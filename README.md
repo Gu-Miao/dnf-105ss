@@ -2,6 +2,6 @@
 
 DNF 105SS 提升率
 
-## LIENSE
+## LICENSE
 
 MIT
