@@ -1,0 +1,2 @@
+export const ATTACK_ENHANCE_ARG = 76000
+export const ELEMENT_ENHANCEMENT = 300
