@@ -3,7 +3,7 @@ import { Data } from '.'
 export const shoes: Data[] = [
   {
     name: 'HEM 加固鞋',
-    prefix: '单异常对象',
+    prefix: '1 个异常对象',
     type: '鞋',
     skillAttacks: [29, 7],
     attackEnhancement: 10090,
