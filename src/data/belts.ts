@@ -1,4 +1,4 @@
-import { data, Data } from '.'
+import { Data } from '.'
 
 export const belts: Data[] = [
   {

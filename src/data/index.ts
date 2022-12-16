@@ -1,6 +1,7 @@
 import { ATTACK_ENHANCE_ARG, ELEMENT_ENHANCEMENT } from '../constants'
 import { coats } from './coats'
 import { pants } from './pants'
+import { spaulders } from './spaulders'
 import { belts } from './belts'
 import { shoes } from './shoes'
 import { bracelets } from './bracelets'
@@ -45,7 +46,7 @@ export type Data = {
   increaseRate?: number
 }
 
-const data: Data[] = [...coats, ...pants, ...belts, ...shoes, ...bracelets]
+const data: Data[] = [...coats, ...pants, ...spaulders, ...belts, ...shoes, ...bracelets]
   .map(item => {
     printProcess(item)
     item.increaseRate = getIncreaseRate(item)
