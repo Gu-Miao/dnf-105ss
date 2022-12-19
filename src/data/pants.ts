@@ -246,7 +246,7 @@ export const pants: Data[] = [
     skillAttacks: [12, 4.8],
     attackEnhancement: 7252,
     elementEnhancement: 10,
-    speed: 20,
+    speed: 24,
   },
   {
     name: '指引胜利的争议',
