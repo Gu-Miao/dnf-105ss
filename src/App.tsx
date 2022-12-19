@@ -59,7 +59,6 @@ function App() {
           <tr>
             <th>图标</th>
             <th>名称</th>
-            <th>类型</th>
             <th>技攻</th>
             <th>攻强</th>
             <th>属强</th>
@@ -75,13 +74,12 @@ function App() {
           {filteredData.map(item => (
             <tr key={item.name + item.prefix}>
               <td>
-                <img src={`/${item.name}.png`} width={32} height={32} alt={item.name} />
+                <img className="icon" src={`/${item.name}.png`} alt={item.name} />
               </td>
               <td>
                 {item.prefix ? `【${item.prefix}】` : ''}
                 {item.name}
               </td>
-              <td>{item.type}</td>
               <td>{item.skillAttacks.join(', ')}</td>
               <td>{item.attackEnhancement}</td>
               <td>{item.elementEnhancement}</td>
