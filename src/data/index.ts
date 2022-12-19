@@ -5,6 +5,8 @@ import { spaulders } from './spaulders'
 import { belts } from './belts'
 import { shoes } from './shoes'
 import { bracelets } from './bracelets'
+import { mixCoats } from './mixCoats'
+import { mixPants } from './mixPants'
 
 type Abnormal = {
   prevConversionRate: number // 原异常伤害转换率
@@ -28,6 +30,15 @@ export type Data = {
     | '辅助装备'
     | '魔法石'
     | '耳环'
+    | '融合 - 上衣'
+    | '融合 - 下装'
+    | '融合 - 头肩'
+    | '融合 - 腰带'
+    | '融合 - 鞋'
+    | '融合 - 手镯'
+    | '融合 - 项链'
+    | '融合 - 戒指'
+
   skillAttacks: number[]
   attackEnhancement: number
   elementEnhancement?: number
@@ -46,7 +57,16 @@ export type Data = {
   increaseRate?: number
 }
 
-const data: Data[] = [...coats, ...pants, ...spaulders, ...belts, ...shoes, ...bracelets]
+const data: Data[] = [
+  ...coats,
+  ...pants,
+  ...spaulders,
+  ...belts,
+  ...shoes,
+  ...bracelets,
+  ...mixCoats,
+  ...mixPants,
+]
   .map(item => {
     printProcess(item)
     item.increaseRate = getIncreaseRate(item)

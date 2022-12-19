@@ -52,6 +52,14 @@ function App() {
           <option value="辅助装备">辅助装备</option>
           <option value="魔法石">魔法石</option>
           <option value="耳环">耳环</option>
+          <option value="融合 - 上衣">融合 - 上衣</option>
+          <option value="融合 - 下装">融合 - 下装</option>
+          <option value="融合 - 头肩">融合 - 头肩</option>
+          <option value="融合 - 腰带">融合 - 腰带</option>
+          <option value="融合 - 鞋">融合 - 鞋</option>
+          <option value="融合 - 手镯">融合 - 手镯</option>
+          <option value="融合 - 项链">融合 - 项链</option>
+          <option value="融合 - 戒指">融合 - 戒指</option>
         </select>
       </p>
       <table>
