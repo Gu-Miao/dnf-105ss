@@ -39,7 +39,7 @@ export const shoes: Data[] = [
     type: '鞋',
     skillAttacks: [29, 13],
     attackEnhancement: 9604,
-    other: '搭配半血手镯使用；保护罩强度 +20%',
+    other: '搭配半血手镯使用；20% 保护罩耐久',
   },
   {
     name: '暗影之迹短靴',
