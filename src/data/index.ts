@@ -5,11 +5,19 @@ import { spaulders } from './spaulders'
 import { belts } from './belts'
 import { shoes } from './shoes'
 import { bracelets } from './bracelets'
+import { necklaces } from './necklaces'
+import { rings } from './ring'
+import { supports } from './supports'
+import { magicStones } from './magicStones'
+import { earrings } from './earrings'
 import { mixCoats } from './mixCoats'
 import { mixPants } from './mixPants'
 import { mixSpaulders } from './mixSpaulders'
 import { mixBelts } from './mixBelts'
 import { mixShoes } from './mixShoes'
+import { mixBracelets } from './mixBracelets'
+import { mixNecklaces } from './mixNecklaces'
+import { mixRings } from './mixRings'
 
 type Abnormal = {
   prevConversionRate: number // 原异常伤害转换率
@@ -67,11 +75,19 @@ const data: Data[] = [
   ...belts,
   ...shoes,
   ...bracelets,
+  ...necklaces,
+  ...rings,
+  ...supports,
+  ...magicStones,
+  ...earrings,
   ...mixCoats,
   ...mixPants,
   ...mixSpaulders,
   ...mixBelts,
   ...mixShoes,
+  ...mixBracelets,
+  ...mixNecklaces,
+  ...mixRings,
 ]
   .map(item => {
     printProcess(item)
