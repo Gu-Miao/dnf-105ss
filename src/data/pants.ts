@@ -249,7 +249,7 @@ export const pants: Data[] = [
     speed: 24,
   },
   {
-    name: '指引胜利的争议',
+    name: '指引胜利的正义',
     prefix: '非破韧',
     type: '下装',
     skillAttacks: [12],
@@ -260,7 +260,7 @@ export const pants: Data[] = [
     },
   },
   {
-    name: '指引胜利的争议',
+    name: '指引胜利的正义',
     prefix: '破韧',
     type: '下装',
     skillAttacks: [12],
