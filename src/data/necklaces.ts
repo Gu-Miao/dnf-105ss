@@ -15,7 +15,7 @@ export const necklaces: Data[] = [
     skillAttacks: [12],
     attackEnhancement: 4528,
     elementEnhancement: 35,
-    other: '按照 35 属强计算',
+    other: '按 35 属强计算',
   },
   {
     name: '黯星项链',

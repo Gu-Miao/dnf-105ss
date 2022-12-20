@@ -182,7 +182,7 @@ export const spaulders: Data[] = [
     type: '头肩',
     skillAttacks: [34, 4],
     attackEnhancement: 11290,
-    other: '按照 6 点计算',
+    other: '按 6 点计算',
   },
   {
     name: '庇佑伤痛的威严',

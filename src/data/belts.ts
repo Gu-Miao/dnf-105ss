@@ -84,7 +84,7 @@ export const belts: Data[] = [
     type: '腰带',
     skillAttacks: [12, 2],
     attackEnhancement: 9378,
-    other: '需要搭配睡眠流装备使用；每 20 秒使 20 秒内技能 CD -20%；-10% 睡眠抗性；需要消耗品效果',
+    other: '需要搭配睡眠流装备使用；每 20 秒使 20 秒内技能 CD -20%；-10% 睡眠抗性；1 个消耗品效果',
   },
   {
     name: '骄傲的意志腰带',
