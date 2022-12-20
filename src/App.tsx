@@ -88,8 +88,8 @@ function App() {
                 {item.prefix ? `【${item.prefix}】` : ''}
                 {item.name}
               </td>
-              <td>{item.skillAttacks.join(', ')}</td>
-              <td>{item.attackEnhancement}</td>
+              <td>{renderSkillAttack(item.skillAttacks)}</td>
+              <td>{item.attackEnhancement || ''}</td>
               <td>{item.elementEnhancement}</td>
               <td>{item.abnormal?.increasedConversionRate}</td>
               <td>{item.abnormal?.increasedAbnormalDamageEnhancement}</td>
@@ -103,6 +103,11 @@ function App() {
       </table>
     </div>
   )
+}
+
+function renderSkillAttack(skillAttacks: Data['skillAttacks']) {
+  if (skillAttacks[0] === 0) return ''
+  return skillAttacks.join(', ')
 }
 
 function renderSpeed(speed: Data['speed']) {

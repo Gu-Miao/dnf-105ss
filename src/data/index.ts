@@ -7,6 +7,9 @@ import { shoes } from './shoes'
 import { bracelets } from './bracelets'
 import { mixCoats } from './mixCoats'
 import { mixPants } from './mixPants'
+import { mixSpaulders } from './mixSpaulders'
+import { mixBelts } from './mixBelts'
+import { mixShoes } from './mixShoes'
 
 type Abnormal = {
   prevConversionRate: number // 原异常伤害转换率
@@ -66,6 +69,9 @@ const data: Data[] = [
   ...bracelets,
   ...mixCoats,
   ...mixPants,
+  ...mixSpaulders,
+  ...mixBelts,
+  ...mixShoes,
 ]
   .map(item => {
     printProcess(item)
