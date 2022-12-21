@@ -126,7 +126,7 @@ export const necklaces: Data[] = [
     skillAttacks: [12],
     attackEnhancement: 5874,
     elementEnhancement: 30,
-    other: 'Lv40 级技能 +10',
+    other: 'Lv40 技能 +10',
   },
   {
     name: '遥感之心项链',

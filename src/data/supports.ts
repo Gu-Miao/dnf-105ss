@@ -131,7 +131,7 @@ export const supports: Data[] = [
     skillAttacks: [12],
     attackEnhancement: 4796,
     elementEnhancement: 30,
-    other: 'Lv60 级技能 +10 级',
+    other: 'Lv60 技能 +10 级',
   },
   {
     name: '幻影之触控制面板',
