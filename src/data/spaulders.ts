@@ -191,4 +191,15 @@ export const spaulders: Data[] = [
     attackEnhancement: 6748,
     elementEnhancement: 10,
   },
+  {
+    name: '双手触及的记忆',
+    type: '头肩',
+    skillAttacks: [34, 5],
+    attackEnhancement: 6574,
+    cd: 10,
+    speed: {
+      attackSpeed: 8,
+      castingSpeed: 12,
+    },
+  },
 ]

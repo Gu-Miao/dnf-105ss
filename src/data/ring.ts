@@ -235,4 +235,12 @@ export const rings: Data[] = [
     attackEnhancement: 7974,
     elementEnhancement: 5,
   },
+  {
+    name: '世界的中心轴',
+    type: '戒指',
+    skillAttacks: [12, 7],
+    attackEnhancement: 8272,
+    speed: -15,
+    other: '减少技能范围；+8 全属抗',
+  },
 ]

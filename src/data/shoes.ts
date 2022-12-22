@@ -287,4 +287,16 @@ export const shoes: Data[] = [
     },
     other: '-10% 全异抗',
   },
+  {
+    name: '超越边界的次元',
+    type: '鞋',
+    skillAttacks: [29, 8, 10],
+    attackEnhancement: 6682,
+    elementEnhancement: 10,
+    speed: {
+      attackSpeed: 8,
+      castingSpeed: 12,
+    },
+    other: 'TP 按 10% 技攻计算；8 全属抗',
+  },
 ]

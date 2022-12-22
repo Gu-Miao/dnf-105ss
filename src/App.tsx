@@ -35,8 +35,11 @@ function App() {
         </a>
       </p>
       <p>
-        装备为 2022/10/27 韩服史诗改版后，所有装备攻强取 1 级，攻强分母 {ATTACK_ENHANCE_ARG}，属强{' '}
-        {ELEMENT_ENHANCEMENT}
+        <strong>计算仅供参考</strong>
+      </p>
+      <p>
+        装备为 2022/10/27 韩服史诗改版后，已更新大魔法师的次元回廊装备，所有装备攻强取 1
+        级，攻强分母 {ATTACK_ENHANCE_ARG}，属强 {ELEMENT_ENHANCEMENT}
         ，只有一个领主怪物，异常默认单挂异常手镯，MP流蓝耗增加技攻只计算鞋子，基础精通只计算了小技能提升率
       </p>
       <p>
@@ -60,6 +63,9 @@ function App() {
           <option value="融合 - 手镯">融合 - 手镯</option>
           <option value="融合 - 项链">融合 - 项链</option>
           <option value="融合 - 戒指">融合 - 戒指</option>
+          <option value="融合 - 辅助装备">融合 - 辅助装备</option>
+          <option value="融合 - 魔法石">融合 - 魔法石</option>
+          <option value="融合 - 耳环">融合 - 耳环</option>
         </select>
       </p>
       <table>

@@ -136,7 +136,7 @@ export const pants: Data[] = [
     skillAttacks: [12],
     attackEnhancement: 7126,
     elementEnhancement: 10,
-    other: '物体；使敌人灼烧',
+    other: '特效；使敌人灼烧',
   },
   {
     name: '隐匿的自然生命',
@@ -145,7 +145,7 @@ export const pants: Data[] = [
     skillAttacks: [12],
     attackEnhancement: 7838,
     elementEnhancement: 10,
-    other: '物体；使敌人灼烧',
+    other: '特效；使敌人灼烧',
   },
   {
     name: '隐匿的自然生命',
@@ -154,7 +154,7 @@ export const pants: Data[] = [
     skillAttacks: [12],
     attackEnhancement: 9974,
     elementEnhancement: 10,
-    other: '物体；使敌人灼烧；搭配混乱核心胸甲',
+    other: '特效；使敌人灼烧；搭配混乱核心胸甲',
   },
   {
     name: '高科技战术护腿',
@@ -277,5 +277,11 @@ export const pants: Data[] = [
     attackEnhancement: 7559,
     elementEnhancement: 20,
     other: '持续扣血',
+  },
+  {
+    name: '穿风踏物之光',
+    type: '下装',
+    skillAttacks: [12],
+    attackEnhancement: 7679,
   },
 ]

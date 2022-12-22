@@ -6,7 +6,7 @@ export const supports: Data[] = [
     type: '辅助装备',
     skillAttacks: [12, 2, 5],
     attackEnhancement: 5673,
-    other: '物体；使敌人灼烧',
+    other: '特效；使敌人灼烧',
   },
   {
     name: '命运的魔法箱',
@@ -27,7 +27,7 @@ export const supports: Data[] = [
       castingSpeed: 40,
     },
     elementEnhancement: 10,
-    other: '物体；使敌人感电',
+    other: '特效；使敌人感电',
   },
   {
     name: '不祥的暗纹石板',
@@ -99,7 +99,7 @@ export const supports: Data[] = [
     type: '辅助装备',
     skillAttacks: [12, 15],
     attackEnhancement: 4714,
-    other: '物体；使敌人冰冻',
+    other: '特效；使敌人冰冻',
   },
   {
     name: '摇曳的生命之水',
@@ -107,7 +107,7 @@ export const supports: Data[] = [
     type: '辅助装备',
     skillAttacks: [12],
     attackEnhancement: 4714,
-    other: '物体；使敌人冰冻',
+    other: '特效；使敌人冰冻',
   },
   {
     name: '空战型：战术螺旋桨无人机',
@@ -214,5 +214,12 @@ export const supports: Data[] = [
       moveSpeed: 8,
     },
     other: '死亡之舞',
+  },
+  {
+    name: '中止的知识',
+    type: '辅助装备',
+    skillAttacks: [12, 3],
+    attackEnhancement: 8301,
+    speed: '普攻，跳攻，前冲攻击时 35% 攻速',
   },
 ]

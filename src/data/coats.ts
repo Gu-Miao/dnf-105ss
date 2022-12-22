@@ -126,7 +126,7 @@ export const coats: Data[] = [
       attackSpeed: 10,
       castingSpeed: 15,
     },
-    other: '物体；20 火炕',
+    other: '特效；20 火抗',
   },
   {
     name: '高科技战术指挥上衣',
@@ -221,5 +221,12 @@ export const coats: Data[] = [
     skillAttacks: [12],
     attackEnhancement: 10864,
     other: '70% 血以上吃满；10% 保护罩',
+  },
+  {
+    name: '崩溃世界的隙间',
+    type: '上衣',
+    skillAttacks: [12],
+    attackEnhancement: 8367,
+    other: '减伤',
   },
 ]

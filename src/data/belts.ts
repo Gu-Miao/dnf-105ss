@@ -176,7 +176,7 @@ export const belts: Data[] = [
       attackSpeed: 10,
       castingSpeed: 15,
     },
-    other: '物体；20 光抗；使敌人感电',
+    other: '特效；20 光抗；使敌人感电',
   },
   {
     name: '纯粹的自然秩序',
@@ -189,7 +189,7 @@ export const belts: Data[] = [
       attackSpeed: 10,
       castingSpeed: 15,
     },
-    other: '物体；20 光抗；使敌人感电',
+    other: '特效；20 光抗；使敌人感电',
   },
   {
     name: '纯粹的自然秩序',
@@ -202,7 +202,7 @@ export const belts: Data[] = [
       attackSpeed: 10,
       castingSpeed: 15,
     },
-    other: '物体；20 光抗；使敌人感电；搭配混乱核心胸甲',
+    other: '特效；20 光抗；使敌人感电；搭配混乱核心胸甲',
   },
   {
     name: '高科技战术腰带',
@@ -338,5 +338,12 @@ export const belts: Data[] = [
     elementEnhancement: 6,
     speed: 6,
     other: '按 1，2 词条吃满计算',
+  },
+  {
+    name: '雕刻记忆的星座',
+    type: '腰带',
+    skillAttacks: [12, 16],
+    attackEnhancement: 5228,
+    other: '技攻按吃满计算',
   },
 ]

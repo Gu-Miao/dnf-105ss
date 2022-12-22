@@ -112,7 +112,7 @@ export const bracelets: Data[] = [
     type: '手镯',
     skillAttacks: [12, 8],
     attackEnhancement: 3906,
-    other: '物体每次消耗 2% MP；使敌人感电',
+    other: '特效；每次消耗 2% MP；使敌人感电',
   },
   {
     name: '绿野的纯真手镯',
@@ -120,7 +120,7 @@ export const bracelets: Data[] = [
     type: '手镯',
     skillAttacks: [12, 8, 5, 15],
     attackEnhancement: 4646,
-    other: '物体每次消耗 2% MP；使敌人感电',
+    other: '特效；每次消耗 2% MP；使敌人感电',
   },
   {
     name: '无人机战术手镯',
@@ -154,18 +154,11 @@ export const bracelets: Data[] = [
   },
   {
     name: '守护龙的庇护 - 慈悲',
-    prefix: '非 Lv35 技能',
     type: '手镯',
     skillAttacks: [12],
     attackEnhancement: 5604,
-  },
-  {
-    name: '守护龙的庇护 - 慈悲',
-    prefix: 'Lv35 技能',
-    type: '手镯',
-    skillAttacks: [12, 30],
-    attackEnhancement: 5604,
-    other: '每级 3%，按 10 级计算',
+    elementEnhancement: 30,
+    other: 'Lv35 技能 +10 级',
   },
   {
     name: '重奏者',
@@ -236,5 +229,16 @@ export const bracelets: Data[] = [
     attackEnhancement: 5066,
     elementEnhancement: 30,
     other: '每 30 秒损蓝损血',
+  },
+  {
+    name: '稍纵即逝的流动',
+    type: '手镯',
+    skillAttacks: [12, 14],
+    attackEnhancement: 7531,
+    elementEnhancement: 15,
+    speed: {
+      moveSpeed: 8,
+    },
+    other: '15% 保护罩',
   },
 ]

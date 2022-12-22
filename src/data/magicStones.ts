@@ -45,7 +45,7 @@ export const magicStones: Data[] = [
       attackSpeed: 8,
       castingSpeed: 12,
     },
-    other: '物体',
+    other: '特效',
   },
   {
     name: '生机盎然的绿宝石',
@@ -205,5 +205,12 @@ export const magicStones: Data[] = [
     skillAttacks: [12, 9],
     attackEnhancement: 6844,
     other: '手搓；减伤',
+  },
+  {
+    name: '被忘却的记录',
+    type: '魔法石',
+    skillAttacks: [12, 7],
+    attackEnhancement: 7411,
+    elementEnhancement: 10,
   },
 ]

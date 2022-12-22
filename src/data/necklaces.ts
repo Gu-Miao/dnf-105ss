@@ -7,7 +7,7 @@ export const necklaces: Data[] = [
     skillAttacks: [12],
     attackEnhancement: 5336,
     elementEnhancement: 15,
-    other: '10% 物体伤害；攻击减 CD；10 火抗；限定火强',
+    other: '10% 特效伤害；攻击减 CD；10 火抗；限定火强',
   },
   {
     name: '第一个黑桃 - 贵族',
@@ -191,7 +191,7 @@ export const necklaces: Data[] = [
     skillAttacks: [12],
     attackEnhancement: 7818,
     elementEnhancement: 10,
-    other: '物体；30% 物体伤害；8 全属抗',
+    other: '特效；30% 特效伤害；8 全属抗',
   },
   {
     name: '暴龙王的支配：恐怖',
@@ -205,5 +205,14 @@ export const necklaces: Data[] = [
       moveSpeed: 20,
     },
     other: '15% 保护罩；8% 保护罩耐久',
+  },
+  {
+    name: '引导命运的方向',
+    type: '项链',
+    skillAttacks: [12, 7],
+    attackEnhancement: 6318,
+    elementEnhancement: 15,
+    speed: 10,
+    other: '-10 全属抗',
   },
 ]

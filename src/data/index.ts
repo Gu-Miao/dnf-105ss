@@ -18,6 +18,9 @@ import { mixShoes } from './mixShoes'
 import { mixBracelets } from './mixBracelets'
 import { mixNecklaces } from './mixNecklaces'
 import { mixRings } from './mixRings'
+import { mixSupports } from './mixSupports'
+import { mixMagicStones } from './mixMagicStones'
+import { mixEarrings } from './mixEarrings'
 
 type Abnormal = {
   prevConversionRate: number // 原异常伤害转换率
@@ -49,6 +52,9 @@ export type Data = {
     | '融合 - 手镯'
     | '融合 - 项链'
     | '融合 - 戒指'
+    | '融合 - 辅助装备'
+    | '融合 - 魔法石'
+    | '融合 - 耳环'
 
   skillAttacks: number[]
   attackEnhancement: number
@@ -88,6 +94,9 @@ const data: Data[] = [
   ...mixBracelets,
   ...mixNecklaces,
   ...mixRings,
+  ...mixSupports,
+  ...mixMagicStones,
+  ...mixEarrings,
 ]
   .map(item => {
     printProcess(item)
