@@ -27,7 +27,7 @@ function App() {
         </a>
         ， 公式参考：
         <a
-          href="https://bbs.colg.cn/tdread-8672452-1-1.html?PC_forum171_strategy"
+          href="https://bbs.colg.cn/thread-8672452-1-1.html"
           target="_blank"
           rel="noopener noreferrer"
         >
