@@ -242,7 +242,7 @@ export const magicStones: Data[] = [
   },
   {
     name: '恩特精灵之心',
-    prefix: '四词条2',
+    prefix: '四词条3',
     type: '魔法石',
     skillAttacks: [12, 5, 5],
     attackEnhancement: 741 + 445 + 1630 + 445,
@@ -251,7 +251,7 @@ export const magicStones: Data[] = [
   },
   {
     name: '恩特精灵之心',
-    prefix: '四词条3',
+    prefix: '四词条4',
     type: '魔法石',
     skillAttacks: [12, 5, 5, 5],
     attackEnhancement: 741 + 445 + 455 + 445,
