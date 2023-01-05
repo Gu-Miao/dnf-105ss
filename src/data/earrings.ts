@@ -1,4 +1,4 @@
-import { data, Data } from '.'
+import { Data } from '.'
 
 export const earrings: Data[] = [
   {
@@ -303,5 +303,75 @@ export const earrings: Data[] = [
     speed: 30,
     elementEnhancement: 15,
     other: '刻印触发概率约为 6.07%',
+  },
+  {
+    name: '森林之魔女耳环',
+    prefix: '三词条',
+    type: '耳环',
+    skillAttacks: [12, 5, 5, 5],
+    attackEnhancement: 445 + 445 + 445 + 1186,
+    other: '感电 5；出血 5；灼烧 5',
+  },
+  {
+    name: '森林之魔女耳环',
+    prefix: '四词条1',
+    type: '耳环',
+    skillAttacks: [12, 5, 5, 5],
+    attackEnhancement: 445 + 445 + 445 + 741,
+    elementEnhancement: 20,
+    other: '感电 5；出血 5；灼烧 5；20 属强',
+  },
+  {
+    name: '森林之魔女耳环',
+    prefix: '四词条1',
+    type: '耳环',
+    skillAttacks: [12, 5, 5, 5],
+    attackEnhancement: 445 + 445 + 445 + 741,
+    elementEnhancement: 20,
+    other: '感电 5；出血 5；灼烧 5；20 属强',
+  },
+  {
+    name: '恩特精灵耳环',
+    prefix: '四词条2',
+    type: '耳环',
+    skillAttacks: [12, 5, 5],
+    attackEnhancement: 445 + 445 + 593 + 889,
+    abnormal: {
+      prevConversionRate: 0.5,
+      prevAbnormalDamageEnhancement: 0.2,
+      increasedConversionRate: 0,
+      increasedAbnormalDamageEnhancement: 0.3,
+    },
+    other: '感电 5；出血 5；15 感电伤害；15 感电伤害',
+  },
+  {
+    name: '恩特精灵耳环',
+    prefix: '四词条3',
+    type: '耳环',
+    skillAttacks: [12, 5, 5, 5],
+    attackEnhancement: 445 + 445 + 445 + 741 + 4446,
+    other: '感电 5；出血 5；灼烧 5；直伤攻强',
+  },
+  {
+    name: '蓝灵绿玉石耳环',
+    prefix: '四词条4',
+    type: '耳环',
+    skillAttacks: [12, 8, 5, 5],
+    attackEnhancement: 148 + 445 + 445 + 296,
+    abnormal: {
+      prevConversionRate: 0.5,
+      prevAbnormalDamageEnhancement: 0.2,
+      increasedConversionRate: 0,
+      increasedAbnormalDamageEnhancement: 0.2,
+    },
+    other: '正面 8；感电 5；出血 5；20 感电伤害',
+  },
+  {
+    name: '深潜迷航耳环',
+    prefix: '四词条5',
+    type: '耳环',
+    skillAttacks: [12, 6, 5, 5, 5],
+    attackEnhancement: 741 + 445 + 445 + 445,
+    other: '领主 6；感电 5；出血 5；灼烧 5',
   },
 ]
