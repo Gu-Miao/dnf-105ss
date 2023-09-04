@@ -14,27 +14,23 @@ export const mixSupports: Data[] = [
     type: '融合 - 辅助装备',
     skillAttacks: [3],
     attackEnhancement: 2350,
-    other: '增加技能范围',
   },
   {
     name: '光辉：高贵的使命',
     type: '融合 - 辅助装备',
     skillAttacks: [3],
     attackEnhancement: 3500,
-    other: '3% 保护罩',
   },
   {
     name: '灵魂的拘束：无慈悲的权能',
     type: '融合 - 辅助装备',
     skillAttacks: [3],
     attackEnhancement: 3770,
-    other: '减技攻副作用',
   },
   {
     name: '卓越：玛尔根源',
     type: '融合 - 辅助装备',
     skillAttacks: [],
     attackEnhancement: 8560,
-    other: '特效；使敌人束缚',
   },
 ]

@@ -32,10 +32,11 @@
     "prefix": "abnormalSnippet",
     "body": [
       "abnormal: {",
+      "  type: '$1',",
       "  prevConversionRate: 0.5,",
       "  prevAbnormalDamageEnhancement: 0.2,",
-      "  increasedConversionRate: $3,",
-      "  increasedAbnormalDamageEnhancement: $4,",
+      "  increasedConversionRate: $2,",
+      "  increasedAbnormalDamageEnhancement: $3,",
       "},$0"
     ]
   }

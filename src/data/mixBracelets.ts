@@ -6,7 +6,6 @@ export const mixBracelets: Data[] = [
     type: '融合 - 手镯',
     skillAttacks: [],
     attackEnhancement: 7815,
-    other: '特效；攻强按期望计算',
   },
   {
     name: '火龙：爆炸的力之源',
@@ -28,7 +27,6 @@ export const mixBracelets: Data[] = [
     type: '融合 - 手镯',
     skillAttacks: [],
     attackEnhancement: 4690,
-    other: '特效；破韧',
   },
   {
     name: '真龙：压倒的力之源',
@@ -36,7 +34,6 @@ export const mixBracelets: Data[] = [
     type: '融合 - 手镯',
     skillAttacks: [],
     attackEnhancement: 9650,
-    other: '特效；破韧',
   },
   {
     name: '黑龙：黑暗的力之源',

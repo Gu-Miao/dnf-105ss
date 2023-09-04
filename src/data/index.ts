@@ -1,4 +1,4 @@
-import { ATTACK_ENHANCE_ARG, ELEMENT_ENHANCEMENT } from '../constants'
+import { ATTACK_ENHANCE_ARG, ELEMENT_ENHANCEMENT, ATTACK_ENHANCE_PER } from '../constants'
 import { coats } from './coats'
 import { pants } from './pants'
 import { spaulders } from './spaulders'
@@ -10,19 +10,20 @@ import { rings } from './ring'
 import { supports } from './supports'
 import { magicStones } from './magicStones'
 import { earrings } from './earrings'
-import { mixCoats } from './mixCoats'
-import { mixPants } from './mixPants'
-import { mixSpaulders } from './mixSpaulders'
-import { mixBelts } from './mixBelts'
-import { mixShoes } from './mixShoes'
-import { mixBracelets } from './mixBracelets'
-import { mixNecklaces } from './mixNecklaces'
-import { mixRings } from './mixRings'
-import { mixSupports } from './mixSupports'
-import { mixMagicStones } from './mixMagicStones'
-import { mixEarrings } from './mixEarrings'
+// import { mixCoats } from './mixCoats'
+// import { mixPants } from './mixPants'
+// import { mixSpaulders } from './mixSpaulders'
+// import { mixBelts } from './mixBelts'
+// import { mixShoes } from './mixShoes'
+// import { mixBracelets } from './mixBracelets'
+// import { mixNecklaces } from './mixNecklaces'
+// import { mixRings } from './mixRings'
+// import { mixSupports } from './mixSupports'
+// import { mixMagicStones } from './mixMagicStones'
+// import { mixEarrings } from './mixEarrings'
 
 type Abnormal = {
+  type: '出血' | '中毒' | '灼烧' | '感电'
   prevConversionRate: number // 原异常伤害转换率
   prevAbnormalDamageEnhancement: number // 原异常伤害增加量
   increasedConversionRate: number // 新增异常伤害转换率
@@ -55,12 +56,12 @@ export type Data = {
     | '融合 - 辅助装备'
     | '融合 - 魔法石'
     | '融合 - 耳环'
-
-  skillAttacks: number[]
+  skillAttacks?: number[]
   attackEnhancement: number
   elementEnhancement?: number
   abnormal?: Abnormal
-  extra?: number
+  coldDownRecover?: number
+  coldDownReduce?: number
   speed?:
     | {
         attackSpeed?: number
@@ -69,7 +70,6 @@ export type Data = {
       }
     | string
     | number
-  cd?: number
   other?: string
   increaseRate?: number
 }
@@ -86,17 +86,17 @@ const data: Data[] = [
   ...supports,
   ...magicStones,
   ...earrings,
-  ...mixCoats,
-  ...mixPants,
-  ...mixSpaulders,
-  ...mixBelts,
-  ...mixShoes,
-  ...mixBracelets,
-  ...mixNecklaces,
-  ...mixRings,
-  ...mixSupports,
-  ...mixMagicStones,
-  ...mixEarrings,
+  // ...mixCoats,
+  // ...mixPants,
+  // ...mixSpaulders,
+  // ...mixBelts,
+  // ...mixShoes,
+  // ...mixBracelets,
+  // ...mixNecklaces,
+  // ...mixRings,
+  // ...mixSupports,
+  // ...mixMagicStones,
+  // ...mixEarrings,
 ]
   .map(item => {
     printProcess(item)
@@ -125,7 +125,7 @@ function getSkillAttackIncreaseRate(skillAttacks: number[]) {
  * @returns 攻击强化提升率
  */
 function getAttackEnhancementIncreaseRate(attackEnhancement: number) {
-  return 1 + attackEnhancement / ATTACK_ENHANCE_ARG
+  return 1 + (attackEnhancement / ATTACK_ENHANCE_ARG) * ATTACK_ENHANCE_PER
 }
 
 /**
@@ -143,18 +143,43 @@ function getElementEnhancementIncreaseRate(increasedElementEnhancement: number) 
  * @returns 异常伤害提升率
  */
 function getAbnormalDamageIncreaseRate({
+  type,
   prevConversionRate,
   prevAbnormalDamageEnhancement,
   increasedConversionRate,
   increasedAbnormalDamageEnhancement,
 }: Abnormal) {
-  return (
-    (prevConversionRate * increasedAbnormalDamageEnhancement +
-      prevAbnormalDamageEnhancement * increasedConversionRate +
-      increasedConversionRate * increasedAbnormalDamageEnhancement) /
-      (1 + prevConversionRate * prevAbnormalDamageEnhancement) +
-    1
-  )
+  const conversionRate = prevConversionRate + increasedConversionRate
+  const abnormalDamageEnhancement =
+    prevAbnormalDamageEnhancement + increasedAbnormalDamageEnhancement
+  const abnormalTypeEnhancement = type === '出血' ? 1.1 : type === '灼烧' ? 1.075 : 1
+
+  const prevDamage =
+    1 -
+    prevConversionRate +
+    prevConversionRate * abnormalTypeEnhancement * (1 + prevAbnormalDamageEnhancement)
+  const damage =
+    1 - conversionRate + conversionRate * abnormalTypeEnhancement * (1 + abnormalDamageEnhancement)
+
+  return damage / prevDamage
+}
+
+/**
+ * 获取冷却时间恢复速度提升率
+ * @param coldDownRecover 冷却时间恢复速度
+ * @returns 冷却时间恢复速度提升率
+ */
+function getColdDownRecoverIncreaseRate(coldDownRecover: number) {
+  return coldDownRecover / 3 + 1
+}
+
+/**
+ * 获取冷却时间减少提升率
+ * @param coldDownReduce 冷却时间减少
+ * @returns 冷却时间减少提升率
+ */
+function getColdDownReduceIncreaseRate(coldDownReduce: number) {
+  return coldDownReduce / 2 + 1
 }
 
 /**
@@ -164,18 +189,23 @@ function getAbnormalDamageIncreaseRate({
  */
 function getIncreaseRate(data: Data) {
   return (
-    getSkillAttackIncreaseRate(data.skillAttacks) *
+    (data.skillAttacks ? getSkillAttackIncreaseRate(data.skillAttacks) : 1) *
       getAttackEnhancementIncreaseRate(data.attackEnhancement) *
       (data.elementEnhancement ? getElementEnhancementIncreaseRate(data.elementEnhancement) : 1) *
       (data.abnormal ? getAbnormalDamageIncreaseRate(data.abnormal) : 1) *
-      (data.extra ?? 1) -
+      (data.coldDownRecover ? getColdDownRecoverIncreaseRate(data.coldDownRecover) : 1) *
+      (data.coldDownReduce ? getColdDownReduceIncreaseRate(data.coldDownReduce) : 1) -
     1
   )
 }
 
 function printProcess(item: Data) {
   console.log(`==== ${item.name} ====`)
-  console.log(`技工：${item.skillAttacks}，提升：${getSkillAttackIncreaseRate(item.skillAttacks)}`)
+  if (item.skillAttacks) {
+    console.log(
+      `技攻：${item.skillAttacks}，提升：${getSkillAttackIncreaseRate(item.skillAttacks)}`,
+    )
+  }
   console.log(
     `攻强：${item.attackEnhancement}，提升：${getAttackEnhancementIncreaseRate(
       item.attackEnhancement,
@@ -185,6 +215,20 @@ function printProcess(item: Data) {
     console.log(
       `属强：${item.elementEnhancement}，提升：${getElementEnhancementIncreaseRate(
         item.elementEnhancement,
+      )}`,
+    )
+  }
+  if (item.coldDownRecover) {
+    console.log(
+      `冷却时间恢复：${item.coldDownRecover}，提升：${getColdDownRecoverIncreaseRate(
+        item.coldDownRecover,
+      )}`,
+    )
+  }
+  if (item.coldDownReduce) {
+    console.log(
+      `冷却时间减少：${item.coldDownReduce}，提升：${getColdDownReduceIncreaseRate(
+        item.coldDownReduce,
       )}`,
     )
   }

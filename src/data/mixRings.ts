@@ -6,7 +6,6 @@ export const mixRings: Data[] = [
     type: '融合 - 戒指',
     skillAttacks: [],
     attackEnhancement: 7815,
-    other: '特效；攻强按期望计算',
   },
   {
     name: '火龙：燃烧的火龙之怒',
@@ -28,7 +27,6 @@ export const mixRings: Data[] = [
     type: '融合 - 戒指',
     skillAttacks: [],
     attackEnhancement: 6252,
-    other: '特效；破韧',
   },
   {
     name: '真龙：沉重的铁之志',
@@ -36,7 +34,6 @@ export const mixRings: Data[] = [
     type: '融合 - 戒指',
     skillAttacks: [],
     attackEnhancement: 7034,
-    other: '特效；破韧',
   },
   {
     name: '黑龙：无尽的黑暗枷锁',
@@ -49,6 +46,5 @@ export const mixRings: Data[] = [
     type: '融合 - 戒指',
     skillAttacks: [],
     attackEnhancement: 7815,
-    other: '20 全属抗',
   },
 ]

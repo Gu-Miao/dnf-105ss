@@ -1,5 +1,5 @@
 import { useState, useMemo, ChangeEvent } from 'react'
-import { ATTACK_ENHANCE_ARG, ELEMENT_ENHANCEMENT } from './constants'
+import { ATTACK_ENHANCE_ARG, ELEMENT_ENHANCEMENT, ATTACK_ENHANCE_PER } from './constants'
 import { data, Data } from './data'
 import './App.less'
 
@@ -37,10 +37,12 @@ function App() {
       <p>
         <strong>计算仅供参考</strong>
       </p>
+      <p>更新至国服弓箭手版本。</p>
       <p>
-        装备为 2022/10/27 韩服史诗改版后，已更新大魔法师的次元回廊装备，所有装备攻强取 1
-        级，攻强分母 {ATTACK_ENHANCE_ARG}，属强 {ELEMENT_ENHANCEMENT}
-        ，只有一个领主怪物，异常默认单挂异常手镯，MP流蓝耗增加技攻只计算鞋子，基础精通只计算了小技能提升率
+        所有装备攻强取 1 级，攻强分母 {ATTACK_ENHANCE_ARG}，百分比攻强{' '}
+        {((ATTACK_ENHANCE_PER - 1) * 100).toFixed(0)}% ，属强 {ELEMENT_ENHANCEMENT}, CD
+        提升率计算方式为 1 技攻 = 2 冷却减少 = 3 冷却恢复
+        ，只有一个领主怪物，异常流默认单挂异常手镯，灼烧破冰率为 75%，MP 流蓝耗增加技攻只计算鞋子。
       </p>
       <p>
         <select value={type} onChange={handleTypeChange}>
@@ -55,7 +57,7 @@ function App() {
           <option value="辅助装备">辅助装备</option>
           <option value="魔法石">魔法石</option>
           <option value="耳环">耳环</option>
-          <option value="融合 - 上衣">融合 - 上衣</option>
+          {/* <option value="融合 - 上衣">融合 - 上衣</option>
           <option value="融合 - 下装">融合 - 下装</option>
           <option value="融合 - 头肩">融合 - 头肩</option>
           <option value="融合 - 腰带">融合 - 腰带</option>
@@ -65,7 +67,7 @@ function App() {
           <option value="融合 - 戒指">融合 - 戒指</option>
           <option value="融合 - 辅助装备">融合 - 辅助装备</option>
           <option value="融合 - 魔法石">融合 - 魔法石</option>
-          <option value="融合 - 耳环">融合 - 耳环</option>
+          <option value="融合 - 耳环">融合 - 耳环</option> */}
         </select>
       </p>
       <table>
@@ -79,7 +81,8 @@ function App() {
             <th>异常转化增加</th>
             <th>异常伤害增加</th>
             <th>速度</th>
-            <th>CD</th>
+            <th>冷却时间恢复</th>
+            <th>冷却时间减少</th>
             <th>备注</th>
             <th>提升率</th>
           </tr>
@@ -97,10 +100,11 @@ function App() {
               <td>{renderSkillAttack(item.skillAttacks)}</td>
               <td>{item.attackEnhancement || ''}</td>
               <td>{item.elementEnhancement}</td>
-              <td>{item.abnormal?.increasedConversionRate}</td>
-              <td>{item.abnormal?.increasedAbnormalDamageEnhancement}</td>
+              <td>{renderPercent(item.abnormal?.increasedConversionRate)}</td>
+              <td>{renderPercent(item.abnormal?.increasedAbnormalDamageEnhancement)}</td>
               <td>{renderSpeed(item.speed)}</td>
-              <td>{item.cd}</td>
+              <td>{renderPercent(item.coldDownRecover)}</td>
+              <td>{renderPercent(item.coldDownReduce)}</td>
               <td>{item.other}</td>
               <td>{((item.increaseRate as number) * 100).toFixed(2)}%</td>
             </tr>
@@ -111,9 +115,14 @@ function App() {
   )
 }
 
+function renderPercent(num: number | undefined) {
+  if (!num) return ''
+  return num * 100 + '%'
+}
+
 function renderSkillAttack(skillAttacks: Data['skillAttacks']) {
-  if (skillAttacks[0] === 0) return ''
-  return skillAttacks.join(', ')
+  if (!skillAttacks || skillAttacks[0] === 0) return ''
+  return skillAttacks.map(num => num + '%').join(', ')
 }
 
 function renderSpeed(speed: Data['speed']) {

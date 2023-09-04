@@ -6,7 +6,6 @@ export const mixShoes: Data[] = [
     type: '融合 - 鞋',
     skillAttacks: [],
     attackEnhancement: 6816,
-    other: '施放技能 15% 冰冻',
   },
   {
     name: '暴食：追击的猎手',
@@ -19,20 +18,17 @@ export const mixShoes: Data[] = [
     type: '融合 - 鞋',
     skillAttacks: [],
     attackEnhancement: 4321,
-    other: 'Lv95 技能 CD',
   },
   {
     name: '激怒：漫无目的的绝望',
     type: '融合 - 鞋',
     skillAttacks: [],
     attackEnhancement: 6213,
-    other: '霸体',
   },
   {
     name: '雷光：呼雷之龙足',
     type: '融合 - 鞋',
     skillAttacks: [],
     attackEnhancement: 5213,
-    other: '单人特效',
   },
 ]

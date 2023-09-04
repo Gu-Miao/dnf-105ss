@@ -6,7 +6,6 @@ export const mixNecklaces: Data[] = [
     type: '融合 - 项链',
     skillAttacks: [],
     attackEnhancement: 7815,
-    other: '特效；攻强按期望计算',
   },
   {
     name: '火龙：沸腾的龙之息',
@@ -19,7 +18,6 @@ export const mixNecklaces: Data[] = [
     type: '融合 - 项链',
     skillAttacks: [],
     attackEnhancement: 6240,
-    other: '特效；破韧',
   },
   {
     name: '黑龙：凝视的龙之瞳',
