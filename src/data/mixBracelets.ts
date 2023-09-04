@@ -12,7 +12,7 @@ export const mixBracelets: Data[] = [
     type: '融合 - 手镯',
     skillAttacks: [],
     attackEnhancement: 0,
-    cd: 12,
+    coldDownReduce: 0.12,
   },
   {
     name: '火龙：爆炸的力之源',

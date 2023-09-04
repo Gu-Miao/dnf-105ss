@@ -4,22 +4,21 @@ export const supports: Data[] = [
   {
     name: '虚影幻息眼镜',
     type: '辅助装备',
-    skillAttacks: [12, 2, 5],
+    skillAttacks: [2, 5],
     attackEnhancement: 5673,
   },
   {
     name: '命运的魔法箱',
     type: '辅助装备',
-    skillAttacks: [12],
+
     attackEnhancement: 5604,
     elementEnhancement: 12,
   },
   {
     name: '挖掘之王部件',
     type: '辅助装备',
-    skillAttacks: [12],
     attackEnhancement: 7100,
-    cd: 25,
+    coldDownReduce: 0.05,
     speed: {
       attackSpeed: 25,
       castingSpeed: 40,
@@ -29,7 +28,7 @@ export const supports: Data[] = [
   {
     name: '不祥的暗纹石板',
     type: '辅助装备',
-    skillAttacks: [12, 5],
+    skillAttacks: [5],
     attackEnhancement: 5874,
     speed: {
       moveSpeed: 8,
@@ -38,7 +37,7 @@ export const supports: Data[] = [
   {
     name: '全息通话器',
     type: '辅助装备',
-    skillAttacks: [12],
+
     attackEnhancement: 6414,
     speed: {
       attackSpeed: 8,
@@ -49,28 +48,27 @@ export const supports: Data[] = [
   {
     name: '生命本源背包',
     type: '辅助装备',
-    skillAttacks: [12],
+
     attackEnhancement: 5510,
     elementEnhancement: 30,
   },
   {
     name: '梦之呼唤',
     type: '辅助装备',
-    skillAttacks: [12],
     attackEnhancement: 4528,
-    cd: 50,
+    coldDownRecover: 0.5,
   },
   {
     name: '飘渺的知识',
     type: '辅助装备',
-    skillAttacks: [12],
+
     attackEnhancement: 5510,
     elementEnhancement: 30,
   },
   {
     name: '正义骑士面具',
     type: '辅助装备',
-    skillAttacks: [12],
+
     attackEnhancement: 5336,
     speed: {
       moveSpeed: 8,
@@ -79,7 +77,7 @@ export const supports: Data[] = [
   {
     name: '未知文明 - 人面石',
     type: '辅助装备',
-    skillAttacks: [12],
+
     attackEnhancement: 5510,
     elementEnhancement: 30,
   },
@@ -87,70 +85,72 @@ export const supports: Data[] = [
     name: '摇曳的生命之水',
     prefix: '破韧冰冻',
     type: '辅助装备',
-    skillAttacks: [12, 15],
+    skillAttacks: [15],
     attackEnhancement: 4714,
   },
   {
     name: '摇曳的生命之水',
     prefix: '未破韧',
     type: '辅助装备',
-    skillAttacks: [12],
+
     attackEnhancement: 4714,
   },
   {
     name: '空战型：战术螺旋桨无人机',
     type: '辅助装备',
-    skillAttacks: [12],
+
     attackEnhancement: 10320,
     elementEnhancement: 5,
   },
   {
     name: '心之潜影',
     type: '辅助装备',
-    skillAttacks: [12],
+
     attackEnhancement: 5510,
     elementEnhancement: 30,
   },
   {
     name: '猎龙者之证 - 龙骨角笛',
     type: '辅助装备',
-    skillAttacks: [12],
+
     attackEnhancement: 4796,
     elementEnhancement: 30,
   },
   {
     name: '幻影之触控制面板',
     type: '辅助装备',
-    skillAttacks: [12],
+
     attackEnhancement: 9781,
     elementEnhancement: 10,
   },
   {
     name: '黎明圣杯',
     type: '辅助装备',
-    skillAttacks: [12, 15],
+    skillAttacks: [15],
     attackEnhancement: 5066,
     speed: 15,
   },
+
   {
     name: '德卡制导装置',
-    prefix: '控制异常',
+    prefix: '未破韧',
     type: '辅助装备',
-    skillAttacks: [12, 3, 1],
+    skillAttacks: [3],
     attackEnhancement: 2910,
-    cd: 20,
+    coldDownRecover: 0.15,
   },
   {
     name: '德卡制导装置',
+    prefix: '破韧',
     type: '辅助装备',
-    skillAttacks: [12, 3],
+    skillAttacks: [3, 1],
     attackEnhancement: 2910,
-    cd: 15,
+    coldDownRecover: 0.15 + 0.05,
   },
   {
     name: '生命的喘息',
     type: '辅助装备',
-    skillAttacks: [12, 7],
+    skillAttacks: [7],
     attackEnhancement: 6751,
     speed: {
       attackSpeed: 8,
@@ -160,7 +160,7 @@ export const supports: Data[] = [
   {
     name: '死亡之冠',
     type: '辅助装备',
-    skillAttacks: [12],
+
     attackEnhancement: 9378,
     elementEnhancement: 10,
     speed: {
@@ -170,7 +170,7 @@ export const supports: Data[] = [
   {
     name: '光学工程眼镜',
     type: '辅助装备',
-    skillAttacks: [12, 5],
+    skillAttacks: [5],
     attackEnhancement: 8085,
     speed: {
       attackSpeed: 5,
@@ -181,13 +181,13 @@ export const supports: Data[] = [
   {
     name: '鲁莽而合理的作战',
     type: '辅助装备',
-    skillAttacks: [12],
+
     attackEnhancement: 8704,
   },
   {
     name: '生命酒杯',
     type: '辅助装备',
-    skillAttacks: [12],
+
     attackEnhancement: 5874 + 2964,
     elementEnhancement: 10,
     speed: {
@@ -197,106 +197,8 @@ export const supports: Data[] = [
   {
     name: '中止的知识',
     type: '辅助装备',
-    skillAttacks: [12, 3],
+    skillAttacks: [3],
     attackEnhancement: 8301,
     speed: '普攻，跳攻，前冲攻击时 35% 攻速',
-  },
-  {
-    name: '蓝灵绿玉石香水',
-    prefix: '三词条',
-    type: '辅助装备',
-    skillAttacks: [12, 5, 5],
-    attackEnhancement: 445 + 445 + 1186 + 1334,
-    elementEnhancement: 15,
-  },
-  {
-    name: '蓝灵绿玉石香水',
-    prefix: '四词条1',
-    type: '辅助装备',
-    skillAttacks: [12, 5],
-    attackEnhancement: 1186 + 1630 + 1186 + 445,
-    elementEnhancement: 40,
-  },
-  {
-    name: '蓝灵绿玉石香水',
-    prefix: '四词条2',
-    type: '辅助装备',
-    skillAttacks: [12, 5, 5],
-    attackEnhancement: 1186 + 1630 + 445 + 445,
-    elementEnhancement: 30,
-  },
-  {
-    name: '蓝灵绿玉石香水',
-    prefix: '四词条3',
-    type: '辅助装备',
-    skillAttacks: [12, 5, 5, 5],
-    attackEnhancement: 1186 + 445 + 445 + 445,
-    elementEnhancement: 15,
-  },
-  {
-    name: '蓝灵绿玉石香水',
-    prefix: '四词条4',
-    type: '辅助装备',
-    skillAttacks: [12, 5, 5, 5, 5],
-    attackEnhancement: 445 + 445 + 445 + 445,
-  },
-  {
-    name: '蓝灵绿玉石香水',
-    prefix: '四词条5',
-    type: '辅助装备',
-    skillAttacks: [12, 7, 5, 5, 5],
-    attackEnhancement: 296 + 445 + 445 + 445,
-  },
-  {
-    name: '蓝灵绿玉石香水',
-    prefix: '四词条6',
-    type: '辅助装备',
-    skillAttacks: [12, 7, 5, 5],
-    attackEnhancement: 296 + 445 + 445 + 296,
-    abnormal: {
-      prevConversionRate: 0.5,
-      prevAbnormalDamageEnhancement: 0.2,
-      increasedConversionRate: 0,
-      increasedAbnormalDamageEnhancement: 0.2,
-    },
-  },
-  {
-    name: '森林之魔女篮子',
-    prefix: '四词条7',
-    type: '辅助装备',
-    skillAttacks: [12, 7, 5, 5],
-    attackEnhancement: 296 + 445 + 445 + 296,
-    abnormal: {
-      prevConversionRate: 0.5,
-      prevAbnormalDamageEnhancement: 0.2,
-      increasedConversionRate: 0,
-      increasedAbnormalDamageEnhancement: 0.1,
-    },
-  },
-  {
-    name: '恩特精灵圣杯',
-    prefix: '四词条8',
-    type: '辅助装备',
-    skillAttacks: [12, 5],
-    attackEnhancement: 1186 + 1186 + 3112 + 445 + 889,
-    abnormal: {
-      prevConversionRate: 0.5,
-      prevAbnormalDamageEnhancement: 0.2,
-      increasedConversionRate: 0,
-      increasedAbnormalDamageEnhancement: 0.15,
-    },
-  },
-  {
-    name: '深潜迷航脚蹼',
-    prefix: '四词条9',
-    type: '辅助装备',
-    skillAttacks: [12, 7, 5, 5],
-    attackEnhancement: 296 + 445 + 445 + 1186,
-    abnormal: {
-      prevConversionRate: 0.5,
-      prevAbnormalDamageEnhancement: 0.2,
-      increasedConversionRate: 0,
-      increasedAbnormalDamageEnhancement: 0.05,
-    },
   },
 ]

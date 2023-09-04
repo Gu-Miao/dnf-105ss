@@ -161,9 +161,9 @@ export const rings: Data[] = [
   {
     name: '血色结晶戒指',
     type: '戒指',
-
     attackEnhancement: 6332,
     abnormal: {
+      type: '出血',
       prevConversionRate: 0.5,
       prevAbnormalDamageEnhancement: 0.2,
       increasedConversionRate: 0,

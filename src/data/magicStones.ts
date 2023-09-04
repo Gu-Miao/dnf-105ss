@@ -4,30 +4,30 @@ export const magicStones: Data[] = [
   {
     name: '不败奖牌',
     type: '魔法石',
-    skillAttacks: [12],
+
     attackEnhancement: 8568,
   },
   {
     name: '虚伪之石',
     type: '魔法石',
-    skillAttacks: [12],
+
     attackEnhancement: 3180,
     elementEnhancement: 30,
   },
   {
     name: '逆流之魂灵珠',
     type: '魔法石',
-    skillAttacks: [12, 7],
+    skillAttacks: [7],
     attackEnhancement: 7047,
-    cd: 8,
+    coldDownReduce: 0.08,
     speed: 15,
   },
   {
     name: '静谧之像',
     type: '魔法石',
-    skillAttacks: [12, 30],
+    skillAttacks: [30],
     attackEnhancement: 4676,
-    cd: 10,
+    coldDownRecover: 0.1,
     speed: {
       attackSpeed: 8,
       castingSpeed: 12,
@@ -36,7 +36,7 @@ export const magicStones: Data[] = [
   {
     name: '未知的黄金石碑',
     type: '魔法石',
-    skillAttacks: [12, 8],
+    skillAttacks: [8],
     attackEnhancement: 4528,
     speed: {
       attackSpeed: 8,
@@ -46,13 +46,13 @@ export const magicStones: Data[] = [
   {
     name: '生机盎然的绿宝石',
     type: '魔法石',
-    skillAttacks: [12],
+
     attackEnhancement: 8568,
   },
   {
     name: '炙热之情宝石',
     type: '魔法石',
-    skillAttacks: [12],
+
     attackEnhancement: 9242,
     elementEnhancement: 28,
   },
@@ -60,7 +60,7 @@ export const magicStones: Data[] = [
     name: '灵动的慧眼',
     prefix: '4 个电池',
     type: '魔法石',
-    skillAttacks: [12, 4],
+    skillAttacks: [4],
     attackEnhancement: 9456,
     elementEnhancement: 15,
     speed: 20,
@@ -69,7 +69,7 @@ export const magicStones: Data[] = [
     name: '灵动的慧眼',
     prefix: '5 个电池',
     type: '魔法石',
-    skillAttacks: [12, 5],
+    skillAttacks: [5],
     attackEnhancement: 10419,
     elementEnhancement: 15,
     speed: 25,
@@ -77,7 +77,7 @@ export const magicStones: Data[] = [
   {
     name: '和平捍卫者',
     type: '魔法石',
-    skillAttacks: [12, 4],
+    skillAttacks: [4],
     attackEnhancement: 5604 + 2964,
     elementEnhancement: 20,
     speed: {
@@ -89,28 +89,28 @@ export const magicStones: Data[] = [
   {
     name: '未知文明 - 星石',
     type: '魔法石',
-    skillAttacks: [12],
+
     attackEnhancement: 8568,
   },
   {
     name: '自然灵息露珠',
     type: '魔法石',
-    skillAttacks: [12],
+
     attackEnhancement: 8568,
   },
   {
     name: '陆战型：战术车轮无人机',
     type: '魔法石',
-    skillAttacks: [12, 10],
+    skillAttacks: [10],
     attackEnhancement: 7289,
     speed: 10,
   },
   {
     name: '奔涌之息宝石',
     type: '魔法石',
-    skillAttacks: [12],
+
     attackEnhancement: 3894,
-    cd: 50,
+    coldDownRecover: 0.5,
     speed: {
       attackSpeed: 8,
       castingSpeed: 12,
@@ -119,22 +119,22 @@ export const magicStones: Data[] = [
   {
     name: '猎龙者之证 - 龙心加工石',
     type: '魔法石',
-    skillAttacks: [12],
+
     attackEnhancement: 4796,
     elementEnhancement: 30,
   },
   {
     name: '迷你电池包',
     type: '魔法石',
-    skillAttacks: [12],
+
     attackEnhancement: 9809,
   },
   {
     name: '子夜的圣域',
     type: '魔法石',
-    skillAttacks: [12, 10],
+    skillAttacks: [10],
     attackEnhancement: 5066,
-    cd: 12,
+    coldDownRecover: 0.12,
     speed: {
       attackSpeed: 10,
       castingSpeed: 15,
@@ -143,14 +143,14 @@ export const magicStones: Data[] = [
   {
     name: '多德卡全息图',
     type: '魔法石',
-    skillAttacks: [12],
+
     attackEnhancement: 9093,
-    cd: 20,
+    coldDownRecover: 0.2,
   },
   {
     name: '诅咒之心',
     type: '魔法石',
-    skillAttacks: [12, 15],
+    skillAttacks: [15],
     attackEnhancement: 5066,
     speed: {
       attackSpeed: 8,
@@ -160,7 +160,7 @@ export const magicStones: Data[] = [
   {
     name: '吞噬黑暗的心脏',
     type: '魔法石',
-    skillAttacks: [12],
+
     attackEnhancement: 6144,
     speed: {
       attackSpeed: 40,
@@ -171,116 +171,28 @@ export const magicStones: Data[] = [
   {
     name: '完成型动力控制装置',
     type: '魔法石',
-    skillAttacks: [12],
+
     attackEnhancement: 7693,
     elementEnhancement: 40,
   },
   {
     name: '胜利约定之时',
     type: '魔法石',
-    skillAttacks: [12, 8],
+    skillAttacks: [8],
     attackEnhancement: 10054,
     speed: { moveSpeed: 8 },
   },
   {
     name: '炎息龙玉',
     type: '魔法石',
-    skillAttacks: [12, 9],
+    skillAttacks: [9],
     attackEnhancement: 6844,
   },
   {
     name: '被忘却的记录',
     type: '魔法石',
-    skillAttacks: [12, 7],
+    skillAttacks: [7],
     attackEnhancement: 7411,
     elementEnhancement: 10,
-  },
-  {
-    name: '恩特精灵之心',
-    prefix: '三词条1',
-    type: '魔法石',
-    skillAttacks: [12, 5, 5],
-    attackEnhancement: 1186 + 445 + 455 + 1186,
-    elementEnhancement: 15,
-  },
-  {
-    name: '森林之魔女精灵石',
-    prefix: '三词条2',
-    type: '魔法石',
-    skillAttacks: [12, 5, 5, 5],
-    attackEnhancement: 445 + 445 + 455 + 1186,
-  },
-  {
-    name: '恩特精灵之心',
-    prefix: '四词条1',
-    type: '魔法石',
-    skillAttacks: [12],
-    attackEnhancement: 741 + 1186 + 1630 + 1186,
-    elementEnhancement: 65,
-  },
-  {
-    name: '恩特精灵之心',
-    prefix: '四词条2',
-    type: '魔法石',
-    skillAttacks: [12, 5],
-    attackEnhancement: 741 + 445 + 1630 + 1186,
-    elementEnhancement: 55,
-  },
-  {
-    name: '恩特精灵之心',
-    prefix: '四词条3',
-    type: '魔法石',
-    skillAttacks: [12, 5, 5],
-    attackEnhancement: 741 + 445 + 1630 + 445,
-    elementEnhancement: 40,
-  },
-  {
-    name: '恩特精灵之心',
-    prefix: '四词条4',
-    type: '魔法石',
-    skillAttacks: [12, 5, 5, 5],
-    attackEnhancement: 741 + 445 + 455 + 445,
-    elementEnhancement: 25,
-  },
-  {
-    name: '恩特精灵之心',
-    prefix: '四词条5',
-    type: '魔法石',
-    skillAttacks: [12, 5, 5],
-    attackEnhancement: 741 + 889 + 455 + 445,
-    elementEnhancement: 25,
-    abnormal: {
-      prevConversionRate: 0.5,
-      prevAbnormalDamageEnhancement: 0.2,
-      increasedConversionRate: 0,
-      increasedAbnormalDamageEnhancement: 0.15,
-    },
-  },
-  {
-    name: '深潜迷航面罩',
-    prefix: '四词条6',
-    type: '魔法石',
-    skillAttacks: [12, 8, 5, 5],
-    attackEnhancement: 741 + 1186 + 455 + 445,
-    abnormal: {
-      prevConversionRate: 0.5,
-      prevAbnormalDamageEnhancement: 0.2,
-      increasedConversionRate: 0,
-      increasedAbnormalDamageEnhancement: 0.05,
-    },
-  },
-  {
-    name: '蓝灵绿玉石宝石',
-    prefix: '四词条7',
-    type: '魔法石',
-    skillAttacks: [12, 5, 5],
-    attackEnhancement: 741 + 1186 + 455 + 445,
-    elementEnhancement: 35,
-    abnormal: {
-      prevConversionRate: 0.5,
-      prevAbnormalDamageEnhancement: 0.2,
-      increasedConversionRate: 0,
-      increasedAbnormalDamageEnhancement: 0.2,
-    },
   },
 ]

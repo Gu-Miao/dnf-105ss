@@ -19,7 +19,7 @@ export const mixRings: Data[] = [
     type: '融合 - 戒指',
     skillAttacks: [10],
     attackEnhancement: 0,
-    cd: -20,
+    coldDownReduce: -0.2,
   },
   {
     name: '真龙：沉重的铁之志',
