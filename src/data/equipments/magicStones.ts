@@ -4,30 +4,34 @@ export const magicStones: Data[] = [
   {
     name: '不败奖牌',
     type: '魔法石',
-
-    attackEnhancement: 8568,
+    attackEnhancement: 5604 + 2964,
   },
   {
     name: '虚伪之石',
     type: '魔法石',
-
     attackEnhancement: 3180,
     elementEnhancement: 30,
+    other: '按 30 属强附魔计算',
   },
   {
     name: '逆流之魂灵珠',
     type: '魔法石',
     skillAttacks: [7],
-    attackEnhancement: 7047,
+    attackEnhancement: 4528 + 2519,
     coldDownReduce: 0.08,
-    speed: 15,
+    speed: {
+      attackSpeed: 15,
+      castingSpeed: 15,
+      moveSpeed: 23,
+    },
   },
   {
     name: '静谧之像',
+    prefix: '15 ~ 30 级技能',
     type: '魔法石',
-    skillAttacks: [30],
+    skillAttacks: [3 * 10],
     attackEnhancement: 4676,
-    coldDownRecover: 0.1,
+    coldDownRecover: 0.01 * 10,
     speed: {
       attackSpeed: 8,
       castingSpeed: 12,
@@ -36,7 +40,7 @@ export const magicStones: Data[] = [
   {
     name: '未知的黄金石碑',
     type: '魔法石',
-    skillAttacks: [8],
+    skillAttacks: [2 * 4],
     attackEnhancement: 4528,
     speed: {
       attackSpeed: 8,
@@ -46,33 +50,22 @@ export const magicStones: Data[] = [
   {
     name: '生机盎然的绿宝石',
     type: '魔法石',
-
-    attackEnhancement: 8568,
+    attackEnhancement: 5604 + 2964,
   },
   {
     name: '炙热之情宝石',
     type: '魔法石',
-
-    attackEnhancement: 9242,
+    attackEnhancement: 4796 + 4446,
     elementEnhancement: 28,
   },
   {
     name: '灵动的慧眼',
     prefix: '4 个电池',
     type: '魔法石',
-    skillAttacks: [4],
-    attackEnhancement: 9456,
+    skillAttacks: [1 * 4],
+    attackEnhancement: 5604 + 963 * 4,
     elementEnhancement: 15,
-    speed: 20,
-  },
-  {
-    name: '灵动的慧眼',
-    prefix: '5 个电池',
-    type: '魔法石',
-    skillAttacks: [5],
-    attackEnhancement: 10419,
-    elementEnhancement: 15,
-    speed: 25,
+    speed: 5 * 4,
   },
   {
     name: '和平捍卫者',
@@ -89,26 +82,23 @@ export const magicStones: Data[] = [
   {
     name: '未知文明 - 星石',
     type: '魔法石',
-
-    attackEnhancement: 8568,
+    attackEnhancement: 5604 + 2964,
   },
   {
     name: '自然灵息露珠',
     type: '魔法石',
-
-    attackEnhancement: 8568,
+    attackEnhancement: 5604 + 2964,
   },
   {
     name: '陆战型：战术车轮无人机',
     type: '魔法石',
-    skillAttacks: [10],
-    attackEnhancement: 7289,
+    skillAttacks: [2 * 5],
+    attackEnhancement: 5066 + 2223,
     speed: 10,
   },
   {
     name: '奔涌之息宝石',
     type: '魔法石',
-
     attackEnhancement: 3894,
     coldDownRecover: 0.5,
     speed: {
@@ -119,15 +109,14 @@ export const magicStones: Data[] = [
   {
     name: '猎龙者之证 - 龙心加工石',
     type: '魔法石',
-
     attackEnhancement: 4796,
     elementEnhancement: 30,
   },
   {
     name: '迷你电池包',
     type: '魔法石',
-
-    attackEnhancement: 9809,
+    skillAttacks: [5],
+    attackEnhancement: 5066 + 504 * 5 + 2223,
   },
   {
     name: '子夜的圣域',
@@ -143,8 +132,7 @@ export const magicStones: Data[] = [
   {
     name: '多德卡全息图',
     type: '魔法石',
-
-    attackEnhancement: 9093,
+    attackEnhancement: 5240 + 3853,
     coldDownRecover: 0.2,
   },
   {
@@ -160,39 +148,38 @@ export const magicStones: Data[] = [
   {
     name: '吞噬黑暗的心脏',
     type: '魔法石',
-
     attackEnhancement: 6144,
     speed: {
-      attackSpeed: 40,
-      castingSpeed: 60,
-      moveSpeed: 40,
+      attackSpeed: 15 + 15,
+      castingSpeed: 20 + 20,
+      moveSpeed: 15 + 15,
     },
   },
   {
     name: '完成型动力控制装置',
     type: '魔法石',
-
-    attackEnhancement: 7693,
-    elementEnhancement: 40,
+    attackEnhancement: 3988 + 3705,
+    elementEnhancement: 10 * 4,
   },
   {
     name: '胜利约定之时',
     type: '魔法石',
     skillAttacks: [8],
-    attackEnhancement: 10054,
-    speed: { moveSpeed: 8 },
+    attackEnhancement: 5604 + 445 * 10,
+    speed: {
+      moveSpeed: 8,
+    },
   },
   {
-    name: '炎息龙玉',
+    name: '终结之龙玉',
     type: '魔法石',
     skillAttacks: [9],
-    attackEnhancement: 6844,
+    attackEnhancement: 5066 + 1778,
   },
   {
-    name: '被忘却的记录',
+    name: '忘却之记载',
     type: '魔法石',
-    skillAttacks: [7],
-    attackEnhancement: 7411,
-    elementEnhancement: 10,
+    skillAttacks: [8],
+    attackEnhancement: 5336 + 1927 + 2668,
   },
 ]

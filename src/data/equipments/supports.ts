@@ -10,20 +10,21 @@ export const supports: Data[] = [
   {
     name: '命运的魔法箱',
     type: '辅助装备',
-
+    skillAttacks: [5],
     attackEnhancement: 5604,
-    elementEnhancement: 12,
+    elementEnhancement: 15,
+    other: '按 5% 技攻附魔计算',
   },
   {
     name: '挖掘之王部件',
     type: '辅助装备',
     attackEnhancement: 7100,
+    elementEnhancement: 10,
     coldDownReduce: 0.05,
     speed: {
-      attackSpeed: 25,
-      castingSpeed: 40,
+      attackSpeed: 5 * 5,
+      castingSpeed: 8 * 5,
     },
-    elementEnhancement: 10,
   },
   {
     name: '不祥的暗纹石板',
@@ -37,7 +38,6 @@ export const supports: Data[] = [
   {
     name: '全息通话器',
     type: '辅助装备',
-
     attackEnhancement: 6414,
     speed: {
       attackSpeed: 8,
@@ -48,9 +48,8 @@ export const supports: Data[] = [
   {
     name: '生命本源背包',
     type: '辅助装备',
-
     attackEnhancement: 5510,
-    elementEnhancement: 30,
+    elementEnhancement: 3 * 10,
   },
   {
     name: '梦之呼唤',
@@ -61,15 +60,14 @@ export const supports: Data[] = [
   {
     name: '飘渺的知识',
     type: '辅助装备',
-
     attackEnhancement: 5510,
-    elementEnhancement: 30,
+    elementEnhancement: 3 * 10,
   },
   {
     name: '正义骑士面具',
     type: '辅助装备',
-
     attackEnhancement: 5336,
+    coldDownReduce: 0.12,
     speed: {
       moveSpeed: 8,
     },
@@ -77,60 +75,78 @@ export const supports: Data[] = [
   {
     name: '未知文明 - 人面石',
     type: '辅助装备',
-
     attackEnhancement: 5510,
-    elementEnhancement: 30,
-  },
-  {
-    name: '摇曳的生命之水',
-    prefix: '破韧冰冻',
-    type: '辅助装备',
-    skillAttacks: [15],
-    attackEnhancement: 4714,
+    elementEnhancement: 3 * 10,
   },
   {
     name: '摇曳的生命之水',
     prefix: '未破韧',
     type: '辅助装备',
-
+    attackEnhancement: 4714,
+  },
+  {
+    name: '摇曳的生命之水',
+    prefix: '破韧',
+    type: '辅助装备',
+    skillAttacks: [5, 15],
     attackEnhancement: 4714,
   },
   {
     name: '空战型：战术螺旋桨无人机',
     type: '辅助装备',
-
-    attackEnhancement: 10320,
+    attackEnhancement: 5874 + 4446,
     elementEnhancement: 5,
   },
   {
     name: '心之潜影',
     type: '辅助装备',
-
     attackEnhancement: 5510,
-    elementEnhancement: 30,
+    elementEnhancement: 3 * 10,
   },
   {
     name: '猎龙者之证 - 龙骨角笛',
     type: '辅助装备',
-
     attackEnhancement: 4796,
     elementEnhancement: 30,
   },
   {
     name: '幻影之触控制面板',
     type: '辅助装备',
-
-    attackEnhancement: 9781,
+    attackEnhancement: 5336 + 889 * 5,
     elementEnhancement: 10,
   },
   {
     name: '黎明圣杯',
+    prefix: '1 键',
+    type: '辅助装备',
+    skillAttacks: [7],
+    attackEnhancement: 5066,
+    speed: 15,
+  },
+  {
+    name: '黎明圣杯',
+    prefix: '2 键',
+    type: '辅助装备',
+    skillAttacks: [9],
+    attackEnhancement: 5066,
+    speed: 15,
+  },
+  {
+    name: '黎明圣杯',
+    prefix: '3 键',
+    type: '辅助装备',
+    skillAttacks: [11],
+    attackEnhancement: 5066,
+    speed: 15,
+  },
+  {
+    name: '黎明圣杯',
+    prefix: '4 键',
     type: '辅助装备',
     skillAttacks: [15],
     attackEnhancement: 5066,
     speed: 15,
   },
-
   {
     name: '德卡制导装置',
     prefix: '未破韧',
@@ -151,7 +167,7 @@ export const supports: Data[] = [
     name: '生命的喘息',
     type: '辅助装备',
     skillAttacks: [7],
-    attackEnhancement: 6751,
+    attackEnhancement: 4528 + 2223,
     speed: {
       attackSpeed: 8,
       castingSpeed: 12,
@@ -160,9 +176,8 @@ export const supports: Data[] = [
   {
     name: '死亡之冠',
     type: '辅助装备',
-
-    attackEnhancement: 9378,
-    elementEnhancement: 10,
+    attackEnhancement: 6414 + 2964,
+    elementEnhancement: 2 + 2 * 4,
     speed: {
       moveSpeed: 8,
     },
@@ -171,7 +186,7 @@ export const supports: Data[] = [
     name: '光学工程眼镜',
     type: '辅助装备',
     skillAttacks: [5],
-    attackEnhancement: 8085,
+    attackEnhancement: 4528 + 3557,
     speed: {
       attackSpeed: 5,
       castingSpeed: 7.5,
@@ -181,13 +196,12 @@ export const supports: Data[] = [
   {
     name: '鲁莽而合理的作战',
     type: '辅助装备',
-
-    attackEnhancement: 8704,
+    skillAttacks: [3],
+    attackEnhancement: 4258 + 4446,
   },
   {
-    name: '生命酒杯',
+    name: '生息之壶觞',
     type: '辅助装备',
-
     attackEnhancement: 5874 + 2964,
     elementEnhancement: 10,
     speed: {
@@ -195,10 +209,10 @@ export const supports: Data[] = [
     },
   },
   {
-    name: '中止的知识',
+    name: '知海沉舟',
     type: '辅助装备',
     skillAttacks: [3],
-    attackEnhancement: 8301,
+    attackEnhancement: 5336 + 593 * 5,
     speed: '普攻，跳攻，前冲攻击时 35% 攻速',
   },
 ]

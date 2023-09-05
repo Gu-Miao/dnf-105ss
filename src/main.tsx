@@ -1,9 +1,12 @@
-import { StrictMode } from 'react'
+import { StrictMode, Suspense } from 'react'
 import { createRoot } from 'react-dom/client'
-import App from './App'
+import { RouterProvider } from 'react-router-dom'
+import router from './router'
 
 createRoot(document.getElementById('root') as HTMLElement).render(
   <StrictMode>
-    <App />
-  </StrictMode>
+    <Suspense>
+      <RouterProvider router={router} />
+    </Suspense>
+  </StrictMode>,
 )

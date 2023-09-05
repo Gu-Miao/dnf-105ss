@@ -1,4 +1,4 @@
-import { Data, data } from '.'
+import { Data } from '.'
 
 export const spaulders: Data[] = [
   {
