@@ -3,13 +3,13 @@ import { entries, Entry } from '@/data/entries'
 
 function Entries() {
   const [type, setType] = useState<Entry['type']>(
-    (localStorage.getItem('type') as null | Entry['type']) ?? '公共',
+    (localStorage.getItem('entryType') as null | Entry['type']) ?? '公共',
   )
   const filteredData = useMemo(() => entries.filter(item => item.type === type), [type])
   function handleTypeChange(e: ChangeEvent<HTMLSelectElement>) {
     const newType = e.target.value as Entry['type']
     setType(newType)
-    localStorage.setItem('type', newType)
+    localStorage.setItem('entryType', newType)
   }
 
   return (
