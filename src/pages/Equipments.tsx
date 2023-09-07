@@ -48,7 +48,7 @@ function Equipments() {
         </thead>
         <tbody>
           {filteredData.map(item => (
-            <tr key={item.name + item.prefix}>
+            <tr key={item.name + item.prefix + item.other}>
               <td>
                 <img className="icon" src={`/${item.name}.png`} alt={item.name} />
               </td>

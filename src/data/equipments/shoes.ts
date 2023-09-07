@@ -155,7 +155,6 @@ export const shoes: Data[] = [
       increasedAbnormalDamageEnhancement: 0.1,
     },
     speed: 15,
-    other: '毒王收益按中毒手镯加蓝灵上衣计算',
   },
   {
     name: '循环的自然之法',
