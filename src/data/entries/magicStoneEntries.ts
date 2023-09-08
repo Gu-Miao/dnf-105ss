@@ -32,12 +32,6 @@ export const magicStoneEntries: Entry[] = [
       '按 40 级技能 20 冷却，30% CDR 计算，期望冷却减少约为 5.66%，按 40 级技能 50% 占比计算。收益低，主要还是给奶用',
   },
   {
-    name: '眩晕抗性/保护罩上限',
-    type: '魔法石',
-    from: '森林之魔女精灵石',
-    attackEnhancement: 1186,
-  },
-  {
     name: '70 级技能韧性 CDR',
     prefix: '50% 占比',
     type: '魔法石',
@@ -65,12 +59,6 @@ export const magicStoneEntries: Entry[] = [
       increasedConversionRate: 0,
       increasedAbnormalDamageEnhancement: 0.15,
     },
-  },
-  {
-    name: '20% 命中率',
-    type: '魔法石',
-    from: '恩特精灵之心',
-    attackEnhancement: 1186,
   },
   {
     name: '领主 20% 灼烧伤害',
@@ -115,14 +103,7 @@ export const magicStoneEntries: Entry[] = [
     elementEnhancement: Math.ceil((35 * 2) / 3),
   },
   {
-    name: '霸体加速/减伤',
-    type: '魔法石',
-    from: '蓝灵绿玉石宝石',
-    attackEnhancement: 1186,
-    speed: '不稳定 15% 攻速，22.5% 施放',
-  },
-  {
-    name: '（非）破招 8% 技攻',
+    name: '破招 8% 技攻',
     type: '魔法石',
     from: '深潜迷航面罩',
     skillAttacks: [8],

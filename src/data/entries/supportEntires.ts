@@ -45,12 +45,6 @@ export const supportEntires: Entry[] = [
       '按 35 级技能 15s 冷却，30% CDR 计算，期望冷却减少约为 5.36%，按 35 级技能 50% 占比计算。收益低，主要还是给奶用',
   },
   {
-    name: '40% 睡眠抗性',
-    type: '辅助装备',
-    from: '森林之魔女篮子',
-    attackEnhancement: 1186,
-  },
-  {
     name: '80 级技能韧性 CDR',
     prefix: '期望，50% 占比',
     type: '辅助装备',
@@ -84,18 +78,6 @@ export const supportEntires: Entry[] = [
     type: '辅助装备',
     from: '恩特精灵圣杯',
     attackEnhancement: 1186 + 3112,
-  },
-  {
-    name: '低血速度/防御',
-    type: '辅助装备',
-    from: '恩特精灵圣杯',
-    attackEnhancement: 1186,
-  },
-  {
-    name: '移速过 100% 加血蓝最大值',
-    type: '辅助装备',
-    from: '恩特精灵圣杯',
-    attackEnhancement: 1334,
   },
   {
     name: '领主 20% 出血伤害',
@@ -140,12 +122,6 @@ export const supportEntires: Entry[] = [
     elementEnhancement: Math.ceil((35 * 2) / 3),
   },
   {
-    name: '30% MP 恢复',
-    type: '辅助装备',
-    from: '蓝灵绿玉石香水',
-    attackEnhancement: 1186,
-  },
-  {
     name: '领主攻强',
     type: '辅助装备',
     from: '蓝灵绿玉石香水',
@@ -157,13 +133,6 @@ export const supportEntires: Entry[] = [
     type: '辅助装备',
     from: '蓝灵绿玉石香水',
     attackEnhancement: 1186 + Math.ceil((3853 * 2) / 3),
-  },
-  {
-    name: '领主速度',
-    type: '辅助装备',
-    from: '蓝灵绿玉石香水',
-    attackEnhancement: 1186,
-    speed: '不稳定 25% 攻速，37.5% 施放',
   },
   {
     name: '普通最后一击攻强',

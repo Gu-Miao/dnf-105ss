@@ -29,12 +29,6 @@ export const coatEntries: Entry[] = [
     attackEnhancement: 741,
   },
   {
-    name: '攻击恢复 HP/MP',
-    type: '上衣',
-    from: '恩特精灵胸甲',
-    attackEnhancement: 1037,
-  },
-  {
     name: '低血攻强速度',
     type: '上衣',
     from: '恩特精灵胸甲',

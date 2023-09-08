@@ -28,16 +28,6 @@ export const specialEquipmentEntries: Entry[] = [
     attackEnhancement: 445,
   },
   {
-    name: '攻击进入大异常',
-    type: '特殊装备',
-    attackEnhancement: 1186,
-  },
-  {
-    name: '攻击进入异常/攻击霸体',
-    type: '特殊装备',
-    attackEnhancement: 1334,
-  },
-  {
     name: '直伤 4 技攻',
     type: '特殊装备',
     skillAttacks: [4],

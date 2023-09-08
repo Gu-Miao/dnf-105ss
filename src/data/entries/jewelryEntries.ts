@@ -69,16 +69,6 @@ export const jewelryEntries: Entry[] = [
     attackEnhancement: 296,
   },
   {
-    name: '前冲/跳跃霸体',
-    type: '首饰',
-    attackEnhancement: 296,
-  },
-  {
-    name: '抗性防御',
-    type: '首饰',
-    attackEnhancement: 1186,
-  },
-  {
     name: '单异常对象',
     type: '首饰',
     attackEnhancement: 1186 + 741,

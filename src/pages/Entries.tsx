@@ -1,5 +1,6 @@
 import { useState, useMemo, ChangeEvent } from 'react'
 import { entries, Entry } from '@/data/entries'
+import { evaluate } from 'mathjs'
 
 function Entries() {
   const [type, setType] = useState<Entry['type']>(
@@ -52,7 +53,7 @@ function Entries() {
         </thead>
         <tbody>
           {filteredData.map(item => (
-            <tr key={item.name + item.prefix}>
+            <tr key={item.name + item.prefix + item.from + item.other + item.attackEnhancement}>
               <td>
                 <img className="icon" src={getIconSrc(item)} alt={item.name} />
               </td>
@@ -85,7 +86,7 @@ function getIconSrc(data: Entry) {
 
 function renderPercent(num: number | undefined) {
   if (!num) return ''
-  return num * 100 + '%'
+  return (num * 100).toFixed(3) + '%'
 }
 
 function renderSkillAttack(skillAttacks: Entry['skillAttacks']) {

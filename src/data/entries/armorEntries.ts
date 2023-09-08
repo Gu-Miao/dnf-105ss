@@ -2,11 +2,6 @@ import { Entry } from '.'
 
 export const armorEntries: Entry[] = [
   {
-    name: '攻击恢复 HP, MP',
-    type: '防具',
-    attackEnhancement: 1037,
-  },
-  {
     name: '异常对象攻强',
     prefix: '单异常对象',
     type: '防具',
@@ -43,7 +38,6 @@ export const armorEntries: Entry[] = [
   },
   {
     name: '单技能 5% 技攻',
-    prefix: '50% 占比',
     type: '防具',
     skillAttacks: [5 * 0.5],
     attackEnhancement: 1334,
@@ -51,20 +45,9 @@ export const armorEntries: Entry[] = [
   },
   {
     name: '单技能 5% 技攻',
-    prefix: '40% 占比',
     type: '防具',
     skillAttacks: [5 * 0.4],
     attackEnhancement: 1334,
     other: '按 40% 伤害占比计算',
-  },
-  {
-    name: '其他',
-    type: '防具',
-    attackEnhancement: 1186,
-  },
-  {
-    name: '其他',
-    type: '防具',
-    attackEnhancement: 1334,
   },
 ]

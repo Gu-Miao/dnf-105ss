@@ -478,4 +478,11 @@ export const spaulders: Data[] = [
     elementEnhancement: 15,
     other: '消耗品效果，异常对象攻强，35~40+3，15 全',
   },
+  {
+    name: '深潜迷航气囊',
+    type: '头肩',
+    attackEnhancement: 296 + 889 + 2964 + 1186 + 1630,
+    elementEnhancement: 4 * 10 + 15 + 15,
+    other: '40 属强，速度攻强，15 单，15全',
+  },
 ]

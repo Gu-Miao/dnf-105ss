@@ -15,12 +15,6 @@ export const ringEntries: Entry[] = [
     },
   },
   {
-    name: '30% 异抗',
-    type: '戒指',
-    from: '森林之魔女戒指',
-    attackEnhancement: 1037,
-  },
-  {
     name: '韧性攻强',
     prefix: '50% 韧性',
     type: '戒指',
@@ -33,22 +27,6 @@ export const ringEntries: Entry[] = [
     type: '戒指',
     from: '森林之魔女戒指',
     attackEnhancement: 1186 + 593 * 3.5,
-  },
-  {
-    name: '异抗速度',
-    type: '戒指',
-    from: '森林之魔女戒指',
-    attackEnhancement: 1186,
-    speed: {
-      attackSpeed: 20,
-      castingSpeed: 30,
-    },
-  },
-  {
-    name: '40% 冰冻抗性',
-    type: '戒指',
-    from: '森林之魔女戒指',
-    attackEnhancement: 1186,
   },
   {
     name: '75 级技能韧性 CDR',
@@ -342,12 +320,6 @@ export const ringEntries: Entry[] = [
     },
   },
   {
-    name: '20% 韧性条减少量',
-    type: '戒指',
-    from: '蓝灵绿玉石戒指',
-    attackEnhancement: 1037,
-  },
-  {
     name: '自异常 80 级技能 30% CDR',
     prefix: '50% 占比',
     type: '戒指',
@@ -378,11 +350,5 @@ export const ringEntries: Entry[] = [
     from: '深潜迷航导航环',
     attackEnhancement: 889,
     elementEnhancement: 25,
-  },
-  {
-    name: '20% 暴击',
-    type: '戒指',
-    from: '深潜迷航导航环',
-    attackEnhancement: 1186,
   },
 ]

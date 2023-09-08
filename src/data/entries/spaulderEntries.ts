@@ -95,12 +95,6 @@ export const spaulderEntries: Entry[] = [
     other: '按 45 30% 占比占比计算',
   },
   {
-    name: '15% 暴击',
-    type: '头肩',
-    from: '恩特精灵护肩',
-    attackEnhancement: 1334,
-  },
-  {
     name: '35 ~ 40 +3',
     prefix: '10% 占比',
     type: '头肩',
@@ -119,13 +113,6 @@ export const spaulderEntries: Entry[] = [
     other: '按 35 ~ 40 占比 10% 计算，35 ~ 40 区间有主动 buff',
   },
   {
-    name: '韧性破化异常增伤',
-    type: '头肩',
-    from: '蓝灵绿玉石肩甲',
-    attackEnhancement: 741,
-    other: '达成条件过于困难',
-  },
-  {
     name: '50% 消耗品效果',
     type: '头肩',
     from: '蓝灵绿玉石肩甲',
@@ -140,12 +127,6 @@ export const spaulderEntries: Entry[] = [
     attackEnhancement: 1186 + 712 * 5,
   },
   {
-    name: '40% 混乱抗性',
-    type: '头肩',
-    from: '蓝灵绿玉石肩甲',
-    attackEnhancement: 1186,
-  },
-  {
     name: '40 属强',
     type: '头肩',
     from: '深潜迷航气囊',
@@ -158,11 +139,5 @@ export const spaulderEntries: Entry[] = [
     from: '深潜迷航气囊',
     attackEnhancement: 889 + 2964,
     speed: 20,
-  },
-  {
-    name: '被击保护罩',
-    type: '头肩',
-    from: '深潜迷航气囊',
-    attackEnhancement: 1037,
   },
 ]
