@@ -1,6 +1,5 @@
 import { useState, useMemo, ChangeEvent } from 'react'
 import { entries, Entry } from '@/data/entries'
-import { evaluate } from 'mathjs'
 
 function Entries() {
   const [type, setType] = useState<Entry['type']>(
