@@ -16,12 +16,11 @@ export const braceletsOptions: Option[] = [
     damageValue: 296,
     abnormal: {
       type: 'posion',
-      prevConversionRate: 0.48,
-      prevAbnormalDamageEnhancement: 0.3,
-
-      increasedAbnormalDamageEnhancement: 0.1,
+      prevConvert: 48,
+      prevAbnormalDamage: 30,
+      abnormalDamage: 10,
     },
-    other: 'bracelet位毒伤，仅有毒王可以使用，按 30% 毒伤计算',
+    other: '手镯位毒伤，仅有毒王可以使用，按穿蓝灵上衣计算',
   },
   {
     name: '每名队员攻强',

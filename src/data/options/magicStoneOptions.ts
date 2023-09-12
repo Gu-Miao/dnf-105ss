@@ -54,11 +54,11 @@ export const magicStoneOptions: Option[] = [
     damageValue: 889,
     abnormal: {
       type: 'burn',
-      prevConversionRate: 0.5,
-      prevAbnormalDamageEnhancement: 0.2,
-
-      increasedAbnormalDamageEnhancement: 0.15,
+      prevConvert: 50,
+      prevAbnormalDamage: 20 + 30,
+      abnormalDamage: 15,
     },
+    other: '按佩戴灼烧手镯和蓝灵上衣计算',
   },
   {
     name: '领主 20% 灼烧伤害',
@@ -67,11 +67,11 @@ export const magicStoneOptions: Option[] = [
     damageValue: 296,
     abnormal: {
       type: 'burn',
-      prevConversionRate: 0.5,
-      prevAbnormalDamageEnhancement: 0.2,
-
-      increasedAbnormalDamageEnhancement: 0.2,
+      prevConvert: 50,
+      prevAbnormalDamage: 20 + 30,
+      abnormalDamage: 20,
     },
+    other: '按佩戴灼烧手镯和蓝灵上衣计算',
   },
   {
     name: '领主 20% 灼烧伤害',
@@ -81,11 +81,11 @@ export const magicStoneOptions: Option[] = [
     damageValue: 296,
     abnormal: {
       type: 'burn',
-      prevConversionRate: 0.5,
-      prevAbnormalDamageEnhancement: 0.2,
-
-      increasedAbnormalDamageEnhancement: (0.2 * 2) / 3,
+      prevConvert: 50,
+      prevAbnormalDamage: 20 + 30,
+      abnormalDamage: 20 * 0.667,
     },
+    other: '按佩戴灼烧手镯和蓝灵上衣计算',
   },
   {
     name: '领主 35 属强',
@@ -116,11 +116,11 @@ export const magicStoneOptions: Option[] = [
     damageValue: 1186,
     abnormal: {
       type: 'burn',
-      prevConversionRate: 0.5,
-      prevAbnormalDamageEnhancement: 0.2,
-
-      increasedAbnormalDamageEnhancement: 0.05,
+      prevConvert: 50,
+      prevAbnormalDamage: 20 + 30,
+      abnormalDamage: 5,
     },
+    other: '按佩戴灼烧手镯和蓝灵上衣计算',
   },
   {
     name: '5% 感电伤害',
@@ -128,12 +128,12 @@ export const magicStoneOptions: Option[] = [
     from: '深潜迷航面罩',
     damageValue: 1186,
     abnormal: {
-      type: 'shock',
-      prevConversionRate: 0.5,
-      prevAbnormalDamageEnhancement: 0.2,
-
-      increasedAbnormalDamageEnhancement: 0.05,
+      type: 'burn',
+      prevConvert: 50,
+      prevAbnormalDamage: 20 + 30,
+      abnormalDamage: 5,
     },
+    other: '按佩戴感电手镯和蓝灵上衣计算',
   },
   {
     name: '韧性攻强',

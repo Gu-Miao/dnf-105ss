@@ -2,10 +2,10 @@ import { BURN_BREAK_ICE_RATE, DAMAGE_VALUE_PERCENTAGE } from '@/constants'
 
 export type Abnormal = {
   type: 'bleed' | 'posion' | 'burn' | 'shock'
-  prevConversionRate: number // 原异常伤害转换率
-  prevAbnormalDamageEnhancement: number // 原异常伤害增加量
-  increasedConversionRate?: number // 新增异常伤害转换率
-  increasedAbnormalDamageEnhancement?: number // 新增异常伤害增加量
+  prevConvert?: number
+  prevAbnormalDamage?: number
+  convert?: number
+  abnormalDamage?: number
 }
 
 export type Data = {
@@ -90,28 +90,29 @@ function getElementalDamageIncreaseRate(elementalDamage: number, prevElementalDa
 
 /**
  * 获取异常伤害提升率
- * @param param0 异常伤害对象
+ * @param param 异常伤害对象
  * @returns 异常伤害提升率
  */
 function getAbnormalDamageIncreaseRate({
   type,
-  prevConversionRate,
-  prevAbnormalDamageEnhancement,
-  increasedConversionRate,
-  increasedAbnormalDamageEnhancement,
+  prevConvert = 0,
+  prevAbnormalDamage = 0,
+  convert = 0,
+  abnormalDamage = 0,
 }: Abnormal) {
-  const conversionRate = prevConversionRate + (increasedConversionRate || 0)
-  const abnormalDamageEnhancement =
-    prevAbnormalDamageEnhancement + (increasedAbnormalDamageEnhancement || 0)
-  const abnormalTypeEnhancement =
-    type === 'bleed' ? 1.1 : type === 'burn' ? 1.1 * (BURN_BREAK_ICE_RATE * 0.01) : 1
+  const currentConvert = prevConvert + convert
+  const currentAbnormalDamage = prevAbnormalDamage + abnormalDamage
+  const additionalDamage =
+    type === 'bleed' ? 10 : type === 'burn' ? 10 * (BURN_BREAK_ICE_RATE * 0.01) : 0
 
   const prevDamage =
     1 -
-    prevConversionRate +
-    prevConversionRate * abnormalTypeEnhancement * (1 + prevAbnormalDamageEnhancement)
+    prevConvert * 0.01 +
+    prevConvert * 0.01 * (1 + additionalDamage * 0.01) * (1 + prevAbnormalDamage * 0.01)
   const damage =
-    1 - conversionRate + conversionRate * abnormalTypeEnhancement * (1 + abnormalDamageEnhancement)
+    1 -
+    currentConvert * 0.01 +
+    currentConvert * 0.01 * (1 + additionalDamage * 0.01) * (1 + currentAbnormalDamage * 0.01)
 
   return damage / prevDamage
 }
@@ -193,12 +194,10 @@ export function getIncreaseRate(data: Data, damageValue: number, elementalDamage
 
     console.log(
       `异常伤害类型: ${abnormalTypeMap[data.abnormal.type]}，原异常转换：${
-        data.abnormal.prevConversionRate
-      }，原异常伤害增加：${data.abnormal.prevAbnormalDamageEnhancement}，异常转换增加：${
-        data.abnormal.increasedConversionRate
-      }，异常伤害增加：${
-        data.abnormal.increasedAbnormalDamageEnhancement
-      }，提升：${abnormalDamageIncreaseRate}`,
+        data.abnormal.prevConvert
+      }，原异常伤害增加：${data.abnormal.prevAbnormalDamage}，异常转换增加：${
+        data.abnormal.convert
+      }，异常伤害增加：${data.abnormal.abnormalDamage}，提升：${abnormalDamageIncreaseRate}`,
     )
   }
 

@@ -7,11 +7,11 @@ export const jewelryOptions: Option[] = [
     damageValue: 296,
     abnormal: {
       type: 'posion',
-      prevConversionRate: 0.5,
-      prevAbnormalDamageEnhancement: 0.2,
-
-      increasedAbnormalDamageEnhancement: 0.1,
+      prevConvert: 50,
+      prevAbnormalDamage: 20 + 30,
+      abnormalDamage: 10,
     },
+    other: '按佩戴中毒手镯和蓝灵上衣计算',
   },
   {
     name: '10 中毒伤害',
@@ -20,11 +20,11 @@ export const jewelryOptions: Option[] = [
     damageValue: 296,
     abnormal: {
       type: 'posion',
-      prevConversionRate: 0.74,
-      prevAbnormalDamageEnhancement: 0.5,
-
-      increasedAbnormalDamageEnhancement: 0.1,
+      prevConvert: 74,
+      prevAbnormalDamage: 20 + 30,
+      abnormalDamage: 10,
     },
+    other: '按佩戴中毒手镯和蓝灵上衣计算',
   },
   {
     name: '10 灼烧伤害',
@@ -32,11 +32,11 @@ export const jewelryOptions: Option[] = [
     damageValue: 296,
     abnormal: {
       type: 'burn',
-      prevConversionRate: 0.5,
-      prevAbnormalDamageEnhancement: 0.2,
-
-      increasedAbnormalDamageEnhancement: 0.1,
+      prevConvert: 50,
+      prevAbnormalDamage: 20 + 30,
+      abnormalDamage: 10,
     },
+    other: '按佩戴灼烧手镯和蓝灵上衣计算',
   },
   {
     name: '10 感电伤害',
@@ -44,11 +44,11 @@ export const jewelryOptions: Option[] = [
     damageValue: 296,
     abnormal: {
       type: 'shock',
-      prevConversionRate: 0.5,
-      prevAbnormalDamageEnhancement: 0.2,
-
-      increasedAbnormalDamageEnhancement: 0.1,
+      prevConvert: 50,
+      prevAbnormalDamage: 20 + 30,
+      abnormalDamage: 10,
     },
+    other: '按佩戴感电手镯和蓝灵上衣计算',
   },
   {
     name: '10 出血伤害',
@@ -56,11 +56,11 @@ export const jewelryOptions: Option[] = [
     damageValue: 296,
     abnormal: {
       type: 'bleed',
-      prevConversionRate: 0.5,
-      prevAbnormalDamageEnhancement: 0.2,
-
-      increasedAbnormalDamageEnhancement: 0.1,
+      prevConvert: 50,
+      prevAbnormalDamage: 20 + 30,
+      abnormalDamage: 10,
     },
+    other: '按佩戴出血手镯和蓝灵上衣计算',
   },
   {
     name: '种族 7 技攻',

@@ -56,11 +56,11 @@ export const bottomOptions: Option[] = [
     damageValue: 593,
     abnormal: {
       type: 'bleed',
-      prevConversionRate: 0.5,
-      prevAbnormalDamageEnhancement: 0.2,
-
-      increasedAbnormalDamageEnhancement: 0.2,
+      prevConvert: 50,
+      prevAbnormalDamage: 20 + 30,
+      abnormalDamage: 20,
     },
+    other: '按佩戴出血手镯和蓝灵上衣计算',
   },
   {
     name: '20% 感电伤害',
@@ -69,11 +69,11 @@ export const bottomOptions: Option[] = [
     damageValue: 593,
     abnormal: {
       type: 'shock',
-      prevConversionRate: 0.5,
-      prevAbnormalDamageEnhancement: 0.2,
-
-      increasedAbnormalDamageEnhancement: 0.2,
+      prevConvert: 50,
+      prevAbnormalDamage: 20 + 30,
+      abnormalDamage: 20,
     },
+    other: '按佩戴感电手镯和蓝灵上衣计算',
   },
   {
     name: 'Lv35 20% 技攻，Lv35 +30% CD',

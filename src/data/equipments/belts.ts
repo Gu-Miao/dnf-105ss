@@ -93,11 +93,11 @@ export const belts: Data[] = [
     damageValue: 6414 + 2964 + 712,
     abnormal: {
       type: 'shock',
-      prevConversionRate: 0.5,
-      prevAbnormalDamageEnhancement: 0.2,
-
-      increasedAbnormalDamageEnhancement: 0.15,
+      prevConvert: 50,
+      prevAbnormalDamage: 20 + 30,
+      abnormalDamage: 15,
     },
+    other: '按佩戴感电手镯和蓝灵上衣计算',
   },
   {
     name: '骄傲的意志腰带',
@@ -106,11 +106,11 @@ export const belts: Data[] = [
     damageValue: 6414 + 2964 + 712 * 2,
     abnormal: {
       type: 'shock',
-      prevConversionRate: 0.5,
-      prevAbnormalDamageEnhancement: 0.2,
-
-      increasedAbnormalDamageEnhancement: 0.15,
+      prevConvert: 50,
+      prevAbnormalDamage: 20 + 30,
+      abnormalDamage: 15,
     },
+    other: '按佩戴感电手镯和蓝灵上衣计算',
   },
   {
     name: '骄傲的意志腰带',
@@ -119,11 +119,11 @@ export const belts: Data[] = [
     damageValue: 6414 + 2964 + 712 * 5,
     abnormal: {
       type: 'shock',
-      prevConversionRate: 0.5,
-      prevAbnormalDamageEnhancement: 0.2,
-
-      increasedAbnormalDamageEnhancement: 0.15,
+      prevConvert: 50,
+      prevAbnormalDamage: 20 + 15,
+      abnormalDamage: 15,
     },
+    other: '按佩戴感电手镯和混乱核心计算',
   },
   {
     name: '大地之翼腰带',
@@ -293,11 +293,11 @@ export const belts: Data[] = [
     damageValue: 4528 + 712,
     abnormal: {
       type: 'burn',
-      prevConversionRate: 0.5,
-      prevAbnormalDamageEnhancement: 0.2,
-
-      increasedAbnormalDamageEnhancement: 0.15,
+      prevConvert: 50,
+      prevAbnormalDamage: 20 + 30,
+      abnormalDamage: 15,
     },
+    other: '按佩戴灼烧手镯和蓝灵上衣计算',
   },
   {
     name: '永眠前的准备',
@@ -306,11 +306,11 @@ export const belts: Data[] = [
     damageValue: 4528 + 712 * 2,
     abnormal: {
       type: 'burn',
-      prevConversionRate: 0.5,
-      prevAbnormalDamageEnhancement: 0.2,
-
-      increasedAbnormalDamageEnhancement: 0.15,
+      prevConvert: 50,
+      prevAbnormalDamage: 20 + 30,
+      abnormalDamage: 15,
     },
+    other: '按佩戴灼烧手镯和蓝灵上衣计算',
   },
   {
     name: '永眠前的准备',
@@ -319,11 +319,11 @@ export const belts: Data[] = [
     damageValue: 4528 + 712 * 5,
     abnormal: {
       type: 'burn',
-      prevConversionRate: 0.5,
-      prevAbnormalDamageEnhancement: 0.2,
-
-      increasedAbnormalDamageEnhancement: 0.15,
+      prevConvert: 50,
+      prevAbnormalDamage: 20 + 15,
+      abnormalDamage: 15,
     },
+    other: '按佩戴灼烧手镯和混乱核心计算',
   },
   {
     name: '愈合伤痕的誓言',

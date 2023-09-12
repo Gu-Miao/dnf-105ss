@@ -59,8 +59,8 @@ function FusionEquipments() {
               <td>{renderSkillAttack(item.skillAtk)}</td>
               <td>{item.damageValue || ''}</td>
               <td>{item.elementalDamage}</td>
-              <td>{renderPercent(item.abnormal?.increasedConversionRate)}</td>
-              <td>{renderPercent(item.abnormal?.increasedAbnormalDamageEnhancement)}</td>
+              <td>{item.abnormal?.convert && item.abnormal.convert + '%'}</td>
+              <td>{item.abnormal?.abnormalDamage && item.abnormal.abnormalDamage + '%'}</td>
               <td>{renderSpeed(item.speed)}</td>
               <td>{renderPercent(item.coldDownRecover)}</td>
               <td>{renderPercent(item.coldDownReduce)}</td>

@@ -8,12 +8,11 @@ export const necklaceOptions: Option[] = [
     damageValue: 296,
     abnormal: {
       type: 'bleed',
-      prevConversionRate: 0.5,
-      prevAbnormalDamageEnhancement: 0.5,
-
-      increasedAbnormalDamageEnhancement: 0.1,
+      prevConvert: 50,
+      prevAbnormalDamage: 20 + 30,
+      abnormalDamage: 10,
     },
-    other: '按出血手蓝灵top计算',
+    other: '按佩戴出血手镯和蓝灵上衣计算',
   },
   {
     name: '韧性 Lv45 30% CDR',

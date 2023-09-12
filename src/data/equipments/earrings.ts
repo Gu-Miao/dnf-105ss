@@ -256,11 +256,11 @@ export const earrings: Data[] = [
     damageValue: 5484 + 889 * 5,
     abnormal: {
       type: 'posion',
-      prevConversionRate: 0.5,
-      prevAbnormalDamageEnhancement: 0.2,
-
-      increasedAbnormalDamageEnhancement: 0.05,
+      prevConvert: 50,
+      prevAbnormalDamage: 20 + 30,
+      abnormalDamage: 5,
     },
+    other: '按佩戴中毒手镯和蓝灵上衣计算',
   },
   {
     name: '终结永恒时光的夙愿',
@@ -269,11 +269,11 @@ export const earrings: Data[] = [
     damageValue: 5484 + 889 * 5,
     abnormal: {
       type: 'posion',
-      prevConversionRate: 0.74,
-      prevAbnormalDamageEnhancement: 0.5,
-
-      increasedAbnormalDamageEnhancement: 0.05,
+      prevConvert: 74,
+      prevAbnormalDamage: 20 + 30,
+      abnormalDamage: 5,
     },
+    other: '对毒王提升，按佩戴中毒手镯和蓝灵上衣计算',
   },
   {
     name: '含泪之宝石',

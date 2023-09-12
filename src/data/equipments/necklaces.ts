@@ -87,11 +87,11 @@ export const necklaces: Data[] = [
     elementalDamage: 15,
     abnormal: {
       type: 'burn',
-      prevConversionRate: 0.5,
-      prevAbnormalDamageEnhancement: 0.2,
-
-      increasedAbnormalDamageEnhancement: 0.35,
+      prevConvert: 50,
+      prevAbnormalDamage: 20 + 30,
+      abnormalDamage: 35,
     },
+    other: '按佩戴灼烧手镯和蓝灵上衣计算',
   },
   {
     name: '高科技闪影项链',

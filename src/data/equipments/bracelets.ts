@@ -62,10 +62,8 @@ export const bracelets: Data[] = [
     skillAtk: [2, 5],
     abnormal: {
       type: 'burn',
-      prevConversionRate: 0,
-      prevAbnormalDamageEnhancement: 0,
-      increasedConversionRate: 0.5,
-      increasedAbnormalDamageEnhancement: 0.2,
+      convert: 50,
+      abnormalDamage: 20,
     },
   },
   {
@@ -75,10 +73,8 @@ export const bracelets: Data[] = [
     skillAtk: [2, 5],
     abnormal: {
       type: 'shock',
-      prevConversionRate: 0,
-      prevAbnormalDamageEnhancement: 0,
-      increasedConversionRate: 0.5,
-      increasedAbnormalDamageEnhancement: 0.2,
+      convert: 50,
+      abnormalDamage: 20,
     },
   },
   {
@@ -109,10 +105,8 @@ export const bracelets: Data[] = [
     skillAtk: [2, 5],
     abnormal: {
       type: 'posion',
-      prevConversionRate: 0,
-      prevAbnormalDamageEnhancement: 0,
-      increasedConversionRate: 0.5,
-      increasedAbnormalDamageEnhancement: 0.2,
+      convert: 50,
+      abnormalDamage: 20,
     },
   },
   {
@@ -123,10 +117,9 @@ export const bracelets: Data[] = [
     skillAtk: [2, 5],
     abnormal: {
       type: 'posion',
-      prevConversionRate: 0.48,
-      prevAbnormalDamageEnhancement: 0,
-      increasedConversionRate: 0.5,
-      increasedAbnormalDamageEnhancement: 0.2,
+      prevConvert: 48,
+      convert: 50,
+      abnormalDamage: 20,
     },
   },
   {
@@ -204,10 +197,8 @@ export const bracelets: Data[] = [
     skillAtk: [2, 5],
     abnormal: {
       type: 'bleed',
-      prevConversionRate: 0,
-      prevAbnormalDamageEnhancement: 0,
-      increasedConversionRate: 0.5,
-      increasedAbnormalDamageEnhancement: 0.2,
+      convert: 50,
+      abnormalDamage: 20,
     },
   },
   {

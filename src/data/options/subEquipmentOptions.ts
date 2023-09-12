@@ -8,11 +8,11 @@ export const subEquipmentOptions: Option[] = [
     damageValue: 296,
     abnormal: {
       type: 'shock',
-      prevConversionRate: 0.5,
-      prevAbnormalDamageEnhancement: 0.2,
-
-      increasedAbnormalDamageEnhancement: 0.1,
+      prevConvert: 50,
+      prevAbnormalDamage: 20 + 30,
+      abnormalDamage: 10,
     },
+    other: '按佩戴感电手镯和蓝灵上衣计算',
   },
   {
     name: '减少 45 级技能剩余 CD',
@@ -60,11 +60,11 @@ export const subEquipmentOptions: Option[] = [
     damageValue: 889,
     abnormal: {
       type: 'bleed',
-      prevConversionRate: 0.5,
-      prevAbnormalDamageEnhancement: 0.2,
-
-      increasedAbnormalDamageEnhancement: 0.15,
+      prevConvert: 50,
+      prevAbnormalDamage: 20 + 30,
+      abnormalDamage: 15,
     },
+    other: '按佩戴出血手镯和蓝灵上衣计算',
   },
   {
     name: '低血 5 技攻',
@@ -86,11 +86,11 @@ export const subEquipmentOptions: Option[] = [
     damageValue: 296,
     abnormal: {
       type: 'bleed',
-      prevConversionRate: 0.5,
-      prevAbnormalDamageEnhancement: 0.2,
-
-      increasedAbnormalDamageEnhancement: 0.2,
+      prevConvert: 50,
+      prevAbnormalDamage: 20 + 30,
+      abnormalDamage: 20,
     },
+    other: '按佩戴出血手镯和蓝灵上衣计算',
   },
   {
     name: '领主 20% 出血伤害',
@@ -100,11 +100,11 @@ export const subEquipmentOptions: Option[] = [
     damageValue: 296,
     abnormal: {
       type: 'bleed',
-      prevConversionRate: 0.5,
-      prevAbnormalDamageEnhancement: 0.2,
-
-      increasedAbnormalDamageEnhancement: (0.2 * 2) / 3,
+      prevConvert: 50,
+      prevAbnormalDamage: 20 + 30,
+      abnormalDamage: 20 * 0.667,
     },
+    other: '按佩戴出血手镯和蓝灵上衣计算',
   },
   {
     name: '领主 35 属强',
@@ -156,11 +156,11 @@ export const subEquipmentOptions: Option[] = [
     damageValue: 1186,
     abnormal: {
       type: 'bleed',
-      prevConversionRate: 0.5,
-      prevAbnormalDamageEnhancement: 0.2,
-
-      increasedAbnormalDamageEnhancement: 0.05,
+      prevConvert: 50,
+      prevAbnormalDamage: 20 + 30,
+      abnormalDamage: 5,
     },
+    other: '按佩戴出血手镯和蓝灵上衣计算',
   },
   {
     name: '5% 中毒伤害',
@@ -169,11 +169,11 @@ export const subEquipmentOptions: Option[] = [
     damageValue: 1186,
     abnormal: {
       type: 'posion',
-      prevConversionRate: 0.5,
-      prevAbnormalDamageEnhancement: 0.2,
-
-      increasedAbnormalDamageEnhancement: 0.05,
+      prevConvert: 50,
+      prevAbnormalDamage: 20 + 30,
+      abnormalDamage: 5,
     },
+    other: '按佩戴中毒手镯和蓝灵上衣计算',
   },
   {
     name: '5% 中毒伤害',
@@ -183,11 +183,11 @@ export const subEquipmentOptions: Option[] = [
     damageValue: 1186,
     abnormal: {
       type: 'posion',
-      prevConversionRate: 0.74,
-      prevAbnormalDamageEnhancement: 0.5,
-
-      increasedAbnormalDamageEnhancement: 0.05,
+      prevConvert: 74,
+      prevAbnormalDamage: 20 + 30,
+      abnormalDamage: 5,
     },
+    other: '按佩戴中毒手镯和蓝灵上衣计算',
   },
   {
     name: '韧性攻强',

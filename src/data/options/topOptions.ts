@@ -62,11 +62,11 @@ export const topOptions: Option[] = [
     damageValue: 148,
     abnormal: {
       type: 'bleed',
-      prevConversionRate: 0.5,
-      prevAbnormalDamageEnhancement: 0.2,
-
-      increasedAbnormalDamageEnhancement: 0.3,
+      prevConvert: 50,
+      prevAbnormalDamage: 20,
+      abnormalDamage: 30,
     },
+    other: '按单挂出血手镯计算',
   },
   {
     name: '30% 感电伤害',
@@ -75,11 +75,11 @@ export const topOptions: Option[] = [
     damageValue: 148,
     abnormal: {
       type: 'shock',
-      prevConversionRate: 0.5,
-      prevAbnormalDamageEnhancement: 0.2,
-
-      increasedAbnormalDamageEnhancement: 0.3,
+      prevConvert: 50,
+      prevAbnormalDamage: 20,
+      abnormalDamage: 30,
     },
+    other: '按单挂感电手镯计算',
   },
   {
     name: '30% 灼烧伤害',
@@ -88,11 +88,11 @@ export const topOptions: Option[] = [
     damageValue: 148,
     abnormal: {
       type: 'burn',
-      prevConversionRate: 0.5,
-      prevAbnormalDamageEnhancement: 0.2,
-
-      increasedAbnormalDamageEnhancement: 0.3,
+      prevConvert: 50,
+      prevAbnormalDamage: 20,
+      abnormalDamage: 30,
     },
+    other: '按单挂灼烧手镯计算',
   },
   {
     name: '30% 中毒伤害',
@@ -101,11 +101,11 @@ export const topOptions: Option[] = [
     damageValue: 148,
     abnormal: {
       type: 'posion',
-      prevConversionRate: 0.5,
-      prevAbnormalDamageEnhancement: 0.2,
-
-      increasedAbnormalDamageEnhancement: 0.3,
+      prevConvert: 50,
+      prevAbnormalDamage: 20,
+      abnormalDamage: 30,
     },
+    other: '按单挂中毒手镯计算',
   },
   {
     name: '30% 中毒伤害',
@@ -115,11 +115,11 @@ export const topOptions: Option[] = [
     damageValue: 148,
     abnormal: {
       type: 'posion',
-      prevConversionRate: 0.74,
-      prevAbnormalDamageEnhancement: 0.2,
-
-      increasedAbnormalDamageEnhancement: 0.3,
+      prevConvert: 74,
+      prevAbnormalDamage: 20,
+      abnormalDamage: 30,
     },
+    other: '按单挂中毒手镯计算',
   },
   {
     name: '80 ~ 95 + 3',
