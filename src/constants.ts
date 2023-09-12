@@ -7,3 +7,6 @@ export const ELEMENTAL_DAMAGE = 383
 
 // 普通年宠 + 普通年套称号 + 国庆光环 + 红色宠物装备 + 夏日勋章
 export const DAMAGE_VALUE_PERCENTAGE = 25 + 20 + 7 + 8 + 10
+
+// 灼烧破冰率
+export const BURN_BREAK_ICE_RATE = 75

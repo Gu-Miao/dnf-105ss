@@ -1,4 +1,4 @@
-import { DAMAGE_VALUE_PERCENTAGE } from '@/constants'
+import { BURN_BREAK_ICE_RATE, DAMAGE_VALUE_PERCENTAGE } from '@/constants'
 
 export type Abnormal = {
   type: '出血' | '中毒' | '灼烧' | '感电'
@@ -58,7 +58,7 @@ export type Data = {
  * @returns 技攻提升率
  */
 function getSkillAtkIncreaseRate(skillAtk: number[]) {
-  return skillAtk.reduce((increaseRate, skillAttack) => increaseRate * (1 + skillAttack / 100), 1)
+  return skillAtk.reduce((increaseRate, skillAttack) => increaseRate * (1 + skillAttack * 0.01), 1)
 }
 
 /**
@@ -68,7 +68,7 @@ function getSkillAtkIncreaseRate(skillAtk: number[]) {
  * @returns 攻击强化提升率
  */
 function getDamageValueIncreaseRate(damageValue: number, prevDamageValue: number) {
-  return 1 + (damageValue / prevDamageValue) * (1 + DAMAGE_VALUE_PERCENTAGE / 100)
+  return 1 + (damageValue / prevDamageValue) * (1 + DAMAGE_VALUE_PERCENTAGE * 0.01)
 }
 
 /**
@@ -96,7 +96,8 @@ function getAbnormalDamageIncreaseRate({
   const conversionRate = prevConversionRate + (increasedConversionRate || 0)
   const abnormalDamageEnhancement =
     prevAbnormalDamageEnhancement + (increasedAbnormalDamageEnhancement || 0)
-  const abnormalTypeEnhancement = type === '出血' ? 1.1 : type === '灼烧' ? 1.075 : 1
+  const abnormalTypeEnhancement =
+    type === '出血' ? 1.1 : type === '灼烧' ? 1.1 * (BURN_BREAK_ICE_RATE * 0.01) : 1
 
   const prevDamage =
     1 -
