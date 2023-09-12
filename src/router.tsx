@@ -3,8 +3,8 @@ import { createBrowserRouter } from 'react-router-dom'
 import App from './App'
 
 const Equipments = lazy(() => import('./pages/Equipments'))
-const Entries = lazy(() => import('./pages/Entries'))
-const Mixins = lazy(() => import('./pages/Mixins'))
+const Options = lazy(() => import('./pages/Options'))
+const FusionEquipments = lazy(() => import('./pages/FusionEquipments'))
 
 const router = createBrowserRouter([
   {
@@ -16,12 +16,12 @@ const router = createBrowserRouter([
         element: <Equipments />,
       },
       {
-        path: '/entries',
-        element: <Entries />,
+        path: '/options',
+        element: <Options />,
       },
       {
-        path: '/mixins',
-        element: <Mixins />,
+        path: '/fusion-equipments',
+        element: <FusionEquipments />,
       },
     ],
   },

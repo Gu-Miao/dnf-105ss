@@ -1,21 +1,25 @@
 import { useState, useMemo, ChangeEvent } from 'react'
-import { equipments, Data } from '@/data/equipments'
+import { options, Option } from '@/data/options'
 
-function Equipments() {
-  const [type, setType] = useState<Data['type']>(
-    (localStorage.getItem('equipments') as null | Data['type']) ?? 'top',
+function Options() {
+  const [type, setType] = useState<Option['type']>(
+    (localStorage.getItem('options') as null | Option['type']) ?? 'public',
   )
-  const filteredData = useMemo(() => equipments.filter(item => item.type === type), [type])
+  const filteredData = useMemo(() => options.filter(item => item.type === type), [type])
   function handleTypeChange(e: ChangeEvent<HTMLSelectElement>) {
-    const newType = e.target.value as Data['type']
+    const newType = e.target.value as Option['type']
     setType(newType)
-    localStorage.setItem('equipments', newType)
+    localStorage.setItem('options', newType)
   }
 
   return (
     <div>
       <p>
         <select value={type} onChange={handleTypeChange}>
+          <option value="public">公共</option>
+          <option value="armor">防具</option>
+          <option value="jewelry">首饰</option>
+          <option value="special-equipment">特殊装备</option>
           <option value="top">上衣</option>
           <option value="bottom">下装</option>
           <option value="header-shoulder">头肩</option>
@@ -48,9 +52,9 @@ function Equipments() {
         </thead>
         <tbody>
           {filteredData.map(item => (
-            <tr key={item.name + item.prefix + item.other}>
+            <tr key={item.name + item.prefix + item.from + item.other + item.damageValue}>
               <td>
-                <img className="icon" src={`/${item.name}.png`} alt={item.name} />
+                <img className="icon" src={getIconSrc(item)} alt={item.name} />
               </td>
               <td>
                 {item.prefix ? `【${item.prefix}】` : ''}
@@ -74,17 +78,22 @@ function Equipments() {
   )
 }
 
-function renderPercent(num: number | undefined) {
-  if (!num) return ''
-  return num * 100 + '%'
+function getIconSrc(data: Option) {
+  const name = data.from || 'logo'
+  return `/${name}.png`
 }
 
-function renderSkillAttack(skillAtk: Data['skillAtk']) {
+function renderPercent(num: number | undefined) {
+  if (!num) return ''
+  return (num * 100).toFixed(3) + '%'
+}
+
+function renderSkillAttack(skillAtk: Option['skillAtk']) {
   if (!skillAtk || skillAtk[0] === 0) return ''
   return skillAtk.map(num => num + '%').join(', ')
 }
 
-function renderSpeed(speed: Data['speed']) {
+function renderSpeed(speed: Option['speed']) {
   if (typeof speed === 'number') {
     return `${speed}% 三速`
   } else if (typeof speed === 'object') {
@@ -98,4 +107,4 @@ function renderSpeed(speed: Data['speed']) {
   return speed
 }
 
-export default Equipments
+export default Options

@@ -22,8 +22,7 @@
       "{",
       "  name: '$1',",
       "  type: '$2',",
-      "  skillAttacks: [$3],",
-      "  attackEnhancement: $4,",
+      "  damageValue: $4,",skillAtk: [$3],",
       "},$0"
     ]
   },

@@ -1,42 +1,42 @@
-import { ATTACK_ENHANCE_PER } from '@/constants'
+import { DAMAGE_VALUE_PERCENTAGE } from '@/constants'
 
 export type Abnormal = {
   type: '出血' | '中毒' | '灼烧' | '感电'
   prevConversionRate: number // 原异常伤害转换率
   prevAbnormalDamageEnhancement: number // 原异常伤害增加量
-  increasedConversionRate: number // 新增异常伤害转换率
-  increasedAbnormalDamageEnhancement: number // 新增异常伤害增加量
+  increasedConversionRate?: number // 新增异常伤害转换率
+  increasedAbnormalDamageEnhancement?: number // 新增异常伤害增加量
 }
 
 export type Data = {
   name: string
   prefix?: string
   type:
-    | '上衣'
-    | '下装'
-    | '头肩'
-    | '腰带'
-    | '鞋'
-    | '手镯'
-    | '项链'
-    | '戒指'
-    | '辅助装备'
-    | '魔法石'
-    | '耳环'
-    | '融合 - 上衣'
-    | '融合 - 下装'
-    | '融合 - 头肩'
-    | '融合 - 腰带'
-    | '融合 - 鞋'
-    | '融合 - 手镯'
-    | '融合 - 项链'
-    | '融合 - 戒指'
-    | '融合 - 辅助装备'
-    | '融合 - 魔法石'
-    | '融合 - 耳环'
-  skillAttacks?: number[]
-  attackEnhancement: number
-  elementEnhancement?: number
+    | 'top'
+    | 'bottom'
+    | 'header-shoulder'
+    | 'belt'
+    | 'shoe'
+    | 'bracelet'
+    | 'necklace'
+    | 'ring'
+    | 'sub-equipment'
+    | 'magic-stone'
+    | 'earring'
+    | 'fusion-top'
+    | 'fusion-bottom'
+    | 'fusion-header-shoulder'
+    | 'fusion-belt'
+    | 'fusion-shoe'
+    | 'fusion-bracelet'
+    | 'fusion-necklace'
+    | 'fusion-ring'
+    | 'fusion-sub-equipment'
+    | 'fusion-magic-stone'
+    | 'fusion-earring'
+  damageValue?: number
+  skillAtk?: number[]
+  elementalDamage?: number
   abnormal?: Abnormal
   coldDownRecover?: number
   coldDownReduce?: number
@@ -54,40 +54,31 @@ export type Data = {
 
 /**
  * 获取技攻提升率
- * @param skillAttacks 所有技攻加成
+ * @param skillAtk 所有技攻加成
  * @returns 技攻提升率
  */
-function getSkillAttackIncreaseRate(skillAttacks: number[]) {
-  return skillAttacks.reduce(
-    (increaseRate, skillAttack) => increaseRate * (1 + skillAttack / 100),
-    1,
-  )
+function getSkillAtkIncreaseRate(skillAtk: number[]) {
+  return skillAtk.reduce((increaseRate, skillAttack) => increaseRate * (1 + skillAttack / 100), 1)
 }
 
 /**
  * 获取攻击强化提升率
- * @param increasedAttackEnhancement 增加的攻击强化
- * @param attackEnhacment 攻强分母
+ * @param damageValue 增加的攻击强化
+ * @param prevDamageValue 攻强分母
  * @returns 攻击强化提升率
  */
-function getAttackEnhancementIncreaseRate(
-  increasedAttackEnhancement: number,
-  attackEnhacment: number,
-) {
-  return 1 + (increasedAttackEnhancement / attackEnhacment) * ATTACK_ENHANCE_PER
+function getDamageValueIncreaseRate(damageValue: number, prevDamageValue: number) {
+  return 1 + (damageValue / prevDamageValue) * (1 + DAMAGE_VALUE_PERCENTAGE / 100)
 }
 
 /**
  * 获取属强提升率
- * @param increasedElementEnhancement 属强
- * @param elementEnhancement 原属强
+ * @param elementalDamage 属强
+ * @param prevElementalDamage 原属强
  * @returns 属强提升率
  */
-function getElementEnhancementIncreaseRate(
-  increasedElementEnhancement: number,
-  elementEnhancement: number,
-) {
-  return 1 + increasedElementEnhancement / (elementEnhancement + 233)
+function getElementalDamageIncreaseRate(elementalDamage: number, prevElementalDamage: number) {
+  return 1 + elementalDamage / (prevElementalDamage + 233)
 }
 
 /**
@@ -102,9 +93,9 @@ function getAbnormalDamageIncreaseRate({
   increasedConversionRate,
   increasedAbnormalDamageEnhancement,
 }: Abnormal) {
-  const conversionRate = prevConversionRate + increasedConversionRate
+  const conversionRate = prevConversionRate + (increasedConversionRate || 0)
   const abnormalDamageEnhancement =
-    prevAbnormalDamageEnhancement + increasedAbnormalDamageEnhancement
+    prevAbnormalDamageEnhancement + (increasedAbnormalDamageEnhancement || 0)
   const abnormalTypeEnhancement = type === '出血' ? 1.1 : type === '灼烧' ? 1.075 : 1
 
   const prevDamage =
@@ -138,44 +129,39 @@ function getColdDownReduceIncreaseRate(coldDownReduce: number) {
 /**
  * 获取装备提升率
  * @param data 装备数据
- * @param attackEnhacment 攻强分母
- * @param elementEnhancement 原属强
+ * @param damageValue 攻强分母
+ * @param elementalDamage 原属强
  * @returns 装备提升率
  */
-export function getIncreaseRate(data: Data, attackEnhacment: number, elementEnhancement: number) {
+export function getIncreaseRate(data: Data, damageValue: number, elementalDamage: number) {
   let increaseRate = 1
 
   console.log(`==== ${data.prefix ? `【${data.prefix}】` : ''}${data.name} ====`)
 
-  if (data.attackEnhancement) {
-    const attackEnhancementIncreaseRate = getAttackEnhancementIncreaseRate(
-      data.attackEnhancement,
-      attackEnhacment,
-    )
+  if (data.damageValue) {
+    const damageValueIncreaseRate = getDamageValueIncreaseRate(data.damageValue, damageValue)
 
-    increaseRate *= attackEnhancementIncreaseRate
-    console.log(`攻击强化：${data.attackEnhancement}，提升：${attackEnhancementIncreaseRate}`)
+    increaseRate *= damageValueIncreaseRate
+    console.log(`攻击强化：${data.damageValue}，提升：${damageValueIncreaseRate}`)
   }
 
-  if (data.skillAttacks) {
-    const skillAttackIncreaseRate = getSkillAttackIncreaseRate(data.skillAttacks)
+  if (data.skillAtk) {
+    const skillAtkIncreaseRate = getSkillAtkIncreaseRate(data.skillAtk)
 
-    increaseRate *= skillAttackIncreaseRate
+    increaseRate *= skillAtkIncreaseRate
     console.log(
-      `技攻：${data.skillAttacks
-        .map(num => num + '%')
-        .join(', ')}，提升：${skillAttackIncreaseRate}`,
+      `技攻：${data.skillAtk.map(num => num + '%').join(', ')}，提升：${skillAtkIncreaseRate}`,
     )
   }
 
-  if (data.elementEnhancement) {
-    const elementEnhancementIncreaseRate = getElementEnhancementIncreaseRate(
-      data.elementEnhancement,
-      elementEnhancement,
+  if (data.elementalDamage) {
+    const elementalDamageIncreaseRate = getElementalDamageIncreaseRate(
+      data.elementalDamage,
+      elementalDamage,
     )
 
-    increaseRate *= elementEnhancementIncreaseRate
-    console.log(`属强：${data.elementEnhancement}，提升：${elementEnhancementIncreaseRate}`)
+    increaseRate *= elementalDamageIncreaseRate
+    console.log(`属强：${data.elementalDamage}，提升：${elementalDamageIncreaseRate}`)
   }
 
   if (data.coldDownRecover) {

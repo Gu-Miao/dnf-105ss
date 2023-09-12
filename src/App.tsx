@@ -13,12 +13,12 @@ function App() {
           </NavLink>
         </li>
         <li>
-          <NavLink to="/mixins" className={({ isActive }) => (isActive ? 'active' : '')}>
+          <NavLink to="/fusion-equipments" className={({ isActive }) => (isActive ? 'active' : '')}>
             贴膜对比
           </NavLink>
         </li>
         <li>
-          <NavLink to="/entries" className={({ isActive }) => (isActive ? 'active' : '')}>
+          <NavLink to="/options" className={({ isActive }) => (isActive ? 'active' : '')}>
             自定义词条对比
           </NavLink>
         </li>

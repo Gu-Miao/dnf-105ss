@@ -1,32 +1,32 @@
-import { ATTACK_ENHANCE_ARG, ELEMENT_ENHANCEMENT } from '@/constants'
+import { DAMAGE_VALUE_BASE, ELEMENTAL_DAMAGE } from '@/constants'
 import { getIncreaseRate, Data } from '../common'
-import { coats } from './coats'
-import { pants } from './pants'
-import { spaulders } from './spaulders'
+import { tops } from './tops'
+import { bottoms } from './bottoms'
+import { headerShoulders } from './headerShoulders'
 import { belts } from './belts'
 import { shoes } from './shoes'
 import { bracelets } from './bracelets'
 import { necklaces } from './necklaces'
 import { rings } from './rings'
-import { supports } from './supports'
+import { subEquipments } from './subEquipments'
 import { magicStones } from './magicStones'
 import { earrings } from './earrings'
 
 const equipments: Data[] = [
-  ...coats,
-  ...pants,
-  ...spaulders,
+  ...tops,
+  ...bottoms,
+  ...headerShoulders,
   ...belts,
   ...shoes,
   ...bracelets,
   ...necklaces,
   ...rings,
-  ...supports,
+  ...subEquipments,
   ...magicStones,
   ...earrings,
 ]
   .map(item => {
-    item.increaseRate = getIncreaseRate(item, ATTACK_ENHANCE_ARG, ELEMENT_ENHANCEMENT)
+    item.increaseRate = getIncreaseRate(item, DAMAGE_VALUE_BASE, ELEMENTAL_DAMAGE)
     return item
   })
   .sort((a, b) => (b.increaseRate as number) - (a.increaseRate as number))

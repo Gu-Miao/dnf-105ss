@@ -1,32 +1,32 @@
 import { useState, useMemo, ChangeEvent } from 'react'
-import { equipments, Data } from '@/data/equipments'
+import { fusionEquipments, Data } from '@/data/fusionEquipments'
 
-function Equipments() {
+function FusionEquipments() {
   const [type, setType] = useState<Data['type']>(
-    (localStorage.getItem('equipments') as null | Data['type']) ?? 'top',
+    (localStorage.getItem('fusionEquipments') as null | Data['type']) ?? 'fusion-top',
   )
-  const filteredData = useMemo(() => equipments.filter(item => item.type === type), [type])
+  const filteredData = useMemo(() => fusionEquipments.filter(item => item.type === type), [type])
   function handleTypeChange(e: ChangeEvent<HTMLSelectElement>) {
     const newType = e.target.value as Data['type']
     setType(newType)
-    localStorage.setItem('equipments', newType)
+    localStorage.setItem('fusionEquipments', newType)
   }
 
   return (
     <div>
       <p>
         <select value={type} onChange={handleTypeChange}>
-          <option value="top">上衣</option>
-          <option value="bottom">下装</option>
-          <option value="header-shoulder">头肩</option>
-          <option value="belt">腰带</option>
-          <option value="shoe">鞋</option>
-          <option value="bracelet">手镯</option>
-          <option value="necklace">项链</option>
-          <option value="ring">戒指</option>
-          <option value="sub-equipment">辅助装备</option>
-          <option value="magic-stone">魔法石</option>
-          <option value="earring">耳环</option>
+          <option value="fusion-top">融合 - 上衣</option>
+          <option value="fusion-bottom">融合 - 下装</option>
+          <option value="fusion-header-shoulder">融合 - 头肩</option>
+          <option value="fusion-belt">融合 - 腰带</option>
+          <option value="fusion-shoe">融合 - 鞋</option>
+          <option value="fusion-bracelet">融合 - 手镯</option>
+          <option value="fusion-necklace">融合 - 项链</option>
+          <option value="fusion-ring">融合 - 戒指</option>
+          <option value="fusion-sub-equipment">融合 - 辅助装备</option>
+          <option value="fusion-magic-stone">融合 - 魔法石</option>
+          <option value="fusion-earring">融合 - 耳环</option>
         </select>
       </p>
       <table>
@@ -48,7 +48,7 @@ function Equipments() {
         </thead>
         <tbody>
           {filteredData.map(item => (
-            <tr key={item.name + item.prefix + item.other}>
+            <tr key={item.name + item.prefix}>
               <td>
                 <img className="icon" src={`/${item.name}.png`} alt={item.name} />
               </td>
@@ -76,7 +76,7 @@ function Equipments() {
 
 function renderPercent(num: number | undefined) {
   if (!num) return ''
-  return num * 100 + '%'
+  return (num * 100).toFixed(3) + '%'
 }
 
 function renderSkillAttack(skillAtk: Data['skillAtk']) {
@@ -98,4 +98,4 @@ function renderSpeed(speed: Data['speed']) {
   return speed
 }
 
-export default Equipments
+export default FusionEquipments
