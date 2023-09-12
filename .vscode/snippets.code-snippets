@@ -22,9 +22,15 @@
       "{",
       "  name: '$1',",
       "  type: '$2',",
-      "  damageValue: $4,",skillAtk: [$3],",
+      "  damageValue: $3,",
+      "  skillAtk: [$4],",
       "},$0"
     ]
+  },
+  "option": {
+    "scope": "typescript",
+    "prefix": "optionSnippet",
+    "body": ["{", "  name: '$1',", "  type: '$2',", "  from: '$3',", "  damageValue: $4,", "},$0"]
   },
   "abnormal": {
     "scope": "typescript",
@@ -32,10 +38,10 @@
     "body": [
       "abnormal: {",
       "  type: '$1',",
-      "  prevConversionRate: 0.5,",
-      "  prevAbnormalDamageEnhancement: 0.2,",
-      "  increasedConversionRate: $2,",
-      "  increasedAbnormalDamageEnhancement: $3,",
+      "  prevConvert: 50,",
+      "  prevAbnormalDamage: 20,",
+      "  convert: $2,",
+      "  abnormalDamage: $3,",
       "},$0"
     ]
   }
