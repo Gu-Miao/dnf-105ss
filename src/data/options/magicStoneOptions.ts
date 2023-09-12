@@ -7,7 +7,7 @@ export const magicStoneOptions: Option[] = [
     type: 'magic-stone',
     from: '森林之魔女精灵石',
     damageValue: 1037,
-    coldDownReduce: 0.081 * 0.5,
+    coolDownReduction: 0.081 * 0.5,
     other:
       '按 70 级技能 50 冷却，30% CDR 计算，期望冷却减少约为 8.1%，按 70 级技能 50% 占比计算。收益低，主要还是给奶用',
   },
@@ -17,7 +17,7 @@ export const magicStoneOptions: Option[] = [
     type: 'magic-stone',
     from: '森林之魔女精灵石',
     damageValue: 1037,
-    coldDownReduce: 0.0685 * 0.5,
+    coolDownReduction: 0.0685 * 0.5,
     other:
       '按 75 级技能 35 冷却，30% CDR 计算，期望冷却减少约为 6.85%，按 75 级技能 50% 占比计算。收益低，主要还是给奶用',
   },
@@ -27,7 +27,7 @@ export const magicStoneOptions: Option[] = [
     type: 'magic-stone',
     from: '森林之魔女精灵石',
     damageValue: 1037,
-    coldDownReduce: 0.0566 * 0.5,
+    coolDownReduction: 0.0566 * 0.5,
     other:
       '按 40 级技能 20 冷却，30% CDR 计算，期望冷却减少约为 5.66%，按 40 级技能 50% 占比计算。收益低，主要还是给奶用',
   },
@@ -37,7 +37,7 @@ export const magicStoneOptions: Option[] = [
     type: 'magic-stone',
     from: '森林之魔女精灵石',
     damageValue: 1334,
-    coldDownReduce: 0.165 * 0.5,
+    coolDownReduction: 0.165 * 0.5,
     other: '期望 16.5% CDR，按 70 级技能 50% 占比计算',
   },
   {

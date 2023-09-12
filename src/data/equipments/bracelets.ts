@@ -26,7 +26,7 @@ export const bracelets: Data[] = [
     type: 'bracelet',
     damageValue: 4528,
     skillAtk: [6],
-    coldDownRecover: 0.25,
+    coolDownRecovery: 0.25,
     speed: {
       attackSpeed: 8,
       castingSpeed: 12,
@@ -49,7 +49,7 @@ export const bracelets: Data[] = [
     type: 'bracelet',
     damageValue: 5066,
     skillAtk: [-15],
-    coldDownReduce: -0.1,
+    coolDownReduction: -0.1,
     speed: {
       attackSpeed: 8,
       castingSpeed: 12,
@@ -142,7 +142,7 @@ export const bracelets: Data[] = [
     damageValue: 5066 + 193 * 10,
     skillAtk: [10],
     elementalDamage: 20,
-    coldDownReduce: 0.12,
+    coolDownReduction: 0.12,
     speed: {
       attackSpeed: 8,
       castingSpeed: 12,
@@ -174,7 +174,7 @@ export const bracelets: Data[] = [
     type: 'bracelet',
     damageValue: 3988,
     skillAtk: [2 * 6],
-    coldDownRecover: 0.3,
+    coolDownRecovery: 0.3,
   },
   {
     name: '骑士的救赎',
@@ -212,7 +212,7 @@ export const bracelets: Data[] = [
     type: 'bracelet',
     damageValue: 5066 + 2816,
     skillAtk: [7],
-    coldDownReduce: 0.15,
+    coolDownReduction: 0.15,
     speed: {
       attackSpeed: 8,
       castingSpeed: 12,

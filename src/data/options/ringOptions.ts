@@ -34,7 +34,7 @@ export const ringOptions: Option[] = [
     type: 'ring',
     from: '森林之魔女戒指',
     damageValue: 1186,
-    coldDownRecover: 0.165 * 0.5,
+    coolDownRecovery: 0.165 * 0.5,
     other: '期望 16.5% CDR，按 75 级技能 50% 占比计算',
   },
   {
@@ -348,7 +348,7 @@ export const ringOptions: Option[] = [
     type: 'ring',
     from: '蓝灵绿玉石戒指',
     damageValue: 1334,
-    coldDownRecover: 0.3 * 0.5,
+    coolDownRecovery: 0.3 * 0.5,
     other: '按 80 级技能 50% 占比计算',
   },
   {
@@ -357,7 +357,7 @@ export const ringOptions: Option[] = [
     type: 'ring',
     from: '蓝灵绿玉石戒指',
     damageValue: 1334,
-    coldDownRecover: 0.3 * 0.16,
+    coolDownRecovery: 0.3 * 0.16,
     other: '按 95 级技能 16% 占比计算',
   },
   {
@@ -365,7 +365,7 @@ export const ringOptions: Option[] = [
     type: 'ring',
     from: '深潜迷航导航环',
     damageValue: 741,
-    coldDownRecover: 0.3,
+    coolDownRecovery: 0.3,
   },
   {
     name: '25 属强',

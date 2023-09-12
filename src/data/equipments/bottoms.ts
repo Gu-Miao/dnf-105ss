@@ -23,7 +23,7 @@ export const bottoms: Data[] = [
     type: 'bottom',
     damageValue: 4258,
     skillAtk: [5],
-    coldDownReduce: -0.08,
+    coolDownReduction: -0.08,
     speed: {
       attackSpeed: 18,
       castingSpeed: 22,
@@ -198,7 +198,7 @@ export const bottoms: Data[] = [
     name: '终极掌控者护腿',
     type: 'bottom',
     damageValue: 5874,
-    coldDownReduce: 0.15,
+    coolDownReduction: 0.15,
     speed: {
       moveSpeed: 8,
     },
@@ -207,7 +207,7 @@ export const bottoms: Data[] = [
     name: '玉化亡灵腿甲',
     type: 'bottom',
     damageValue: 5066 + 2668,
-    coldDownReduce: 0.08,
+    coolDownReduction: 0.08,
     speed: {
       attackSpeed: 8,
       castingSpeed: 12,
@@ -218,7 +218,7 @@ export const bottoms: Data[] = [
     name: '暴风骑士',
     type: 'bottom',
     damageValue: 6414 + 1037,
-    coldDownRecover: 0.1,
+    coolDownRecovery: 0.1,
   },
   {
     name: '机械装甲下装',
@@ -289,7 +289,7 @@ export const bottoms: Data[] = [
     damageValue: 1186 + 1186 + 1186 + 1630,
     skillAtk: [20 * 0.3],
     elementalDamage: 15 + 15,
-    coldDownReduce: 0.2 * 0.3,
+    coolDownReduction: 0.2 * 0.3,
     other: 'Lv80 技攻，Lv80 冷却，15 单，15 全，按鹦鹉双 80 top剜心 30% 占比计算',
   },
 ]

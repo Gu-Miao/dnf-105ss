@@ -34,7 +34,7 @@ export const braceletsOptions: Option[] = [
     type: 'bracelet',
     from: '蓝灵绿玉石手镯',
     damageValue: 1334,
-    coldDownRecover: 0.3 * 0.13,
+    coolDownRecovery: 0.3 * 0.13,
     other: '按关羽 9 保长虹贯日 13% 占比计算',
   },
   {
@@ -42,7 +42,7 @@ export const braceletsOptions: Option[] = [
     type: 'bracelet',
     from: '蓝灵绿玉石手镯',
     damageValue: 1334,
-    coldDownRecover: 0.3 * 0.3,
+    coolDownRecovery: 0.3 * 0.3,
     other: '按旅人特化恩特肩魔女裤子 Lv45 30% 占比计算',
   },
   {
@@ -50,7 +50,7 @@ export const braceletsOptions: Option[] = [
     type: 'bracelet',
     from: '蓝灵绿玉石手镯',
     damageValue: 1334,
-    coldDownRecover: 0.3 * 0.2,
+    coolDownRecovery: 0.3 * 0.2,
     other: '按特工恩特裤子 9 保月步 20% 占比计算',
   },
   {

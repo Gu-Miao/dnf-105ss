@@ -18,7 +18,7 @@ export const earrings: Data[] = [
     name: '徘徊之魂耳环',
     type: 'earring',
     damageValue: 4528 + 2964,
-    coldDownReduce: 0.01 * 20,
+    coolDownReduction: 0.01 * 20,
   },
   {
     name: '无色冰晶耳环',
@@ -26,7 +26,7 @@ export const earrings: Data[] = [
     type: 'earring',
     damageValue: 4528,
     skillAtk: [20],
-    coldDownReduce: 0.3,
+    coolDownReduction: 0.3,
     speed: {
       attackSpeed: 8,
       castingSpeed: 12,
@@ -38,7 +38,7 @@ export const earrings: Data[] = [
     type: 'earring',
     damageValue: 4528,
     skillAtk: [20],
-    coldDownReduce: -0.15,
+    coolDownReduction: -0.15,
     speed: {
       attackSpeed: 8,
       castingSpeed: 12,
@@ -50,7 +50,7 @@ export const earrings: Data[] = [
     type: 'earring',
     damageValue: 4528,
     skillAtk: [-25],
-    coldDownReduce: -0.15,
+    coolDownReduction: -0.15,
     speed: {
       attackSpeed: 8,
       castingSpeed: 12,
@@ -81,7 +81,7 @@ export const earrings: Data[] = [
     type: 'earring',
     damageValue: 5874,
     skillAtk: [15],
-    coldDownReduce: -0.05,
+    coolDownReduction: -0.05,
   },
   {
     name: '苍空飞羽耳环',
@@ -123,7 +123,7 @@ export const earrings: Data[] = [
     type: 'earring',
     damageValue: 4796,
     skillAtk: [8],
-    coldDownReduce: 0.1,
+    coolDownReduction: 0.1,
   },
   {
     name: '猎龙者之证 - 龙鳞耳环',
@@ -188,7 +188,7 @@ export const earrings: Data[] = [
     type: 'earring',
     damageValue: 3787,
     skillAtk: [2, 5],
-    coldDownRecover: 0.1,
+    coolDownRecovery: 0.1,
   },
   {
     name: '诅咒的枷锁',
@@ -196,7 +196,7 @@ export const earrings: Data[] = [
     type: 'earring',
     damageValue: 3787,
     skillAtk: [2, 5],
-    coldDownRecover: 0.2,
+    coolDownRecovery: 0.2,
   },
   {
     name: '吞噬风暴耳环',

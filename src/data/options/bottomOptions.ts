@@ -6,7 +6,7 @@ export const bottomOptions: Option[] = [
     type: 'bottom',
     from: '森林之魔女护腿',
     damageValue: 1186,
-    coldDownReduce: 0.2 * 0.24,
+    coolDownReduction: 0.2 * 0.24,
     other: '按恩特肩特化 45 旅人 24% 占比计算',
   },
   {
@@ -14,7 +14,7 @@ export const bottomOptions: Option[] = [
     type: 'bottom',
     from: '森林之魔女护腿',
     damageValue: 1186,
-    coldDownReduce: 0.2 * 0.17,
+    coolDownReduction: 0.2 * 0.17,
     other: '按特工 9 保月步 17% 占比计算',
   },
   {
@@ -81,7 +81,7 @@ export const bottomOptions: Option[] = [
     from: '恩特精灵护腿',
     damageValue: 1134,
     skillAtk: [3.4],
-    coldDownReduce: -0.3 * 0.17,
+    coolDownReduction: -0.3 * 0.17,
     other: '按特工 9 保月步 17% 占比计算',
   },
   {
@@ -90,7 +90,7 @@ export const bottomOptions: Option[] = [
     from: '恩特精灵护腿',
     damageValue: 1134,
     skillAtk: [3.4],
-    coldDownReduce: -0.3 * 0.04,
+    coolDownReduction: -0.3 * 0.04,
     other: '按特工 9 保月步 17% 和 4% 占比计算',
   },
   {
@@ -99,7 +99,7 @@ export const bottomOptions: Option[] = [
     from: '恩特精灵护腿',
     damageValue: 1134,
     skillAtk: [5],
-    coldDownReduce: -0.3 * 0.06,
+    coolDownReduction: -0.3 * 0.06,
     other: '按男街霸特化霸王拳 19% 和毒雷 6% 占比计算',
   },
   {
@@ -108,7 +108,7 @@ export const bottomOptions: Option[] = [
     from: '恩特精灵护腿',
     damageValue: 1134,
     skillAtk: [5],
-    coldDownReduce: -0.3 * 0.06,
+    coolDownReduction: -0.3 * 0.06,
     other: '按男街霸特化霸王拳 19%，毒雷 6%，45 6% 占比计算',
   },
   {
@@ -131,7 +131,7 @@ export const bottomOptions: Option[] = [
     type: 'bottom',
     from: '深潜迷航长裤',
     damageValue: 1186,
-    coldDownReduce: 0.2 * 0.3,
+    coolDownReduction: 0.2 * 0.3,
     other: '按鹦鹉双 80 特化剜心 30% 占比计算',
   },
   {
@@ -155,7 +155,7 @@ export const bottomOptions: Option[] = [
     type: 'bottom',
     from: '深潜迷航长裤',
     damageValue: 1186,
-    coldDownReduce: 0.2 * 0.25,
+    coolDownReduction: 0.2 * 0.25,
     other: '按男气功 9 保雷切 25% 占比计算',
   },
   {

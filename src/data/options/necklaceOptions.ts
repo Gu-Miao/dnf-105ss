@@ -19,7 +19,7 @@ export const necklaceOptions: Option[] = [
     type: 'necklace',
     from: '森林之魔女项链',
     damageValue: 1334,
-    coldDownRecover: 0.165 * 0.3,
+    coolDownRecovery: 0.165 * 0.3,
     other: '期望 16.5% CDR，按旅人特化恩特肩魔女裤子 Lv45 30% 占比计算',
   },
   {
@@ -34,7 +34,7 @@ export const necklaceOptions: Option[] = [
     type: 'necklace',
     from: '蓝灵绿玉石项链',
     damageValue: 1334,
-    coldDownRecover: 0.3 * 0.2,
+    coolDownRecovery: 0.3 * 0.2,
     other: '按男街霸恩特裤子霸王拳 20% 占比计算',
   },
   {
@@ -42,7 +42,7 @@ export const necklaceOptions: Option[] = [
     type: 'necklace',
     from: '蓝灵绿玉石项链',
     damageValue: 1334,
-    coldDownRecover: 0.3 * 0.15,
+    coolDownRecovery: 0.3 * 0.15,
     other: '按女漫游 9 保压制射击 15% 占比计算',
   },
   {
@@ -50,7 +50,7 @@ export const necklaceOptions: Option[] = [
     type: 'necklace',
     from: '蓝灵绿玉石项链',
     damageValue: 1334,
-    coldDownRecover: 0.3 * 0.28,
+    coolDownRecovery: 0.3 * 0.28,
     other: '按男气功深潜裤子雷切 28% 占比计算',
   },
   {

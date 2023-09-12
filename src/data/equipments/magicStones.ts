@@ -18,7 +18,7 @@ export const magicStones: Data[] = [
     type: 'magic-stone',
     damageValue: 4528 + 2519,
     skillAtk: [7],
-    coldDownReduce: 0.08,
+    coolDownReduction: 0.08,
     speed: {
       attackSpeed: 15,
       castingSpeed: 15,
@@ -31,7 +31,7 @@ export const magicStones: Data[] = [
     type: 'magic-stone',
     damageValue: 4676,
     skillAtk: [3 * 10],
-    coldDownRecover: 0.01 * 10,
+    coolDownRecovery: 0.01 * 10,
     speed: {
       attackSpeed: 8,
       castingSpeed: 12,
@@ -100,7 +100,7 @@ export const magicStones: Data[] = [
     name: '奔涌之息宝石',
     type: 'magic-stone',
     damageValue: 3894,
-    coldDownRecover: 0.5,
+    coolDownRecovery: 0.5,
     speed: {
       attackSpeed: 8,
       castingSpeed: 12,
@@ -123,7 +123,7 @@ export const magicStones: Data[] = [
     type: 'magic-stone',
     damageValue: 5066,
     skillAtk: [10],
-    coldDownRecover: 0.12,
+    coolDownRecovery: 0.12,
     speed: {
       attackSpeed: 10,
       castingSpeed: 15,
@@ -133,7 +133,7 @@ export const magicStones: Data[] = [
     name: '多德卡全息图',
     type: 'magic-stone',
     damageValue: 5240 + 3853,
-    coldDownRecover: 0.2,
+    coolDownRecovery: 0.2,
   },
   {
     name: '诅咒之心',

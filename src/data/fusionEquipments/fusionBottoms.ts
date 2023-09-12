@@ -20,7 +20,7 @@ export const fusionBottoms: Data[] = [
     prefix: '16% 占比',
     type: 'fusion-bottom',
     damageValue: 4325,
-    coldDownRecover: 0.2 * 0.16,
+    coolDownRecovery: 0.2 * 0.16,
     other: '期望为 20% CDR，按 35 和 70 级技能伤害占比 16% 计算',
   },
   {
@@ -28,7 +28,7 @@ export const fusionBottoms: Data[] = [
     prefix: '12% 占比',
     type: 'fusion-bottom',
     damageValue: 4325,
-    coldDownRecover: 0.2 * 0.12,
+    coolDownRecovery: 0.2 * 0.12,
     other: '期望为 20% CDR，按 35 和 70 级技能伤害占比 12% 计算',
   },
   {

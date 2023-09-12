@@ -20,7 +20,7 @@ export const subEquipmentOptions: Option[] = [
     type: 'sub-equipment',
     from: '森林之魔女篮子',
     damageValue: 1037,
-    coldDownReduce: 0.0778 * 0.5,
+    coolDownReduction: 0.0778 * 0.5,
     other:
       '按 45 级技能 45s 冷却，30% CDR 计算，期望冷却减少约为 7.7%，按 45 级技能 50% 占比计算。收益低，主要还是给奶用',
   },
@@ -29,7 +29,7 @@ export const subEquipmentOptions: Option[] = [
     prefix: '50% 占比',
     type: 'sub-equipment',
     from: '森林之魔女篮子',
-    coldDownReduce: 0.0685 * 0.5,
+    coolDownReduction: 0.0685 * 0.5,
     damageValue: 1037,
     other:
       '按 60 级技能 35s 冷却，30% CDR 计算，期望冷却减少约为 6.85%，按 60 级技能 50% 占比计算。收益低，主要还是给奶用',
@@ -40,7 +40,7 @@ export const subEquipmentOptions: Option[] = [
     type: 'sub-equipment',
     from: '森林之魔女篮子',
     damageValue: 1037,
-    coldDownReduce: 0.0536 * 0.5,
+    coolDownReduction: 0.0536 * 0.5,
     other:
       '按 35 级技能 15s 冷却，30% CDR 计算，期望冷却减少约为 5.36%，按 35 级技能 50% 占比计算。收益低，主要还是给奶用',
   },
@@ -50,7 +50,7 @@ export const subEquipmentOptions: Option[] = [
     type: 'sub-equipment',
     from: '森林之魔女篮子',
     damageValue: 1334,
-    coldDownReduce: 0.165 * 0.5,
+    coolDownReduction: 0.165 * 0.5,
     other: '期望 16.5% CDR，按 80 级技能 50% 占比计算',
   },
   {
@@ -146,7 +146,7 @@ export const subEquipmentOptions: Option[] = [
     type: 'sub-equipment',
     from: '深潜迷航脚蹼',
     damageValue: 1186,
-    coldDownReduce: 0.0617 * 0.3,
+    coolDownReduction: 0.0617 * 0.3,
     other: '按 CP 女气功计算，30% CDR 下冷却减少收益约为 6.17%，1 ~ 30 级技能按 30% 占比计算',
   },
   {

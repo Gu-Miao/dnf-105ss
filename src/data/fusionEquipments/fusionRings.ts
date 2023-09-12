@@ -16,7 +16,7 @@ export const fusionRings: Data[] = [
     prefix: '火龙之怒',
     type: 'fusion-ring',
     skillAtk: [10],
-    coldDownReduce: -0.2,
+    coolDownReduction: -0.2,
   },
   {
     name: '真龙：沉重的铁之志',

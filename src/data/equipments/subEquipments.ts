@@ -20,7 +20,7 @@ export const subEquipments: Data[] = [
     type: 'sub-equipment',
     damageValue: 7100,
     elementalDamage: 10,
-    coldDownReduce: 0.05,
+    coolDownReduction: 0.05,
     speed: {
       attackSpeed: 5 * 5,
       castingSpeed: 8 * 5,
@@ -55,7 +55,7 @@ export const subEquipments: Data[] = [
     name: '梦之呼唤',
     type: 'sub-equipment',
     damageValue: 4528,
-    coldDownRecover: 0.5,
+    coolDownRecovery: 0.5,
   },
   {
     name: '飘渺的知识',
@@ -67,7 +67,7 @@ export const subEquipments: Data[] = [
     name: '正义骑士面具',
     type: 'sub-equipment',
     damageValue: 5336,
-    coldDownReduce: 0.12,
+    coolDownReduction: 0.12,
     speed: {
       moveSpeed: 8,
     },
@@ -153,7 +153,7 @@ export const subEquipments: Data[] = [
     type: 'sub-equipment',
     damageValue: 2910,
     skillAtk: [3],
-    coldDownRecover: 0.15,
+    coolDownRecovery: 0.15,
   },
   {
     name: '德卡制导装置',
@@ -161,7 +161,7 @@ export const subEquipments: Data[] = [
     type: 'sub-equipment',
     damageValue: 2910,
     skillAtk: [3, 1],
-    coldDownRecover: 0.15 + 0.05,
+    coolDownRecovery: 0.15 + 0.05,
   },
   {
     name: '生命的喘息',

@@ -49,7 +49,7 @@ export const tops: Data[] = [
     prefix: '未破韧',
     type: 'top',
     damageValue: 5336 + 1037,
-    coldDownRecover: 0.2,
+    coolDownRecovery: 0.2,
     speed: {
       attackSpeed: 8,
       castingSpeed: 12,
@@ -60,7 +60,7 @@ export const tops: Data[] = [
     prefix: '破韧',
     type: 'top',
     damageValue: 5336 + 1037 + 1284,
-    coldDownRecover: 0.2,
+    coolDownRecovery: 0.2,
     speed: {
       attackSpeed: 8,
       castingSpeed: 12,
@@ -195,7 +195,7 @@ export const tops: Data[] = [
     type: 'top',
     damageValue: 5187,
     elementalDamage: 15,
-    coldDownRecover: 0.2,
+    coolDownRecovery: 0.2,
   },
   {
     name: '高贵的神意上衣',
@@ -250,7 +250,7 @@ export const tops: Data[] = [
     name: '冷静的谋略家上衣',
     type: 'top',
     damageValue: 4796 + 296 * 5,
-    coldDownRecover: 0.3,
+    coolDownRecovery: 0.3,
     speed: {
       attackSpeed: 8,
       castingSpeed: 12,

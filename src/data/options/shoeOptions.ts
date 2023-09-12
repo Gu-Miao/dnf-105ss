@@ -14,7 +14,7 @@ export const shoeOptions: Option[] = [
     from: '恩特精灵战靴',
     damageValue: 296,
     skillAtk: [20 * 0.15],
-    coldDownReduce: -0.3 * 0.15,
+    coolDownReduction: -0.3 * 0.15,
     other: '按女漫游 9 保压制射击 15% 占比计算',
   },
   {
@@ -23,7 +23,7 @@ export const shoeOptions: Option[] = [
     from: '恩特精灵战靴',
     damageValue: 296,
     skillAtk: [20 * 0.15],
-    coldDownReduce: -0.3 * 0.07,
+    coolDownReduction: -0.3 * 0.07,
     other: '按女漫游 9 保压制射击 15% 和 7% 占比计算',
   },
   {
@@ -32,7 +32,7 @@ export const shoeOptions: Option[] = [
     from: '恩特精灵战靴',
     damageValue: 296,
     skillAtk: [5.6],
-    coldDownReduce: -0.3 * 0.28,
+    coolDownReduction: -0.3 * 0.28,
     other: '按男气功深潜裤子雷切 28% 占比计算',
   },
   {
@@ -41,7 +41,7 @@ export const shoeOptions: Option[] = [
     from: '恩特精灵战靴',
     damageValue: 296,
     skillAtk: [5.6],
-    coldDownReduce: -0.3 * 0.06,
+    coolDownReduction: -0.3 * 0.06,
     other: '按男气功深潜裤子雷切 28% 和 6% 占比计算',
   },
   {

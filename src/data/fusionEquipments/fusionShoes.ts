@@ -16,7 +16,7 @@ export const fusionShoes: Data[] = [
     prefix: '16% 占比',
     type: 'fusion-shoe',
     damageValue: 4321,
-    coldDownRecover: 0.2 * 0.16,
+    coolDownRecovery: 0.2 * 0.16,
     other: '期望为 20% CDR，按 95 级技能伤害占比 16% 计算',
   },
   {
@@ -24,7 +24,7 @@ export const fusionShoes: Data[] = [
     prefix: '13% 占比',
     type: 'fusion-shoe',
     damageValue: 4321,
-    coldDownRecover: 0.2 * 0.13,
+    coolDownRecovery: 0.2 * 0.13,
     other: '期望为 20% CDR，按 95 级技能伤害占比 13% 计算',
   },
   {

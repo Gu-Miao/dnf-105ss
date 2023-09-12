@@ -6,7 +6,7 @@ export const necklaces: Data[] = [
     type: 'necklace',
     damageValue: 5336,
     elementalDamage: 15,
-    coldDownReduce: 0.1,
+    coolDownReduction: 0.1,
     other: 'CD 收益估算为 10% 减 CD',
   },
   {
@@ -99,7 +99,7 @@ export const necklaces: Data[] = [
     damageValue: 4876,
     skillAtk: [10],
     elementalDamage: 15,
-    coldDownReduce: 0.15,
+    coolDownReduction: 0.15,
   },
   {
     name: '领域之心项链',
@@ -162,7 +162,7 @@ export const necklaces: Data[] = [
     type: 'necklace',
     damageValue: 4702,
     elementalDamage: 15,
-    coldDownRecover: 0.05 * 5,
+    coolDownRecovery: 0.05 * 5,
   },
   {
     name: '正气傲然的理念',

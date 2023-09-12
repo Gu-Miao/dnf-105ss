@@ -6,7 +6,7 @@ export const belts: Data[] = [
     type: 'belt',
     damageValue: 5336,
     skillAtk: [7],
-    coldDownRecover: 0.15,
+    coolDownRecovery: 0.15,
     speed: 45,
   },
   {
@@ -84,7 +84,7 @@ export const belts: Data[] = [
     type: 'belt',
     damageValue: 6414 + 2964,
     skillAtk: [2],
-    coldDownReduce: 0.1,
+    coolDownReduction: 0.1,
   },
   {
     name: '骄傲的意志腰带',
@@ -138,7 +138,7 @@ export const belts: Data[] = [
     type: 'belt',
     damageValue: 6318 + 712,
     elementalDamage: 10,
-    coldDownRecover: 0.25,
+    coolDownRecovery: 0.25,
   },
   {
     name: '亘古的悬空石腰带',
@@ -146,7 +146,7 @@ export const belts: Data[] = [
     type: 'belt',
     damageValue: 6318 + 712 * 2,
     elementalDamage: 10,
-    coldDownRecover: 0.25,
+    coolDownRecovery: 0.25,
   },
   {
     name: '亘古的悬空石腰带',
@@ -154,7 +154,7 @@ export const belts: Data[] = [
     type: 'belt',
     damageValue: 6318 + 712 * 5,
     elementalDamage: 10,
-    coldDownRecover: 0.25,
+    coolDownRecovery: 0.25,
   },
   {
     name: '纯粹的自然秩序',
@@ -274,7 +274,7 @@ export const belts: Data[] = [
     type: 'belt',
     damageValue: 6414,
     skillAtk: [6],
-    coldDownRecover: 0.15,
+    coolDownRecovery: 0.15,
     speed: {
       attackSpeed: 8,
       castingSpeed: 12,
@@ -284,7 +284,7 @@ export const belts: Data[] = [
     name: '增援号令腰带',
     type: 'belt',
     damageValue: 5604 + 4001,
-    coldDownRecover: 0.2,
+    coolDownRecovery: 0.2,
   },
   {
     name: '永眠前的准备',

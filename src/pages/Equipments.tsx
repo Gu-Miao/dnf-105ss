@@ -62,8 +62,8 @@ function Equipments() {
               <td>{item.abnormal?.convert && item.abnormal.convert + '%'}</td>
               <td>{item.abnormal?.abnormalDamage && item.abnormal.abnormalDamage + '%'}</td>
               <td>{renderSpeed(item.speed)}</td>
-              <td>{renderPercent(item.coldDownRecover)}</td>
-              <td>{renderPercent(item.coldDownReduce)}</td>
+              <td>{renderPercent(item.coolDownRecovery)}</td>
+              <td>{renderPercent(item.coolDownReduction)}</td>
               <td>{item.other}</td>
               <td>{(((item.increaseRate as number) - 1) * 100).toFixed(2)}%</td>
             </tr>
