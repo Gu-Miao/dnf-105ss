@@ -8,7 +8,7 @@ export const tops: Data[] = [
     damageValue: 5604 + 712,
     elementalDamage: 10,
     abnormal: {
-      type: '灼烧',
+      type: 'burn',
       prevConversionRate: 0.5,
       prevAbnormalDamageEnhancement: 0.2,
 
@@ -22,7 +22,7 @@ export const tops: Data[] = [
     damageValue: 5604 + 712 * 2,
     elementalDamage: 10,
     abnormal: {
-      type: '灼烧',
+      type: 'burn',
       prevConversionRate: 0.5,
       prevAbnormalDamageEnhancement: 0.2,
 
@@ -72,7 +72,7 @@ export const tops: Data[] = [
     damageValue: 5604,
     elementalDamage: 10,
     abnormal: {
-      type: '出血',
+      type: 'bleed',
       prevConversionRate: 0.5,
       prevAbnormalDamageEnhancement: 0.2,
 
@@ -105,7 +105,7 @@ export const tops: Data[] = [
     damageValue: 5604,
     elementalDamage: 10,
     abnormal: {
-      type: '感电',
+      type: 'shock',
       prevConversionRate: 0.5,
       prevAbnormalDamageEnhancement: 0.2,
 
@@ -124,7 +124,7 @@ export const tops: Data[] = [
     damageValue: 5604,
     elementalDamage: 10,
     abnormal: {
-      type: '中毒',
+      type: 'posion',
       prevConversionRate: 0.5,
       prevAbnormalDamageEnhancement: 0.2,
 
@@ -211,7 +211,7 @@ export const tops: Data[] = [
     damageValue: 5604,
     elementalDamage: 10,
     abnormal: {
-      type: '出血',
+      type: 'bleed',
       prevConversionRate: 0.5,
       prevAbnormalDamageEnhancement: 0.2,
 
@@ -244,7 +244,7 @@ export const tops: Data[] = [
     type: 'top',
     damageValue: 148 + 1186 + 1186 + 1186,
     abnormal: {
-      type: '出血',
+      type: 'bleed',
       prevConversionRate: 0.5,
       prevAbnormalDamageEnhancement: 0.2,
 
@@ -258,7 +258,7 @@ export const tops: Data[] = [
     damageValue: 148 + 1186 + 111 * 20 + 1186 + 1630,
     elementalDamage: 15 + 15,
     abnormal: {
-      type: '出血',
+      type: 'bleed',
       prevConversionRate: 0.5,
       prevAbnormalDamageEnhancement: 0.2,
 
@@ -273,7 +273,7 @@ export const tops: Data[] = [
     damageValue: 148 + 1186 + 111 * 20 + 1186 + 1630,
     elementalDamage: 15 + 15,
     abnormal: {
-      type: '出血',
+      type: 'bleed',
       prevConversionRate: 0.74,
       prevAbnormalDamageEnhancement: 0.2,
 

@@ -76,7 +76,7 @@ export const bottoms: Data[] = [
     type: 'bottom',
     damageValue: 6682 + 712,
     abnormal: {
-      type: '中毒',
+      type: 'posion',
       prevConversionRate: 0.5,
       prevAbnormalDamageEnhancement: 0.2,
 
@@ -89,7 +89,7 @@ export const bottoms: Data[] = [
     type: 'bottom',
     damageValue: 6682 + 712 * 2,
     abnormal: {
-      type: '中毒',
+      type: 'posion',
       prevConversionRate: 0.5,
       prevAbnormalDamageEnhancement: 0.2,
 
@@ -102,7 +102,7 @@ export const bottoms: Data[] = [
     type: 'bottom',
     damageValue: 6682 + 712 * 5,
     abnormal: {
-      type: '中毒',
+      type: 'posion',
       prevConversionRate: 0.5,
       prevAbnormalDamageEnhancement: 0.2,
 
@@ -115,7 +115,7 @@ export const bottoms: Data[] = [
     type: 'bottom',
     damageValue: 6682 + 712,
     abnormal: {
-      type: '中毒',
+      type: 'posion',
       prevConversionRate: 0.74,
       prevAbnormalDamageEnhancement: 0.5,
 
@@ -250,7 +250,7 @@ export const bottoms: Data[] = [
     type: 'bottom',
     damageValue: 593 + 1186 + 1186 + 1186,
     abnormal: {
-      type: '出血',
+      type: 'bleed',
       prevConversionRate: 0.5,
       prevAbnormalDamageEnhancement: 0.2,
 
@@ -264,7 +264,7 @@ export const bottoms: Data[] = [
     damageValue: 593 + 1186 + 178 * 10 + 1186 + 1630,
     elementalDamage: 15 + 15,
     abnormal: {
-      type: '出血',
+      type: 'bleed',
       prevConversionRate: 0.5,
       prevAbnormalDamageEnhancement: 0.2,
 

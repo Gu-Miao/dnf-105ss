@@ -118,7 +118,7 @@ export const shoes: Data[] = [
     damageValue: 5510,
     skillAtk: [10],
     abnormal: {
-      type: '中毒',
+      type: 'posion',
       prevConversionRate: 0.5,
       prevAbnormalDamageEnhancement: 0.2,
 
@@ -132,7 +132,7 @@ export const shoes: Data[] = [
     type: 'shoe',
     damageValue: 5510,
     abnormal: {
-      type: '中毒',
+      type: 'posion',
       prevConversionRate: 0.5,
       prevAbnormalDamageEnhancement: 0.2,
 
@@ -148,7 +148,7 @@ export const shoes: Data[] = [
     damageValue: 5510,
     skillAtk: [10],
     abnormal: {
-      type: '中毒',
+      type: 'posion',
       prevConversionRate: 0.74,
       prevAbnormalDamageEnhancement: 0.5,
 

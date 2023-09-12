@@ -7,7 +7,7 @@ export const ringOptions: Option[] = [
     from: '森林之魔女戒指',
     damageValue: 296,
     abnormal: {
-      type: '灼烧',
+      type: 'burn',
       prevConversionRate: 0.5,
       prevAbnormalDamageEnhancement: 0.2,
 
@@ -43,7 +43,7 @@ export const ringOptions: Option[] = [
     from: '恩特精灵戒指',
     damageValue: 889,
     abnormal: {
-      type: '中毒',
+      type: 'posion',
       prevConversionRate: 0.5,
       prevAbnormalDamageEnhancement: 0.2,
 
@@ -57,7 +57,7 @@ export const ringOptions: Option[] = [
     from: '恩特精灵戒指',
     damageValue: 889,
     abnormal: {
-      type: '中毒',
+      type: 'posion',
       prevConversionRate: 0.74,
       prevAbnormalDamageEnhancement: 0.5,
 
@@ -76,7 +76,7 @@ export const ringOptions: Option[] = [
     from: '恩特精灵戒指',
     damageValue: 1482,
     abnormal: {
-      type: '中毒',
+      type: 'posion',
       prevConversionRate: 0.5,
       prevAbnormalDamageEnhancement: 0.5,
       increasedConversionRate: 0.1,
@@ -90,7 +90,7 @@ export const ringOptions: Option[] = [
     from: '恩特精灵戒指',
     damageValue: 1482,
     abnormal: {
-      type: '中毒',
+      type: 'posion',
       prevConversionRate: 0.74,
       prevAbnormalDamageEnhancement: 0.5,
       increasedConversionRate: 0.1,
@@ -102,7 +102,7 @@ export const ringOptions: Option[] = [
     from: '恩特精灵戒指',
     damageValue: 1482,
     abnormal: {
-      type: '灼烧',
+      type: 'burn',
       prevConversionRate: 0.5,
       prevAbnormalDamageEnhancement: 0.5,
       increasedConversionRate: 0.1,
@@ -115,7 +115,7 @@ export const ringOptions: Option[] = [
     from: '恩特精灵戒指',
     damageValue: 1482,
     abnormal: {
-      type: '感电',
+      type: 'shock',
       prevConversionRate: 0.5,
       prevAbnormalDamageEnhancement: 0.5,
       increasedConversionRate: 0.1,
@@ -128,7 +128,7 @@ export const ringOptions: Option[] = [
     from: '恩特精灵戒指',
     damageValue: 1482,
     abnormal: {
-      type: '出血',
+      type: 'bleed',
       prevConversionRate: 0.5,
       prevAbnormalDamageEnhancement: 0.5,
       increasedConversionRate: 0.1,
@@ -141,7 +141,7 @@ export const ringOptions: Option[] = [
     from: '蓝灵绿玉石戒指',
     damageValue: 296,
     abnormal: {
-      type: '中毒',
+      type: 'posion',
       prevConversionRate: 0.5,
       prevAbnormalDamageEnhancement: 0.2,
 
@@ -155,7 +155,7 @@ export const ringOptions: Option[] = [
     from: '蓝灵绿玉石戒指',
     damageValue: 296,
     abnormal: {
-      type: '中毒',
+      type: 'posion',
       prevConversionRate: 0.74,
       prevAbnormalDamageEnhancement: 0.5,
 
@@ -169,7 +169,7 @@ export const ringOptions: Option[] = [
     from: '蓝灵绿玉石戒指',
     damageValue: 296,
     abnormal: {
-      type: '中毒',
+      type: 'posion',
       prevConversionRate: 0.5,
       prevAbnormalDamageEnhancement: 0.2,
 
@@ -183,7 +183,7 @@ export const ringOptions: Option[] = [
     from: '蓝灵绿玉石戒指',
     damageValue: 296,
     abnormal: {
-      type: '中毒',
+      type: 'posion',
       prevConversionRate: 0.74,
       prevAbnormalDamageEnhancement: 0.5,
 
@@ -211,7 +211,7 @@ export const ringOptions: Option[] = [
     from: '蓝灵绿玉石戒指',
     damageValue: 741,
     abnormal: {
-      type: '中毒',
+      type: 'posion',
       prevConversionRate: 0.5,
       prevAbnormalDamageEnhancement: 0.2,
 
@@ -225,7 +225,7 @@ export const ringOptions: Option[] = [
     from: '蓝灵绿玉石戒指',
     damageValue: 741,
     abnormal: {
-      type: '中毒',
+      type: 'posion',
       prevConversionRate: 0.74,
       prevAbnormalDamageEnhancement: 0.5,
 
@@ -239,7 +239,7 @@ export const ringOptions: Option[] = [
     from: '蓝灵绿玉石戒指',
     damageValue: 741,
     abnormal: {
-      type: '中毒',
+      type: 'posion',
       prevConversionRate: 0.5,
       prevAbnormalDamageEnhancement: 0.2,
 
@@ -253,7 +253,7 @@ export const ringOptions: Option[] = [
     from: '蓝灵绿玉石戒指',
     damageValue: 741,
     abnormal: {
-      type: '中毒',
+      type: 'posion',
       prevConversionRate: 0.74,
       prevAbnormalDamageEnhancement: 0.5,
 
@@ -266,7 +266,7 @@ export const ringOptions: Option[] = [
     from: '蓝灵绿玉石戒指',
     damageValue: 741,
     abnormal: {
-      type: '灼烧',
+      type: 'burn',
       prevConversionRate: 0.5,
       prevAbnormalDamageEnhancement: 0.2,
 
@@ -280,7 +280,7 @@ export const ringOptions: Option[] = [
     from: '蓝灵绿玉石戒指',
     damageValue: 741,
     abnormal: {
-      type: '灼烧',
+      type: 'burn',
       prevConversionRate: 0.5,
       prevAbnormalDamageEnhancement: 0.2,
 
@@ -293,7 +293,7 @@ export const ringOptions: Option[] = [
     from: '蓝灵绿玉石戒指',
     damageValue: 741,
     abnormal: {
-      type: '感电',
+      type: 'shock',
       prevConversionRate: 0.5,
       prevAbnormalDamageEnhancement: 0.2,
 
@@ -307,7 +307,7 @@ export const ringOptions: Option[] = [
     from: '蓝灵绿玉石戒指',
     damageValue: 741,
     abnormal: {
-      type: '感电',
+      type: 'shock',
       prevConversionRate: 0.5,
       prevAbnormalDamageEnhancement: 0.2,
 

@@ -15,7 +15,7 @@ export const braceletsOptions: Option[] = [
     from: '森林之魔女手镯',
     damageValue: 296,
     abnormal: {
-      type: '中毒',
+      type: 'posion',
       prevConversionRate: 0.48,
       prevAbnormalDamageEnhancement: 0.3,
 

@@ -92,7 +92,7 @@ export const belts: Data[] = [
     type: 'belt',
     damageValue: 6414 + 2964 + 712,
     abnormal: {
-      type: '感电',
+      type: 'shock',
       prevConversionRate: 0.5,
       prevAbnormalDamageEnhancement: 0.2,
 
@@ -105,7 +105,7 @@ export const belts: Data[] = [
     type: 'belt',
     damageValue: 6414 + 2964 + 712 * 2,
     abnormal: {
-      type: '感电',
+      type: 'shock',
       prevConversionRate: 0.5,
       prevAbnormalDamageEnhancement: 0.2,
 
@@ -118,7 +118,7 @@ export const belts: Data[] = [
     type: 'belt',
     damageValue: 6414 + 2964 + 712 * 5,
     abnormal: {
-      type: '感电',
+      type: 'shock',
       prevConversionRate: 0.5,
       prevAbnormalDamageEnhancement: 0.2,
 
@@ -292,7 +292,7 @@ export const belts: Data[] = [
     type: 'belt',
     damageValue: 4528 + 712,
     abnormal: {
-      type: '灼烧',
+      type: 'burn',
       prevConversionRate: 0.5,
       prevAbnormalDamageEnhancement: 0.2,
 
@@ -305,7 +305,7 @@ export const belts: Data[] = [
     type: 'belt',
     damageValue: 4528 + 712 * 2,
     abnormal: {
-      type: '灼烧',
+      type: 'burn',
       prevConversionRate: 0.5,
       prevAbnormalDamageEnhancement: 0.2,
 
@@ -318,7 +318,7 @@ export const belts: Data[] = [
     type: 'belt',
     damageValue: 4528 + 712 * 5,
     abnormal: {
-      type: '灼烧',
+      type: 'burn',
       prevConversionRate: 0.5,
       prevAbnormalDamageEnhancement: 0.2,
 

@@ -1,7 +1,7 @@
 import { BURN_BREAK_ICE_RATE, DAMAGE_VALUE_PERCENTAGE } from '@/constants'
 
 export type Abnormal = {
-  type: '出血' | '中毒' | '灼烧' | '感电'
+  type: 'bleed' | 'posion' | 'burn' | 'shock'
   prevConversionRate: number // 原异常伤害转换率
   prevAbnormalDamageEnhancement: number // 原异常伤害增加量
   increasedConversionRate?: number // 新增异常伤害转换率
@@ -52,6 +52,13 @@ export type Data = {
   increaseRate?: number
 }
 
+const abnormalTypeMap = {
+  bleed: '出血',
+  posion: '中毒',
+  burn: '灼烧',
+  shock: '感电',
+}
+
 /**
  * 获取技攻提升率
  * @param skillAtk 所有技攻加成
@@ -97,7 +104,7 @@ function getAbnormalDamageIncreaseRate({
   const abnormalDamageEnhancement =
     prevAbnormalDamageEnhancement + (increasedAbnormalDamageEnhancement || 0)
   const abnormalTypeEnhancement =
-    type === '出血' ? 1.1 : type === '灼烧' ? 1.1 * (BURN_BREAK_ICE_RATE * 0.01) : 1
+    type === 'bleed' ? 1.1 : type === 'burn' ? 1.1 * (BURN_BREAK_ICE_RATE * 0.01) : 1
 
   const prevDamage =
     1 -
@@ -183,8 +190,15 @@ export function getIncreaseRate(data: Data, damageValue: number, elementalDamage
     const abnormalDamageIncreaseRate = getAbnormalDamageIncreaseRate(data.abnormal)
 
     increaseRate *= abnormalDamageIncreaseRate
+
     console.log(
-      `异常伤害类型: ${data.abnormal.type}，原异常转换：${data.abnormal.prevConversionRate}，原异常伤害增加：${data.abnormal.prevAbnormalDamageEnhancement}}，异常转换增加：${data.abnormal.increasedConversionRate}，异常伤害增加：${data.abnormal.increasedAbnormalDamageEnhancement}，提升：${abnormalDamageIncreaseRate}`,
+      `异常伤害类型: ${abnormalTypeMap[data.abnormal.type]}，原异常转换：${
+        data.abnormal.prevConversionRate
+      }，原异常伤害增加：${data.abnormal.prevAbnormalDamageEnhancement}，异常转换增加：${
+        data.abnormal.increasedConversionRate
+      }，异常伤害增加：${
+        data.abnormal.increasedAbnormalDamageEnhancement
+      }，提升：${abnormalDamageIncreaseRate}`,
     )
   }
 

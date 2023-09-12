@@ -86,7 +86,7 @@ export const necklaces: Data[] = [
     damageValue: 5604,
     elementalDamage: 15,
     abnormal: {
-      type: '灼烧',
+      type: 'burn',
       prevConversionRate: 0.5,
       prevAbnormalDamageEnhancement: 0.2,
 

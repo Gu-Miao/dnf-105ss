@@ -55,7 +55,7 @@ export const bottomOptions: Option[] = [
     from: '恩特精灵护腿',
     damageValue: 593,
     abnormal: {
-      type: '出血',
+      type: 'bleed',
       prevConversionRate: 0.5,
       prevAbnormalDamageEnhancement: 0.2,
 
@@ -68,7 +68,7 @@ export const bottomOptions: Option[] = [
     from: '恩特精灵护腿',
     damageValue: 593,
     abnormal: {
-      type: '感电',
+      type: 'shock',
       prevConversionRate: 0.5,
       prevAbnormalDamageEnhancement: 0.2,
 

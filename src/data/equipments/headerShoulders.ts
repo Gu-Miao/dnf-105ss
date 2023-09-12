@@ -7,7 +7,7 @@ export const headerShoulders: Data[] = [
     type: 'header-shoulder',
     damageValue: 6144 + 712,
     abnormal: {
-      type: '灼烧',
+      type: 'burn',
       prevConversionRate: 0.5,
       prevAbnormalDamageEnhancement: 0.2,
 
@@ -21,7 +21,7 @@ export const headerShoulders: Data[] = [
     type: 'header-shoulder',
     damageValue: 6144 + 712 * 2,
     abnormal: {
-      type: '灼烧',
+      type: 'burn',
       prevConversionRate: 0.5,
       prevAbnormalDamageEnhancement: 0.2,
 
@@ -35,7 +35,7 @@ export const headerShoulders: Data[] = [
     type: 'header-shoulder',
     damageValue: 6144 + 712 * 5,
     abnormal: {
-      type: '灼烧',
+      type: 'burn',
       prevConversionRate: 0.5,
       prevAbnormalDamageEnhancement: 0.2,
 
@@ -76,7 +76,7 @@ export const headerShoulders: Data[] = [
     type: 'header-shoulder',
     damageValue: 6144 + 712,
     abnormal: {
-      type: '感电',
+      type: 'shock',
       prevConversionRate: 0.5,
       prevAbnormalDamageEnhancement: 0.2,
 
@@ -90,7 +90,7 @@ export const headerShoulders: Data[] = [
     type: 'header-shoulder',
     damageValue: 6144 + 712 * 2,
     abnormal: {
-      type: '感电',
+      type: 'shock',
       prevConversionRate: 0.5,
       prevAbnormalDamageEnhancement: 0.2,
 
@@ -104,7 +104,7 @@ export const headerShoulders: Data[] = [
     type: 'header-shoulder',
     damageValue: 6144 + 712 * 5,
     abnormal: {
-      type: '感电',
+      type: 'shock',
       prevConversionRate: 0.5,
       prevAbnormalDamageEnhancement: 0.2,
 
@@ -163,7 +163,7 @@ export const headerShoulders: Data[] = [
     type: 'header-shoulder',
     damageValue: 6682 + 712,
     abnormal: {
-      type: '中毒',
+      type: 'posion',
       prevConversionRate: 0.5,
       prevAbnormalDamageEnhancement: 0.2,
 
@@ -177,7 +177,7 @@ export const headerShoulders: Data[] = [
     type: 'header-shoulder',
     damageValue: 6682 + 712 * 2,
     abnormal: {
-      type: '中毒',
+      type: 'posion',
       prevConversionRate: 0.5,
       prevAbnormalDamageEnhancement: 0.2,
 
@@ -191,7 +191,7 @@ export const headerShoulders: Data[] = [
     type: 'header-shoulder',
     damageValue: 6682 + 712 * 5,
     abnormal: {
-      type: '中毒',
+      type: 'posion',
       prevConversionRate: 0.5,
       prevAbnormalDamageEnhancement: 0.2,
 
@@ -205,7 +205,7 @@ export const headerShoulders: Data[] = [
     type: 'header-shoulder',
     damageValue: 6682 + 712,
     abnormal: {
-      type: '中毒',
+      type: 'posion',
       prevConversionRate: 0.74,
       prevAbnormalDamageEnhancement: 0.5,
 
@@ -262,7 +262,7 @@ export const headerShoulders: Data[] = [
     type: 'header-shoulder',
     damageValue: 5604 + 712,
     abnormal: {
-      type: '出血',
+      type: 'bleed',
       prevConversionRate: 0.5,
       prevAbnormalDamageEnhancement: 0.2,
 
@@ -276,7 +276,7 @@ export const headerShoulders: Data[] = [
     type: 'header-shoulder',
     damageValue: 5604 + 712 * 2,
     abnormal: {
-      type: '出血',
+      type: 'bleed',
       prevConversionRate: 0.5,
       prevAbnormalDamageEnhancement: 0.2,
 
@@ -290,7 +290,7 @@ export const headerShoulders: Data[] = [
     type: 'header-shoulder',
     damageValue: 5604 + 712 * 5,
     abnormal: {
-      type: '出血',
+      type: 'bleed',
       prevConversionRate: 0.5,
       prevAbnormalDamageEnhancement: 0.2,
 
@@ -320,7 +320,7 @@ export const headerShoulders: Data[] = [
     type: 'header-shoulder',
     damageValue: 4647 + 712,
     abnormal: {
-      type: '出血',
+      type: 'bleed',
       prevConversionRate: 0.5,
       prevAbnormalDamageEnhancement: 0.2,
 
@@ -333,7 +333,7 @@ export const headerShoulders: Data[] = [
     type: 'header-shoulder',
     damageValue: 4647 + 712 * 2,
     abnormal: {
-      type: '出血',
+      type: 'bleed',
       prevConversionRate: 0.5,
       prevAbnormalDamageEnhancement: 0.2,
 
@@ -346,7 +346,7 @@ export const headerShoulders: Data[] = [
     type: 'header-shoulder',
     damageValue: 4647 + 712 * 5,
     abnormal: {
-      type: '出血',
+      type: 'bleed',
       prevConversionRate: 0.5,
       prevAbnormalDamageEnhancement: 0.2,
 

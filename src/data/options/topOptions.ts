@@ -61,7 +61,7 @@ export const topOptions: Option[] = [
     from: '蓝灵绿玉石胸甲',
     damageValue: 148,
     abnormal: {
-      type: '出血',
+      type: 'bleed',
       prevConversionRate: 0.5,
       prevAbnormalDamageEnhancement: 0.2,
 
@@ -74,7 +74,7 @@ export const topOptions: Option[] = [
     from: '蓝灵绿玉石胸甲',
     damageValue: 148,
     abnormal: {
-      type: '感电',
+      type: 'shock',
       prevConversionRate: 0.5,
       prevAbnormalDamageEnhancement: 0.2,
 
@@ -87,7 +87,7 @@ export const topOptions: Option[] = [
     from: '蓝灵绿玉石胸甲',
     damageValue: 148,
     abnormal: {
-      type: '灼烧',
+      type: 'burn',
       prevConversionRate: 0.5,
       prevAbnormalDamageEnhancement: 0.2,
 
@@ -100,7 +100,7 @@ export const topOptions: Option[] = [
     from: '蓝灵绿玉石胸甲',
     damageValue: 148,
     abnormal: {
-      type: '中毒',
+      type: 'posion',
       prevConversionRate: 0.5,
       prevAbnormalDamageEnhancement: 0.2,
 
@@ -114,7 +114,7 @@ export const topOptions: Option[] = [
     from: '蓝灵绿玉石胸甲',
     damageValue: 148,
     abnormal: {
-      type: '中毒',
+      type: 'posion',
       prevConversionRate: 0.74,
       prevAbnormalDamageEnhancement: 0.2,
 

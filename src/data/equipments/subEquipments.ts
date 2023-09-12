@@ -229,7 +229,7 @@ export const subEquipments: Data[] = [
     damageValue: 296 + 445 + 445 + 889,
     skillAtk: [7, 5, 5],
     abnormal: {
-      type: '出血',
+      type: 'bleed',
       prevConversionRate: 0.5,
       prevAbnormalDamageEnhancement: 0.2,
 
@@ -251,7 +251,7 @@ export const subEquipments: Data[] = [
     skillAtk: [7],
     elementalDamage: 35,
     abnormal: {
-      type: '出血',
+      type: 'bleed',
       prevConversionRate: 0.5,
       prevAbnormalDamageEnhancement: 0.2,
 

@@ -210,7 +210,7 @@ export const rings: Data[] = [
     type: 'ring',
     damageValue: 3368 + 2223 + 741,
     abnormal: {
-      type: '出血',
+      type: 'bleed',
       prevConversionRate: 0.5,
       prevAbnormalDamageEnhancement: 0.2,
 
@@ -275,7 +275,7 @@ export const rings: Data[] = [
     damageValue: 296 + 1482 + 1186 + 1186,
     elementalDamage: 15,
     abnormal: {
-      type: '出血',
+      type: 'bleed',
       prevConversionRate: 0.5,
       prevAbnormalDamageEnhancement: 0.5,
       increasedConversionRate: 0.1,
@@ -289,7 +289,7 @@ export const rings: Data[] = [
     damageValue: 296 + 1482 + 1186 + 1186,
     elementalDamage: 15,
     abnormal: {
-      type: '出血',
+      type: 'bleed',
       prevConversionRate: 0.5,
       prevAbnormalDamageEnhancement: 0.5,
       increasedConversionRate: 0.1,
@@ -303,7 +303,7 @@ export const rings: Data[] = [
     damageValue: 296 + 1482 + 1186 + 1630,
     elementalDamage: 15 + 15,
     abnormal: {
-      type: '出血',
+      type: 'bleed',
       prevConversionRate: 0.5,
       prevAbnormalDamageEnhancement: 0.5,
       increasedConversionRate: 0.1,
@@ -318,7 +318,7 @@ export const rings: Data[] = [
     damageValue: 889 + 296 + 1482 + 1630,
     elementalDamage: 15,
     abnormal: {
-      type: '中毒',
+      type: 'posion',
       prevConversionRate: 0.74,
       prevAbnormalDamageEnhancement: 0.5,
       increasedConversionRate: 0.1,
@@ -333,7 +333,7 @@ export const rings: Data[] = [
     damageValue: 296 + 741 + 296 + 1630,
     elementalDamage: 15,
     abnormal: {
-      type: '中毒',
+      type: 'posion',
       prevConversionRate: 0.74,
       prevAbnormalDamageEnhancement: 0.5,
 
@@ -348,7 +348,7 @@ export const rings: Data[] = [
     damageValue: 296 + 741 + 296 + 1630,
     elementalDamage: 15,
     abnormal: {
-      type: '中毒',
+      type: 'posion',
       prevConversionRate: 0.74,
       prevAbnormalDamageEnhancement: 0.5,
 

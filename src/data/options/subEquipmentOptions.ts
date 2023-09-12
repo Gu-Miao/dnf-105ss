@@ -7,7 +7,7 @@ export const subEquipmentOptions: Option[] = [
     from: '森林之魔女篮子',
     damageValue: 296,
     abnormal: {
-      type: '感电',
+      type: 'shock',
       prevConversionRate: 0.5,
       prevAbnormalDamageEnhancement: 0.2,
 
@@ -59,7 +59,7 @@ export const subEquipmentOptions: Option[] = [
     from: '恩特精灵圣杯',
     damageValue: 889,
     abnormal: {
-      type: '出血',
+      type: 'bleed',
       prevConversionRate: 0.5,
       prevAbnormalDamageEnhancement: 0.2,
 
@@ -85,7 +85,7 @@ export const subEquipmentOptions: Option[] = [
     from: '蓝灵绿玉石香水',
     damageValue: 296,
     abnormal: {
-      type: '出血',
+      type: 'bleed',
       prevConversionRate: 0.5,
       prevAbnormalDamageEnhancement: 0.2,
 
@@ -99,7 +99,7 @@ export const subEquipmentOptions: Option[] = [
     from: '蓝灵绿玉石香水',
     damageValue: 296,
     abnormal: {
-      type: '出血',
+      type: 'bleed',
       prevConversionRate: 0.5,
       prevAbnormalDamageEnhancement: 0.2,
 
@@ -155,7 +155,7 @@ export const subEquipmentOptions: Option[] = [
     from: '深潜迷航脚蹼',
     damageValue: 1186,
     abnormal: {
-      type: '出血',
+      type: 'bleed',
       prevConversionRate: 0.5,
       prevAbnormalDamageEnhancement: 0.2,
 
@@ -168,7 +168,7 @@ export const subEquipmentOptions: Option[] = [
     from: '深潜迷航脚蹼',
     damageValue: 1186,
     abnormal: {
-      type: '中毒',
+      type: 'posion',
       prevConversionRate: 0.5,
       prevAbnormalDamageEnhancement: 0.2,
 
@@ -182,7 +182,7 @@ export const subEquipmentOptions: Option[] = [
     from: '深潜迷航脚蹼',
     damageValue: 1186,
     abnormal: {
-      type: '中毒',
+      type: 'posion',
       prevConversionRate: 0.74,
       prevAbnormalDamageEnhancement: 0.5,
 

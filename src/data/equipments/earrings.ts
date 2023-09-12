@@ -255,7 +255,7 @@ export const earrings: Data[] = [
     type: 'earring',
     damageValue: 5484 + 889 * 5,
     abnormal: {
-      type: '中毒',
+      type: 'posion',
       prevConversionRate: 0.5,
       prevAbnormalDamageEnhancement: 0.2,
 
@@ -268,7 +268,7 @@ export const earrings: Data[] = [
     type: 'earring',
     damageValue: 5484 + 889 * 5,
     abnormal: {
-      type: '中毒',
+      type: 'posion',
       prevConversionRate: 0.74,
       prevAbnormalDamageEnhancement: 0.5,
 

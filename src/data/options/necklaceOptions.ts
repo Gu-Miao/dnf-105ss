@@ -7,7 +7,7 @@ export const necklaceOptions: Option[] = [
     from: '森林之魔女项链',
     damageValue: 296,
     abnormal: {
-      type: '出血',
+      type: 'bleed',
       prevConversionRate: 0.5,
       prevAbnormalDamageEnhancement: 0.5,
 

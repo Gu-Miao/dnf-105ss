@@ -61,7 +61,7 @@ export const bracelets: Data[] = [
     damageValue: 3165,
     skillAtk: [2, 5],
     abnormal: {
-      type: '灼烧',
+      type: 'burn',
       prevConversionRate: 0,
       prevAbnormalDamageEnhancement: 0,
       increasedConversionRate: 0.5,
@@ -74,7 +74,7 @@ export const bracelets: Data[] = [
     damageValue: 3165,
     skillAtk: [2, 5],
     abnormal: {
-      type: '感电',
+      type: 'shock',
       prevConversionRate: 0,
       prevAbnormalDamageEnhancement: 0,
       increasedConversionRate: 0.5,
@@ -108,7 +108,7 @@ export const bracelets: Data[] = [
     damageValue: 3705,
     skillAtk: [2, 5],
     abnormal: {
-      type: '中毒',
+      type: 'posion',
       prevConversionRate: 0,
       prevAbnormalDamageEnhancement: 0,
       increasedConversionRate: 0.5,
@@ -122,7 +122,7 @@ export const bracelets: Data[] = [
     damageValue: 3705,
     skillAtk: [2, 5],
     abnormal: {
-      type: '中毒',
+      type: 'posion',
       prevConversionRate: 0.48,
       prevAbnormalDamageEnhancement: 0,
       increasedConversionRate: 0.5,
@@ -203,7 +203,7 @@ export const bracelets: Data[] = [
     damageValue: 3165,
     skillAtk: [2, 5],
     abnormal: {
-      type: '出血',
+      type: 'bleed',
       prevConversionRate: 0,
       prevAbnormalDamageEnhancement: 0,
       increasedConversionRate: 0.5,
