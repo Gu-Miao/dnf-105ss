@@ -3,7 +3,7 @@ divSupport()
 
 /**
  * 魔女系列 CD 减少模拟
- * 以剑魂为例，模板 CDR 30%
+ * 模板 CDR 30%
  */
 function forestWitchSeries() {
   const skills = [
@@ -13,6 +13,8 @@ function forestWitchSeries() {
     { name: '极神剑术·流星落', cd: 35 },
     { name: '破空拔刀斩', cd: 50 },
     { name: '极神剑术·破空斩', cd: 35 },
+    { name: '剜心', cd: 45 },
+    { name: '影缚追魂锁', cd: 60 },
   ]
   const cdr = 0.3
   const cd = 10
