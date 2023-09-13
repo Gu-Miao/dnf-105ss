@@ -58,7 +58,7 @@ export const magicStoneOptions: Option[] = [
       prevAbnormalDamage: 20 + 30,
       abnormalDamage: 15,
     },
-    other: '按佩戴灼烧手镯和蓝灵上衣计算',
+    other: '按佩戴异常手镯和蓝灵上衣计算',
   },
   {
     name: '领主 20% 灼烧伤害',
@@ -71,7 +71,7 @@ export const magicStoneOptions: Option[] = [
       prevAbnormalDamage: 20 + 30,
       abnormalDamage: 20,
     },
-    other: '按佩戴灼烧手镯和蓝灵上衣计算',
+    other: '按佩戴异常手镯和蓝灵上衣计算',
   },
   {
     name: '领主 20% 灼烧伤害',
@@ -85,7 +85,7 @@ export const magicStoneOptions: Option[] = [
       prevAbnormalDamage: 20 + 30,
       abnormalDamage: 20 * 0.667,
     },
-    other: '按佩戴灼烧手镯和蓝灵上衣计算',
+    other: '按佩戴异常手镯和蓝灵上衣计算',
   },
   {
     name: '领主 35 属强',
@@ -100,7 +100,7 @@ export const magicStoneOptions: Option[] = [
     type: 'magic-stone',
     from: '蓝灵绿玉石宝石',
     damageValue: 741,
-    elementalDamage: Math.ceil((35 * 2) / 3),
+    elementalDamage: Math.floor((35 * 2) / 3),
   },
   {
     name: '破招 8% 技攻',
@@ -120,7 +120,7 @@ export const magicStoneOptions: Option[] = [
       prevAbnormalDamage: 20 + 30,
       abnormalDamage: 5,
     },
-    other: '按佩戴灼烧手镯和蓝灵上衣计算',
+    other: '按佩戴异常手镯和蓝灵上衣计算',
   },
   {
     name: '5% 感电伤害',
@@ -133,7 +133,7 @@ export const magicStoneOptions: Option[] = [
       prevAbnormalDamage: 20 + 30,
       abnormalDamage: 5,
     },
-    other: '按佩戴感电手镯和蓝灵上衣计算',
+    other: '按佩戴异常手镯和蓝灵上衣计算',
   },
   {
     name: '韧性攻强',

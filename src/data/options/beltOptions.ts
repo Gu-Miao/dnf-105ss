@@ -41,7 +41,7 @@ export const beltOptions: Option[] = [
       prevAbnormalDamage: 20 + 30,
       abnormalDamage: 20,
     },
-    other: '按佩戴灼烧手镯和蓝灵上衣计算',
+    other: '按佩戴异常手镯和蓝灵上衣计算',
   },
   {
     name: '20% 中毒伤害',
@@ -54,7 +54,7 @@ export const beltOptions: Option[] = [
       prevAbnormalDamage: 20 + 30,
       abnormalDamage: 20,
     },
-    other: '按佩戴中毒手镯和蓝灵上衣计算',
+    other: '按佩戴异常手镯和蓝灵上衣计算',
   },
   {
     name: '20% 中毒伤害',
@@ -68,7 +68,7 @@ export const beltOptions: Option[] = [
       prevAbnormalDamage: 20 + 30,
       abnormalDamage: 20,
     },
-    other: '对毒王提升，按佩戴中毒手镯和蓝灵上衣计算',
+    other: '对毒王提升，按佩戴异常手镯和蓝灵上衣计算',
   },
   {
     name: '距离 5% 技攻',
@@ -155,7 +155,7 @@ export const beltOptions: Option[] = [
       prevAbnormalDamage: 20 + 30,
       abnormalDamage: 10,
     },
-    other: '按佩戴灼烧手镯和蓝灵上衣计算',
+    other: '按佩戴异常手镯和蓝灵上衣计算',
   },
   {
     name: '10% 出血伤害',
@@ -168,7 +168,7 @@ export const beltOptions: Option[] = [
       prevAbnormalDamage: 20 + 30,
       abnormalDamage: 10,
     },
-    other: '按佩戴出血手镯和蓝灵上衣计算',
+    other: '按佩戴异常手镯和蓝灵上衣计算',
   },
   {
     name: '10% 感电伤害',
@@ -181,7 +181,7 @@ export const beltOptions: Option[] = [
       prevAbnormalDamage: 20 + 30,
       abnormalDamage: 10,
     },
-    other: '按佩戴感电手镯和蓝灵上衣计算',
+    other: '按佩戴异常手镯和蓝灵上衣计算',
   },
   {
     name: '10% 中毒伤害',
@@ -194,7 +194,7 @@ export const beltOptions: Option[] = [
       prevAbnormalDamage: 20 + 30,
       abnormalDamage: 10,
     },
-    other: '按佩戴中毒手镯和蓝灵上衣计算',
+    other: '按佩戴异常手镯和蓝灵上衣计算',
   },
   {
     name: '10% 中毒伤害',
@@ -208,7 +208,7 @@ export const beltOptions: Option[] = [
       prevAbnormalDamage: 20 + 30,
       abnormalDamage: 10,
     },
-    other: '对毒王提升，按佩戴中毒手镯和蓝灵上衣计算',
+    other: '对毒王提升，按佩戴异常手镯和蓝灵上衣计算',
   },
   {
     name: '连击攻强',

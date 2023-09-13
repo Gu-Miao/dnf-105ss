@@ -124,7 +124,7 @@ export const shoes: Data[] = [
       abnormalDamage: 10,
     },
     speed: 15,
-    other: '按佩戴中毒手镯和蓝灵上衣计算',
+    other: '按佩戴异常手镯和蓝灵上衣计算',
   },
   {
     name: '黑暗吞噬短靴',
@@ -139,7 +139,7 @@ export const shoes: Data[] = [
     },
     coolDownRecovery: 0.3,
     speed: 15,
-    other: '按佩戴中毒手镯和蓝灵上衣计算',
+    other: '按佩戴异常手镯和蓝灵上衣计算',
   },
   {
     name: '黑暗吞噬短靴',
@@ -154,7 +154,7 @@ export const shoes: Data[] = [
       abnormalDamage: 10,
     },
     speed: 15,
-    other: '按佩戴中毒手镯和蓝灵上衣计算',
+    other: '按佩戴异常手镯和蓝灵上衣计算',
   },
   {
     name: '循环的自然之法',

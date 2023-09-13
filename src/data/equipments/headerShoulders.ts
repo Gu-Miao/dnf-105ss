@@ -13,7 +13,7 @@ export const headerShoulders: Data[] = [
       abnormalDamage: 20,
     },
     speed: '自身灼烧时 5% 攻速，7.5% 施放',
-    other: '按佩戴灼烧手镯和蓝灵上衣计算',
+    other: '按佩戴异常手镯和蓝灵上衣计算',
   },
   {
     name: '沙漠星芒披肩',
@@ -27,7 +27,7 @@ export const headerShoulders: Data[] = [
       abnormalDamage: 20,
     },
     speed: '自身灼烧时 5% 攻速，7.5% 施放',
-    other: '按佩戴灼烧手镯和蓝灵上衣计算',
+    other: '按佩戴异常手镯和蓝灵上衣计算',
   },
   {
     name: '沙漠星芒披肩',
@@ -41,7 +41,7 @@ export const headerShoulders: Data[] = [
       abnormalDamage: 20,
     },
     speed: '自身灼烧时 5% 攻速，7.5% 施放',
-    other: '按佩戴灼烧手镯和混乱核心计算',
+    other: '按佩戴异常手镯和混乱核心计算',
   },
   {
     name: '白色的信念斗篷',
@@ -82,7 +82,7 @@ export const headerShoulders: Data[] = [
       abnormalDamage: 20,
     },
     speed: '自身感电时 5% 攻速，7.5% 施放',
-    other: '按佩戴感电手镯和蓝灵上衣计算',
+    other: '按佩戴异常手镯和蓝灵上衣计算',
   },
   {
     name: '电磁搜索者护肩',
@@ -96,7 +96,7 @@ export const headerShoulders: Data[] = [
       abnormalDamage: 20,
     },
     speed: '自身感电时 5% 攻速，7.5% 施放',
-    other: '按佩戴感电手镯和蓝灵上衣计算',
+    other: '按佩戴异常手镯和蓝灵上衣计算',
   },
   {
     name: '电磁搜索者护肩',
@@ -110,7 +110,7 @@ export const headerShoulders: Data[] = [
       abnormalDamage: 20,
     },
     speed: '自身感电时 5% 攻速，7.5% 施放',
-    other: '按佩戴感电手镯和混乱核心计算',
+    other: '按佩戴异常手镯和混乱核心计算',
   },
   {
     name: '华丽的清音护肩',
@@ -169,7 +169,7 @@ export const headerShoulders: Data[] = [
       abnormalDamage: 20,
     },
     speed: '自身中毒时 5% 攻速，7.5% 施放',
-    other: '按佩戴中毒手镯和蓝灵上衣计算',
+    other: '按佩戴异常手镯和蓝灵上衣计算',
   },
   {
     name: '冰玉之蚀肩甲',
@@ -183,7 +183,7 @@ export const headerShoulders: Data[] = [
       abnormalDamage: 20,
     },
     speed: '自身中毒时 5% 攻速，7.5% 施放',
-    other: '按佩戴中毒手镯和蓝灵上衣计算',
+    other: '按佩戴异常手镯和蓝灵上衣计算',
   },
   {
     name: '冰玉之蚀肩甲',
@@ -197,7 +197,7 @@ export const headerShoulders: Data[] = [
       abnormalDamage: 20,
     },
     speed: '自身中毒时 5% 攻速，7.5% 施放',
-    other: '按佩戴中毒手镯和混乱核心计算',
+    other: '按佩戴异常手镯和混乱核心计算',
   },
   {
     name: '冰玉之蚀肩甲',
@@ -211,7 +211,7 @@ export const headerShoulders: Data[] = [
       abnormalDamage: 20,
     },
     speed: '自身中毒时 5% 攻速，7.5% 施放',
-    other: '按佩戴中毒手镯和蓝灵上衣计算',
+    other: '按佩戴异常手镯和蓝灵上衣计算',
   },
   {
     name: '冰玉之蚀肩甲',
@@ -225,7 +225,7 @@ export const headerShoulders: Data[] = [
       abnormalDamage: 20,
     },
     speed: '自身中毒时 5% 攻速，7.5% 施放',
-    other: '按佩戴中毒手镯和混乱核心计算',
+    other: '按佩戴异常手镯和混乱核心计算',
   },
   {
     name: '绽放的自然生命',
@@ -282,7 +282,7 @@ export const headerShoulders: Data[] = [
       abnormalDamage: 20,
     },
     speed: '自身出血时 5% 攻速，7.5% 施放',
-    other: '按佩戴出血手镯和蓝灵上衣计算',
+    other: '按佩戴异常手镯和蓝灵上衣计算',
   },
   {
     name: '隐匿之光护肩',
@@ -296,7 +296,7 @@ export const headerShoulders: Data[] = [
       abnormalDamage: 20,
     },
     speed: '自身出血时 5% 攻速，7.5% 施放',
-    other: '按佩戴出血手镯和蓝灵上衣计算',
+    other: '按佩戴异常手镯和蓝灵上衣计算',
   },
   {
     name: '隐匿之光护肩',
@@ -310,7 +310,7 @@ export const headerShoulders: Data[] = [
       abnormalDamage: 20,
     },
     speed: '自身出血时 5% 攻速，7.5% 施放',
-    other: '按佩戴出血手镯和混乱核心计算',
+    other: '按佩戴异常手镯和混乱核心计算',
   },
   {
     name: '猎龙者',
@@ -339,7 +339,7 @@ export const headerShoulders: Data[] = [
       prevAbnormalDamage: 20,
       abnormalDamage: 15,
     },
-    other: '按佩戴出血手镯和蓝灵上衣计算',
+    other: '按佩戴异常手镯和蓝灵上衣计算',
   },
   {
     name: '耀武之威护肩',
@@ -352,7 +352,7 @@ export const headerShoulders: Data[] = [
       prevAbnormalDamage: 20,
       abnormalDamage: 15,
     },
-    other: '按佩戴出血手镯和蓝灵上衣计算',
+    other: '按佩戴异常手镯和蓝灵上衣计算',
   },
   {
     name: '耀武之威护肩',
@@ -365,7 +365,7 @@ export const headerShoulders: Data[] = [
       prevAbnormalDamage: 20,
       abnormalDamage: 15,
     },
-    other: '按佩戴出血手镯和蓝灵上衣计算',
+    other: '按佩戴异常手镯和蓝灵上衣计算',
   },
   {
     name: '六方式脉冲肩甲',

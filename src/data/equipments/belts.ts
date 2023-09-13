@@ -97,7 +97,7 @@ export const belts: Data[] = [
       prevAbnormalDamage: 20 + 30,
       abnormalDamage: 15,
     },
-    other: '按佩戴感电手镯和蓝灵上衣计算',
+    other: '按佩戴异常手镯和蓝灵上衣计算',
   },
   {
     name: '骄傲的意志腰带',
@@ -110,7 +110,7 @@ export const belts: Data[] = [
       prevAbnormalDamage: 20 + 30,
       abnormalDamage: 15,
     },
-    other: '按佩戴感电手镯和蓝灵上衣计算',
+    other: '按佩戴异常手镯和蓝灵上衣计算',
   },
   {
     name: '骄傲的意志腰带',
@@ -123,7 +123,7 @@ export const belts: Data[] = [
       prevAbnormalDamage: 20 + 15,
       abnormalDamage: 15,
     },
-    other: '按佩戴感电手镯和混乱核心计算',
+    other: '按佩戴异常手镯和混乱核心计算',
   },
   {
     name: '大地之翼腰带',
@@ -297,7 +297,7 @@ export const belts: Data[] = [
       prevAbnormalDamage: 20 + 30,
       abnormalDamage: 15,
     },
-    other: '按佩戴灼烧手镯和蓝灵上衣计算',
+    other: '按佩戴异常手镯和蓝灵上衣计算',
   },
   {
     name: '永眠前的准备',
@@ -310,7 +310,7 @@ export const belts: Data[] = [
       prevAbnormalDamage: 20 + 30,
       abnormalDamage: 15,
     },
-    other: '按佩戴灼烧手镯和蓝灵上衣计算',
+    other: '按佩戴异常手镯和蓝灵上衣计算',
   },
   {
     name: '永眠前的准备',
@@ -323,7 +323,7 @@ export const belts: Data[] = [
       prevAbnormalDamage: 20 + 15,
       abnormalDamage: 15,
     },
-    other: '按佩戴灼烧手镯和混乱核心计算',
+    other: '按佩戴异常手镯和混乱核心计算',
   },
   {
     name: '愈合伤痕的誓言',
@@ -375,7 +375,7 @@ export const belts: Data[] = [
       prevAbnormalDamage: 20 + 30,
       abnormalDamage: 20,
     },
-    other: '20% 毒伤，2 个距离 5% 技攻，15 全。对毒王提升，按佩戴中毒手镯和蓝灵上衣计算',
+    other: '20% 毒伤，2 个距离 5% 技攻，15 全。对毒王提升，按佩戴异常手镯和蓝灵上衣计算',
   },
   {
     name: '深潜迷航腰带',
@@ -388,6 +388,6 @@ export const belts: Data[] = [
       prevAbnormalDamage: 20 + 30,
       abnormalDamage: 10,
     },
-    other: '10% 出血伤害，深潜专属连击攻强，15 单，15 全。按佩戴出血手镯和蓝灵上衣计算',
+    other: '10% 出血伤害，深潜专属连击攻强，15 单，15 全。按佩戴异常手镯和蓝灵上衣计算',
   },
 ]

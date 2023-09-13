@@ -91,7 +91,7 @@ export const necklaces: Data[] = [
       prevAbnormalDamage: 20 + 30,
       abnormalDamage: 35,
     },
-    other: '按佩戴灼烧手镯和蓝灵上衣计算',
+    other: '按佩戴异常手镯和蓝灵上衣计算',
   },
   {
     name: '高科技闪影项链',
@@ -155,7 +155,7 @@ export const necklaces: Data[] = [
     damageValue: 5240,
     skillAtk: [8.5],
     elementalDamage: 15,
-    other: '减防估算为 8.5% 技攻',
+    other: '减防估算为 8.5% 技攻，削血特效未计算',
   },
   {
     name: '原子核项链',
@@ -188,5 +188,45 @@ export const necklaces: Data[] = [
     skillAtk: [7],
     elementalDamage: 15,
     speed: 10,
+  },
+  {
+    name: '森林之魔女项链',
+    type: 'necklace',
+    damageValue: 296 + 296 + 1186 + 1630,
+    elementalDamage: 15 + 15,
+    abnormal: {
+      type: 'bleed',
+      prevConvert: 50,
+      prevAbnormalDamage: 20 + 30,
+      abnormalDamage: 10 + 10,
+    },
+    other: '魔女专属 10% 出血伤害，10% 出血伤害，15 单，15 全。按佩戴异常手镯和蓝灵上衣计算',
+  },
+  {
+    name: '恩特精灵项链',
+    type: 'necklace',
+    damageValue: 445 + 296 + 1186 + 1630,
+    elementalDamage: 35 + 15 + 15,
+    abnormal: {
+      type: 'bleed',
+      prevConvert: 50,
+      prevAbnormalDamage: 20 + 30,
+      abnormalDamage: 10,
+    },
+    other: '35 属强，10% 出血伤害，15 单，15 全。按佩戴异常手镯和蓝灵上衣计算',
+  },
+  {
+    name: '恩特精灵项链',
+    prefix: '毒王',
+    type: 'necklace',
+    damageValue: 445 + 296 + 1186 + 1630,
+    elementalDamage: 35 + 15 + 15,
+    abnormal: {
+      type: 'posion',
+      prevConvert: 74,
+      prevAbnormalDamage: 20 + 30,
+      abnormalDamage: 10,
+    },
+    other: '35 属强，10% 毒伤，15 单，15 全。对毒王提升，按佩戴异常手镯和蓝灵上衣计算',
   },
 ]

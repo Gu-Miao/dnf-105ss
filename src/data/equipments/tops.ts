@@ -13,7 +13,7 @@ export const tops: Data[] = [
       prevAbnormalDamage: 20,
       abnormalDamage: 20,
     },
-    other: '按单挂灼烧手镯计算',
+    other: '按单挂异常手镯计算',
   },
   {
     name: '御力装甲上衣',
@@ -27,7 +27,7 @@ export const tops: Data[] = [
       prevAbnormalDamage: 20,
       abnormalDamage: 20,
     },
-    other: '按单挂灼烧手镯计算',
+    other: '按单挂异常手镯计算',
   },
   {
     name: '白金流光夹克',
@@ -80,7 +80,7 @@ export const tops: Data[] = [
     speed: {
       moveSpeed: 8,
     },
-    other: '按单挂出血手镯计算',
+    other: '按单挂异常手镯计算',
   },
   {
     name: '双面星云皮大衣',
@@ -110,7 +110,7 @@ export const tops: Data[] = [
       prevAbnormalDamage: 20,
       abnormalDamage: 20,
     },
-    other: '按单挂感电手镯计算',
+    other: '按单挂异常手镯计算',
   },
   {
     name: '守护之王者铠甲',
@@ -129,7 +129,7 @@ export const tops: Data[] = [
       prevAbnormalDamage: 20,
       abnormalDamage: 20,
     },
-    other: '按单挂中毒手镯计算',
+    other: '按单挂异常手镯计算',
   },
   {
     name: '轰天裂地石甲',
@@ -143,7 +143,7 @@ export const tops: Data[] = [
       prevAbnormalDamage: 20,
       abnormalDamage: 20,
     },
-    other: '对毒王提升，按单挂中毒手镯计算',
+    other: '对毒王提升，按单挂异常手镯计算',
   },
   {
     name: '大地的馈赠上衣',
@@ -230,7 +230,7 @@ export const tops: Data[] = [
       prevAbnormalDamage: 20,
       abnormalDamage: 15,
     },
-    other: '按单挂出血手镯计算',
+    other: '按单挂异常手镯计算',
   },
   {
     name: '混乱核心胸甲',
@@ -244,7 +244,7 @@ export const tops: Data[] = [
       prevAbnormalDamage: 20,
       abnormalDamage: 15,
     },
-    other: '对毒王提升，按单挂中毒手镯计算',
+    other: '对毒王提升，按单挂异常手镯计算',
   },
   {
     name: '冷静的谋略家上衣',
@@ -276,7 +276,7 @@ export const tops: Data[] = [
       prevAbnormalDamage: 20,
       abnormalDamage: 30,
     },
-    other: '30% 出血伤害，3 个无用。按单挂出血手镯计算',
+    other: '30% 出血伤害，3 个无用。按单挂异常手镯计算',
   },
   {
     name: '蓝灵绿玉石胸甲',
@@ -289,7 +289,7 @@ export const tops: Data[] = [
       prevAbnormalDamage: 20,
       abnormalDamage: 30,
     },
-    other: '30% 出血伤害，蓝灵专属攻强，15单，15全。按单挂出血手镯计算',
+    other: '30% 出血伤害，蓝灵专属攻强，15单，15全。按单挂异常手镯计算',
   },
   {
     name: '蓝灵绿玉石胸甲',
@@ -303,7 +303,7 @@ export const tops: Data[] = [
       prevAbnormalDamage: 20,
       abnormalDamage: 30,
     },
-    other: '30% 中毒伤害，蓝灵专属攻强，15单，15全。对毒王提升，按单挂中毒手镯计算',
+    other: '30% 中毒伤害，蓝灵专属攻强，15单，15全。对毒王提升，按单挂异常手镯计算',
   },
   {
     name: '恩特精灵胸甲',

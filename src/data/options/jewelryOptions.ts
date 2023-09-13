@@ -11,7 +11,7 @@ export const jewelryOptions: Option[] = [
       prevAbnormalDamage: 20 + 30,
       abnormalDamage: 10,
     },
-    other: '按佩戴中毒手镯和蓝灵上衣计算',
+    other: '按佩戴异常手镯和蓝灵上衣计算',
   },
   {
     name: '10 中毒伤害',
@@ -24,7 +24,7 @@ export const jewelryOptions: Option[] = [
       prevAbnormalDamage: 20 + 30,
       abnormalDamage: 10,
     },
-    other: '按佩戴中毒手镯和蓝灵上衣计算',
+    other: '按佩戴异常手镯和蓝灵上衣计算',
   },
   {
     name: '10 灼烧伤害',
@@ -36,7 +36,7 @@ export const jewelryOptions: Option[] = [
       prevAbnormalDamage: 20 + 30,
       abnormalDamage: 10,
     },
-    other: '按佩戴灼烧手镯和蓝灵上衣计算',
+    other: '按佩戴异常手镯和蓝灵上衣计算',
   },
   {
     name: '10 感电伤害',
@@ -48,7 +48,7 @@ export const jewelryOptions: Option[] = [
       prevAbnormalDamage: 20 + 30,
       abnormalDamage: 10,
     },
-    other: '按佩戴感电手镯和蓝灵上衣计算',
+    other: '按佩戴异常手镯和蓝灵上衣计算',
   },
   {
     name: '10 出血伤害',
@@ -60,7 +60,7 @@ export const jewelryOptions: Option[] = [
       prevAbnormalDamage: 20 + 30,
       abnormalDamage: 10,
     },
-    other: '按佩戴出血手镯和蓝灵上衣计算',
+    other: '按佩戴异常手镯和蓝灵上衣计算',
   },
   {
     name: '种族 7 技攻',

@@ -12,7 +12,7 @@ export const subEquipmentOptions: Option[] = [
       prevAbnormalDamage: 20 + 30,
       abnormalDamage: 10,
     },
-    other: '按佩戴感电手镯和蓝灵上衣计算',
+    other: '按佩戴异常手镯和蓝灵上衣计算',
   },
   {
     name: '减少 45 级技能剩余 CD',
@@ -64,7 +64,7 @@ export const subEquipmentOptions: Option[] = [
       prevAbnormalDamage: 20 + 30,
       abnormalDamage: 15,
     },
-    other: '按佩戴出血手镯和蓝灵上衣计算',
+    other: '按佩戴异常手镯和蓝灵上衣计算',
   },
   {
     name: '低血 5 技攻',
@@ -90,7 +90,7 @@ export const subEquipmentOptions: Option[] = [
       prevAbnormalDamage: 20 + 30,
       abnormalDamage: 20,
     },
-    other: '按佩戴出血手镯和蓝灵上衣计算',
+    other: '按佩戴异常手镯和蓝灵上衣计算',
   },
   {
     name: '领主 20% 出血伤害',
@@ -104,7 +104,7 @@ export const subEquipmentOptions: Option[] = [
       prevAbnormalDamage: 20 + 30,
       abnormalDamage: 20 * 0.667,
     },
-    other: '按佩戴出血手镯和蓝灵上衣计算',
+    other: '按佩戴异常手镯和蓝灵上衣计算',
   },
   {
     name: '领主 35 属强',
@@ -119,7 +119,7 @@ export const subEquipmentOptions: Option[] = [
     type: 'sub-equipment',
     from: '蓝灵绿玉石香水',
     damageValue: 741,
-    elementalDamage: Math.ceil((35 * 2) / 3),
+    elementalDamage: Math.floor((35 * 2) / 3),
   },
   {
     name: '领主攻强',
@@ -132,7 +132,7 @@ export const subEquipmentOptions: Option[] = [
     prefix: '期望',
     type: 'sub-equipment',
     from: '蓝灵绿玉石香水',
-    damageValue: 1186 + Math.ceil((3853 * 2) / 3),
+    damageValue: 1186 + Math.floor((3853 * 2) / 3),
   },
   {
     name: '普通最后一击攻强',
@@ -160,7 +160,7 @@ export const subEquipmentOptions: Option[] = [
       prevAbnormalDamage: 20 + 30,
       abnormalDamage: 5,
     },
-    other: '按佩戴出血手镯和蓝灵上衣计算',
+    other: '按佩戴异常手镯和蓝灵上衣计算',
   },
   {
     name: '5% 中毒伤害',
@@ -173,7 +173,7 @@ export const subEquipmentOptions: Option[] = [
       prevAbnormalDamage: 20 + 30,
       abnormalDamage: 5,
     },
-    other: '按佩戴中毒手镯和蓝灵上衣计算',
+    other: '按佩戴异常手镯和蓝灵上衣计算',
   },
   {
     name: '5% 中毒伤害',
@@ -187,7 +187,7 @@ export const subEquipmentOptions: Option[] = [
       prevAbnormalDamage: 20 + 30,
       abnormalDamage: 5,
     },
-    other: '按佩戴中毒手镯和蓝灵上衣计算',
+    other: '按佩戴异常手镯和蓝灵上衣计算',
   },
   {
     name: '韧性攻强',

@@ -2,27 +2,24 @@ forestWitchSeries()
 divSupport()
 
 /**
- * 魔女系列 CD 减少模拟
- * 模板 CDR 30%
+ * 完美触发下魔女系列 CD 减少模拟
  */
 function forestWitchSeries() {
   const skills = [
-    { name: '拔刀斩', cd: 15 },
-    { name: '猛龙断空斩', cd: 20 },
-    { name: '幻影剑舞', cd: 45 },
-    { name: '极神剑术·流星落', cd: 35 },
-    { name: '破空拔刀斩', cd: 50 },
-    { name: '极神剑术·破空斩', cd: 35 },
-    { name: '剜心', cd: 45 },
-    { name: '影缚追魂锁', cd: 60 },
+    // 攻速出血灵通肩恩特裤子双 40 特化碎灵屠戮 21% 占比
+    { name: '混沌魔灵 Lv40 碎灵屠戮', cd: 47.3, cdr: 22.5 + 15 + 25 },
+    // 空血静谧双音 CP 鹦鹉双 80 恩特上衣，双 80 恩特裤子灵通腰带武器 Lv80 减 CD，34% 占比
+    { name: '鹦鹉 Lv80 剜心', cd: 34.7, cdr: 12 + 22.5 + 30 },
+    // 空血静谧双音制式鹦鹉灵通鞋 Lv95 11% 占比
+    { name: '鹦鹉 Lv95 影缚追魂锁', cd: 51.3, cdr: 30 + 20 },
   ]
-  const cdr = 0.3
   const cd = 10
 
   console.log('=== 森林之魔女系列 ===')
 
   for (let i = 0; i < skills.length; i++) {
-    test(skills[i].name, skills[i].cd, cdr, cd)
+    const skill = skills[i]
+    test(skill.name, skill.cd, skill.cdr, cd)
   }
 }
 

@@ -66,7 +66,7 @@ export const topOptions: Option[] = [
       prevAbnormalDamage: 20,
       abnormalDamage: 30,
     },
-    other: '按单挂出血手镯计算',
+    other: '按单挂异常手镯计算',
   },
   {
     name: '30% 感电伤害',
@@ -79,7 +79,7 @@ export const topOptions: Option[] = [
       prevAbnormalDamage: 20,
       abnormalDamage: 30,
     },
-    other: '按单挂感电手镯计算',
+    other: '按单挂异常手镯计算',
   },
   {
     name: '30% 灼烧伤害',
@@ -92,7 +92,7 @@ export const topOptions: Option[] = [
       prevAbnormalDamage: 20,
       abnormalDamage: 30,
     },
-    other: '按单挂灼烧手镯计算',
+    other: '按单挂异常手镯计算',
   },
   {
     name: '30% 中毒伤害',
@@ -105,7 +105,7 @@ export const topOptions: Option[] = [
       prevAbnormalDamage: 20,
       abnormalDamage: 30,
     },
-    other: '按单挂中毒手镯计算',
+    other: '按单挂异常手镯计算',
   },
   {
     name: '30% 中毒伤害',
@@ -119,7 +119,7 @@ export const topOptions: Option[] = [
       prevAbnormalDamage: 20,
       abnormalDamage: 30,
     },
-    other: '按单挂中毒手镯计算',
+    other: '按单挂异常手镯计算',
   },
   {
     name: '80 ~ 95 + 3',

@@ -81,7 +81,7 @@ export const bottoms: Data[] = [
       prevAbnormalDamage: 20 + 30,
       abnormalDamage: 15,
     },
-    other: '按佩戴中毒手镯和蓝灵上衣计算',
+    other: '按佩戴异常手镯和蓝灵上衣计算',
   },
   {
     name: '沧海之覆护腿',
@@ -94,7 +94,7 @@ export const bottoms: Data[] = [
       prevAbnormalDamage: 20 + 30,
       abnormalDamage: 15,
     },
-    other: '按佩戴中毒手镯和蓝灵上衣计算',
+    other: '按佩戴异常手镯和蓝灵上衣计算',
   },
   {
     name: '沧海之覆护腿',
@@ -107,7 +107,7 @@ export const bottoms: Data[] = [
       prevAbnormalDamage: 20 + 15,
       abnormalDamage: 15,
     },
-    other: '按佩戴中毒手镯和混乱核心计算',
+    other: '按佩戴异常手镯和混乱核心计算',
   },
   {
     name: '沧海之覆护腿',
@@ -120,7 +120,7 @@ export const bottoms: Data[] = [
       prevAbnormalDamage: 20 + 30,
       abnormalDamage: 15,
     },
-    other: '对毒王提升，按佩戴中毒手镯和蓝灵上衣计算',
+    other: '对毒王提升，按佩戴异常手镯和蓝灵上衣计算',
   },
   {
     name: '沧海之覆护腿',
@@ -133,7 +133,7 @@ export const bottoms: Data[] = [
       prevAbnormalDamage: 20 + 15,
       abnormalDamage: 15,
     },
-    other: '对毒王提升，按佩戴中毒手镯和混乱核心计算',
+    other: '对毒王提升，按佩戴异常手镯和混乱核心计算',
   },
   {
     name: '隐匿的自然生命',
@@ -268,7 +268,7 @@ export const bottoms: Data[] = [
       prevAbnormalDamage: 20 + 30,
       abnormalDamage: 20,
     },
-    other: '20% 出血伤害，3 个无用。按佩戴出血手镯和蓝灵上衣计算',
+    other: '20% 出血伤害，3 个无用。按佩戴异常手镯和蓝灵上衣计算',
   },
   {
     name: '恩特精灵护腿',
@@ -281,7 +281,7 @@ export const bottoms: Data[] = [
       prevAbnormalDamage: 20 + 30,
       abnormalDamage: 20,
     },
-    other: '20% 出血伤害，连击攻强，15 单，15 全。按佩戴出血手镯和蓝灵上衣计算',
+    other: '20% 出血伤害，连击攻强，15 单，15 全。按佩戴异常手镯和蓝灵上衣计算',
   },
   {
     name: '深潜迷航长裤',

@@ -12,7 +12,7 @@ export const ringOptions: Option[] = [
       prevAbnormalDamage: 20 + 30,
       abnormalDamage: 10,
     },
-    other: '按佩戴灼烧手镯和蓝灵上衣计算',
+    other: '按佩戴异常手镯和蓝灵上衣计算',
   },
   {
     name: '韧性攻强',
@@ -48,7 +48,7 @@ export const ringOptions: Option[] = [
       prevAbnormalDamage: 20,
       abnormalDamage: 15,
     },
-    other: '按佩戴中毒手镯和蓝灵上衣计算',
+    other: '按佩戴异常手镯和蓝灵上衣计算',
   },
   {
     name: '15% 中毒伤害',
@@ -62,7 +62,7 @@ export const ringOptions: Option[] = [
       prevAbnormalDamage: 20,
       abnormalDamage: 15,
     },
-    other: '对毒王提升，按佩戴中毒手镯和蓝灵上衣计算',
+    other: '对毒王提升，按佩戴异常手镯和蓝灵上衣计算',
   },
   {
     name: '50% HP 攻强',
@@ -81,7 +81,7 @@ export const ringOptions: Option[] = [
       prevAbnormalDamage: 20 + 30,
       convert: 10,
     },
-    other: '按佩戴中毒手镯和蓝灵上衣计算',
+    other: '按佩戴异常手镯和蓝灵上衣计算',
   },
   {
     name: '10% 中毒转伤',
@@ -95,7 +95,7 @@ export const ringOptions: Option[] = [
       prevAbnormalDamage: 20 + 30,
       convert: 10,
     },
-    other: '对毒王提升，按佩戴中毒手镯和蓝灵上衣计算',
+    other: '对毒王提升，按佩戴异常手镯和蓝灵上衣计算',
   },
   {
     name: '10% 灼烧转伤',
@@ -108,7 +108,7 @@ export const ringOptions: Option[] = [
       prevAbnormalDamage: 20 + 30,
       convert: 10,
     },
-    other: '按佩戴灼烧手镯和蓝灵上衣计算',
+    other: '按佩戴异常手镯和蓝灵上衣计算',
   },
   {
     name: '10% 感电转伤',
@@ -121,7 +121,7 @@ export const ringOptions: Option[] = [
       prevAbnormalDamage: 20 + 30,
       convert: 10,
     },
-    other: '按佩戴感电手镯和蓝灵上衣计算',
+    other: '按佩戴异常手镯和蓝灵上衣计算',
   },
   {
     name: '10% 出血转伤',
@@ -134,7 +134,7 @@ export const ringOptions: Option[] = [
       prevAbnormalDamage: 20 + 30,
       convert: 10,
     },
-    other: '按佩戴出血手镯和蓝灵上衣计算',
+    other: '按佩戴异常手镯和蓝灵上衣计算',
   },
   {
     name: '领主 20% 中毒伤害',
@@ -147,7 +147,7 @@ export const ringOptions: Option[] = [
       prevAbnormalDamage: 20 + 30,
       abnormalDamage: 20,
     },
-    other: '按佩戴中毒手镯和蓝灵上衣计算',
+    other: '按佩戴异常手镯和蓝灵上衣计算',
   },
   {
     name: '领主 20% 中毒伤害',
@@ -161,7 +161,7 @@ export const ringOptions: Option[] = [
       prevAbnormalDamage: 20 + 30,
       abnormalDamage: 20,
     },
-    other: '对毒王提升，按佩戴中毒手镯和蓝灵上衣计算',
+    other: '对毒王提升，按佩戴异常手镯和蓝灵上衣计算',
   },
   {
     name: '领主 20% 中毒伤害',
@@ -175,7 +175,7 @@ export const ringOptions: Option[] = [
       prevAbnormalDamage: 20 + 30,
       abnormalDamage: 20 * 0.667,
     },
-    other: '按佩戴中毒手镯和蓝灵上衣计算',
+    other: '按佩戴异常手镯和蓝灵上衣计算',
   },
   {
     name: '领主 20% 中毒伤害',
@@ -189,7 +189,7 @@ export const ringOptions: Option[] = [
       prevAbnormalDamage: 20 + 30,
       abnormalDamage: 20 * 0.667,
     },
-    other: '对毒王提升，按佩戴中毒手镯和蓝灵上衣计算',
+    other: '对毒王提升，按佩戴异常手镯和蓝灵上衣计算',
   },
   {
     name: '领主 35 属强',
@@ -204,7 +204,7 @@ export const ringOptions: Option[] = [
     type: 'ring',
     from: '蓝灵绿玉石戒指',
     damageValue: 741,
-    elementalDamage: Math.ceil((35 * 2) / 3),
+    elementalDamage: Math.floor((35 * 2) / 3),
   },
   {
     name: '基础精通 20% 出血伤害',
@@ -217,7 +217,7 @@ export const ringOptions: Option[] = [
       prevAbnormalDamage: 20,
       abnormalDamage: 20,
     },
-    other: '按佩戴出血手镯和蓝灵上衣计算',
+    other: '按佩戴异常手镯和蓝灵上衣计算',
   },
   {
     name: '基础精通 20% 出血伤害',
@@ -231,7 +231,7 @@ export const ringOptions: Option[] = [
       prevAbnormalDamage: 20,
       abnormalDamage: 20 * 0.667,
     },
-    other: '按佩戴出血手镯和蓝灵上衣计算',
+    other: '按佩戴异常手镯和蓝灵上衣计算',
   },
   {
     name: '基础精通 20% 中毒伤害',
@@ -244,7 +244,7 @@ export const ringOptions: Option[] = [
       prevAbnormalDamage: 20,
       abnormalDamage: 20,
     },
-    other: '按佩戴中毒手镯和蓝灵上衣计算',
+    other: '按佩戴异常手镯和蓝灵上衣计算',
   },
   {
     name: '基础精通 20% 中毒伤害',
@@ -258,7 +258,7 @@ export const ringOptions: Option[] = [
       prevAbnormalDamage: 20,
       abnormalDamage: 20,
     },
-    other: '对毒王提升，按佩戴中毒手镯和蓝灵上衣计算',
+    other: '对毒王提升，按佩戴异常手镯和蓝灵上衣计算',
   },
   {
     name: '基础精通 20% 中毒伤害',
@@ -272,7 +272,7 @@ export const ringOptions: Option[] = [
       prevAbnormalDamage: 20,
       abnormalDamage: 20 * 0.667,
     },
-    other: '按佩戴中毒手镯和蓝灵上衣计算',
+    other: '按佩戴异常手镯和蓝灵上衣计算',
   },
   {
     name: '基础精通 20% 中毒伤害',
@@ -286,7 +286,7 @@ export const ringOptions: Option[] = [
       prevAbnormalDamage: 20,
       abnormalDamage: 20 * 0.667,
     },
-    other: '对毒王提升，按佩戴中毒手镯和蓝灵上衣计算',
+    other: '对毒王提升，按佩戴异常手镯和蓝灵上衣计算',
   },
   {
     name: '基础精通 20% 灼烧伤害',
@@ -299,7 +299,7 @@ export const ringOptions: Option[] = [
       prevAbnormalDamage: 20,
       abnormalDamage: 20,
     },
-    other: '按佩戴灼烧手镯和蓝灵上衣计算',
+    other: '按佩戴异常手镯和蓝灵上衣计算',
   },
   {
     name: '基础精通 20% 灼烧伤害',
@@ -313,7 +313,7 @@ export const ringOptions: Option[] = [
       prevAbnormalDamage: 20,
       abnormalDamage: 20 * 0.667,
     },
-    other: '按佩戴灼烧手镯和蓝灵上衣计算',
+    other: '按佩戴异常手镯和蓝灵上衣计算',
   },
   {
     name: '基础精通 20% 感电伤害',
@@ -326,7 +326,7 @@ export const ringOptions: Option[] = [
       prevAbnormalDamage: 20,
       abnormalDamage: 20,
     },
-    other: '按佩戴感电手镯和蓝灵上衣计算',
+    other: '按佩戴异常手镯和蓝灵上衣计算',
   },
   {
     name: '基础精通 20% 感电伤害',
@@ -340,7 +340,7 @@ export const ringOptions: Option[] = [
       prevAbnormalDamage: 20,
       abnormalDamage: 20 * 0.667,
     },
-    other: '按佩戴灼烧手镯和蓝灵上衣计算',
+    other: '按佩戴异常手镯和蓝灵上衣计算',
   },
   {
     name: '自异常 80 级技能 30% CDR',

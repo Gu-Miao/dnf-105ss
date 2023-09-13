@@ -234,7 +234,7 @@ export const subEquipments: Data[] = [
       prevAbnormalDamage: 20 + 30,
       abnormalDamage: 15,
     },
-    other: '龙族 7% 技攻，2 个异常 5% 技攻，15% 出血伤害。按佩戴出血手镯和蓝灵上衣计算',
+    other: '龙族 7% 技攻，2 个异常 5% 技攻，15% 出血伤害。按佩戴异常手镯和蓝灵上衣计算',
   },
   {
     name: '恩特精灵圣杯',
@@ -255,7 +255,7 @@ export const subEquipments: Data[] = [
       prevAbnormalDamage: 20 + 30,
       abnormalDamage: 20,
     },
-    other: '龙族 7% 技攻，领主 20% 出血伤害，领主 35 属强，领主攻强。按佩戴出血手镯和蓝灵上衣计算',
+    other: '龙族 7% 技攻，领主 20% 出血伤害，领主 35 属强，领主攻强。按佩戴异常手镯和蓝灵上衣计算',
   },
   {
     name: '深潜迷航脚蹼',

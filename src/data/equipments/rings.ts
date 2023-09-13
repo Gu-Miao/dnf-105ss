@@ -216,7 +216,7 @@ export const rings: Data[] = [
       abnormalDamage: 5 + 10 + 10,
     },
     speed: -15,
-    other: '按佩戴出血手镯和蓝灵上衣计算',
+    other: '按佩戴异常手镯和蓝灵上衣计算',
   },
   {
     name: '永不停歇的命运',
@@ -281,21 +281,7 @@ export const rings: Data[] = [
       convert: 10,
       abnormalDamage: 10,
     },
-    other: '10% 出血转伤，10% 出血伤害，15 单，无用。按佩戴出血手镯和蓝灵上衣计算',
-  },
-  {
-    name: '恩特精灵戒指',
-    type: 'ring',
-    damageValue: 296 + 1482 + 1186 + 1186,
-    elementalDamage: 15,
-    abnormal: {
-      type: 'bleed',
-      prevConvert: 50,
-      prevAbnormalDamage: 20 + 30,
-      convert: 10,
-      abnormalDamage: 10,
-    },
-    other: '10% 出血转伤，10% 出血伤害，15 单，无用。按佩戴出血手镯和蓝灵上衣计算',
+    other: '10% 出血转伤，10% 出血伤害，15 单，无用。按佩戴异常手镯和蓝灵上衣计算',
   },
   {
     name: '恩特精灵戒指',
@@ -309,7 +295,7 @@ export const rings: Data[] = [
       convert: 10,
       abnormalDamage: 10,
     },
-    other: '10% 出血转伤，10% 出血伤害，15 单，15全。按佩戴出血手镯和蓝灵上衣计算',
+    other: '10% 出血转伤，10% 出血伤害，15 单，15全。按佩戴异常手镯和蓝灵上衣计算',
   },
   {
     name: '恩特精灵戒指',
@@ -324,7 +310,7 @@ export const rings: Data[] = [
       convert: 10,
       abnormalDamage: 15 + 10,
     },
-    other: '15% 毒伤，10% 毒伤，10% 毒转，15全。按佩戴中毒手镯和蓝灵上衣计算',
+    other: '15% 毒伤，10% 毒伤，10% 毒转，15全。按佩戴异常手镯和蓝灵上衣计算',
   },
   {
     name: '蓝灵绿玉石戒指',
@@ -338,7 +324,7 @@ export const rings: Data[] = [
       prevAbnormalDamage: 20 + 30,
       abnormalDamage: 20 + 20 + 10,
     },
-    other: '领主 20% 毒伤，基础精通 20% 毒伤，10% 毒伤，15 全。按佩戴中毒手镯和蓝灵上衣计算',
+    other: '领主 20% 毒伤，基础精通 20% 毒伤，10% 毒伤，15 全。按佩戴异常手镯和蓝灵上衣计算',
   },
   {
     name: '蓝灵绿玉石戒指',
@@ -352,7 +338,7 @@ export const rings: Data[] = [
       prevAbnormalDamage: 20 + 30,
       abnormalDamage: 20 * 0.667 + 20 * 0.667 + 10,
     },
-    other: '领主 20% 毒伤，基础精通 20% 毒伤，10% 毒伤，15 全。按佩戴中毒手镯和蓝灵上衣计算',
+    other: '领主 20% 毒伤，基础精通 20% 毒伤，10% 毒伤，15 全。按佩戴异常手镯和蓝灵上衣计算',
   },
   {
     name: '深潜迷航导航环',
