@@ -1,5 +1,6 @@
 import { useState, useMemo, ChangeEvent } from 'react'
 import { options, Option } from '@/data/options'
+import { renderSkillAttack, renderSpeed } from './utils'
 
 function Options() {
   const [type, setType] = useState<Option['type']>(
@@ -52,22 +53,22 @@ function Options() {
         </thead>
         <tbody>
           {filteredData.map(item => (
-            <tr key={item.name + item.prefix + item.from + item.other + item.damageValue}>
+            <tr key={item.name + item.prefix + item.damageValue + item.other}>
               <td>
-                <img className="icon" src={getIconSrc(item)} alt={item.name} />
+                <img className="icon" src={`/${item.from || 'logo'}.png`} alt={item.name} />
               </td>
               <td>
                 {item.prefix ? `【${item.prefix}】` : ''}
                 {item.name}
               </td>
               <td>{renderSkillAttack(item.skillAtk)}</td>
-              <td>{item.damageValue || ''}</td>
+              <td>{item.damageValue}</td>
               <td>{item.elementalDamage}</td>
               <td>{item.abnormal?.convert && item.abnormal.convert + '%'}</td>
               <td>{item.abnormal?.abnormalDamage && item.abnormal.abnormalDamage + '%'}</td>
               <td>{renderSpeed(item.speed)}</td>
-              <td>{renderPercent(item.coolDownRecovery)}</td>
-              <td>{renderPercent(item.coolDownReduction)}</td>
+              <td>{item.cooldownRecovery && item.cooldownRecovery + '%'}</td>
+              <td>{item.cooldownReduction && item.cooldownReduction + '%'}</td>
               <td>{item.other}</td>
               <td>{(((item.increaseRate as number) - 1) * 100).toFixed(2)}%</td>
             </tr>
@@ -76,35 +77,6 @@ function Options() {
       </table>
     </div>
   )
-}
-
-function getIconSrc(data: Option) {
-  const name = data.from || 'logo'
-  return `/${name}.png`
-}
-
-function renderPercent(num: number | undefined) {
-  if (!num) return ''
-  return (num * 100).toFixed(3) + '%'
-}
-
-function renderSkillAttack(skillAtk: Option['skillAtk']) {
-  if (!skillAtk || skillAtk[0] === 0) return ''
-  return skillAtk.map(num => num + '%').join(', ')
-}
-
-function renderSpeed(speed: Option['speed']) {
-  if (typeof speed === 'number') {
-    return `${speed}% 三速`
-  } else if (typeof speed === 'object') {
-    const slices = []
-    if (speed.attackSpeed) slices.push(`${speed.attackSpeed}% 攻速`)
-    if (speed.castingSpeed) slices.push(`${speed.castingSpeed}% 施放`)
-    if (speed.moveSpeed) slices.push(`${speed.moveSpeed}% 移速`)
-    return slices.join('，')
-  }
-
-  return speed
 }
 
 export default Options

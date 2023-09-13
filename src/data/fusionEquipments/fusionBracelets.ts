@@ -10,7 +10,7 @@ export const fusionBracelets: Data[] = [
   {
     name: '火龙：爆炸的力之源',
     type: 'fusion-bracelet',
-    coolDownReduction: 0.12,
+    cooldownReduction: 12,
   },
   {
     name: '火龙：爆炸的力之源',

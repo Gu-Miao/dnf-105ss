@@ -38,8 +38,8 @@ export type Data = {
   skillAtk?: number[]
   elementalDamage?: number
   abnormal?: Abnormal
-  coolDownRecovery?: number
-  coolDownReduction?: number
+  cooldownRecovery?: number
+  cooldownReduction?: number
   speed?:
     | {
         attackSpeed?: number
@@ -119,20 +119,20 @@ function getAbnormalDamageIncreaseRate({
 
 /**
  * 获取冷却时间恢复速度提升率
- * @param coolDownRecovery 冷却时间恢复速度
+ * @param cooldownRecovery 冷却时间恢复速度
  * @returns 冷却时间恢复速度提升率
  */
-function getCoolDownRecoveryIncreaseRate(coolDownRecovery: number) {
-  return coolDownRecovery / 3 + 1
+function getCooldownRecoveryIncreaseRate(cooldownRecovery: number) {
+  return (cooldownRecovery * 0.01) / 3 + 1
 }
 
 /**
  * 获取冷却时间减少提升率
- * @param coolDownReduction 冷却时间减少
+ * @param cooldownReduction 冷却时间减少
  * @returns 冷却时间减少提升率
  */
-function getCoolDownReductionIncreaseRate(coolDownReduction: number) {
-  return coolDownReduction / 2 + 1
+function getCooldownReductionIncreaseRate(cooldownReduction: number) {
+  return (cooldownReduction * 0.01) / 2 + 1
 }
 
 /**
@@ -173,18 +173,18 @@ export function getIncreaseRate(data: Data, damageValue: number, elementalDamage
     console.log(`属强：${data.elementalDamage}，提升：${elementalDamageIncreaseRate}`)
   }
 
-  if (data.coolDownRecovery) {
-    const coolDownRecoveryIncreaseRate = getCoolDownRecoveryIncreaseRate(data.coolDownRecovery)
+  if (data.cooldownRecovery) {
+    const cooldownRecoveryIncreaseRate = getCooldownRecoveryIncreaseRate(data.cooldownRecovery)
 
-    increaseRate *= coolDownRecoveryIncreaseRate
-    console.log(`冷却时间恢复：${data.coolDownRecovery}，提升：${coolDownRecoveryIncreaseRate}`)
+    increaseRate *= cooldownRecoveryIncreaseRate
+    console.log(`冷却时间恢复：${data.cooldownRecovery}，提升：${cooldownRecoveryIncreaseRate}`)
   }
 
-  if (data.coolDownReduction) {
-    const coolDownReductionIncreaseRate = getCoolDownReductionIncreaseRate(data.coolDownReduction)
+  if (data.cooldownReduction) {
+    const cooldownReductionIncreaseRate = getCooldownReductionIncreaseRate(data.cooldownReduction)
 
-    increaseRate *= coolDownReductionIncreaseRate
-    console.log(`冷却时间减少：${data.coolDownReduction}，提升：${coolDownReductionIncreaseRate}`)
+    increaseRate *= cooldownReductionIncreaseRate
+    console.log(`冷却时间减少：${data.cooldownReduction}，提升：${cooldownReductionIncreaseRate}`)
   }
 
   if (data.abnormal) {

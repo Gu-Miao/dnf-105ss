@@ -16,7 +16,7 @@ export const fusionTops: Data[] = [
     prefix: '11% 占比',
     type: 'fusion-top',
     damageValue: 5311,
-    coolDownRecovery: 0.2 * 0.11,
+    cooldownRecovery: 20 * 0.11,
     other: '期望为 20% CDR，按 30 和 60 级技能伤害占比 11% 计算',
   },
   {
@@ -24,7 +24,7 @@ export const fusionTops: Data[] = [
     prefix: '10% 占比',
     type: 'fusion-top',
     damageValue: 5311,
-    coolDownRecovery: 0.02,
+    cooldownRecovery: 20 * 0.1,
     other: '期望为 20% CDR，按 30 和 60 级技能伤害占比 10% 计算',
   },
   {

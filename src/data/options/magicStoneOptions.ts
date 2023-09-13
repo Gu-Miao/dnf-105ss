@@ -3,41 +3,39 @@ import { Option } from '.'
 export const magicStoneOptions: Option[] = [
   {
     name: '减少 70 级技能剩余 CD',
-    prefix: '50% 占比',
     type: 'magic-stone',
     from: '森林之魔女精灵石',
     damageValue: 1037,
-    coolDownReduction: 0.081 * 0.5,
+    cooldownReduction: 7.2 * 0.15,
     other:
-      '按 70 级技能 50 冷却，30% CDR 计算，期望冷却减少约为 8.1%，按 70 级技能 50% 占比计算。收益低，主要还是给奶用',
+      '按攻速出血女漫游 40% CDR 模拟，期望 CD 约为 7.2%。按女漫游 9 保压制射击 Lv70 15% 占比计算',
   },
   {
     name: '减少 75 级技能剩余 CD',
-    prefix: '50% 占比',
     type: 'magic-stone',
     from: '森林之魔女精灵石',
     damageValue: 1037,
-    coolDownReduction: 0.0685 * 0.5,
+    cooldownReduction: 6.85 * 0.5,
     other:
       '按 75 级技能 35 冷却，30% CDR 计算，期望冷却减少约为 6.85%，按 75 级技能 50% 占比计算。收益低，主要还是给奶用',
   },
   {
     name: '减少 40 级技能剩余 CD',
-    prefix: '50% 占比',
+
     type: 'magic-stone',
     from: '森林之魔女精灵石',
     damageValue: 1037,
-    coolDownReduction: 0.0566 * 0.5,
+    cooldownReduction: 5.66 * 0.5,
     other:
       '按 40 级技能 20 冷却，30% CDR 计算，期望冷却减少约为 5.66%，按 40 级技能 50% 占比计算。收益低，主要还是给奶用',
   },
   {
     name: '70 级技能韧性 CDR',
-    prefix: '50% 占比',
+
     type: 'magic-stone',
     from: '森林之魔女精灵石',
     damageValue: 1334,
-    coolDownReduction: 0.165 * 0.5,
+    cooldownRecovery: 16.5 * 0.5,
     other: '期望 16.5% CDR，按 70 级技能 50% 占比计算',
   },
   {

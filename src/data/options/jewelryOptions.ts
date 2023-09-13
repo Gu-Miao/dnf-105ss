@@ -2,7 +2,7 @@ import { Option } from '.'
 
 export const jewelryOptions: Option[] = [
   {
-    name: '10 中毒伤害',
+    name: '10% 中毒伤害',
     type: 'jewelry',
     damageValue: 296,
     abnormal: {
@@ -14,7 +14,7 @@ export const jewelryOptions: Option[] = [
     other: '按佩戴异常手镯和蓝灵上衣计算',
   },
   {
-    name: '10 中毒伤害',
+    name: '10% 中毒伤害',
     prefix: '毒王',
     type: 'jewelry',
     damageValue: 296,
@@ -27,7 +27,7 @@ export const jewelryOptions: Option[] = [
     other: '按佩戴异常手镯和蓝灵上衣计算',
   },
   {
-    name: '10 灼烧伤害',
+    name: '10% 灼烧伤害',
     type: 'jewelry',
     damageValue: 296,
     abnormal: {
@@ -39,7 +39,7 @@ export const jewelryOptions: Option[] = [
     other: '按佩戴异常手镯和蓝灵上衣计算',
   },
   {
-    name: '10 感电伤害',
+    name: '10% 感电伤害',
     type: 'jewelry',
     damageValue: 296,
     abnormal: {
@@ -51,7 +51,7 @@ export const jewelryOptions: Option[] = [
     other: '按佩戴异常手镯和蓝灵上衣计算',
   },
   {
-    name: '10 出血伤害',
+    name: '10% 出血伤害',
     type: 'jewelry',
     damageValue: 296,
     abnormal: {
@@ -63,7 +63,7 @@ export const jewelryOptions: Option[] = [
     other: '按佩戴异常手镯和蓝灵上衣计算',
   },
   {
-    name: '种族 7 技攻',
+    name: '种族 7% 技攻',
     type: 'jewelry',
     damageValue: 296,
     skillAtk: [7],

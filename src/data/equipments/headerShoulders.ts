@@ -116,7 +116,7 @@ export const headerShoulders: Data[] = [
     name: '华丽的清音护肩',
     type: 'header-shoulder',
     damageValue: 5604,
-    coolDownRecovery: 0.1 * 5,
+    cooldownRecovery: 10 * 5,
     speed: {
       attackSpeed: 10,
       castingSpeed: 10,
@@ -128,7 +128,7 @@ export const headerShoulders: Data[] = [
     type: 'header-shoulder',
     damageValue: 3988,
     skillAtk: [-2 * 5],
-    coolDownRecovery: 0.1 * 5,
+    cooldownRecovery: 10 * 5,
   },
   {
     name: '自由之翼护肩',
@@ -419,7 +419,7 @@ export const headerShoulders: Data[] = [
     name: '金属齿轮护肩',
     type: 'header-shoulder',
     damageValue: 3450 + 2964,
-    coolDownRecovery: 0.25,
+    cooldownRecovery: 25,
   },
   {
     name: '欢笑中的祈盼',
@@ -440,7 +440,7 @@ export const headerShoulders: Data[] = [
     type: 'header-shoulder',
     damageValue: 4796 + 1778,
     skillAtk: [5],
-    coolDownRecovery: 0.1,
+    cooldownRecovery: 10,
     speed: {
       attackSpeed: 8,
       castingSpeed: 12,

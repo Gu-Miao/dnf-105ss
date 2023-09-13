@@ -5,6 +5,7 @@ export const fusionRings: Data[] = [
     name: '金龙：无限的光之结界',
     type: 'fusion-ring',
     damageValue: 7815,
+    other: '按平均值计算',
   },
   {
     name: '火龙：燃烧的火龙之怒',
@@ -16,7 +17,7 @@ export const fusionRings: Data[] = [
     prefix: '火龙之怒',
     type: 'fusion-ring',
     skillAtk: [10],
-    coolDownReduction: -0.2,
+    cooldownReduction: -20,
   },
   {
     name: '真龙：沉重的铁之志',

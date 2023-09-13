@@ -26,7 +26,7 @@ export const bracelets: Data[] = [
     type: 'bracelet',
     damageValue: 4528,
     skillAtk: [6],
-    coolDownRecovery: 0.25,
+    cooldownRecovery: 25,
     speed: {
       attackSpeed: 8,
       castingSpeed: 12,
@@ -49,7 +49,7 @@ export const bracelets: Data[] = [
     type: 'bracelet',
     damageValue: 5066,
     skillAtk: [-15],
-    coolDownReduction: -0.1,
+    cooldownReduction: -10,
     speed: {
       attackSpeed: 8,
       castingSpeed: 12,
@@ -142,7 +142,7 @@ export const bracelets: Data[] = [
     damageValue: 5066 + 193 * 10,
     skillAtk: [10],
     elementalDamage: 20,
-    coolDownReduction: 0.12,
+    cooldownReduction: 12,
     speed: {
       attackSpeed: 8,
       castingSpeed: 12,
@@ -174,7 +174,7 @@ export const bracelets: Data[] = [
     type: 'bracelet',
     damageValue: 3988,
     skillAtk: [2 * 6],
-    coolDownRecovery: 0.3,
+    cooldownRecovery: 30,
   },
   {
     name: '骑士的救赎',
@@ -212,7 +212,7 @@ export const bracelets: Data[] = [
     type: 'bracelet',
     damageValue: 5066 + 2816,
     skillAtk: [7],
-    coolDownReduction: 0.15,
+    cooldownReduction: 15,
     speed: {
       attackSpeed: 8,
       castingSpeed: 12,
@@ -240,5 +240,12 @@ export const bracelets: Data[] = [
     speed: {
       moveSpeed: 8,
     },
+  },
+  {
+    name: '深潜迷航腕表',
+    type: 'bracelet',
+    damageValue: 1186 + (3409 + 2223) / 2 + 1334 + (3409 + 2223) / 2 + 1186 + 1630,
+    elementalDamage: 15 + 15,
+    other: '减伤攻强，速度攻强，15 单，15 全',
   },
 ]

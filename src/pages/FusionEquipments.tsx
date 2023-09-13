@@ -1,5 +1,6 @@
 import { useState, useMemo, ChangeEvent } from 'react'
 import { fusionEquipments, Data } from '@/data/fusionEquipments'
+import { renderSkillAttack, renderSpeed } from './utils'
 
 function FusionEquipments() {
   const [type, setType] = useState<Data['type']>(
@@ -48,7 +49,7 @@ function FusionEquipments() {
         </thead>
         <tbody>
           {filteredData.map(item => (
-            <tr key={item.name + item.prefix}>
+            <tr key={item.name + item.prefix + item.damageValue + item.other}>
               <td>
                 <img className="icon" src={`/${item.name}.png`} alt={item.name} />
               </td>
@@ -57,13 +58,13 @@ function FusionEquipments() {
                 {item.name}
               </td>
               <td>{renderSkillAttack(item.skillAtk)}</td>
-              <td>{item.damageValue || ''}</td>
+              <td>{item.damageValue}</td>
               <td>{item.elementalDamage}</td>
               <td>{item.abnormal?.convert && item.abnormal.convert + '%'}</td>
               <td>{item.abnormal?.abnormalDamage && item.abnormal.abnormalDamage + '%'}</td>
               <td>{renderSpeed(item.speed)}</td>
-              <td>{renderPercent(item.coolDownRecovery)}</td>
-              <td>{renderPercent(item.coolDownReduction)}</td>
+              <td>{item.cooldownRecovery && item.cooldownRecovery + '%'}</td>
+              <td>{item.cooldownReduction && item.cooldownReduction + '%'}</td>
               <td>{item.other}</td>
               <td>{(((item.increaseRate as number) - 1) * 100).toFixed(2)}%</td>
             </tr>
@@ -72,30 +73,6 @@ function FusionEquipments() {
       </table>
     </div>
   )
-}
-
-function renderPercent(num: number | undefined) {
-  if (!num) return ''
-  return (num * 100).toFixed(3) + '%'
-}
-
-function renderSkillAttack(skillAtk: Data['skillAtk']) {
-  if (!skillAtk || skillAtk[0] === 0) return ''
-  return skillAtk.map(num => num + '%').join(', ')
-}
-
-function renderSpeed(speed: Data['speed']) {
-  if (typeof speed === 'number') {
-    return `${speed}% 三速`
-  } else if (typeof speed === 'object') {
-    const slices = []
-    if (speed.attackSpeed) slices.push(`${speed.attackSpeed}% 攻速`)
-    if (speed.castingSpeed) slices.push(`${speed.castingSpeed}% 施放`)
-    if (speed.moveSpeed) slices.push(`${speed.moveSpeed}% 移速`)
-    return slices.join('，')
-  }
-
-  return speed
 }
 
 export default FusionEquipments

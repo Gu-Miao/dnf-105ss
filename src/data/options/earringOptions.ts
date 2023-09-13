@@ -13,7 +13,7 @@ export const earringOptions: Option[] = [
     type: 'earring',
     from: '森林之魔女耳环',
     damageValue: 1037,
-    coolDownReduction: 0.089 * 0.12,
+    cooldownReduction: 8.9 * 0.12,
     other: '按鹦鹉 Lv95 技能 30% CDR 模拟，期望 CD 为 8.9%，按制式鹦鹉 Lv95 12% 占比计算',
   },
   {
@@ -21,7 +21,7 @@ export const earringOptions: Option[] = [
     type: 'earring',
     from: '森林之魔女耳环',
     damageValue: 1037,
-    coolDownReduction: 0.077 * 0.35,
+    cooldownReduction: 7.7 * 0.35,
     other: '按鹦鹉 Lv95 技能 30% CDR 模拟，期望 CD 为 7.7%，按特化剜心 35% 占比计算',
   },
   {
@@ -29,7 +29,7 @@ export const earringOptions: Option[] = [
     type: 'earring',
     from: '森林之魔女耳环',
     damageValue: 1334,
-    coolDownReduction: 0.165 * 0.2,
+    cooldownRecovery: 16.5 * 0.2,
     other: '期望 16.5% CDR，按特工恩特裤子 9 保月步 20% 占比计算',
   },
   {
@@ -37,7 +37,7 @@ export const earringOptions: Option[] = [
     type: 'earring',
     from: '森林之魔女耳环',
     damageValue: 1334,
-    coolDownReduction: 0.165 * 0.21,
+    cooldownRecovery: 16.5 * 0.21,
     other: '期望 16.5% CDR，按攻速出血灵通肩恩特裤子双 40 特化碎灵屠戮 21% 占比计算',
   },
   {

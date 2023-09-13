@@ -97,7 +97,7 @@ export const shoes: Data[] = [
     type: 'shoe',
     damageValue: 5604 + 2223,
     elementalDamage: 25,
-    coolDownReduction: 0.15,
+    cooldownReduction: 15,
     speed: {
       moveSpeed: 8,
     },
@@ -137,7 +137,7 @@ export const shoes: Data[] = [
       prevAbnormalDamage: 20 + 30,
       abnormalDamage: 10,
     },
-    coolDownRecovery: 0.3,
+    cooldownRecovery: 30,
     speed: 15,
     other: '按佩戴异常手镯和蓝灵上衣计算',
   },
@@ -198,7 +198,7 @@ export const shoes: Data[] = [
     damageValue: 5510,
     skillAtk: [8],
     elementalDamage: 15,
-    coolDownReduction: 0.05 * 4,
+    cooldownReduction: 5 * 4,
   },
   {
     name: '暴走之驱战靴',
@@ -279,7 +279,7 @@ export const shoes: Data[] = [
     type: 'shoe',
     damageValue: 4917 + 371 * 10,
     skillAtk: [5],
-    coolDownReduction: 0.15,
+    cooldownReduction: 15,
   },
   {
     name: '赛博音速长靴',

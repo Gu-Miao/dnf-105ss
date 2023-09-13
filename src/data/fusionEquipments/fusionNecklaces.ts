@@ -5,6 +5,7 @@ export const fusionNecklaces: Data[] = [
     name: '金龙：灿烂的龙之鳞',
     type: 'fusion-necklace',
     damageValue: 7815,
+    other: '按平均值计算',
   },
   {
     name: '火龙：沸腾的龙之息',

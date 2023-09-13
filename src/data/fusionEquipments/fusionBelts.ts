@@ -16,7 +16,7 @@ export const fusionBelts: Data[] = [
     prefix: '20% 占比',
     type: 'fusion-belt',
     damageValue: 3142,
-    coolDownRecovery: 0.225 * 0.2,
+    cooldownRecovery: 22.5 * 0.2,
     other: '期望为 22.5% CDR，按 45 和 80 级技能伤害占比 20% 计算',
   },
   {
@@ -24,7 +24,7 @@ export const fusionBelts: Data[] = [
     prefix: '37% 占比',
     type: 'fusion-belt',
     damageValue: 3142,
-    coolDownRecovery: 0.225 * 0.37,
+    cooldownRecovery: 22.5 * 0.37,
     other: '期望为 22.5% CDR，按 45 和 80 级技能伤害占比 37% 计算',
   },
   {

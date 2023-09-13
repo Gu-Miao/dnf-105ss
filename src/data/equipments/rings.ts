@@ -6,7 +6,7 @@ export const rings: Data[] = [
     type: 'ring',
     damageValue: 5604,
     skillAtk: [5],
-    coolDownRecovery: 0.1,
+    cooldownRecovery: 10,
   },
   {
     name: '第三个黑桃 - 死亡',
@@ -26,7 +26,7 @@ export const rings: Data[] = [
     name: '双音交映戒指',
     type: 'ring',
     damageValue: 4258,
-    coolDownRecovery: 0.3,
+    cooldownRecovery: 30,
     speed: {
       attackSpeed: 24,
       castingSpeed: 36,
@@ -128,28 +128,28 @@ export const rings: Data[] = [
     prefix: '42%',
     type: 'ring',
     damageValue: 3450,
-    coolDownRecovery: 0.42,
+    cooldownRecovery: 42,
   },
   {
     name: '雷达战网戒指',
     prefix: '38.5%',
     type: 'ring',
     damageValue: 3450,
-    coolDownRecovery: 0.385,
+    cooldownRecovery: 38.5,
   },
   {
     name: '雷达战网戒指',
     prefix: '35%',
     type: 'ring',
     damageValue: 3450,
-    coolDownRecovery: 0.35,
+    cooldownRecovery: 35,
   },
   {
     name: '雷达战网戒指',
     prefix: '31.5%',
     type: 'ring',
     damageValue: 3450,
-    coolDownRecovery: 0.315,
+    cooldownRecovery: 31.5,
   },
   {
     name: '无尽的痛苦之戒',
@@ -310,7 +310,7 @@ export const rings: Data[] = [
       convert: 10,
       abnormalDamage: 15 + 10,
     },
-    other: '15% 毒伤，10% 毒伤，10% 毒转，15全。按佩戴异常手镯和蓝灵上衣计算',
+    other: '15%中毒伤害，10%中毒伤害，10% 毒转，15全。按佩戴异常手镯和蓝灵上衣计算',
   },
   {
     name: '蓝灵绿玉石戒指',
@@ -324,7 +324,8 @@ export const rings: Data[] = [
       prevAbnormalDamage: 20 + 30,
       abnormalDamage: 20 + 20 + 10,
     },
-    other: '领主 20% 毒伤，基础精通 20% 毒伤，10% 毒伤，15 全。按佩戴异常手镯和蓝灵上衣计算',
+    other:
+      '领主 20%中毒伤害，基础精通 20%中毒伤害，10%中毒伤害，15 全。按佩戴异常手镯和蓝灵上衣计算',
   },
   {
     name: '蓝灵绿玉石戒指',
@@ -338,14 +339,15 @@ export const rings: Data[] = [
       prevAbnormalDamage: 20 + 30,
       abnormalDamage: 20 * 0.667 + 20 * 0.667 + 10,
     },
-    other: '领主 20% 毒伤，基础精通 20% 毒伤，10% 毒伤，15 全。按佩戴异常手镯和蓝灵上衣计算',
+    other:
+      '领主 20%中毒伤害，基础精通 20%中毒伤害，10%中毒伤害，15 全。按佩戴异常手镯和蓝灵上衣计算',
   },
   {
     name: '深潜迷航导航环',
     type: 'ring',
     damageValue: 741 + 889 + 1186 + 1630,
     elementalDamage: 25 + 15 + 15,
-    coolDownRecovery: 0.3,
+    cooldownRecovery: 30,
     other: '10 无色 30% CDR，25 属强，15 单，15 全',
   },
 ]

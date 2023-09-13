@@ -18,7 +18,7 @@ export const earrings: Data[] = [
     name: '徘徊之魂耳环',
     type: 'earring',
     damageValue: 4528 + 2964,
-    coolDownReduction: 0.01 * 20,
+    cooldownReduction: 1 * 20,
   },
   {
     name: '无色冰晶耳环',
@@ -26,7 +26,7 @@ export const earrings: Data[] = [
     type: 'earring',
     damageValue: 4528,
     skillAtk: [20],
-    coolDownReduction: 0.3,
+    cooldownReduction: 30,
     speed: {
       attackSpeed: 8,
       castingSpeed: 12,
@@ -38,7 +38,7 @@ export const earrings: Data[] = [
     type: 'earring',
     damageValue: 4528,
     skillAtk: [20],
-    coolDownReduction: -0.15,
+    cooldownReduction: -15,
     speed: {
       attackSpeed: 8,
       castingSpeed: 12,
@@ -50,7 +50,7 @@ export const earrings: Data[] = [
     type: 'earring',
     damageValue: 4528,
     skillAtk: [-25],
-    coolDownReduction: -0.15,
+    cooldownReduction: -15,
     speed: {
       attackSpeed: 8,
       castingSpeed: 12,
@@ -81,7 +81,7 @@ export const earrings: Data[] = [
     type: 'earring',
     damageValue: 5874,
     skillAtk: [15],
-    coolDownReduction: -0.05,
+    cooldownReduction: -5,
   },
   {
     name: '苍空飞羽耳环',
@@ -123,7 +123,7 @@ export const earrings: Data[] = [
     type: 'earring',
     damageValue: 4796,
     skillAtk: [8],
-    coolDownReduction: 0.1,
+    cooldownReduction: 10,
   },
   {
     name: '猎龙者之证 - 龙鳞耳环',
@@ -188,7 +188,7 @@ export const earrings: Data[] = [
     type: 'earring',
     damageValue: 3787,
     skillAtk: [2, 5],
-    coolDownRecovery: 0.1,
+    cooldownRecovery: 10,
   },
   {
     name: '诅咒的枷锁',
@@ -196,7 +196,7 @@ export const earrings: Data[] = [
     type: 'earring',
     damageValue: 3787,
     skillAtk: [2, 5],
-    coolDownRecovery: 0.2,
+    cooldownRecovery: 20,
   },
   {
     name: '吞噬风暴耳环',
@@ -344,7 +344,7 @@ export const earrings: Data[] = [
       prevAbnormalDamage: 20 + 30,
       abnormalDamage: 15,
     },
-    other: '异抗 15% 毒伤，异常 5% 技攻，15 单，无用。对毒王提升，按佩戴异常手镯和蓝灵上衣计算',
+    other: '异抗 15%中毒伤害，异常 5% 技攻，15 单，无用。对毒王提升，按佩戴异常手镯和蓝灵上衣计算',
   },
   {
     name: '恩特精灵耳环',
@@ -359,7 +359,7 @@ export const earrings: Data[] = [
       abnormalDamage: 15,
     },
     other:
-      '异抗 15% 毒伤，龙族 7% 技攻，2 个异常 5% 技攻。对毒王提升，按佩戴异常手镯和蓝灵上衣计算',
+      '异抗 15%中毒伤害，龙族 7% 技攻，2 个异常 5% 技攻。对毒王提升，按佩戴异常手镯和蓝灵上衣计算',
   },
   {
     name: '恩特精灵耳环',
