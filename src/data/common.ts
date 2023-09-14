@@ -103,7 +103,7 @@ function getAbnormalDamageIncreaseRate({
   const currentConvert = prevConvert + convert
   const currentAbnormalDamage = prevAbnormalDamage + abnormalDamage
   const additionalDamage =
-    type === 'bleed' ? 10 : type === 'burn' ? 10 * (BURN_BREAK_ICE_RATE * 0.01) : 0
+    type === 'bleed' ? 10 : type === 'burn' ? 5 * (BURN_BREAK_ICE_RATE * 0.01) : 0
 
   const prevDamage =
     1 -
