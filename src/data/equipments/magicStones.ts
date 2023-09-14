@@ -27,7 +27,7 @@ export const magicStones: Data[] = [
   },
   {
     name: '静谧之像',
-    prefix: '15 ~ 30 级技能',
+    prefix: 'Lv15~30',
     type: 'magic-stone',
     damageValue: 4676,
     skillAtk: [3 * 10],

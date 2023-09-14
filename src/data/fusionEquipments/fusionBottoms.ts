@@ -17,19 +17,17 @@ export const fusionBottoms: Data[] = [
   },
   {
     name: '灵通：守候温度',
-    prefix: '16% 占比',
-    type: 'fusion-bottom',
-    damageValue: 4325,
-    cooldownRecovery: 20 * 0.16,
-    other: '期望为 20% CDR，按 35 和 70 级技能伤害占比 16% 计算',
-  },
-  {
-    name: '灵通：守候温度',
-    prefix: '12% 占比',
     type: 'fusion-bottom',
     damageValue: 4325,
     cooldownRecovery: 20 * 0.12,
-    other: '期望为 20% CDR，按 35 和 70 级技能伤害占比 12% 计算',
+    other: '期望为 20% CDR，按 Lv35 和 Lv70 总共 12% 占比计算',
+  },
+  {
+    name: '灵通：守候温度',
+    type: 'fusion-bottom',
+    damageValue: 4325,
+    cooldownRecovery: 20 * 0.16,
+    other: '期望为 20% CDR，按 Lv35 和 Lv70 总共 16% 占比计算',
   },
   {
     name: '暴怒：贪恋世间的渴求',

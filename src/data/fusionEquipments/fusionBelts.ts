@@ -13,19 +13,17 @@ export const fusionBelts: Data[] = [
   },
   {
     name: '灵通：满盈泪珠',
-    prefix: '20% 占比',
     type: 'fusion-belt',
     damageValue: 3142,
     cooldownRecovery: 22.5 * 0.2,
-    other: '期望为 22.5% CDR，按 45 和 80 级技能伤害占比 20% 计算',
+    other: '期望为 22.5% CDR，按 Lv45 和 Lv80 总共 20% 占比计算',
   },
   {
     name: '灵通：满盈泪珠',
-    prefix: '37% 占比',
     type: 'fusion-belt',
     damageValue: 3142,
     cooldownRecovery: 22.5 * 0.37,
-    other: '期望为 22.5% CDR，按 45 和 80 级技能伤害占比 37% 计算',
+    other: '期望为 22.5% CDR，按 Lv45 和 Lv80 总共 37% 占比计算',
   },
   {
     name: '暴怒：无限膨胀的食欲',

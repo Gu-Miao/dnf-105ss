@@ -13,19 +13,17 @@ export const fusionTops: Data[] = [
   },
   {
     name: '灵通：协同生命',
-    prefix: '11% 占比',
-    type: 'fusion-top',
-    damageValue: 5311,
-    cooldownRecovery: 20 * 0.11,
-    other: '期望为 20% CDR，按 30 和 60 级技能伤害占比 11% 计算',
-  },
-  {
-    name: '灵通：协同生命',
-    prefix: '10% 占比',
     type: 'fusion-top',
     damageValue: 5311,
     cooldownRecovery: 20 * 0.1,
-    other: '期望为 20% CDR，按 30 和 60 级技能伤害占比 10% 计算',
+    other: '期望为 20% CDR，按 Lv30 和 Lv60 总共 10% 占比计算',
+  },
+  {
+    name: '灵通：协同生命',
+    type: 'fusion-top',
+    damageValue: 5311,
+    cooldownRecovery: 20 * 0.11,
+    other: '期望为 20% CDR，按 Lv30 和 Lv60 总共 11% 占比计算',
   },
   {
     name: '暴怒：吞噬终末的气息',

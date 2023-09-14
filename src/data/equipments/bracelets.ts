@@ -34,7 +34,7 @@ export const bracelets: Data[] = [
   },
   {
     name: '千里之音手镯',
-    prefix: '15 ~ 30 级技能',
+    prefix: 'Lv15~30',
     type: 'bracelet',
     damageValue: 5066,
     skillAtk: [10, 10],

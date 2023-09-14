@@ -17,19 +17,17 @@ export const fusionHeaderShoulders: Data[] = [
   },
   {
     name: '灵通：暖融阳光',
-    prefix: '17% 占比',
-    type: 'fusion-header-shoulder',
-    damageValue: 3756,
-    cooldownRecovery: 22.5 * 0.17,
-    other: '期望为 22.5% CDR，按 40 和 75 级技能伤害占比 17% 计算',
-  },
-  {
-    name: '灵通：暖融阳光',
-    prefix: '14% 占比',
     type: 'fusion-header-shoulder',
     damageValue: 3756,
     cooldownRecovery: 3.15,
-    other: '期望为 22.5% CDR，按 40 和 75 级技能伤害占比 14% 计算',
+    other: '期望为 22.5% CDR，按 Lv40 和 Lv75 总共 14% 占比计算',
+  },
+  {
+    name: '灵通：暖融阳光',
+    type: 'fusion-header-shoulder',
+    damageValue: 3756,
+    cooldownRecovery: 22.5 * 0.17,
+    other: '期望为 22.5% CDR，按 Lv40 和 Lv75 总共 17% 占比计算',
   },
   {
     name: '暴怒：毁灭万物的盲目',

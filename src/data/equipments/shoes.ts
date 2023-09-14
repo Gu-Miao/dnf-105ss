@@ -40,7 +40,7 @@ export const shoes: Data[] = [
   },
   {
     name: '暗影之迹短靴',
-    prefix: '15 ~ 30 级技能',
+    prefix: 'Lv15~30',
     type: 'shoe',
     damageValue: 5066,
     skillAtk: [15],

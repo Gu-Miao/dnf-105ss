@@ -21,15 +21,16 @@ export const subEquipmentOptions: Option[] = [
     damageValue: 1037,
     cooldownReduction: 5.8 * 0.3,
     other:
-      '按旅人 Lv45 模拟，期望 CD 约为 5.8%。按旅人双 45 恩特肩双 45 魔女裤子 Lv45 30% 占比计算',
+      '按旅人空血静谧双音双 45 恩特肩双 45 魔女裤子灵通腰带 52.5% CDR 模拟，期望 CD 约为 5.8%，按 Lv45 30% 占比计算',
   },
   {
     name: '减少 Lv60 剩余 CD',
     type: 'sub-equipment',
     from: '森林之魔女篮子',
-    cooldownReduction: 5.8 * 0.13,
+    cooldownReduction: 5.6 * 0.13,
     damageValue: 1037,
-    other: '按关羽 Lv60 模拟，期望 CD 约为 5.8%。按关羽 9 保长虹贯日 Lv60 13% 占比计算',
+    other:
+      '按关羽空血静谧双音 9 保长虹贯日灵通上衣 50% CDR 模拟，期望 CD 约为 5.6%，按 Lv60 13% 占比计算',
   },
   {
     name: '减少 Lv35 剩余 CD',
@@ -37,10 +38,11 @@ export const subEquipmentOptions: Option[] = [
     from: '森林之魔女篮子',
     damageValue: 1037,
     cooldownReduction: 5.4 * 0.2,
-    other: '按特工 Lv35 模拟，期望 CD 约为 5.4%。按特工单 35 恩特裤子 9 保月步 20% 占比计算',
+    other:
+      '按特工攻速出血单 35 恩特裤子灵通裤子 9 保月步 60% CDR 模拟，期望 CD 约为 5.4%，按 Lv35 20% 占比计算',
   },
   {
-    name: '80 级技能韧性 CDR',
+    name: 'Lv80 韧性 CDR',
     type: 'sub-equipment',
     from: '森林之魔女篮子',
     damageValue: 1334,

@@ -2,41 +2,39 @@ import { Option } from '.'
 
 export const magicStoneOptions: Option[] = [
   {
-    name: '减少 70 级技能剩余 CD',
+    name: '减少 Lv70 剩余 CD',
     type: 'magic-stone',
     from: '森林之魔女精灵石',
     damageValue: 1037,
-    cooldownReduction: 7.2 * 0.15,
+    cooldownReduction: 6.8 * 0.15,
     other:
-      '按攻速出血女漫游 40% CDR 模拟，期望 CD 约为 7.2%。按女漫游 9 保压制射击 Lv70 15% 占比计算',
+      '按女漫游攻速出血灵通裤子 9 保压制射击 45% CDR 模拟，期望 CD 约为 6.8%，按 Lv70 15% 占比计算',
   },
   {
-    name: '减少 75 级技能剩余 CD',
+    name: '减少 Lv75 剩余 CD',
     type: 'magic-stone',
     from: '森林之魔女精灵石',
     damageValue: 1037,
-    cooldownReduction: 6.85 * 0.5,
+    cooldownReduction: 1.596,
     other:
-      '按 75 级技能 35 冷却，30% CDR 计算，期望冷却减少约为 6.85%，按 75 级技能 50% 占比计算。收益低，主要还是给奶用',
+      '按男气功空血静谧双音双 75 深潜裤子特化雷切 52.5% CDR 模拟，期望 CD 约为 5.7%，按 Lv75 28% 占比计算',
   },
   {
-    name: '减少 40 级技能剩余 CD',
-
+    name: '减少 Lv40 剩余 CD',
     type: 'magic-stone',
     from: '森林之魔女精灵石',
     damageValue: 1037,
-    cooldownReduction: 5.66 * 0.5,
+    cooldownReduction: 7 * 0.21,
     other:
-      '按 40 级技能 20 冷却，30% CDR 计算，期望冷却减少约为 5.66%，按 40 级技能 50% 占比计算。收益低，主要还是给奶用',
+      '按帕拉乙攻速出血灵通肩恩特裤子双 40 特化碎灵屠戮 62.5% CDR 模拟，期望 CD 约为 7%，按 Lv40 21% 占比计算',
   },
   {
-    name: '70 级技能韧性 CDR',
-
+    name: 'Lv70 韧性 CDR',
     type: 'magic-stone',
     from: '森林之魔女精灵石',
     damageValue: 1334,
-    cooldownRecovery: 16.5 * 0.5,
-    other: '期望 16.5% CDR，按 70 级技能 50% 占比计算',
+    cooldownRecovery: 16.5 * 0.15,
+    other: '期望 16.5% CDR，按女漫游 9 保压制射击 Lv70 15% 占比计算',
   },
   {
     name: '25 属强',
@@ -46,7 +44,7 @@ export const magicStoneOptions: Option[] = [
     elementalDamage: 25,
   },
   {
-    name: '15 灼烧伤害',
+    name: '15% 灼烧伤害',
     type: 'magic-stone',
     from: '恩特精灵之心',
     damageValue: 889,
