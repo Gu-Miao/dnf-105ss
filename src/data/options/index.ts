@@ -16,12 +16,7 @@ import { subEquipmentOptions } from './subEquipmentOptions'
 import { magicStoneOptions } from './magicStoneOptions'
 import { earringOptions } from './earringOptions'
 
-export type Option = Omit<Data, 'type'> & {
-  type: Data['type'] | 'public' | 'armor' | 'jewelry' | 'special-equipment'
-  from?: string
-}
-
-export const options: Option[] = [
+const options: Data[] = [
   ...publicOptions,
   ...armorOptions,
   ...jewelryOptions,
@@ -43,3 +38,5 @@ export const options: Option[] = [
     return item
   })
   .sort((a, b) => (b.increaseRate as number) - (a.increaseRate as number))
+
+export { options, type Data }

@@ -12,6 +12,10 @@ export type Data = {
   name: string
   prefix?: string
   type:
+    | 'public'
+    | 'armor'
+    | 'jewelry'
+    | 'special-equipment'
     | 'top'
     | 'bottom'
     | 'header-shoulder'
@@ -34,6 +38,7 @@ export type Data = {
     | 'fusion-sub-equipment'
     | 'fusion-magic-stone'
     | 'fusion-earring'
+  from?: string
   damageValue?: number
   skillAtk?: number[]
   elementalDamage?: number
