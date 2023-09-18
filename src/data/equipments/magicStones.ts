@@ -10,8 +10,8 @@ export const magicStones: Data[] = [
     name: '虚伪之石',
     type: 'magic-stone',
     damageValue: 3180,
-    elementalDamage: 30,
-    other: '按 30 属强附魔计算',
+    elementalDamage: 35,
+    other: '按 35 属强附魔计算',
   },
   {
     name: '逆流之魂灵珠',
@@ -30,8 +30,8 @@ export const magicStones: Data[] = [
     prefix: 'Lv15~30',
     type: 'magic-stone',
     damageValue: 4676,
-    skillAtk: [3 * 10],
-    cooldownRecovery: 1 * 10,
+    skillAtk: [5 * 5],
+    cooldownRecovery: 2 * 5,
     speed: {
       attackSpeed: 8,
       castingSpeed: 12,
@@ -115,7 +115,7 @@ export const magicStones: Data[] = [
   {
     name: '迷你电池包',
     type: 'magic-stone',
-    damageValue: 5066 + 504 * 5 + 2223,
+    damageValue: 5066 + 2223 + 2519,
     skillAtk: [5],
   },
   {
@@ -173,7 +173,7 @@ export const magicStones: Data[] = [
   {
     name: '终结之龙玉',
     type: 'magic-stone',
-    damageValue: 5066 + 1778,
+    damageValue: 5604 + 1778,
     skillAtk: [9],
   },
   {

@@ -61,7 +61,7 @@ export const belts: Data[] = [
     type: 'belt',
     damageValue: 6414 + 712 + 712,
     skillAtk: [7],
-    elementalDamage: 15,
+    elementalDamage: 20,
   },
   {
     name: '御雷腰带',
@@ -69,7 +69,7 @@ export const belts: Data[] = [
     type: 'belt',
     damageValue: 6414 + 712 + 712 * 2,
     skillAtk: [7],
-    elementalDamage: 15,
+    elementalDamage: 20,
   },
   {
     name: '御雷腰带',
@@ -77,7 +77,7 @@ export const belts: Data[] = [
     type: 'belt',
     damageValue: 6414 + 712 + 712 * 5,
     skillAtk: [7],
-    elementalDamage: 15,
+    elementalDamage: 20,
   },
   {
     name: '音律的夙愿',
@@ -162,7 +162,7 @@ export const belts: Data[] = [
     type: 'belt',
     damageValue: 6414 + 712,
     skillAtk: [2],
-    elementalDamage: 15,
+    elementalDamage: 20,
     speed: {
       attackSpeed: 10,
       castingSpeed: 15,
@@ -174,7 +174,7 @@ export const belts: Data[] = [
     type: 'belt',
     damageValue: 6414 + 712 * 2,
     skillAtk: [2],
-    elementalDamage: 15,
+    elementalDamage: 20,
     speed: {
       attackSpeed: 10,
       castingSpeed: 15,
@@ -186,7 +186,7 @@ export const belts: Data[] = [
     type: 'belt',
     damageValue: 6414 + 712 * 5,
     skillAtk: [2],
-    elementalDamage: 15,
+    elementalDamage: 20,
     speed: {
       attackSpeed: 10,
       castingSpeed: 15,
@@ -202,7 +202,7 @@ export const belts: Data[] = [
     name: '信念之喘息腰带',
     prefix: '2 个异常对象',
     type: 'belt',
-    damageValue: 5874 + 1186 + 712 * 2,
+    damageValue: 5874 + 2816 + 712 * 2,
     skillAtk: [7],
     elementalDamage: 10,
   },
@@ -210,7 +210,7 @@ export const belts: Data[] = [
     name: '信念之喘息腰带',
     prefix: '5 个异常对象',
     type: 'belt',
-    damageValue: 5874 + 1186 + 712 * 5,
+    damageValue: 5874 + 2816 + 712 * 5,
     skillAtk: [7],
     elementalDamage: 10,
   },
@@ -228,7 +228,7 @@ export const belts: Data[] = [
     name: '天才技术大师的百宝腰带',
     type: 'belt',
     damageValue: 4917 + 2223 + 889 * 5,
-    elementalDamage: 24,
+    skillAtk: [5],
   },
   {
     name: '应尽之责腰带',

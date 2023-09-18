@@ -78,7 +78,7 @@ export const rings: Data[] = [
     type: 'ring',
     damageValue: 5133 + 741,
     skillAtk: [2, 5],
-    elementalDamage: 10,
+    elementalDamage: 20,
   },
   {
     name: '闪耀的音律',
@@ -207,14 +207,13 @@ export const rings: Data[] = [
   {
     name: '血色结晶戒指',
     type: 'ring',
-    damageValue: 3368 + 2223 + 741,
+    damageValue: 3368 + 2223 + 2223,
     abnormal: {
       type: 'bleed',
       prevConvert: 50,
       prevAbnormalDamage: 20 + 30,
-      abnormalDamage: 5 + 10 + 10,
+      abnormalDamage: 15 + 10,
     },
-    speed: -15,
     other: '按佩戴异常手镯和蓝灵上衣计算',
   },
   {
@@ -240,7 +239,7 @@ export const rings: Data[] = [
     name: '炽热的渴望之证',
     type: 'ring',
     damageValue: 3988 + 445 * 10,
-    elementalDamage: 32,
+    elementalDamage: 9 * 4,
     speed: {
       attackSpeed: 8,
       castingSpeed: 12,

@@ -5,9 +5,8 @@ export const necklaces: Data[] = [
     name: '战士的荣耀项链',
     type: 'necklace',
     damageValue: 5336,
-    elementalDamage: 15,
-    cooldownReduction: 10,
-    other: 'CD 收益估算为 10% 减 CD',
+    elementalDamage: 20,
+    cooldownRecovery: 20,
   },
   {
     name: '第一个黑桃 - 贵族',
@@ -27,7 +26,8 @@ export const necklaces: Data[] = [
   {
     name: '脉冲触发器',
     type: 'necklace',
-    damageValue: 4796 + 4446,
+    damageValue: 4796,
+    skillAtk: [7],
     elementalDamage: 15,
     speed: {
       attackSpeed: 25 + 25,
@@ -38,7 +38,7 @@ export const necklaces: Data[] = [
     type: 'necklace',
     damageValue: 6952,
     speed: {
-      moveSpeed: 8,
+      moveSpeed: 12,
     },
   },
   {
@@ -65,7 +65,7 @@ export const necklaces: Data[] = [
   {
     name: '浮光跃金项链',
     type: 'necklace',
-    damageValue: 4528 + 741 * 4,
+    damageValue: 4528 + 926 * 4,
     skillAtk: [8],
     speed: {
       attackSpeed: 8,
@@ -139,7 +139,7 @@ export const necklaces: Data[] = [
   {
     name: '熔丝项链',
     type: 'necklace',
-    damageValue: 6682 + 1778,
+    damageValue: 6682 + 2668,
     skillAtk: [5],
   },
   {
@@ -169,13 +169,14 @@ export const necklaces: Data[] = [
     name: '正气傲然的理念',
     type: 'necklace',
     damageValue: 4258 + 356 * 10,
-    elementalDamage: 10,
+    elementalDamage: 18,
   },
   {
     name: '暴龙王的支配 - 恐怖',
     type: 'necklace',
     damageValue: 7396,
-    elementalDamage: 10 + 15,
+    skillAtk: [5],
+    elementalDamage: 20,
     speed: {
       attackSpeed: 20,
       castingSpeed: 30,

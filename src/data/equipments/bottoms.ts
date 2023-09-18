@@ -5,7 +5,7 @@ export const bottoms: Data[] = [
     name: '荒漠之界长裤',
     type: 'bottom',
     damageValue: 4528,
-    elementalDamage: 5 * 5 + 15,
+    elementalDamage: 25 + 20,
   },
   {
     name: '白虹贯日长裤',
@@ -23,10 +23,10 @@ export const bottoms: Data[] = [
     type: 'bottom',
     damageValue: 4258,
     skillAtk: [5],
-    cooldownReduction: -8,
+    cooldownReduction: -5,
     speed: {
-      attackSpeed: 18,
-      castingSpeed: 22,
+      attackSpeed: 5 * 3 + 8,
+      castingSpeed: 5 * 3 + 12,
     },
   },
   {
@@ -43,14 +43,14 @@ export const bottoms: Data[] = [
     prefix: '未被击',
     type: 'bottom',
     damageValue: 3450,
-    elementalDamage: 30 + 15,
+    elementalDamage: 30 + 20,
   },
   {
     name: '霜云暗影长裤',
     prefix: '被击',
     type: 'bottom',
     damageValue: 3450,
-    elementalDamage: 30 + 20 + 15,
+    elementalDamage: 30 + 20 + 20,
   },
   {
     name: '舞台的华丽',
@@ -63,7 +63,7 @@ export const bottoms: Data[] = [
     prefix: '被击',
     type: 'bottom',
     damageValue: 3450,
-    elementalDamage: 30 + 20 + 15,
+    elementalDamage: 30 + 20 + 20,
   },
   {
     name: '和平之翼长裤',
@@ -167,7 +167,7 @@ export const bottoms: Data[] = [
     prefix: '被击',
     type: 'bottom',
     damageValue: 3450,
-    elementalDamage: 30 + 20 + 15,
+    elementalDamage: 30 + 20 + 20,
   },
   {
     name: '苍龙闪影护腿',
@@ -183,6 +183,7 @@ export const bottoms: Data[] = [
     name: '天才技术大师的百宝裤',
     type: 'bottom',
     damageValue: 4796 + 3705,
+    skillAtk: [3],
     speed: {
       moveSpeed: 8,
     },
@@ -192,7 +193,7 @@ export const bottoms: Data[] = [
     prefix: '被击',
     type: 'bottom',
     damageValue: 3450,
-    elementalDamage: 30 + 20 + 15,
+    elementalDamage: 30 + 20 + 20,
   },
   {
     name: '终极掌控者护腿',
@@ -226,7 +227,7 @@ export const bottoms: Data[] = [
     type: 'bottom',
     damageValue: 3988 + 136 * 20,
     skillAtk: [0.2 * 20],
-    elementalDamage: 10,
+    elementalDamage: 18,
     speed: 2 * 10,
   },
   {
@@ -235,13 +236,15 @@ export const bottoms: Data[] = [
     type: 'bottom',
     damageValue: 3988 + 136 * 24,
     skillAtk: [4.8],
-    elementalDamage: 10,
+    elementalDamage: 18,
     speed: 2 * 12,
   },
   {
     name: '指引胜利的正义',
+    prefix: '90% 韧性',
     type: 'bottom',
     damageValue: 5604 + 296 * 10,
+    skillAtk: [2],
     elementalDamage: 15,
     speed: {
       moveSpeed: 8,
@@ -257,5 +260,32 @@ export const bottoms: Data[] = [
     name: '穿云破雾之光',
     type: 'bottom',
     damageValue: 5604 + 2705,
+  },
+  {
+    name: '迷雾追随者下装',
+    prefix: '90% 韧性',
+    type: 'bottom',
+    damageValue: 5604 + 296 * 10,
+    skillAtk: [2],
+    elementalDamage: 15,
+  },
+  {
+    name: '溪谷监视者下装',
+    type: 'bottom',
+    damageValue: 4917,
+    skillAtk: [10],
+  },
+  {
+    name: '满怀梦想的工程师长裤',
+    type: 'bottom',
+    damageValue: 5066 + 1186,
+    skillAtk: [2 * 3],
+  },
+  {
+    name: '光荣骑士下装',
+    type: 'bottom',
+    damageValue: 4824,
+    skillAtk: [10, 5 * 0.26],
+    other: '按红眼 Lv75 和 Lv80 总共 26% 占比计算',
   },
 ]

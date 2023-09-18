@@ -37,7 +37,7 @@ export const bracelets: Data[] = [
     prefix: 'Lv15~30',
     type: 'bracelet',
     damageValue: 5066,
-    skillAtk: [10, 10],
+    skillAtk: [21],
     speed: {
       attackSpeed: 8,
       castingSpeed: 12,
@@ -48,8 +48,6 @@ export const bracelets: Data[] = [
     prefix: '无色',
     type: 'bracelet',
     damageValue: 5066,
-    skillAtk: [-15],
-    cooldownReduction: -10,
     speed: {
       attackSpeed: 8,
       castingSpeed: 12,
@@ -89,7 +87,7 @@ export const bracelets: Data[] = [
     type: 'bracelet',
     damageValue: 5066,
     skillAtk: [14],
-    elementalDamage: 3 * 10,
+    elementalDamage: 30,
   },
   {
     name: '灿若繁星手镯',
@@ -126,14 +124,14 @@ export const bracelets: Data[] = [
     name: '绿野的纯真手镯',
     prefix: '未破韧',
     type: 'bracelet',
-    damageValue: 3906 + 148 * 5,
+    damageValue: 3906 + 445 * 5,
     skillAtk: [8],
   },
   {
     name: '绿野的纯真手镯',
     prefix: '破韧',
     type: 'bracelet',
-    damageValue: 3906 + 148 * 5,
+    damageValue: 3906 + 445 * 5,
     skillAtk: [8, 5, 15],
   },
   {
@@ -154,14 +152,14 @@ export const bracelets: Data[] = [
     type: 'bracelet',
     damageValue: 5416 + 4446,
     skillAtk: [10],
-    elementalDamage: 3 * 5 + 15,
+    elementalDamage: 20 + 3 * 5,
   },
   {
     name: '自由之缚手镯',
     prefix: '非无色',
     type: 'bracelet',
     damageValue: 5416 + 4446,
-    elementalDamage: 3 * 5 + 15,
+    elementalDamage: 20 + 3 * 5,
   },
   {
     name: '守护龙的庇护 - 慈悲',
@@ -173,8 +171,8 @@ export const bracelets: Data[] = [
     name: '重奏者',
     type: 'bracelet',
     damageValue: 3988,
-    skillAtk: [2 * 6],
-    cooldownRecovery: 30,
+    skillAtk: [2, 2 * 5],
+    cooldownRecovery: 6 * 5,
   },
   {
     name: '骑士的救赎',
@@ -211,7 +209,7 @@ export const bracelets: Data[] = [
     name: '动力导航包',
     type: 'bracelet',
     damageValue: 5066 + 2816,
-    skillAtk: [7],
+    skillAtk: [9],
     cooldownReduction: 15,
     speed: {
       attackSpeed: 8,

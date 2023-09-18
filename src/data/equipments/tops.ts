@@ -97,6 +97,7 @@ export const tops: Data[] = [
     name: '百折不挠的梦想',
     type: 'top',
     damageValue: 6952,
+    skillAtk: [5],
     elementalDamage: 15,
   },
   {
@@ -151,7 +152,7 @@ export const tops: Data[] = [
     type: 'top',
     damageValue: 6414 + 712,
     skillAtk: [2],
-    elementalDamage: 15,
+    elementalDamage: 20,
     speed: {
       attackSpeed: 10,
       castingSpeed: 15,
@@ -163,7 +164,7 @@ export const tops: Data[] = [
     type: 'top',
     damageValue: 6414 + 712 * 2,
     skillAtk: [2],
-    elementalDamage: 15,
+    elementalDamage: 20,
     speed: {
       attackSpeed: 10,
       castingSpeed: 15,
@@ -172,7 +173,7 @@ export const tops: Data[] = [
   {
     name: '高科技战术指挥上衣',
     type: 'top',
-    damageValue: 6414 + 1927,
+    damageValue: 6952 + 1927,
     elementalDamage: 30,
     speed: {
       moveSpeed: 30,
@@ -216,7 +217,7 @@ export const tops: Data[] = [
   {
     name: '深渊之源上衣',
     type: 'top',
-    damageValue: 6414 + 1927,
+    damageValue: 6952 + 1927,
     elementalDamage: 30,
   },
   {
@@ -250,7 +251,7 @@ export const tops: Data[] = [
     name: '冷静的谋略家上衣',
     type: 'top',
     damageValue: 4796 + 296 * 5,
-    cooldownRecovery: 30,
+    cooldownRecovery: 2 * 15,
     speed: {
       attackSpeed: 8,
       castingSpeed: 12,
@@ -260,10 +261,37 @@ export const tops: Data[] = [
     name: '铭记长夜的黎明',
     type: 'top',
     damageValue: 6414 + 445 * 10,
+    elementalDamage: 15,
   },
   {
     name: '临界崩坏之隙',
     type: 'top',
     damageValue: 6144 + 2223,
+  },
+  {
+    name: '迷雾追随者上衣',
+    type: 'top',
+    damageValue: 6144,
+    skillAtk: [10],
+  },
+  {
+    name: '溪谷监视着上衣',
+    type: 'top',
+    damageValue: 6414,
+    skillAtk: [7],
+    speed: 10,
+  },
+  {
+    name: '满怀梦想的工程师上衣',
+    type: 'top',
+    damageValue: 6414,
+    skillAtk: [8],
+  },
+  {
+    name: '勇敢的骑士装甲',
+    type: 'top',
+    damageValue: 5187,
+    cooldownRecovery: 7 * 3,
+    speed: 10,
   },
 ]

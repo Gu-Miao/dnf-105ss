@@ -20,7 +20,7 @@ export const subEquipments: Data[] = [
     type: 'sub-equipment',
     damageValue: 7100,
     elementalDamage: 10,
-    cooldownReduction: 5,
+    cooldownReduction: 10,
     speed: {
       attackSpeed: 5 * 5,
       castingSpeed: 8 * 5,
@@ -37,8 +37,10 @@ export const subEquipments: Data[] = [
   },
   {
     name: '全息通话器',
+    prefix: 'Lv1~30',
     type: 'sub-equipment',
     damageValue: 6414,
+    skillAtk: [12],
     speed: {
       attackSpeed: 8,
       castingSpeed: 12,
@@ -176,8 +178,8 @@ export const subEquipments: Data[] = [
   {
     name: '死亡之冠',
     type: 'sub-equipment',
-    damageValue: 6414 + 2964,
-    elementalDamage: 2 + 2 * 4,
+    damageValue: 6414 + 3705,
+    elementalDamage: 4 + 4 * 4,
     speed: {
       moveSpeed: 8,
     },
@@ -186,7 +188,7 @@ export const subEquipments: Data[] = [
     name: '光学工程眼镜',
     type: 'sub-equipment',
     damageValue: 4528 + 3557,
-    skillAtk: [5],
+    skillAtk: [7],
     speed: {
       attackSpeed: 5,
       castingSpeed: 7.5,
