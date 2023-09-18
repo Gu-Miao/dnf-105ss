@@ -30,7 +30,7 @@ function Header() {
       <p>
         <strong>计算仅供参考</strong>
       </p>
-      <p>更新至国服弓箭手版本。</p>
+      <p>更新至韩服 9.13 神界版本。</p>
       <p>
         所有装备攻强取 1 级，攻强分母 {DAMAGE_VALUE_BASE}，百分比攻强 {DAMAGE_VALUE_PERCENTAGE}
         %，属强 {ELEMENTAL_DAMAGE}。计算贴膜时的模板攻强为 {DAMAGE_VALUE_FUSION}。CD
