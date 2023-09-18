@@ -258,38 +258,4 @@ export const bottoms: Data[] = [
     type: 'bottom',
     damageValue: 5604 + 2705,
   },
-  {
-    name: '恩特精灵护腿',
-    type: 'bottom',
-    damageValue: 593 + 1186 + 1186 + 1186,
-    abnormal: {
-      type: 'bleed',
-      prevConvert: 50,
-      prevAbnormalDamage: 20 + 30,
-      abnormalDamage: 20,
-    },
-    other: '20% 出血伤害，3 个无用。按佩戴异常手镯和蓝灵上衣计算',
-  },
-  {
-    name: '恩特精灵护腿',
-    type: 'bottom',
-    damageValue: 593 + 1186 + 178 * 10 + 1186 + 1630,
-    elementalDamage: 15 + 15,
-    abnormal: {
-      type: 'bleed',
-      prevConvert: 50,
-      prevAbnormalDamage: 20 + 30,
-      abnormalDamage: 20,
-    },
-    other: '20% 出血伤害，连击攻强，15 单，15 全。按佩戴异常手镯和蓝灵上衣计算',
-  },
-  {
-    name: '深潜迷航长裤',
-    type: 'bottom',
-    damageValue: 1186 + 1186 + 1186 + 1630,
-    skillAtk: [20 * 0.3],
-    elementalDamage: 15 + 15,
-    cooldownReduction: 20 * 0.3,
-    other: 'Lv80 技攻，Lv80 冷却，15 单，15 全，按鹦鹉双 80 top剜心 30% 占比计算',
-  },
 ]

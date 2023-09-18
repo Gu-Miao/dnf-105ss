@@ -362,32 +362,4 @@ export const belts: Data[] = [
     damageValue: 3450 + 1778,
     skillAtk: [12],
   },
-  {
-    name: '恩特精灵腰带',
-    prefix: '毒王',
-    type: 'belt',
-    damageValue: 593 + 1334 + 1334 + 1630,
-    skillAtk: [5, 5],
-    elementalDamage: 15,
-    abnormal: {
-      type: 'posion',
-      prevConvert: 50,
-      prevAbnormalDamage: 20 + 30,
-      abnormalDamage: 20,
-    },
-    other: '20%中毒伤害，2 个距离 5% 技攻，15 全。对毒王提升，按佩戴异常手镯和蓝灵上衣计算',
-  },
-  {
-    name: '深潜迷航腰带',
-    type: 'belt',
-    damageValue: 593 + 1186 + 416 * 10 + 1186 + 1630,
-    elementalDamage: 15 + 15,
-    abnormal: {
-      type: 'bleed',
-      prevConvert: 50,
-      prevAbnormalDamage: 20 + 30,
-      abnormalDamage: 10,
-    },
-    other: '10% 出血伤害，深潜专属连击攻强，15 单，15 全。按佩戴异常手镯和蓝灵上衣计算',
-  },
 ]

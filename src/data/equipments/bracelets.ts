@@ -241,11 +241,4 @@ export const bracelets: Data[] = [
       moveSpeed: 8,
     },
   },
-  {
-    name: '深潜迷航腕表',
-    type: 'bracelet',
-    damageValue: 1186 + (3409 + 2223) / 2 + 1334 + (3409 + 2223) / 2 + 1186 + 1630,
-    elementalDamage: 15 + 15,
-    other: '减伤攻强，速度攻强，15 单，15 全',
-  },
 ]
