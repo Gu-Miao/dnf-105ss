@@ -18,14 +18,14 @@ export const belts: Data[] = [
   },
   {
     name: '恐惧缠绕腰带',
-    prefix: '1 ~ 30 技能',
+    prefix: 'Lv1~30',
     type: 'belt',
     damageValue: 4528,
     skillAtk: [20, 12],
   },
   {
     name: '恐惧缠绕腰带',
-    prefix: '30 级以上技能',
+    prefix: 'Lv30 以上',
     type: 'belt',
     damageValue: 4528,
     skillAtk: [20],

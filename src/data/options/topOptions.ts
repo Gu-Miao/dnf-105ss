@@ -1,6 +1,6 @@
-import { Option } from '.'
+import { Data } from '.'
 
-export const topOptions: Option[] = [
+export const topOptions: Data[] = [
   {
     name: '25 属强',
     type: 'top',

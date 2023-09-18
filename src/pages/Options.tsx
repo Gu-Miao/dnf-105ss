@@ -1,7 +1,5 @@
-import { useState, useMemo } from 'react'
 import { options, Data } from '@/data/options'
-import Table from '@/components/Table'
-import Selector from '@/components/Selector'
+import Page from '@/components/Page'
 
 const cacheName = 'options'
 const types: Data['type'][] = [
@@ -23,24 +21,7 @@ const types: Data['type'][] = [
 ]
 
 function Options() {
-  const [type, setType] = useState<Data['type']>(
-    (localStorage.getItem(cacheName) as null | Data['type']) ?? types[0],
-  )
-  const filteredData = useMemo(() => options.filter(item => item.type === type), [type])
-
-  return (
-    <div>
-      <p>
-        <Selector
-          cacheName={cacheName}
-          types={types}
-          value={type}
-          onChange={type => setType(type)}
-        />
-      </p>
-      <Table data={filteredData} />
-    </div>
-  )
+  return <Page data={options} cacheName={cacheName} types={types} />
 }
 
 export default Options

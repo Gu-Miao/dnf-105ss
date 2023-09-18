@@ -1,6 +1,6 @@
-import { Option } from '.'
+import { Data } from '.'
 
-export const publicOptions: Option[] = [
+export const publicOptions: Data[] = [
   {
     name: '15 单属强',
     type: 'public',

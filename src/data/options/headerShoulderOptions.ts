@@ -1,6 +1,6 @@
-import { Option } from '.'
+import { Data } from '.'
 
-export const headerShoulderOptions: Option[] = [
+export const headerShoulderOptions: Data[] = [
   {
     name: '韧性攻强',
     type: 'header-shoulder',
@@ -29,7 +29,7 @@ export const headerShoulderOptions: Option[] = [
     from: '森林之魔女斗篷',
     damageValue: 1186,
     skillAtk: [20 * 0.21],
-    other: '按帕拉乙双 40 恩特裤子 Lv40 21% 占比计算',
+    other: '按魔灵双 40 恩特裤子 Lv40 21% 占比计算',
   },
   {
     name: 'Lv40 20% CD',
@@ -37,7 +37,7 @@ export const headerShoulderOptions: Option[] = [
     from: '森林之魔女斗篷',
     cooldownReduction: 20 * 0.21,
     damageValue: 1186,
-    other: '按帕拉乙双 40 恩特裤子 Lv40 21% 占比计算',
+    other: '按魔灵双 40 恩特裤子 Lv40 21% 占比计算',
   },
   {
     name: 'Lv40 +1',
@@ -45,7 +45,7 @@ export const headerShoulderOptions: Option[] = [
     from: '森林之魔女斗篷',
     damageValue: 1482,
     skillAtk: [2 * 0.21],
-    other: '帕拉乙 Lv40 +1 提升 2%，按双 40 恩特裤子 Lv40 21% 占比计算',
+    other: '魔灵 Lv40 +1 提升 2%，按双 40 恩特裤子 Lv40 21% 占比计算',
   },
   {
     name: '手搓 12% 技攻',
@@ -74,7 +74,7 @@ export const headerShoulderOptions: Option[] = [
     type: 'header-shoulder',
     from: '恩特精灵护肩',
     skillAtk: [3.6],
-    cooldownReduction: -30 * 0.18,
+    cooldownReduction: -5.4,
     damageValue: 1186,
     other: '按旅人 9 保 45 Lv45 18% 占比计算',
   },

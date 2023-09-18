@@ -204,7 +204,6 @@ export const rings: Data[] = [
     skillAtk: [5, 15],
     elementalDamage: 10,
   },
-
   {
     name: '血色结晶戒指',
     type: 'ring',

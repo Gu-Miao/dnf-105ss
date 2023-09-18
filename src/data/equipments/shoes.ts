@@ -43,8 +43,11 @@ export const shoes: Data[] = [
     prefix: 'Lv15~30',
     type: 'shoe',
     damageValue: 5066,
-    skillAtk: [15],
-    speed: 30,
+    skillAtk: [5 * 3],
+    speed: {
+      attackSpeed: 10 * 3,
+      castingSpeed: 10 * 3,
+    },
   },
   {
     name: '大地的践踏短靴',
@@ -251,12 +254,12 @@ export const shoes: Data[] = [
     name: '无畏的勇气短靴',
     type: 'shoe',
     damageValue: 6414 + 3260,
-    skillAtk: [3, 3],
+    skillAtk: [6.7],
     elementalDamage: 25,
     speed: {
       moveSpeed: 8,
     },
-    other: '等级增加估算为 2 个 3% 技攻',
+    other: '按剑魂 Lv1~25 +2 提升 6.7% 计算',
   },
   {
     name: '蒸汽朋克音速鞋',
@@ -321,7 +324,7 @@ export const shoes: Data[] = [
   },
   {
     name: '超界次元',
-    prefix: '未包含 TP 技能',
+    prefix: '非 TP',
     type: 'shoe',
     damageValue: 6682,
     skillAtk: [8],
@@ -333,15 +336,15 @@ export const shoes: Data[] = [
   },
   {
     name: '超界次元',
-    prefix: '包含 TP 技能',
+    prefix: 'TP',
     type: 'shoe',
     damageValue: 6682,
-    skillAtk: [8, 10],
+    skillAtk: [8, 7],
     elementalDamage: 10,
     speed: {
       attackSpeed: 8,
       castingSpeed: 12,
     },
-    other: '1 级 TP 按 10% 技攻计算',
+    other: 'TP +1 提升约为 7%',
   },
 ]

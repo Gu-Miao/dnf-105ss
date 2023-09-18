@@ -75,7 +75,7 @@ function getSkillAtkIncreaseRate(skillAtk: number[]) {
 
 /**
  * 获取攻击强化提升率
- * @param damageValue 增加的攻击强化
+ * @param damageValue 攻击强化
  * @param prevDamageValue 攻强分母
  * @returns 攻击强化提升率
  */

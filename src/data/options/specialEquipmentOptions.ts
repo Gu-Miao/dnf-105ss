@@ -1,6 +1,6 @@
-import { Option } from '.'
+import { Data } from '.'
 
-export const specialEquipmentOptions: Option[] = [
+export const specialEquipmentOptions: Data[] = [
   {
     name: '种族 7% 技攻',
     type: 'special-equipment',

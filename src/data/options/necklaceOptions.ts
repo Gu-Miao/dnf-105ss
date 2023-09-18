@@ -1,6 +1,6 @@
-import { Option } from '.'
+import { Data } from '.'
 
-export const necklaceOptions: Option[] = [
+export const necklaceOptions: Data[] = [
   {
     name: '10% 出血伤害',
     type: 'necklace',
@@ -35,7 +35,7 @@ export const necklaceOptions: Option[] = [
     from: '蓝灵绿玉石项链',
     damageValue: 1334,
     cooldownRecovery: 30 * 0.21,
-    other: '按帕拉乙双 40 恩特裤子 Lv40 21% 占比计算',
+    other: '按魔灵双 40 恩特裤子 Lv40 21% 占比计算',
   },
   {
     name: '自异常 Lv70 30% CDR',

@@ -1,6 +1,6 @@
-import { Option } from '.'
+import { Data } from '.'
 
-export const ringOptions: Option[] = [
+export const ringOptions: Data[] = [
   {
     name: '10% 灼烧伤害',
     type: 'ring',

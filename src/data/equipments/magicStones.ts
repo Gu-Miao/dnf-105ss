@@ -31,7 +31,7 @@ export const magicStones: Data[] = [
     type: 'magic-stone',
     damageValue: 4676,
     skillAtk: [3 * 10],
-    cooldownRecovery: 0.01 * 10,
+    cooldownRecovery: 1 * 10,
     speed: {
       attackSpeed: 8,
       castingSpeed: 12,

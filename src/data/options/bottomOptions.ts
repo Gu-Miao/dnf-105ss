@@ -1,6 +1,6 @@
-import { Option } from '.'
+import { Data } from '.'
 
-export const bottomOptions: Option[] = [
+export const bottomOptions: Data[] = [
   {
     name: 'Lv45 20% CD',
     type: 'bottom',
@@ -100,7 +100,7 @@ export const bottomOptions: Option[] = [
     damageValue: 1134,
     skillAtk: [20 * 0.16],
     cooldownReduction: -30 * 0.16,
-    other: '按帕拉乙 9 保碎灵屠戮 Lv40 16% 占比计算',
+    other: '按魔灵 9 保碎灵屠戮 Lv40 16% 占比计算',
   },
   {
     name: 'Lv40 20% 技攻，Lv45 +30% CD',
@@ -108,7 +108,7 @@ export const bottomOptions: Option[] = [
     from: '恩特精灵护腿',
     damageValue: 1134,
     skillAtk: [20 * 0.16],
-    other: '按帕拉乙 9 保碎灵屠戮 Lv40 16% 占比且不点 Lv45 计算',
+    other: '按魔灵 9 保碎灵屠戮 Lv40 16% 占比且不点 Lv45 计算',
   },
   {
     name: 'Lv70~75 +3',

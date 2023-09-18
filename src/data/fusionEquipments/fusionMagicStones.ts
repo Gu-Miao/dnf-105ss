@@ -19,7 +19,6 @@ export const fusionMagicStones: Data[] = [
     damageValue: 2350,
     skillAtk: [3],
   },
-
   {
     name: '卓越：魔力之环',
     type: 'fusion-magic-stone',

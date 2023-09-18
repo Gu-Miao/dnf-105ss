@@ -1,6 +1,6 @@
-import { Option } from '.'
+import { Data } from '.'
 
-export const shoeOptions: Option[] = [
+export const shoeOptions: Data[] = [
   {
     name: '空技能栏 12% 技攻',
     type: 'shoe',

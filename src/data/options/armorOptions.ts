@@ -1,6 +1,6 @@
-import { Option } from '.'
+import { Data } from '.'
 
-export const armorOptions: Option[] = [
+export const armorOptions: Data[] = [
   {
     name: '异常对象攻强',
     prefix: '单异常对象',

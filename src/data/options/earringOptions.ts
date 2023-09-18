@@ -1,29 +1,12 @@
-import { Option } from '.'
+import { Data } from '.'
 
-export const earringOptions: Option[] = [
+export const earringOptions: Data[] = [
   {
     name: '领主 20 属强',
     type: 'earring',
     from: '森林之魔女耳环',
     damageValue: 741,
     elementalDamage: 20,
-  },
-  {
-    name: '减少 Lv95 剩余 CD',
-    type: 'earring',
-    from: '森林之魔女耳环',
-    damageValue: 1037,
-    cooldownReduction: 0.912,
-    other: '按鹦鹉空血静谧双音制式武器灵通鞋 50% CDR 模拟，期望 CD 为 7.6%，按 Lv95 12% 占比计算',
-  },
-  {
-    name: '减少 Lv80 剩余 CD',
-    type: 'earring',
-    from: '森林之魔女耳环',
-    damageValue: 1037,
-    cooldownReduction: 6.2 * 0.43,
-    other:
-      '按鹦鹉空血静谧双音 CP 武器灵通腰带武器贴膜 64.5% CDR 模拟，期望 CD 为 6.2%，按 Lv80 43% 占比计算',
   },
   {
     name: 'Lv35 韧性 CDR',
@@ -39,7 +22,7 @@ export const earringOptions: Option[] = [
     from: '森林之魔女耳环',
     damageValue: 1334,
     cooldownRecovery: 16.5 * 0.21,
-    other: '期望 16.5% CDR，按帕拉乙双 40 恩特裤子 Lv40 21% 占比计算',
+    other: '期望 16.5% CDR，按魔灵双 40 恩特裤子 Lv40 21% 占比计算',
   },
   {
     name: '异抗 15% 出血伤害',

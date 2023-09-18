@@ -1,6 +1,6 @@
-import { Option } from '.'
+import { Data } from '.'
 
-export const jewelryOptions: Option[] = [
+export const jewelryOptions: Data[] = [
   {
     name: '10% 中毒伤害',
     type: 'jewelry',

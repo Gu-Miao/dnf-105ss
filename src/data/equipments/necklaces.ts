@@ -163,6 +163,7 @@ export const necklaces: Data[] = [
     damageValue: 4702,
     elementalDamage: 15,
     cooldownRecovery: 5 * 5,
+    speed: 3 * 5,
   },
   {
     name: '正气傲然的理念',

@@ -1,6 +1,6 @@
-import { Option } from '.'
+import { Data } from '.'
 
-export const beltOptions: Option[] = [
+export const beltOptions: Data[] = [
   {
     name: '每名敌人减 CD',
     type: 'belt',

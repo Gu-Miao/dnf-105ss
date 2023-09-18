@@ -1,33 +1,6 @@
-import { Option } from '.'
+import { Data } from '.'
 
-export const magicStoneOptions: Option[] = [
-  {
-    name: '减少 Lv70 剩余 CD',
-    type: 'magic-stone',
-    from: '森林之魔女精灵石',
-    damageValue: 1037,
-    cooldownReduction: 6.8 * 0.15,
-    other:
-      '按女漫游攻速出血灵通裤子 9 保压制射击 45% CDR 模拟，期望 CD 约为 6.8%，按 Lv70 15% 占比计算',
-  },
-  {
-    name: '减少 Lv75 剩余 CD',
-    type: 'magic-stone',
-    from: '森林之魔女精灵石',
-    damageValue: 1037,
-    cooldownReduction: 1.596,
-    other:
-      '按男气功空血静谧双音双 75 深潜裤子特化雷切 52.5% CDR 模拟，期望 CD 约为 5.7%，按 Lv75 28% 占比计算',
-  },
-  {
-    name: '减少 Lv40 剩余 CD',
-    type: 'magic-stone',
-    from: '森林之魔女精灵石',
-    damageValue: 1037,
-    cooldownReduction: 7 * 0.21,
-    other:
-      '按帕拉乙攻速出血灵通肩恩特裤子双 40 特化碎灵屠戮 62.5% CDR 模拟，期望 CD 约为 7%，按 Lv40 21% 占比计算',
-  },
+export const magicStoneOptions: Data[] = [
   {
     name: 'Lv70 韧性 CDR',
     type: 'magic-stone',
