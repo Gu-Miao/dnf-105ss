@@ -6,6 +6,7 @@ export type Abnormal = {
   prevAbnormalDamage?: number
   convert?: number
   abnormalDamage?: number
+  additionalDamage?: number
 }
 
 export type Data = {
@@ -104,20 +105,25 @@ function getAbnormalDamageIncreaseRate({
   prevAbnormalDamage = 0,
   convert = 0,
   abnormalDamage = 0,
+  additionalDamage = 0,
 }: Abnormal) {
   const currentConvert = prevConvert + convert
   const currentAbnormalDamage = prevAbnormalDamage + abnormalDamage
-  const additionalDamage =
+  const abnormalTypeDamage =
     type === 'shock' ? 5 : type === 'burn' ? 10 * (BURN_BREAK_ICE_RATE * 0.01) : 10
 
   const prevDamage =
     1 -
     prevConvert * 0.01 +
-    prevConvert * 0.01 * (1 + additionalDamage * 0.01) * (1 + prevAbnormalDamage * 0.01)
+    prevConvert * 0.01 * (1 + abnormalTypeDamage * 0.01) * (1 + prevAbnormalDamage * 0.01)
   const damage =
     1 -
     currentConvert * 0.01 +
-    currentConvert * 0.01 * (1 + additionalDamage * 0.01) * (1 + currentAbnormalDamage * 0.01)
+    currentConvert *
+      0.01 *
+      (1 + abnormalTypeDamage * 0.01) *
+      (1 + currentAbnormalDamage * 0.01) *
+      (1 + additionalDamage * 0.01)
 
   return damage / prevDamage
 }

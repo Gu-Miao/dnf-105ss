@@ -32,7 +32,7 @@ export const subEquipments: Data[] = [
     damageValue: 5874,
     skillAtk: [5],
     speed: {
-      moveSpeed: 8,
+      moveSpeed: 4 + 8,
     },
   },
   {
@@ -71,7 +71,7 @@ export const subEquipments: Data[] = [
     damageValue: 5336,
     cooldownReduction: 12,
     speed: {
-      moveSpeed: 8,
+      moveSpeed: 4 + 8,
     },
   },
   {
@@ -85,6 +85,13 @@ export const subEquipments: Data[] = [
     prefix: '未破韧',
     type: 'sub-equipment',
     damageValue: 4714,
+  },
+  {
+    name: '摇曳的生命之水',
+    prefix: '1/3',
+    type: 'sub-equipment',
+    damageValue: 4714,
+    skillAtk: [1.67, 5],
   },
   {
     name: '摇曳的生命之水',
@@ -216,5 +223,37 @@ export const subEquipments: Data[] = [
     damageValue: 5336 + 593 * 5,
     skillAtk: [3],
     speed: '普攻，跳攻，前冲攻击时 35% 攻速',
+  },
+  {
+    name: '被侵蚀神兽的悲痛面纱',
+    type: 'sub-equipment',
+    damageValue: 6144,
+    skillAtk: [7],
+  },
+  {
+    name: '清渊之力',
+    type: 'sub-equipment',
+    damageValue: 7222 + 2519,
+    elementalDamage: 15,
+    speed: {
+      attackSpeed: 10 + 8,
+      castingSpeed: 10 + 12,
+      moveSpeed: 10,
+    },
+  },
+  {
+    name: '查理的面具',
+    type: 'sub-equipment',
+    damageValue: 6170,
+    skillAtk: [-35],
+    cooldownReduction: 50,
+  },
+  {
+    name: '前进的一步',
+    type: 'sub-equipment',
+    damageValue: 6440,
+    skillAtk: [1.75],
+    cooldownRecovery: 15,
+    other: '按旅人双 45 恩特肩双 45 魔女裤子 Lv45 30% 和 Lv40 5% 占比计算',
   },
 ]

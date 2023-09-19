@@ -158,8 +158,11 @@ export const magicStones: Data[] = [
   {
     name: '完成型动力控制装置',
     type: 'magic-stone',
-    damageValue: 3988 + 3705,
+    damageValue: 3988 + 3705 + 3705,
     elementalDamage: 10 * 4,
+    speed: {
+      moveSpeed: 8,
+    },
   },
   {
     name: '胜利约定之时',
@@ -181,5 +184,44 @@ export const magicStones: Data[] = [
     type: 'magic-stone',
     damageValue: 5336 + 1927 + 2668,
     skillAtk: [8],
+    speed: {
+      moveSpeed: 8,
+    },
+  },
+  {
+    name: '被侵蚀高原的精髓',
+    type: 'magic-stone',
+    damageValue: 5066,
+    skillAtk: [8],
+    elementalDamage: 18,
+    speed: 0.5 * 10,
+  },
+  {
+    name: '记录者的宝石',
+    type: 'magic-stone',
+    damageValue: 4528,
+    skillAtk: [10],
+  },
+  {
+    name: '机械工学的精华',
+    prefix: '无弱点',
+    type: 'magic-stone',
+    damageValue: 4528,
+    skillAtk: [8],
+    elementalDamage: 10,
+  },
+  {
+    name: '机械工学的精华',
+    prefix: '弱点',
+    type: 'magic-stone',
+    damageValue: 4528,
+    skillAtk: [8],
+    elementalDamage: 10 + 20,
+  },
+  {
+    name: '守护的忍耐',
+    type: 'magic-stone',
+    damageValue: 6144,
+    skillAtk: [10],
   },
 ]

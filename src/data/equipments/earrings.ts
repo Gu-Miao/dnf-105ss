@@ -5,7 +5,7 @@ export const earrings: Data[] = [
     name: '战争之主耳环',
     type: 'earring',
     damageValue: 4528,
-    elementalDamage: 50 + 15,
+    elementalDamage: 50 + 20,
   },
   {
     name: '时间之念耳环',
@@ -61,14 +61,14 @@ export const earrings: Data[] = [
     damageValue: 5604,
     skillAtk: [12],
     speed: {
-      moveSpeed: 28,
+      moveSpeed: 20 + 8,
     },
   },
   {
     name: '无尽的生机耳环',
     type: 'earring',
     damageValue: 4528,
-    elementalDamage: 50 + 15,
+    elementalDamage: 50 + 20,
   },
   {
     name: '灵犀之音耳环',
@@ -96,15 +96,14 @@ export const earrings: Data[] = [
   {
     name: '未知文明 - 双子石',
     type: 'earring',
-
     damageValue: 4528,
-    elementalDamage: 50 + 15,
+    elementalDamage: 50 + 20,
   },
   {
     name: '晨曦的新芽耳环',
     type: 'earring',
     damageValue: 4528,
-    elementalDamage: 50 + 15,
+    elementalDamage: 50 + 20,
   },
   {
     name: '爆炸型：小型战术信号弹',
@@ -186,7 +185,7 @@ export const earrings: Data[] = [
     prefix: '单异常对象',
     type: 'earring',
     damageValue: 3787,
-    skillAtk: [7.1],
+    skillAtk: [2, 5],
     cooldownRecovery: 15,
   },
   {
@@ -194,7 +193,7 @@ export const earrings: Data[] = [
     prefix: '2 个异常对象',
     type: 'earring',
     damageValue: 3787,
-    skillAtk: [7.1],
+    skillAtk: [2, 5],
     cooldownRecovery: 15 * 2,
   },
   {
@@ -299,5 +298,47 @@ export const earrings: Data[] = [
     elementalDamage: 15,
     speed: 30,
     other: '通过模拟得到期望概率为 8.7%',
+  },
+  {
+    name: '被侵蚀神兽的眼泪',
+    prefix: '远',
+    type: 'earring',
+    damageValue: 6682 + 2519,
+    speed: {
+      attackSpeed: 0.5 * 10,
+      castingSpeed: 0.5 * 10,
+      moveSpeed: 0.5 * 10 + 8,
+    },
+  },
+  {
+    name: '被侵蚀神兽的眼泪',
+    prefix: '近',
+    type: 'earring',
+    damageValue: 6682,
+    skillAtk: [8],
+    speed: {
+      attackSpeed: 0.5 * 10,
+      castingSpeed: 0.5 * 10,
+      moveSpeed: 0.5 * 10 + 8,
+    },
+  },
+  {
+    name: '溪谷监视者的证明',
+    type: 'earring',
+    damageValue: 5604,
+    skillAtk: [10, 6 * 0.75],
+    other: '按鹦鹉特化剜心 Lv75 以上技能总共 75% 占比计算',
+  },
+  {
+    name: '机械工学的时间',
+    type: 'earring',
+    damageValue: 5604,
+    skillAtk: [12],
+  },
+  {
+    name: '永不言弃的勇气',
+    type: 'earring',
+    damageValue: 5874,
+    skillAtk: [12],
   },
 ]

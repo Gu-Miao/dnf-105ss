@@ -268,6 +268,9 @@ export const bottoms: Data[] = [
     damageValue: 5604 + 296 * 10,
     skillAtk: [2],
     elementalDamage: 15,
+    speed: {
+      moveSpeed: 8,
+    },
   },
   {
     name: '溪谷监视者下装',
@@ -280,6 +283,10 @@ export const bottoms: Data[] = [
     type: 'bottom',
     damageValue: 5066 + 1186,
     skillAtk: [2 * 3],
+    speed: {
+      attackSpeed: 8,
+      castingSpeed: 12,
+    },
   },
   {
     name: '光荣骑士下装',

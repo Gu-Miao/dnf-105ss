@@ -5,13 +5,13 @@ export const bracelets: Data[] = [
     name: '电弧爆源手镯',
     prefix: '未破韧',
     type: 'bracelet',
-    damageValue: 4176 + 148 * 5,
+    damageValue: 4176 + 445 * 5,
   },
   {
     name: '电弧爆源手镯',
     prefix: '破韧',
     type: 'bracelet',
-    damageValue: 4176 + 148 * 5,
+    damageValue: 4176 + 445 * 5,
     skillAtk: [10, 15],
   },
   {
@@ -37,7 +37,7 @@ export const bracelets: Data[] = [
     prefix: 'Lv15~30',
     type: 'bracelet',
     damageValue: 5066,
-    skillAtk: [21],
+    skillAtk: [10, 10],
     speed: {
       attackSpeed: 8,
       castingSpeed: 12,
@@ -171,7 +171,7 @@ export const bracelets: Data[] = [
     name: '重奏者',
     type: 'bracelet',
     damageValue: 3988,
-    skillAtk: [2, 2 * 5],
+    skillAtk: [2 * 5, 2],
     cooldownRecovery: 6 * 5,
   },
   {
@@ -187,6 +187,9 @@ export const bracelets: Data[] = [
     type: 'bracelet',
     damageValue: 4528 + 4446,
     elementalDamage: 20,
+    speed: {
+      moveSpeed: 8,
+    },
   },
   {
     name: '黑灵缠绕手镯',
@@ -238,5 +241,53 @@ export const bracelets: Data[] = [
     speed: {
       moveSpeed: 8,
     },
+  },
+  {
+    name: '侵蚀禁忌之力手镯',
+    prefix: '50% 韧性',
+    type: 'bracelet',
+    damageValue: 5604,
+    skillAtk: [20],
+    speed: {
+      moveSpeed: 8,
+    },
+  },
+  {
+    name: '侵蚀禁忌之力手镯',
+    prefix: '期望',
+    type: 'bracelet',
+    damageValue: 5604,
+    skillAtk: [(20 * 50 + 30 * 15 + 8 * 20) / 100],
+    speed: {
+      moveSpeed: 8,
+    },
+  },
+  {
+    name: '信使的祝福',
+    type: 'bracelet',
+    damageValue: 5874,
+    skillAtk: [15],
+    elementalDamage: 15,
+    speed: {
+      attackSpeed: 8,
+      castingSpeed: 12,
+    },
+  },
+  {
+    name: '历久弥新手镯',
+    type: 'bracelet',
+    damageValue: 5604,
+    skillAtk: [14],
+    elementalDamage: 15,
+    speed: {
+      moveSpeed: 8,
+    },
+  },
+  {
+    name: '铭刻之誓约',
+    type: 'bracelet',
+    damageValue: 6144,
+    skillAtk: [5 * 3],
+    elementalDamage: 30,
   },
 ]

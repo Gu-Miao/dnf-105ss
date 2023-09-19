@@ -20,7 +20,7 @@ export const necklaces: Data[] = [
     type: 'necklace',
     damageValue: 4972 + 2668,
     skillAtk: [7],
-    elementalDamage: 15,
+    elementalDamage: 20,
     speed: 20,
   },
   {
@@ -38,7 +38,7 @@ export const necklaces: Data[] = [
     type: 'necklace',
     damageValue: 6952,
     speed: {
-      moveSpeed: 12,
+      moveSpeed: 4 + 8,
     },
   },
   {
@@ -84,7 +84,7 @@ export const necklaces: Data[] = [
     name: '蓝色自然的种子',
     type: 'necklace',
     damageValue: 5604,
-    elementalDamage: 15,
+    elementalDamage: 20,
     abnormal: {
       type: 'burn',
       prevConvert: 50,
@@ -98,7 +98,7 @@ export const necklaces: Data[] = [
     type: 'necklace',
     damageValue: 4876,
     skillAtk: [10],
-    elementalDamage: 15,
+    elementalDamage: 20,
     cooldownReduction: 15,
   },
   {
@@ -106,7 +106,7 @@ export const necklaces: Data[] = [
     type: 'necklace',
     damageValue: 5416 + 222 * 20,
     skillAtk: [3],
-    elementalDamage: 15,
+    elementalDamage: 20,
     speed: 5 * 3,
   },
   {
@@ -119,7 +119,7 @@ export const necklaces: Data[] = [
     name: '遥感之心项链',
     type: 'necklace',
     damageValue: 5510,
-    elementalDamage: 15,
+    elementalDamage: 20,
     speed: {
       attackSpeed: 8,
       castingSpeed: 12,
@@ -154,14 +154,14 @@ export const necklaces: Data[] = [
     type: 'necklace',
     damageValue: 5240,
     skillAtk: [8.5],
-    elementalDamage: 15,
+    elementalDamage: 20,
     other: '减防估算为 8.5% 技攻，削血特效未计算',
   },
   {
     name: '原子核项链',
     type: 'necklace',
     damageValue: 4702,
-    elementalDamage: 15,
+    elementalDamage: 20,
     cooldownRecovery: 5 * 5,
     speed: 3 * 5,
   },
@@ -188,7 +188,37 @@ export const necklaces: Data[] = [
     type: 'necklace',
     damageValue: 6048,
     skillAtk: [7],
-    elementalDamage: 15,
+    elementalDamage: 20,
     speed: 10,
+  },
+  {
+    name: '迷雾探求者项链',
+    type: 'necklace',
+    damageValue: 6144 + 3557,
+    skillAtk: [5],
+    elementalDamage: 18,
+    speed: {
+      moveSpeed: 0.5 * 20,
+    },
+  },
+  {
+    name: '记录者的项链',
+    type: 'necklace',
+    damageValue: 6144,
+    skillAtk: [11],
+  },
+  {
+    name: '机械工学之心',
+    type: 'necklace',
+    damageValue: 4972,
+    skillAtk: [10],
+    elementalDamage: 20,
+  },
+  {
+    name: '对敌慎重',
+    type: 'necklace',
+    damageValue: 6170,
+    skillAtk: [10, 1.05],
+    other: '按关羽 9 保长虹贯日 Lv60 13% 和 Lv70 8% 占比计算',
   },
 ]
