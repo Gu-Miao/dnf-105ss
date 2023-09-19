@@ -189,6 +189,9 @@ export const bracelets: Data[] = [
     type: 'bracelet',
     damageValue: 4528 + 4446,
     elementalDamage: 20,
+    speed: {
+      moveSpeed: 8,
+    },
   },
   {
     name: '黑灵缠绕手镯',

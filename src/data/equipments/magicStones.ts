@@ -158,8 +158,11 @@ export const magicStones: Data[] = [
   {
     name: '完成型动力控制装置',
     type: 'magic-stone',
-    damageValue: 3988 + 3705,
+    damageValue: 3988 + 3705 + 3705,
     elementalDamage: 10 * 4,
+    speed: {
+      moveSpeed: 8,
+    },
   },
   {
     name: '胜利约定之时',
@@ -181,6 +184,9 @@ export const magicStones: Data[] = [
     type: 'magic-stone',
     damageValue: 5336 + 1927 + 2668,
     skillAtk: [8],
+    speed: {
+      moveSpeed: 8,
+    },
   },
   {
     name: '森林之魔女精灵石',
