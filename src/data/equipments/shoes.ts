@@ -29,8 +29,8 @@ export const shoes: Data[] = [
     name: '白色秘境皮鞋',
     type: 'shoe',
     damageValue: 5604,
-    skillAtk: [3],
-    other: '按 3% 技攻附魔计算',
+    skillAtk: [5],
+    other: '按 5% 技攻附魔计算',
   },
   {
     name: '万念俱灰短靴',
