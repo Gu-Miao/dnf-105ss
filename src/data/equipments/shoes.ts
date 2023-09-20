@@ -6,7 +6,7 @@ export const shoes: Data[] = [
     prefix: '单异常对象',
     type: 'shoe',
     damageValue: 6414 + 2964 + 712,
-    skillAtk: [7],
+    skillAtk: 7,
     elementalDamage: 20,
   },
   {
@@ -14,7 +14,7 @@ export const shoes: Data[] = [
     prefix: '2 个异常对象',
     type: 'shoe',
     damageValue: 6414 + 2964 + 712 * 2,
-    skillAtk: [7],
+    skillAtk: 7,
     elementalDamage: 20,
   },
   {
@@ -22,28 +22,28 @@ export const shoes: Data[] = [
     prefix: '5 个异常对象',
     type: 'shoe',
     damageValue: 6414 + 2964 + 712 * 5,
-    skillAtk: [7],
+    skillAtk: 7,
     elementalDamage: 20,
   },
   {
     name: '白色秘境皮鞋',
     type: 'shoe',
     damageValue: 5604,
-    skillAtk: [5],
+    skillAtk: 5,
     other: '按 5% 技攻附魔计算',
   },
   {
     name: '万念俱灰短靴',
     type: 'shoe',
     damageValue: 5874 + 800 * 5,
-    skillAtk: [17],
+    skillAtk: 17,
   },
   {
     name: '暗影之迹短靴',
     prefix: 'Lv15~30',
     type: 'shoe',
     damageValue: 5066,
-    skillAtk: [6 * 3],
+    skillAtk: 6 * 3,
     speed: {
       attackSpeed: 10 * 2,
       castingSpeed: 15 * 2,
@@ -53,7 +53,7 @@ export const shoes: Data[] = [
     name: '大地的践踏短靴',
     type: 'shoe',
     damageValue: 6952,
-    skillAtk: [7],
+    skillAtk: 7,
     speed: {
       attackSpeed: 8,
       castingSpeed: 12,
@@ -65,7 +65,7 @@ export const shoes: Data[] = [
     prefix: '2 个异常对象',
     type: 'shoe',
     damageValue: 6858 + 712 * 2,
-    skillAtk: [17],
+    skillAtk: 17,
     speed: {
       attackSpeed: 20,
       castingSpeed: 30,
@@ -77,7 +77,7 @@ export const shoes: Data[] = [
     prefix: '5 个异常对象',
     type: 'shoe',
     damageValue: 6858 + 712 * 5,
-    skillAtk: [17],
+    skillAtk: 17,
     speed: {
       attackSpeed: 20,
       castingSpeed: 30,
@@ -99,7 +99,7 @@ export const shoes: Data[] = [
     name: '摇曳的残影短靴',
     type: 'shoe',
     damageValue: 5604 + 3260,
-    skillAtk: [9],
+    skillAtk: 9,
     cooldownReduction: 5 * 3,
     speed: {
       moveSpeed: 8,
@@ -109,7 +109,7 @@ export const shoes: Data[] = [
     name: '天翼之守护短靴',
     type: 'shoe',
     damageValue: 5604 + 4001,
-    skillAtk: [10],
+    skillAtk: 10,
     speed: {
       moveSpeed: 8,
     },
@@ -119,7 +119,7 @@ export const shoes: Data[] = [
     prefix: '技攻',
     type: 'shoe',
     damageValue: 5510,
-    skillAtk: [10],
+    skillAtk: 10,
     abnormal: {
       type: 'posion',
       prevConvert: 50,
@@ -149,7 +149,7 @@ export const shoes: Data[] = [
     prefix: '技攻，毒王',
     type: 'shoe',
     damageValue: 5510,
-    skillAtk: [10],
+    skillAtk: 10,
     abnormal: {
       type: 'posion',
       prevConvert: 74,
@@ -164,7 +164,7 @@ export const shoes: Data[] = [
     prefix: '未破韧',
     type: 'shoe',
     damageValue: 6414,
-    skillAtk: [2],
+    skillAtk: 2,
     elementalDamage: 20,
     speed: {
       attackSpeed: 10,
@@ -176,7 +176,7 @@ export const shoes: Data[] = [
     prefix: '破韧',
     type: 'shoe',
     damageValue: 6414 + 1284,
-    skillAtk: [2],
+    skillAtk: 2,
     elementalDamage: 20,
     speed: {
       attackSpeed: 10,
@@ -188,7 +188,7 @@ export const shoes: Data[] = [
     prefix: '破韧，3 个异常对象',
     type: 'shoe',
     damageValue: 6414 + 1284 * 3,
-    skillAtk: [2],
+    skillAtk: 2,
     elementalDamage: 20,
     speed: {
       attackSpeed: 10,
@@ -199,7 +199,7 @@ export const shoes: Data[] = [
     name: '高科技战术强化靴',
     type: 'shoe',
     damageValue: 5780,
-    skillAtk: [11],
+    skillAtk: 11,
     elementalDamage: 20,
     cooldownReduction: 5 * 4,
     speed: 5,
@@ -208,7 +208,7 @@ export const shoes: Data[] = [
     name: '暴走之驱战靴',
     type: 'shoe',
     damageValue: 6414 + 741 * 4,
-    skillAtk: [13],
+    skillAtk: 13,
   },
   {
     name: '龙之开拓者短靴',
@@ -226,7 +226,7 @@ export const shoes: Data[] = [
     prefix: '375% 蓝耗',
     type: 'shoe',
     damageValue: 2910 + 815 * 4,
-    skillAtk: [5 * 3.75],
+    skillAtk: 5 * 3.75,
     speed: {
       moveSpeed: 8,
     },
@@ -236,7 +236,7 @@ export const shoes: Data[] = [
     prefix: '475% 蓝耗',
     type: 'shoe',
     damageValue: 2910 + 815 * 4,
-    skillAtk: [5 * 4.75],
+    skillAtk: 5 * 4.75,
     speed: {
       moveSpeed: 8,
     },
@@ -246,7 +246,7 @@ export const shoes: Data[] = [
     prefix: '500% 蓝耗',
     type: 'shoe',
     damageValue: 2910 + 815 * 4,
-    skillAtk: [5 * 5],
+    skillAtk: 5 * 5,
     elementalDamage: 15,
     speed: {
       moveSpeed: 8,
@@ -266,7 +266,7 @@ export const shoes: Data[] = [
     name: '蒸汽朋克音速鞋',
     type: 'shoe',
     damageValue: 4972,
-    skillAtk: [13],
+    skillAtk: 13,
     cooldownRecovery: 10,
   },
   {
@@ -274,7 +274,7 @@ export const shoes: Data[] = [
     prefix: '破韧',
     type: 'shoe',
     damageValue: 4972 + 1284,
-    skillAtk: [13],
+    skillAtk: 13,
     cooldownRecovery: 10,
   },
   {
@@ -282,14 +282,14 @@ export const shoes: Data[] = [
     prefix: '破韧，3 个异常对象',
     type: 'shoe',
     damageValue: 4972 + 1284 * 3,
-    skillAtk: [13],
+    skillAtk: 13,
     cooldownRecovery: 10,
   },
   {
     name: '玉化亡灵长靴',
     type: 'shoe',
     damageValue: 5604 + 3409,
-    skillAtk: [17],
+    skillAtk: 17,
     speed: {
       attackSpeed: 24,
       castingSpeed: 24,
@@ -300,7 +300,7 @@ export const shoes: Data[] = [
     name: '流星追月短靴',
     type: 'shoe',
     damageValue: 4917 + 371 * 10,
-    skillAtk: [5],
+    skillAtk: 5,
     cooldownReduction: 15,
   },
   {
@@ -308,34 +308,34 @@ export const shoes: Data[] = [
     prefix: '100% 攻速',
     type: 'shoe',
     damageValue: 2642,
-    skillAtk: [10],
+    skillAtk: 10,
   },
   {
     name: '赛博音速长靴',
     prefix: '120% 攻速',
     type: 'shoe',
     damageValue: 2642,
-    skillAtk: [20],
+    skillAtk: 20,
   },
   {
     name: '赛博音速长靴',
     prefix: '140% 攻速',
     type: 'shoe',
     damageValue: 2642,
-    skillAtk: [30],
+    skillAtk: 30,
   },
   {
     name: '所愿之行动',
     type: 'shoe',
     damageValue: 7126,
-    skillAtk: [16],
+    skillAtk: 16,
     elementalDamage: 20,
   },
   {
     name: '告别过去的前进',
     type: 'shoe',
     damageValue: 6318 + 3705,
-    skillAtk: [16],
+    skillAtk: 16,
     speed: {
       attackSpeed: 8,
       castingSpeed: 12,
@@ -346,7 +346,7 @@ export const shoes: Data[] = [
     prefix: '非 TP',
     type: 'shoe',
     damageValue: 6682,
-    skillAtk: [13],
+    skillAtk: 13,
     elementalDamage: 10,
     speed: {
       attackSpeed: 8,
@@ -370,7 +370,7 @@ export const shoes: Data[] = [
     name: '迷雾追随者长靴',
     type: 'shoe',
     damageValue: 6144,
-    skillAtk: [13],
+    skillAtk: 13,
     speed: {
       moveSpeed: 8,
     },
@@ -421,7 +421,7 @@ export const shoes: Data[] = [
     name: '满怀梦想的工程师工作靴',
     type: 'shoe',
     damageValue: 6144,
-    skillAtk: [6 * 3],
+    skillAtk: 6 * 3,
     speed: {
       moveSpeed: 8,
     },
@@ -430,6 +430,6 @@ export const shoes: Data[] = [
     name: '华丽骑士长靴',
     type: 'shoe',
     damageValue: 5510 + 4446,
-    skillAtk: [17],
+    skillAtk: 17,
   },
 ]

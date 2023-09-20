@@ -38,7 +38,7 @@ export const tops: Data[] = [
     name: '死亡蚕食胸甲',
     type: 'top',
     damageValue: 4528 + 445 * 5,
-    skillAtk: [5],
+    skillAtk: 5,
     speed: {
       attackSpeed: 15,
       castingSpeed: 22.5,
@@ -86,7 +86,7 @@ export const tops: Data[] = [
     name: '双面星云皮大衣',
     type: 'top',
     damageValue: 6803,
-    skillAtk: [5],
+    skillAtk: 5,
     elementalDamage: 20,
     speed: {
       attackSpeed: 5,
@@ -97,7 +97,7 @@ export const tops: Data[] = [
     name: '百折不挠的梦想',
     type: 'top',
     damageValue: 6952,
-    skillAtk: [5],
+    skillAtk: 5,
     elementalDamage: 15,
   },
   {
@@ -151,7 +151,7 @@ export const tops: Data[] = [
     prefix: '单异常对象',
     type: 'top',
     damageValue: 6414 + 712,
-    skillAtk: [2],
+    skillAtk: 2,
     elementalDamage: 20,
     speed: {
       attackSpeed: 10,
@@ -163,7 +163,7 @@ export const tops: Data[] = [
     prefix: '2个异常对象',
     type: 'top',
     damageValue: 6414 + 712 * 2,
-    skillAtk: [2],
+    skillAtk: 2,
     elementalDamage: 20,
     speed: {
       attackSpeed: 10,
@@ -272,20 +272,20 @@ export const tops: Data[] = [
     name: '迷雾追随者上衣',
     type: 'top',
     damageValue: 6144,
-    skillAtk: [10],
+    skillAtk: 10,
   },
   {
     name: '溪谷监视着上衣',
     type: 'top',
     damageValue: 6414,
-    skillAtk: [7],
+    skillAtk: 7,
     speed: 10,
   },
   {
     name: '满怀梦想的工程师上衣',
     type: 'top',
     damageValue: 6414,
-    skillAtk: [8],
+    skillAtk: 8,
   },
   {
     name: '勇敢的骑士装甲',

@@ -16,7 +16,7 @@ export const fusionRings: Data[] = [
     name: '火龙：燃烧的火龙之怒',
     prefix: '火龙之怒',
     type: 'fusion-ring',
-    skillAtk: [10],
+    skillAtk: 10,
     cooldownReduction: -20,
   },
   {

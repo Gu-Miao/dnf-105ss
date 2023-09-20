@@ -2,6 +2,28 @@ import { Data } from '.'
 
 export const headerShoulderOptions: Data[] = [
   {
+    name: '石化攻强',
+    type: 'header-shoulder',
+    from: 'logo',
+    damageValue: 1186 + 4446,
+  },
+  {
+    name: 'MP 技攻',
+    prefix: '500% 蓝耗',
+    type: 'header-shoulder',
+    from: 'logo',
+    damageValue: 1482,
+    skillAtk: 5,
+  },
+  {
+    name: 'MP 技攻',
+    prefix: '700% 蓝耗',
+    type: 'header-shoulder',
+    from: 'logo',
+    damageValue: 1482,
+    skillAtk: 7,
+  },
+  {
     name: '韧性攻强',
     type: 'header-shoulder',
     from: '森林之魔女斗篷',
@@ -12,7 +34,7 @@ export const headerShoulderOptions: Data[] = [
     type: 'header-shoulder',
     from: '森林之魔女斗篷',
     damageValue: 1186,
-    skillAtk: [1.8],
+    skillAtk: 1.8,
     other: '按无色冰晶 CP 女气功 Lv30 9% 占比计算',
   },
   {
@@ -28,7 +50,7 @@ export const headerShoulderOptions: Data[] = [
     type: 'header-shoulder',
     from: '森林之魔女斗篷',
     damageValue: 1186,
-    skillAtk: [20 * 0.21],
+    skillAtk: 20 * 0.21,
     other: '按魔灵双 40 恩特裤子 Lv40 21% 占比计算',
   },
   {
@@ -40,19 +62,19 @@ export const headerShoulderOptions: Data[] = [
     other: '按魔灵双 40 恩特裤子 Lv40 21% 占比计算',
   },
   {
-    name: 'Lv40 +1',
+    name: 'Lv40 +1，Lv30~40 5% 技攻',
     type: 'header-shoulder',
     from: '森林之魔女斗篷',
     damageValue: 1482,
-    skillAtk: [2 * 0.21],
-    other: '魔灵 Lv40 +1 提升 2%，按双 40 恩特裤子 Lv40 21% 占比计算',
+    skillAtk: [2 * 5 * 0.21, 5 * 0.15],
+    other: '魔灵 Lv40 +1 提升 2%，按双 40 恩特裤子 Lv40 21% 占比，Lv30，35 总共 15% 占比计算',
   },
   {
     name: '手搓 12% 技攻',
     type: 'header-shoulder',
     from: '恩特精灵护肩',
     damageValue: 296,
-    skillAtk: [12],
+    skillAtk: 12,
   },
   {
     name: '非无色 15% 技攻',
@@ -60,7 +82,7 @@ export const headerShoulderOptions: Data[] = [
     type: 'header-shoulder',
     from: '恩特精灵护肩',
     damageValue: 741,
-    skillAtk: [15],
+    skillAtk: 15,
   },
   {
     name: '100% 指令效果',
@@ -70,19 +92,19 @@ export const headerShoulderOptions: Data[] = [
     damageValue: 1186,
   },
   {
-    name: 'Lv45 20% 技攻，Lv45 +30% CD',
+    name: 'Lv45 20% 技攻，Lv45 +15% CD',
     type: 'header-shoulder',
     from: '恩特精灵护肩',
-    skillAtk: [3.6],
+    skillAtk: 3.6,
     cooldownReduction: -5.4,
     damageValue: 1186,
     other: '按旅人 9 保 45 Lv45 18% 占比计算',
   },
   {
-    name: 'Lv45 20% 技攻，Lv60 +30% CD',
+    name: 'Lv45 20% 技攻，Lv60 +15% CD',
     type: 'header-shoulder',
     from: '恩特精灵护肩',
-    skillAtk: [3.6],
+    skillAtk: 3.6,
     damageValue: 1186,
     other: '按旅人 9 保 45 Lv45 18% 占比且不点 Lv60 计算',
   },
@@ -91,7 +113,7 @@ export const headerShoulderOptions: Data[] = [
     type: 'header-shoulder',
     from: '蓝灵绿玉石肩甲',
     damageValue: 296,
-    skillAtk: [4.4 + 5.7 * 0.074 + 6 * 0.065],
+    skillAtk: 4.4 + 5.7 * 0.074 + 6 * 0.065,
     other:
       '毒王挑衅 +3 提升 4.4%，Lv35 +3 提升 5.7%，Lv40 +3 提升 6%，按 Lv35 7.4% 和 Lv40 6.5% 占比计算',
   },
@@ -100,7 +122,7 @@ export const headerShoulderOptions: Data[] = [
     type: 'header-shoulder',
     from: '蓝灵绿玉石肩甲',
     damageValue: 1186,
-    skillAtk: [5.4],
+    skillAtk: 5.4,
     other: '按单斗神 5.4% 提升率计算',
   },
   {

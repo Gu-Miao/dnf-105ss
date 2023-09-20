@@ -5,7 +5,7 @@ export const fusionSubEquipments: Data[] = [
     name: '灵魂拘束：支配权能',
     type: 'fusion-sub-equipment',
     damageValue: 2000,
-    skillAtk: [4],
+    skillAtk: [3, 1],
   },
   {
     name: '罪恶支配：绝望之恐怖',
@@ -21,7 +21,7 @@ export const fusionSubEquipments: Data[] = [
     name: '深渊结集：无法定义之存在',
     type: 'fusion-sub-equipment',
     damageValue: 2350,
-    skillAtk: [3],
+    skillAtk: 3,
   },
   {
     name: '卓越：玛尔本源',
@@ -33,13 +33,13 @@ export const fusionSubEquipments: Data[] = [
     prefix: '未被击',
     type: 'fusion-sub-equipment',
     damageValue: 3500,
-    skillAtk: [3],
+    skillAtk: 3,
   },
   {
     name: '光辉：崇高的使命',
     prefix: '被击',
     type: 'fusion-sub-equipment',
     damageValue: 3500 - 2000,
-    skillAtk: [3],
+    skillAtk: 3,
   },
 ]

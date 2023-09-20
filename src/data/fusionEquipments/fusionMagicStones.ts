@@ -5,7 +5,7 @@ export const fusionMagicStones: Data[] = [
     name: '灵魂拘束：沉重罪魇',
     type: 'fusion-magic-stone',
     damageValue: 2000,
-    skillAtk: [4],
+    skillAtk: [3, 1],
   },
   {
     name: '罪恶支配：哀鸣之恐怖',
@@ -17,7 +17,7 @@ export const fusionMagicStones: Data[] = [
     name: '深渊结集：无限坍塌',
     type: 'fusion-magic-stone',
     damageValue: 2350,
-    skillAtk: [3],
+    skillAtk: 3,
   },
   {
     name: '卓越：魔力之环',
@@ -29,13 +29,13 @@ export const fusionMagicStones: Data[] = [
     prefix: '未被击',
     type: 'fusion-magic-stone',
     damageValue: 3500,
-    skillAtk: [3],
+    skillAtk: 3,
   },
   {
     name: '光辉：无畏的意志',
     prefix: '被击',
     type: 'fusion-magic-stone',
     damageValue: 3500 - 2000,
-    skillAtk: [3],
+    skillAtk: 3,
   },
 ]

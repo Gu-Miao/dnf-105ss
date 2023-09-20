@@ -2,6 +2,20 @@ import { Data } from '.'
 
 export const subEquipmentOptions: Data[] = [
   {
+    name: '回血 20% CDR',
+    type: 'sub-equipment',
+    from: 'logo',
+    damageValue: 1186,
+    cooldownRecovery: 20,
+  },
+  {
+    name: '10 无色 15% CDR',
+    type: 'sub-equipment',
+    from: 'logo',
+    damageValue: 741,
+    cooldownRecovery: 15,
+  },
+  {
     name: '10% 感电伤害',
     type: 'sub-equipment',
     from: '森林之魔女篮子',
@@ -40,7 +54,7 @@ export const subEquipmentOptions: Data[] = [
     type: 'sub-equipment',
     from: '恩特精灵圣杯',
     damageValue: 1186,
-    skillAtk: [5],
+    skillAtk: 5,
   },
   {
     name: '低血攻强',

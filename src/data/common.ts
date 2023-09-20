@@ -41,7 +41,7 @@ export type Data = {
     | 'fusion-earring'
   from?: string
   damageValue?: number
-  skillAtk?: number[]
+  skillAtk?: number | number[]
   elementalDamage?: number
   abnormal?: Abnormal
   cooldownRecovery?: number
@@ -70,8 +70,10 @@ const abnormalTypeMap = {
  * @param skillAtk 所有技攻加成
  * @returns 技攻提升率
  */
-function getSkillAtkIncreaseRate(skillAtk: number[]) {
-  return skillAtk.reduce((increaseRate, skillAttack) => increaseRate * (1 + skillAttack * 0.01), 1)
+function getSkillAtkIncreaseRate(skillAtk: number | number[]) {
+  return Array.isArray(skillAtk)
+    ? skillAtk.reduce((increaseRate, skillAttack) => increaseRate * (1 + skillAttack * 0.01), 1)
+    : 1 + skillAtk * 0.01
 }
 
 /**
@@ -170,7 +172,11 @@ export function getIncreaseRate(data: Data, damageValue: number, elementalDamage
 
     increaseRate *= skillAtkIncreaseRate
     console.log(
-      `技攻：${data.skillAtk.map(num => num + '%').join(', ')}，提升：${skillAtkIncreaseRate}`,
+      `技攻：${
+        Array.isArray(data.skillAtk)
+          ? data.skillAtk.map(num => num + '%').join(', ')
+          : `${data.skillAtk}%`
+      }，提升：${skillAtkIncreaseRate}`,
     )
   }
 

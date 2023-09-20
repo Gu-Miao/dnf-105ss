@@ -2,6 +2,21 @@ import { Data } from '.'
 
 export const ringOptions: Data[] = [
   {
+    name: '自异常技攻',
+    type: 'ring',
+    from: 'logo',
+    damageValue: 1186,
+    skillAtk: 4,
+  },
+  {
+    name: '睡眠抗性技攻',
+    type: 'ring',
+    from: 'logo',
+    damageValue: 1186,
+    skillAtk: 3,
+    speed: 10,
+  },
+  {
     name: '10% 灼烧伤害',
     type: 'ring',
     from: '森林之魔女戒指',
@@ -67,7 +82,7 @@ export const ringOptions: Data[] = [
     name: '50% HP 攻强',
     type: 'ring',
     from: '恩特精灵戒指',
-    damageValue: 1186 + 1778,
+    damageValue: 1186 + 2223,
   },
   {
     name: '10% 出血转伤',

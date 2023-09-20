@@ -6,7 +6,7 @@ export const headerShoulders: Data[] = [
     prefix: '单异常对象',
     type: 'header-shoulder',
     damageValue: 6144 + 712,
-    skillAtk: [2],
+    skillAtk: 2,
     abnormal: {
       type: 'burn',
       prevConvert: 50,
@@ -21,7 +21,7 @@ export const headerShoulders: Data[] = [
     prefix: '2 个异常对象',
     type: 'header-shoulder',
     damageValue: 6144 + 712 * 2,
-    skillAtk: [2],
+    skillAtk: 2,
     abnormal: {
       type: 'burn',
       prevConvert: 50,
@@ -36,7 +36,7 @@ export const headerShoulders: Data[] = [
     prefix: '5 个异常对象',
     type: 'header-shoulder',
     damageValue: 6144 + 712 * 5,
-    skillAtk: [2],
+    skillAtk: 2,
     abnormal: {
       type: 'burn',
       prevConvert: 50,
@@ -50,21 +50,21 @@ export const headerShoulders: Data[] = [
     name: '白色的信念斗篷',
     type: 'header-shoulder',
     damageValue: 5604,
-    skillAtk: [3],
+    skillAtk: 3,
     other: '按 3% 技攻附魔计算',
   },
   {
     name: '望穿尽头的视线',
     type: 'header-shoulder',
     damageValue: 5066 + 3705 + 2223,
-    skillAtk: [3],
+    skillAtk: 3,
   },
   {
     name: '黑猫头盔',
     prefix: 'Lv1~30',
     type: 'header-shoulder',
     damageValue: 4528,
-    skillAtk: [10],
+    skillAtk: 10,
     speed: {
       attackSpeed: 8,
       castingSpeed: 12,
@@ -80,7 +80,7 @@ export const headerShoulders: Data[] = [
     prefix: '单异常对象',
     type: 'header-shoulder',
     damageValue: 6144 + 712,
-    skillAtk: [2],
+    skillAtk: 2,
     abnormal: {
       type: 'shock',
       prevConvert: 50,
@@ -95,7 +95,7 @@ export const headerShoulders: Data[] = [
     prefix: '2 个异常对象',
     type: 'header-shoulder',
     damageValue: 6144 + 712 * 2,
-    skillAtk: [2],
+    skillAtk: 2,
     abnormal: {
       type: 'shock',
       prevConvert: 50,
@@ -110,7 +110,7 @@ export const headerShoulders: Data[] = [
     prefix: '5 个异常对象',
     type: 'header-shoulder',
     damageValue: 6144 + 712 * 5,
-    skillAtk: [2],
+    skillAtk: 2,
     abnormal: {
       type: 'shock',
       prevConvert: 50,
@@ -135,7 +135,7 @@ export const headerShoulders: Data[] = [
     name: '远古之法则护肩',
     type: 'header-shoulder',
     damageValue: 3988,
-    skillAtk: [-2 * 5],
+    skillAtk: -2 * 5,
     cooldownRecovery: 10 * 5,
   },
   {
@@ -143,7 +143,7 @@ export const headerShoulders: Data[] = [
     prefix: '单异常对象',
     type: 'header-shoulder',
     damageValue: 6414 + 712,
-    skillAtk: [5],
+    skillAtk: 5,
     elementalDamage: 20,
     speed: 30,
   },
@@ -152,7 +152,7 @@ export const headerShoulders: Data[] = [
     prefix: '2 个异常对象',
     type: 'header-shoulder',
     damageValue: 6414 + 712 * 2,
-    skillAtk: [5],
+    skillAtk: 5,
     elementalDamage: 20,
     speed: 30,
   },
@@ -161,7 +161,7 @@ export const headerShoulders: Data[] = [
     prefix: '5 个异常对象',
     type: 'header-shoulder',
     damageValue: 6414 + 712 * 5,
-    skillAtk: [5],
+    skillAtk: 5,
     elementalDamage: 20,
     speed: 30,
   },
@@ -170,7 +170,7 @@ export const headerShoulders: Data[] = [
     prefix: '单异常对象',
     type: 'header-shoulder',
     damageValue: 6682 + 712,
-    skillAtk: [2],
+    skillAtk: 2,
     abnormal: {
       type: 'posion',
       prevConvert: 50,
@@ -185,7 +185,7 @@ export const headerShoulders: Data[] = [
     prefix: '2 个异常对象',
     type: 'header-shoulder',
     damageValue: 6682 + 712 * 2,
-    skillAtk: [2],
+    skillAtk: 2,
     abnormal: {
       type: 'posion',
       prevConvert: 50,
@@ -200,7 +200,7 @@ export const headerShoulders: Data[] = [
     prefix: '5 个异常对象',
     type: 'header-shoulder',
     damageValue: 6682 + 712 * 5,
-    skillAtk: [2],
+    skillAtk: 2,
     abnormal: {
       type: 'posion',
       prevConvert: 50,
@@ -215,7 +215,7 @@ export const headerShoulders: Data[] = [
     prefix: '单异常对象，毒王',
     type: 'header-shoulder',
     damageValue: 6682 + 712,
-    skillAtk: [2],
+    skillAtk: 2,
     abnormal: {
       type: 'posion',
       prevConvert: 74,
@@ -230,7 +230,7 @@ export const headerShoulders: Data[] = [
     prefix: '5 个异常对象，毒王',
     type: 'header-shoulder',
     damageValue: 6682 + 712 * 5,
-    skillAtk: [2],
+    skillAtk: 2,
     abnormal: {
       type: 'posion',
       prevConvert: 74,
@@ -245,7 +245,7 @@ export const headerShoulders: Data[] = [
     prefix: '未破韧',
     type: 'header-shoulder',
     damageValue: 6414,
-    skillAtk: [2],
+    skillAtk: 2,
     elementalDamage: 20,
     speed: {
       attackSpeed: 10,
@@ -257,7 +257,7 @@ export const headerShoulders: Data[] = [
     prefix: '破韧',
     type: 'header-shoulder',
     damageValue: 6414 + 1284,
-    skillAtk: [2],
+    skillAtk: 2,
     elementalDamage: 20,
     speed: {
       attackSpeed: 10,
@@ -269,7 +269,7 @@ export const headerShoulders: Data[] = [
     prefix: '破韧，3 个异常对象',
     type: 'header-shoulder',
     damageValue: 6414 + 1284 * 3,
-    skillAtk: [2],
+    skillAtk: 2,
     elementalDamage: 20,
     speed: {
       attackSpeed: 10,
@@ -280,7 +280,7 @@ export const headerShoulders: Data[] = [
     name: '高科技御敌护肩',
     type: 'header-shoulder',
     damageValue: 5604 + 534 * 5,
-    skillAtk: [5],
+    skillAtk: 5,
     elementalDamage: 2 * 5,
   },
   {
@@ -288,7 +288,7 @@ export const headerShoulders: Data[] = [
     prefix: '单异常对象',
     type: 'header-shoulder',
     damageValue: 5604 + 712,
-    skillAtk: [2],
+    skillAtk: 2,
     abnormal: {
       type: 'bleed',
       prevConvert: 50,
@@ -303,7 +303,7 @@ export const headerShoulders: Data[] = [
     prefix: '2 个异常对象',
     type: 'header-shoulder',
     damageValue: 5604 + 712 * 2,
-    skillAtk: [2],
+    skillAtk: 2,
     abnormal: {
       type: 'bleed',
       prevConvert: 50,
@@ -318,7 +318,7 @@ export const headerShoulders: Data[] = [
     prefix: '5 个异常对象',
     type: 'header-shoulder',
     damageValue: 5604 + 712 * 5,
-    skillAtk: [2],
+    skillAtk: 2,
     abnormal: {
       type: 'bleed',
       prevConvert: 50,
@@ -342,7 +342,7 @@ export const headerShoulders: Data[] = [
     name: '天才技术大师的保护面罩',
     type: 'header-shoulder',
     damageValue: 5604 + 2223,
-    skillAtk: [8],
+    skillAtk: 8,
   },
   {
     name: '耀武之威护肩',
@@ -388,7 +388,7 @@ export const headerShoulders: Data[] = [
     prefix: '未破韧',
     type: 'header-shoulder',
     damageValue: 5604 + 2519,
-    skillAtk: [5],
+    skillAtk: 5,
     elementalDamage: 15,
     speed: {
       attackSpeed: 8,
@@ -400,7 +400,7 @@ export const headerShoulders: Data[] = [
     prefix: '破韧',
     type: 'header-shoulder',
     damageValue: 5604 + 2519 + 1284,
-    skillAtk: [5],
+    skillAtk: 5,
     elementalDamage: 15,
     speed: {
       attackSpeed: 8,
@@ -412,7 +412,7 @@ export const headerShoulders: Data[] = [
     prefix: '破韧，3 个异常对象',
     type: 'header-shoulder',
     damageValue: 5604 + 2519 + 1284 * 3,
-    skillAtk: [5],
+    skillAtk: 5,
     elementalDamage: 15,
     speed: {
       attackSpeed: 8,
@@ -423,13 +423,13 @@ export const headerShoulders: Data[] = [
     name: '玉化亡灵肩甲',
     type: 'header-shoulder',
     damageValue: 5604 + 1482,
-    skillAtk: [9],
+    skillAtk: 9,
   },
   {
     name: '灵巧的支配者护肩',
     type: 'header-shoulder',
     damageValue: 4528 + 2223,
-    skillAtk: [10],
+    skillAtk: 10,
   },
   {
     name: '金属齿轮护肩',
@@ -441,21 +441,21 @@ export const headerShoulders: Data[] = [
     name: '欢笑中的祈盼',
     type: 'header-shoulder',
     damageValue: 5066 + 1778 + 741 * 6,
-    skillAtk: [4],
+    skillAtk: 4,
     other: '按 6 点计算',
   },
   {
     name: '庇佑伤痛的威严',
     type: 'header-shoulder',
     damageValue: 4528 + 185 * 12,
-    skillAtk: [1 * 8],
+    skillAtk: 1 * 8,
     elementalDamage: 18,
   },
   {
     name: '触手可及之记忆',
     type: 'header-shoulder',
     damageValue: 4796 + 1778,
-    skillAtk: [5],
+    skillAtk: 5,
     cooldownRecovery: 10,
     speed: {
       attackSpeed: 8,
@@ -466,14 +466,14 @@ export const headerShoulders: Data[] = [
     name: '被侵蚀神兽的罪恶斗篷',
     type: 'header-shoulder',
     damageValue: 6144,
-    skillAtk: [9],
+    skillAtk: 9,
   },
   {
     name: '守护清渊的意志',
     prefix: '单异常对象',
     type: 'header-shoulder',
     damageValue: 5066 + 712,
-    skillAtk: [7],
+    skillAtk: 7,
     abnormal: {
       type: 'burn',
       prevConvert: 50,
@@ -487,7 +487,7 @@ export const headerShoulders: Data[] = [
     prefix: '2 个异常对象',
     type: 'header-shoulder',
     damageValue: 5066 + 712 * 2,
-    skillAtk: [7],
+    skillAtk: 7,
     abnormal: {
       type: 'burn',
       prevConvert: 50,
@@ -501,7 +501,7 @@ export const headerShoulders: Data[] = [
     prefix: '5 个异常对象',
     type: 'header-shoulder',
     damageValue: 5066 + 712 * 5,
-    skillAtk: [7],
+    skillAtk: 7,
     abnormal: {
       type: 'burn',
       prevConvert: 50,
@@ -514,7 +514,7 @@ export const headerShoulders: Data[] = [
     name: '实现想象的自由',
     type: 'header-shoulder',
     damageValue: 6144,
-    skillAtk: [9],
+    skillAtk: 9,
   },
   {
     name: '忍耐骑士护肩',

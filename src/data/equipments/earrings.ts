@@ -25,7 +25,7 @@ export const earrings: Data[] = [
     prefix: '非无色',
     type: 'earring',
     damageValue: 4528,
-    skillAtk: [10],
+    skillAtk: 10,
     cooldownReduction: 30,
     speed: {
       attackSpeed: 8,
@@ -37,7 +37,7 @@ export const earrings: Data[] = [
     prefix: '无色',
     type: 'earring',
     damageValue: 4528,
-    skillAtk: [10],
+    skillAtk: 10,
     cooldownReduction: -15,
     speed: {
       attackSpeed: 8,
@@ -49,7 +49,7 @@ export const earrings: Data[] = [
     prefix: '觉醒',
     type: 'earring',
     damageValue: 4528,
-    skillAtk: [-15],
+    skillAtk: -15,
     speed: {
       attackSpeed: 8,
       castingSpeed: 12,
@@ -59,7 +59,7 @@ export const earrings: Data[] = [
     name: '万物引力耳环',
     type: 'earring',
     damageValue: 5604,
-    skillAtk: [12],
+    skillAtk: 12,
     speed: {
       moveSpeed: 20 + 8,
     },
@@ -79,7 +79,7 @@ export const earrings: Data[] = [
     name: '隐匿之叹息耳环',
     type: 'earring',
     damageValue: 5874,
-    skillAtk: [15],
+    skillAtk: 15,
     cooldownReduction: -5,
   },
   {
@@ -120,7 +120,7 @@ export const earrings: Data[] = [
     name: '堕落的灵魂',
     type: 'earring',
     damageValue: 4796,
-    skillAtk: [10],
+    skillAtk: 10,
     cooldownReduction: 10,
   },
   {
@@ -133,14 +133,14 @@ export const earrings: Data[] = [
     name: '脉冲之源耳环',
     type: 'earring',
     damageValue: 3720 + 3557,
-    skillAtk: [15],
+    skillAtk: 15,
   },
   {
     name: '黄昏圣堂',
     prefix: '30% HP',
     type: 'earring',
     damageValue: 6048 + 445 * 6,
-    skillAtk: [1 * 6],
+    skillAtk: 1 * 6,
     elementalDamage: 15,
     speed: {
       attackSpeed: 8,
@@ -152,7 +152,7 @@ export const earrings: Data[] = [
     prefix: '50% HP',
     type: 'earring',
     damageValue: 6048 + 445 * 10,
-    skillAtk: [1 * 10],
+    skillAtk: 1 * 10,
     elementalDamage: 15,
     speed: {
       attackSpeed: 8,
@@ -200,7 +200,7 @@ export const earrings: Data[] = [
     name: '吞噬风暴耳环',
     type: 'earring',
     damageValue: 5066,
-    skillAtk: [10],
+    skillAtk: 10,
     elementalDamage: 15,
   },
   {
@@ -208,7 +208,7 @@ export const earrings: Data[] = [
     prefix: '51% 韧性',
     type: 'earring',
     damageValue: 4258,
-    skillAtk: [8],
+    skillAtk: 8,
     speed: {
       attackSpeed: 8,
       castingSpeed: 12,
@@ -219,7 +219,7 @@ export const earrings: Data[] = [
     prefix: '21% 韧性',
     type: 'earring',
     damageValue: 4258,
-    skillAtk: [13],
+    skillAtk: 13,
     speed: {
       attackSpeed: 8,
       castingSpeed: 12,
@@ -230,7 +230,7 @@ export const earrings: Data[] = [
     prefix: '19% 韧性',
     type: 'earring',
     damageValue: 4258,
-    skillAtk: [20],
+    skillAtk: 20,
     speed: {
       attackSpeed: 8,
       castingSpeed: 12,
@@ -241,7 +241,7 @@ export const earrings: Data[] = [
     prefix: '期望',
     type: 'earring',
     damageValue: 4258,
-    skillAtk: [11.1],
+    skillAtk: 11.1,
     speed: {
       attackSpeed: 8,
       castingSpeed: 12,
@@ -294,7 +294,7 @@ export const earrings: Data[] = [
     prefix: '非觉醒，期望',
     type: 'earring',
     damageValue: 5780,
-    skillAtk: [8.7],
+    skillAtk: 8.7,
     elementalDamage: 15,
     speed: 30,
     other: '通过模拟得到期望概率为 8.7%',
@@ -315,7 +315,7 @@ export const earrings: Data[] = [
     prefix: '近',
     type: 'earring',
     damageValue: 6682,
-    skillAtk: [8],
+    skillAtk: 8,
     speed: {
       attackSpeed: 0.5 * 10,
       castingSpeed: 0.5 * 10,
@@ -333,12 +333,12 @@ export const earrings: Data[] = [
     name: '机械工学的时间',
     type: 'earring',
     damageValue: 5604,
-    skillAtk: [12],
+    skillAtk: 12,
   },
   {
     name: '永不言弃的勇气',
     type: 'earring',
     damageValue: 5874,
-    skillAtk: [12],
+    skillAtk: 12,
   },
 ]

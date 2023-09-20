@@ -2,14 +2,29 @@ import { Data } from '.'
 
 export const braceletsOptions: Data[] = [
   {
-    name: '每名敌人 9 属强',
+    name: '直伤技攻',
+    type: 'bracelet',
+    from: 'logo',
+    damageValue: 1186,
+    skillAtk: [2, 5],
+  },
+  {
+    name: '移动技攻',
+    type: 'bracelet',
+    from: 'logo',
+    damageValue: 1186,
+    skillAtk: 6,
+    speed: 10,
+  },
+  {
+    name: '每个目标属强',
     type: 'bracelet',
     from: '森林之魔女手镯',
     damageValue: 148,
-    elementalDamage: 9 * 2,
+    elementalDamage: 5 * 4 + 20,
   },
   {
-    name: '10% 中毒伤害',
+    name: '15% 中毒伤害',
     prefix: '毒王',
     type: 'bracelet',
     from: '森林之魔女手镯',
@@ -21,6 +36,16 @@ export const braceletsOptions: Data[] = [
       abnormalDamage: 10,
     },
     other: '手镯位毒伤，仅有毒王可以使用，按穿蓝灵上衣计算',
+  },
+  {
+    name: '30% 感电转伤',
+    type: 'bracelet',
+    from: '森林之魔女手镯',
+    damageValue: 1186,
+    abnormal: {
+      type: 'shock',
+      convert: 30,
+    },
   },
   {
     name: '每名队员攻强',

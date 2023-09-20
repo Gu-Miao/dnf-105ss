@@ -2,7 +2,28 @@ import { Data } from '.'
 
 export const necklaceOptions: Data[] = [
   {
-    name: '10% 出血伤害',
+    name: '30% 消耗品效果',
+    type: 'necklace',
+    from: 'logo',
+    damageValue: 1186,
+    skillAtk: 3.2,
+    other: '按单斗神 3.2% 提升率计算',
+  },
+  {
+    name: '25% 灼烧伤害',
+    type: 'necklace',
+    from: 'logo',
+    damageValue: 1186,
+    abnormal: {
+      type: 'burn',
+      prevConvert: 50,
+      prevAbnormalDamage: 20 + 30,
+      abnormalDamage: 25,
+    },
+    other: '按佩戴异常手镯和蓝灵上衣计算',
+  },
+  {
+    name: '15% 出血伤害',
     type: 'necklace',
     from: '森林之魔女项链',
     damageValue: 296,
@@ -10,9 +31,16 @@ export const necklaceOptions: Data[] = [
       type: 'bleed',
       prevConvert: 50,
       prevAbnormalDamage: 20 + 30,
-      abnormalDamage: 10,
+      abnormalDamage: 15,
     },
     other: '按佩戴异常手镯和蓝灵上衣计算',
+  },
+  {
+    name: '贵族机要技攻',
+    type: 'necklace',
+    from: '森林之魔女项链',
+    damageValue: 445,
+    skillAtk: 2,
   },
   {
     name: '韧性 Lv45 30% CDR',

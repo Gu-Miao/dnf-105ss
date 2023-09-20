@@ -5,7 +5,7 @@ export const rings: Data[] = [
     name: '瞬息千里戒指',
     type: 'ring',
     damageValue: 5604,
-    skillAtk: [5],
+    skillAtk: 5,
     cooldownRecovery: 10,
   },
   {
@@ -45,7 +45,7 @@ export const rings: Data[] = [
     prefix: '2 人',
     type: 'ring',
     damageValue: 4258 + 1112 * 2,
-    skillAtk: [2 * 2],
+    skillAtk: 2 * 2,
     speed: {
       attackSpeed: 2 * 5,
       castingSpeed: 2 * 5,
@@ -56,7 +56,7 @@ export const rings: Data[] = [
     prefix: '3 人',
     type: 'ring',
     damageValue: 4258 + 1112 * 3,
-    skillAtk: [2 * 3],
+    skillAtk: 2 * 3,
     speed: {
       attackSpeed: 2 * 5,
       castingSpeed: 2 * 5,
@@ -67,7 +67,7 @@ export const rings: Data[] = [
     prefix: '4 人',
     type: 'ring',
     damageValue: 4258 + 1112 * 4,
-    skillAtk: [2 * 4],
+    skillAtk: 2 * 4,
     speed: {
       attackSpeed: 2 * 5,
       castingSpeed: 2 * 5,
@@ -84,7 +84,7 @@ export const rings: Data[] = [
     name: '闪耀的音律',
     type: 'ring',
     damageValue: 6048,
-    skillAtk: [6],
+    skillAtk: 6,
     elementalDamage: 20,
   },
   {
@@ -155,7 +155,7 @@ export const rings: Data[] = [
     name: '无尽的痛苦之戒',
     type: 'ring',
     damageValue: 4258 + 4446,
-    skillAtk: [7],
+    skillAtk: 7,
   },
   {
     name: '守护龙的庇护 - 祝福',
@@ -167,7 +167,7 @@ export const rings: Data[] = [
     name: '全能主宰者之戒',
     type: 'ring',
     damageValue: 4796 + 2668,
-    skillAtk: [7],
+    skillAtk: 7,
     speed: {
       attackSpeed: 8,
       castingSpeed: 12,
@@ -248,7 +248,7 @@ export const rings: Data[] = [
     name: '能量搜索环',
     type: 'ring',
     damageValue: 3988 + 2816 + 1482,
-    skillAtk: [7],
+    skillAtk: 7,
   },
   {
     name: '炽热的渴望之证',
@@ -265,21 +265,21 @@ export const rings: Data[] = [
     prefix: '攻击强化',
     type: 'ring',
     damageValue: 5604 + 790 * 3 + 741,
-    skillAtk: [5],
+    skillAtk: 5,
   },
   {
     name: '暴龙王的支配 - 压制',
     prefix: '属强',
     type: 'ring',
     damageValue: 5604 + 790 * 3,
-    skillAtk: [5],
+    skillAtk: 5,
     elementalDamage: 5,
   },
   {
     name: '世界的中心轴',
     type: 'ring',
     damageValue: 5604 + 2668,
-    skillAtk: [7],
+    skillAtk: 7,
     speed: -15,
   },
   {
@@ -295,7 +295,7 @@ export const rings: Data[] = [
     name: '典狱长的证明',
     type: 'ring',
     damageValue: 6144,
-    skillAtk: [5],
+    skillAtk: 5,
     abnormal: {
       type: 'bleed',
       prevConvert: 50,
@@ -309,7 +309,7 @@ export const rings: Data[] = [
     prefix: '毒王',
     type: 'ring',
     damageValue: 6144,
-    skillAtk: [5],
+    skillAtk: 5,
     abnormal: {
       type: 'posion',
       prevConvert: 74,
@@ -323,14 +323,14 @@ export const rings: Data[] = [
     prefix: '觉醒',
     type: 'ring',
     damageValue: 7144,
-    skillAtk: [20],
+    skillAtk: 20,
     cooldownRecovery: 40,
   },
   {
     name: '压倒性的勇猛',
     type: 'ring',
     damageValue: 5066,
-    skillAtk: [10],
+    skillAtk: 10,
     speed: {
       attackSpeed: 50,
       castingSpeed: 75,

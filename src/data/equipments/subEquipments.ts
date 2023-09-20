@@ -11,7 +11,7 @@ export const subEquipments: Data[] = [
     name: '命运的魔法箱',
     type: 'sub-equipment',
     damageValue: 5604,
-    skillAtk: [5],
+    skillAtk: 5,
     elementalDamage: 15,
     other: '按 5% 技攻附魔计算',
   },
@@ -30,7 +30,7 @@ export const subEquipments: Data[] = [
     name: '不祥的暗纹石板',
     type: 'sub-equipment',
     damageValue: 5874,
-    skillAtk: [5],
+    skillAtk: 5,
     speed: {
       moveSpeed: 4 + 8,
     },
@@ -40,7 +40,7 @@ export const subEquipments: Data[] = [
     prefix: 'Lv1~30',
     type: 'sub-equipment',
     damageValue: 6414,
-    skillAtk: [12],
+    skillAtk: 12,
     speed: {
       attackSpeed: 8,
       castingSpeed: 12,
@@ -129,7 +129,7 @@ export const subEquipments: Data[] = [
     prefix: '1 键',
     type: 'sub-equipment',
     damageValue: 5066,
-    skillAtk: [7],
+    skillAtk: 7,
     speed: 15,
   },
   {
@@ -137,7 +137,7 @@ export const subEquipments: Data[] = [
     prefix: '2 键',
     type: 'sub-equipment',
     damageValue: 5066,
-    skillAtk: [9],
+    skillAtk: 9,
     speed: 15,
   },
   {
@@ -145,7 +145,7 @@ export const subEquipments: Data[] = [
     prefix: '3 键',
     type: 'sub-equipment',
     damageValue: 5066,
-    skillAtk: [11],
+    skillAtk: 11,
     speed: 15,
   },
   {
@@ -153,7 +153,7 @@ export const subEquipments: Data[] = [
     prefix: '4 键',
     type: 'sub-equipment',
     damageValue: 5066,
-    skillAtk: [15],
+    skillAtk: 15,
     speed: 15,
   },
   {
@@ -161,7 +161,7 @@ export const subEquipments: Data[] = [
     prefix: '未破韧',
     type: 'sub-equipment',
     damageValue: 2910,
-    skillAtk: [3],
+    skillAtk: 3,
     cooldownRecovery: 15,
   },
   {
@@ -176,7 +176,7 @@ export const subEquipments: Data[] = [
     name: '生命的喘息',
     type: 'sub-equipment',
     damageValue: 4528 + 2223,
-    skillAtk: [7],
+    skillAtk: 7,
     speed: {
       attackSpeed: 8,
       castingSpeed: 12,
@@ -195,7 +195,7 @@ export const subEquipments: Data[] = [
     name: '光学工程眼镜',
     type: 'sub-equipment',
     damageValue: 4528 + 3557,
-    skillAtk: [7],
+    skillAtk: 7,
     speed: {
       attackSpeed: 5,
       castingSpeed: 7.5,
@@ -206,7 +206,7 @@ export const subEquipments: Data[] = [
     name: '鲁莽而合理的作战',
     type: 'sub-equipment',
     damageValue: 4258 + 4446,
-    skillAtk: [3],
+    skillAtk: 3,
   },
   {
     name: '生息之壶觞',
@@ -221,14 +221,14 @@ export const subEquipments: Data[] = [
     name: '知海沉舟',
     type: 'sub-equipment',
     damageValue: 5336 + 593 * 5,
-    skillAtk: [3],
+    skillAtk: 3,
     speed: '普攻，跳攻，前冲攻击时 35% 攻速',
   },
   {
     name: '被侵蚀神兽的悲痛面纱',
     type: 'sub-equipment',
     damageValue: 6144,
-    skillAtk: [7],
+    skillAtk: 7,
   },
   {
     name: '清渊之力',
@@ -245,14 +245,14 @@ export const subEquipments: Data[] = [
     name: '查理的面具',
     type: 'sub-equipment',
     damageValue: 6170,
-    skillAtk: [-35],
+    skillAtk: -35,
     cooldownReduction: 50,
   },
   {
     name: '前进的一步',
     type: 'sub-equipment',
     damageValue: 6440,
-    skillAtk: [1.75],
+    skillAtk: 1.75,
     cooldownRecovery: 15,
     other: '按旅人双 45 恩特肩双 45 魔女裤子 Lv45 30% 和 Lv40 5% 占比计算',
   },

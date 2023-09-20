@@ -2,6 +2,21 @@ import { Data } from '.'
 
 export const magicStoneOptions: Data[] = [
   {
+    name: '觉醒 11% 技攻',
+    prefix: '觉醒',
+    type: 'magic-stone',
+    from: 'logo',
+    damageValue: 1186,
+    skillAtk: 11,
+  },
+  {
+    name: '护盾 4% 技攻',
+    type: 'magic-stone',
+    from: 'logo',
+    damageValue: 1037,
+    skillAtk: 4,
+  },
+  {
     name: 'Lv70 韧性 CDR',
     type: 'magic-stone',
     from: '森林之魔女精灵石',
@@ -76,7 +91,7 @@ export const magicStoneOptions: Data[] = [
     type: 'magic-stone',
     from: '深潜迷航面罩',
     damageValue: 741,
-    skillAtk: [8],
+    skillAtk: 8,
   },
   {
     name: '5% 灼烧伤害',

@@ -25,7 +25,7 @@ export const bracelets: Data[] = [
     name: '收获之手',
     type: 'bracelet',
     damageValue: 4528,
-    skillAtk: [6],
+    skillAtk: 6,
     cooldownRecovery: 25,
     speed: {
       attackSpeed: 8,
@@ -79,21 +79,21 @@ export const bracelets: Data[] = [
     name: '和谐之音手镯',
     type: 'bracelet',
     damageValue: 4528,
-    skillAtk: [3 * 5],
+    skillAtk: 3 * 5,
     elementalDamage: 5 * 5,
   },
   {
     name: '迟钝的感知手镯',
     type: 'bracelet',
     damageValue: 5066,
-    skillAtk: [14],
+    skillAtk: 14,
     elementalDamage: 30,
   },
   {
     name: '灿若繁星手镯',
     type: 'bracelet',
     damageValue: 6048,
-    skillAtk: [4 * 4],
+    skillAtk: 4 * 4,
     elementalDamage: 5 * 4,
   },
   {
@@ -125,7 +125,7 @@ export const bracelets: Data[] = [
     prefix: '未破韧',
     type: 'bracelet',
     damageValue: 3906 + 445 * 5,
-    skillAtk: [8],
+    skillAtk: 8,
   },
   {
     name: '绿野的纯真手镯',
@@ -138,7 +138,7 @@ export const bracelets: Data[] = [
     name: '无人机战术手镯',
     type: 'bracelet',
     damageValue: 5066 + 193 * 10,
-    skillAtk: [10],
+    skillAtk: 10,
     elementalDamage: 20,
     cooldownReduction: 12,
     speed: {
@@ -151,7 +151,7 @@ export const bracelets: Data[] = [
     prefix: '无色',
     type: 'bracelet',
     damageValue: 5416 + 4446,
-    skillAtk: [10],
+    skillAtk: 10,
     elementalDamage: 20 + 3 * 5,
   },
   {
@@ -206,13 +206,13 @@ export const bracelets: Data[] = [
     name: '魔力抑制手镯',
     type: 'bracelet',
     damageValue: 5604 + 2668,
-    skillAtk: [15],
+    skillAtk: 15,
   },
   {
     name: '动力导航包',
     type: 'bracelet',
     damageValue: 5066 + 2816,
-    skillAtk: [9],
+    skillAtk: 9,
     cooldownReduction: 15,
     speed: {
       attackSpeed: 8,
@@ -223,20 +223,20 @@ export const bracelets: Data[] = [
     name: '永恒的心愿',
     type: 'bracelet',
     damageValue: 4972,
-    skillAtk: [28],
+    skillAtk: 28,
   },
   {
     name: '暴龙王的支配 - 武力',
     type: 'bracelet',
     damageValue: 5066,
-    skillAtk: [15],
+    skillAtk: 15,
     elementalDamage: 30,
   },
   {
     name: '如流岁月',
     type: 'bracelet',
     damageValue: 5874 + 1927,
-    skillAtk: [14],
+    skillAtk: 14,
     elementalDamage: 15,
     speed: {
       moveSpeed: 8,
@@ -247,7 +247,7 @@ export const bracelets: Data[] = [
     prefix: '50% 韧性',
     type: 'bracelet',
     damageValue: 5604,
-    skillAtk: [20],
+    skillAtk: 20,
     speed: {
       moveSpeed: 8,
     },
@@ -257,7 +257,7 @@ export const bracelets: Data[] = [
     prefix: '期望',
     type: 'bracelet',
     damageValue: 5604,
-    skillAtk: [(20 * 50 + 30 * 15 + 8 * 20) / 100],
+    skillAtk: (20 * 50 + 30 * 15 + 8 * 20) / 100,
     speed: {
       moveSpeed: 8,
     },
@@ -266,7 +266,7 @@ export const bracelets: Data[] = [
     name: '信使的祝福',
     type: 'bracelet',
     damageValue: 5874,
-    skillAtk: [15],
+    skillAtk: 15,
     elementalDamage: 15,
     speed: {
       attackSpeed: 8,
@@ -277,7 +277,7 @@ export const bracelets: Data[] = [
     name: '历久弥新手镯',
     type: 'bracelet',
     damageValue: 5604,
-    skillAtk: [14],
+    skillAtk: 14,
     elementalDamage: 15,
     speed: {
       moveSpeed: 8,
@@ -287,7 +287,7 @@ export const bracelets: Data[] = [
     name: '铭刻之誓约',
     type: 'bracelet',
     damageValue: 6144,
-    skillAtk: [5 * 3],
+    skillAtk: 5 * 3,
     elementalDamage: 30,
   },
 ]
