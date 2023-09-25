@@ -1,4 +1,4 @@
-import { Data } from '.'
+import { Data, options } from '.'
 
 export const headerShoulderOptions: Data[] = [
   {
@@ -132,6 +132,30 @@ export const headerShoulderOptions: Data[] = [
     damageValue: 1186 + 712 * 5,
   },
   {
+    name: '混乱抗性 15 属强',
+    type: 'header-shoulder',
+    from: '蓝灵绿玉石肩甲',
+    damageValue: 1186,
+    elementalDamage: 15,
+  },
+  {
+    name: 'Lv60 +1，Lv45，60，70 5% 技攻',
+    type: 'header-shoulder',
+    from: '蓝灵绿玉石肩甲',
+    damageValue: 1482,
+    skillAtk: 2 * 5 * 0.13 + 5 * 0.14,
+    other: '关羽 Lv60 +1 提升 2.5%，按关羽 9 保长虹贯日 Lv60 13% 占比, Lv45，70 总共 14% 占比计算',
+  },
+  {
+    name: 'Lv70 +1，Lv45，60，70 5% 技攻',
+    type: 'header-shoulder',
+    from: '蓝灵绿玉石肩甲',
+    damageValue: 1482,
+    skillAtk: 2 * 5 * 0.15 + 5 * 0.17,
+    other:
+      '女漫游 Lv70 +1 提升 2.8%，按女漫游 9 保压制射击 Lv70 15% 占比, Lv45，60 总共 17% 占比计算',
+  },
+  {
     name: '40 属强',
     type: 'header-shoulder',
     from: '深潜迷航气囊',
@@ -142,7 +166,64 @@ export const headerShoulderOptions: Data[] = [
     name: '速度攻强',
     type: 'header-shoulder',
     from: '深潜迷航气囊',
-    damageValue: 889 + 2964,
+    damageValue: 889 + 4446,
     speed: 20,
+  },
+  {
+    name: '保护罩 6% 技攻',
+    type: 'header-shoulder',
+    from: '深潜迷航气囊',
+    damageValue: 1037,
+    skillAtk: [6],
+  },
+  {
+    name: '15% 出血伤害',
+    type: 'header-shoulder',
+    from: '蓝色海贼头肩',
+    damageValue: 593,
+    abnormal: {
+      type: 'bleed',
+      prevConvert: 50,
+      prevAbnormalDamage: 20 + 30,
+      abnormalDamage: 15,
+    },
+    other: '按佩戴异常手镯和蓝灵上衣计算',
+  },
+  {
+    name: '移动 6% 技攻',
+    type: 'header-shoulder',
+    from: '蓝色海贼头肩',
+    damageValue: 1186,
+    skillAtk: [6],
+  },
+  {
+    name: '5% 技攻/10% CD',
+    prefix: '技攻',
+    type: 'header-shoulder',
+    from: '蓝色海贼头肩',
+    damageValue: 1186,
+    skillAtk: [5],
+  },
+  {
+    name: '5% 技攻/10% CD',
+    prefix: 'CD',
+    type: 'header-shoulder',
+    from: '蓝色海贼头肩',
+    damageValue: 1186,
+    cooldownReduction: 10,
+  },
+  {
+    name: 'MP CD',
+    type: 'header-shoulder',
+    from: '蓝色海贼头肩',
+    damageValue: 1186,
+    cooldownReduction: 4 * 5,
+  },
+  {
+    name: '15 无色 10% 技攻',
+    type: 'header-shoulder',
+    from: '蓝色海贼头肩',
+    damageValue: 1186,
+    skillAtk: [10],
   },
 ]
