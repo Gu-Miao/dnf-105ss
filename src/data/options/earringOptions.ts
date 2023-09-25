@@ -107,7 +107,7 @@ export const earringOptions: Data[] = [
     name: '直伤攻强',
     type: 'earring',
     from: '恩特精灵耳环',
-    damageValue: 889 + 4446,
+    damageValue: 1186 + 4446,
   },
   {
     name: '正/背面 8% 技攻',
