@@ -9,6 +9,13 @@ export const bracelets: Data[] = [
   },
   {
     name: '电弧爆源手镯',
+    prefix: '1/3',
+    type: 'bracelet',
+    damageValue: 4176 + 445 * 5,
+    skillAtk: [3.33, 5],
+  },
+  {
+    name: '电弧爆源手镯',
     prefix: '破韧',
     type: 'bracelet',
     damageValue: 4176 + 445 * 5,

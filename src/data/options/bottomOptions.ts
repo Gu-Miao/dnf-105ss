@@ -265,12 +265,12 @@ export const bottomOptions: Data[] = [
     type: 'bottom',
     from: '蓝色海贼下装',
     damageValue: 1186,
-    skillAtk: [8],
+    skillAtk: 8,
   },
   {
     name: '50% MP 攻强',
     type: 'bottom',
     from: '蓝色海贼下装',
-    damageValue: 1186,
+    damageValue: 1186 + 2223,
   },
 ]
