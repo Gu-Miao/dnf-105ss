@@ -240,7 +240,7 @@ export const earringOptions: Data[] = [
     skillAtk: 6,
   },
   {
-    name: '获得 TP 等级 6% 技攻，Lv75 以上 6% 技攻',
+    name: 'TP 等级 6% 技攻，Lv75 以上 6% 技攻',
     type: 'earring',
     from: '蓝色海贼耳环',
     damageValue: 1482 + 111 * 20,

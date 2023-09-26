@@ -210,7 +210,7 @@ export const topOptions: Data[] = [
     skillAtk: [10],
   },
   {
-    name: '等级 10% CD',
+    name: 'TP 等级 10% CD',
     type: 'top',
     from: '蓝色海贼上衣',
     damageValue: 1186,
