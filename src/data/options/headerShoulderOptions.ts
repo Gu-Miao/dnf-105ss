@@ -1,4 +1,4 @@
-import { Data, options } from '.'
+import { Data } from '.'
 
 export const headerShoulderOptions: Data[] = [
   {

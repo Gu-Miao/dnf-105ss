@@ -115,6 +115,11 @@ export const braceletsOptions: Data[] = [
     type: 'bracelet',
     from: '深潜迷航腕表',
     damageValue: 1334 + (3409 + 2223) / 2,
+    speed: {
+      attackSpeed: 20,
+      castingSpeed: 30,
+      moveSpeed: 20,
+    },
   },
   {
     name: '手搓 5% 技攻',

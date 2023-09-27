@@ -432,4 +432,32 @@ export const shoes: Data[] = [
     damageValue: 5510 + 4446,
     skillAtk: 17,
   },
+  {
+    name: '森林之魔女长靴',
+    type: 'shoe',
+    damageValue: 1186 + 1186 + 741 + 1630,
+    skillAtk: [6, 8, 6],
+    elementalDamage: 20,
+    other: '10 连击内 5% 技攻，50 打击层数 8% 技攻，低血 6% 技攻，20 全',
+  },
+  {
+    name: '恩特精灵战靴',
+    type: 'shoe',
+    damageValue: 296 + 1630 + 1186 + 1186 + 356 * 10,
+    skillAtk: 12,
+    elementalDamage: 20 + 20,
+    other: '10 连击内 5% 技攻，50 打击层数 8% 技攻，低血 6% 技攻，20 全',
+  },
+  {
+    name: '蓝色海贼鞋',
+    type: 'shoe',
+    damageValue: 1186 + 1186 + 145 + 1186 + 356 * 10,
+    abnormal: {
+      type: 'burn',
+      prevConvert: 50,
+      prevAbnormalDamage: 20 + 30,
+      abnormalDamage: 20 + 15 + 15,
+    },
+    other: '20% 灼烧伤害，破冰 15% 灼烧伤害，15% 灼烧伤害，连击减防攻强',
+  },
 ]

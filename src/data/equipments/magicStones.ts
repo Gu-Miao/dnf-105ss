@@ -224,4 +224,19 @@ export const magicStones: Data[] = [
     damageValue: 6144,
     skillAtk: 10,
   },
+  {
+    name: '深潜迷航面罩',
+    type: 'magic-stone',
+    damageValue: 741 + 445 + 1186 + 1186,
+    skillAtk: [8, 5],
+    elementalDamage: 20,
+    other: '破招 8% 技攻，异常 5% 技攻，20 单，无用',
+  },
+  {
+    name: '深潜迷航面罩',
+    type: 'magic-stone',
+    damageValue: 741 + 445 + 445 + 445,
+    skillAtk: [8, 5, 5, 5],
+    other: '破招 8% 技攻，3 个异常 5% 技攻',
+  },
 ]

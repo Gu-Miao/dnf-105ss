@@ -256,4 +256,25 @@ export const subEquipments: Data[] = [
     cooldownRecovery: 15,
     other: '按旅人双 45 恩特肩双 45 魔女裤子 Lv45 30% 和 Lv40 5% 占比计算',
   },
+  {
+    name: '森林之魔女篮子',
+    type: 'sub-equipment',
+    damageValue: 445 + 1630 + 1186 + 1186,
+    skillAtk: 5,
+    elementalDamage: 20 + 20,
+    other: '异常 5% 技攻，20 全，20 单，无用',
+  },
+  {
+    name: '恩特精灵圣杯',
+    type: 'sub-equipment',
+    damageValue: 889 + 445 + 445 + 445,
+    skillAtk: [5, 5, 5],
+    abnormal: {
+      type: 'bleed',
+      prevConvert: 50,
+      prevAbnormalDamage: 20 + 30,
+      abnormalDamage: 15,
+    },
+    other: '3 个异常 5% 技攻，15% 出血伤害。按佩戴异常手镯和蓝灵上衣计算',
+  },
 ]

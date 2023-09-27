@@ -297,4 +297,25 @@ export const bracelets: Data[] = [
     skillAtk: 5 * 3,
     elementalDamage: 30,
   },
+  {
+    name: '深潜迷航腕表',
+    type: 'bracelet',
+    damageValue: 1186 + 1186 + 1630 + 1186,
+    skillAtk: [10, 6],
+    elementalDamage: 20,
+    other: '110% 暴击 10% 技攻，移动 6% 技攻，20 全，无用',
+  },
+  {
+    name: '深潜迷航腕表',
+    prefix: '期望',
+    type: 'bracelet',
+    damageValue: 1186 + 1186 + 1186 + 4150,
+    skillAtk: [10, 2, 5, 6],
+    speed: {
+      attackSpeed: 20,
+      castingSpeed: 30,
+      moveSpeed: 20,
+    },
+    other: '110% 暴击 10% 技攻，直伤技攻，移动 6% 技攻，速度攻强',
+  },
 ]
