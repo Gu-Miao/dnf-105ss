@@ -243,7 +243,7 @@ export const earringOptions: Data[] = [
     name: 'TP 等级 6% 技攻，Lv75 以上 6% 技攻',
     type: 'earring',
     from: '蓝色海贼耳环',
-    damageValue: 1482 + 111 * 20,
+    damageValue: 1186,
     skillAtk: [6, 6 * 0.78],
     other: '按 CP 鹦鹉双 80 恩特上衣双 80 恩特裤子 40 秒 3 剜心 Lv75 以上技能 78% 占比计算',
   },
