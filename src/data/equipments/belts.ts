@@ -386,10 +386,11 @@ export const belts: Data[] = [
     abnormal: {
       type: 'posion',
       prevConvert: 74,
-      prevAbnormalDamage: 20 + 30,
+      prevAbnormalDamage: 20 + 30 + 50 + 15 + 15,
       additionalDamage: 10,
     },
-    other: '对毒王提升，按中毒异常佩戴异常手镯和蓝灵上衣计算',
+    other:
+      '对毒王提升，按佩戴异常手镯，蓝灵上衣，武器 15% 毒伤，50% 毒伤蓝灵戒指和 15% 毒伤蓝灵裤子计算',
   },
   {
     name: '满怀梦想的工程师工作腰带',
@@ -457,7 +458,7 @@ export const belts: Data[] = [
     prefix: '毒王',
     type: 'belt',
     damageValue: 593 + 1334 + 1630 + 1186,
-    skillAtk: 6,
+    skillAtk: 5,
     elementalDamage: 20,
     abnormal: {
       type: 'posion',
@@ -472,15 +473,16 @@ export const belts: Data[] = [
     prefix: '毒王',
     type: 'belt',
     damageValue: 593 + 1334 + 1630 + 1186,
-    skillAtk: 6,
+    skillAtk: 5,
     elementalDamage: 20 + 20,
     abnormal: {
       type: 'posion',
       prevConvert: 74,
-      prevAbnormalDamage: 20 + 30,
+      prevAbnormalDamage: 20 + 30 + 50 + 15 + 15,
       abnormalDamage: 20,
     },
-    other: '20% 中毒伤害，距离 5% 技攻，20 全，20 单。对毒王提升，按佩戴异常手镯和蓝灵上衣计算',
+    other:
+      '20% 中毒伤害，距离 5% 技攻，20 全，20 单。对毒王提升，按佩戴异常手镯，蓝灵上衣，武器 15% 毒伤，50% 毒伤蓝灵戒指和 15% 毒伤蓝灵裤子计算',
   },
   {
     name: '蓝灵绿玉石腰带',
