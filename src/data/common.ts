@@ -1,4 +1,4 @@
-import { BURN_BREAK_ICE_RATE, DAMAGE_VALUE_PERCENTAGE } from '@/constants'
+import { BURN_BREAK_ICE_RATE } from '@/constants'
 
 export type Abnormal = {
   type: 'bleed' | 'posion' | 'burn' | 'shock'
@@ -83,7 +83,7 @@ function getSkillAtkIncreaseRate(skillAtk: number | number[]) {
  * @returns 攻击强化提升率
  */
 function getDamageValueIncreaseRate(damageValue: number, prevDamageValue: number) {
-  return 1 + (damageValue / prevDamageValue) * (1 + DAMAGE_VALUE_PERCENTAGE * 0.01)
+  return 1 + (damageValue / prevDamageValue) * 0.01
 }
 
 /**
