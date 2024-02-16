@@ -1,4 +1,4 @@
-import { DAMAGE_VALUE_BASE, ELEMENTAL_DAMAGE } from '@/constants'
+import { DAMAGE_VALUE_EQUIPMENT_COMPARATION, ELEMENTAL_DAMAGE } from '@/constants'
 import { getIncreaseRate, Data } from '../common'
 import { publicOptions } from './publicOptions'
 import { armorOptions } from './armorOptions'
@@ -34,7 +34,11 @@ const options: Data[] = [
   ...earringOptions,
 ]
   .map(item => {
-    item.increaseRate = getIncreaseRate(item as Data, DAMAGE_VALUE_BASE, ELEMENTAL_DAMAGE)
+    item.increaseRate = getIncreaseRate(
+      item as Data,
+      DAMAGE_VALUE_EQUIPMENT_COMPARATION,
+      ELEMENTAL_DAMAGE,
+    )
     return item
   })
   .sort((a, b) => (b.increaseRate as number) - (a.increaseRate as number))

@@ -1,12 +1,32 @@
-// 百分比攻击强化 70%，全 80 级词条攻击强化 429226，换算为 1 级为 150606
-// 无贴膜全 80 词条攻击强化 329030，换算为 1 级为 115499，平均每件装备攻强 9620
-// 攻强分母为 150606 - 9620 = 140986，同时计算攻强时需要考虑百分比攻强
-export const DAMAGE_VALUE_FUSION = 415000
-export const DAMAGE_VALUE_BASE = 140986
-export const ELEMENTAL_DAMAGE = 383
+// 1 级到神 40 成长倍数
+const DAMGE_VALUE_RATIO = 3.63
 
-// 普通年宠 + 普通年套称号 + 国庆光环 + 红色宠物装备 + 夏日勋章
-export const DAMAGE_VALUE_PERCENTAGE = 25 + 20 + 7 + 8 + 10
+// +12 勋章攻强
+const DAMGE_VALUE_MEDAL = 25423
+
+// 总攻强
+const DAMAGE_VALUE_ALL = 354924
+
+// 贴膜攻强（左灵通2+猎食3，右孤岛3+监视者3）
+const DAMAGE_VALUE_FUSION = 3756 + 7034 + 6213 + 4321 + 10830 * 3 + 3800 * 3
+
+// 装备攻强（出血散搭9自定义）
+const DAMGE_VALUE_EQUIPMENTS = DAMAGE_VALUE_ALL - DAMAGE_VALUE_FUSION - DAMGE_VALUE_MEDAL
+
+// 用于装备横向对比的攻强
+export const DAMAGE_VALUE_EQUIPMENT_COMPARATION = Math.round(
+  (DAMGE_VALUE_EQUIPMENTS / DAMGE_VALUE_RATIO) * (11 / 12) +
+    DAMAGE_VALUE_FUSION / DAMGE_VALUE_RATIO,
+)
+
+// 用于贴膜横向对比的攻强
+export const DAMAGE_VALUE_FUSION_COMPARATION = Math.round(
+  (DAMAGE_VALUE_FUSION / DAMGE_VALUE_RATIO) * (11 / 12) +
+    DAMGE_VALUE_EQUIPMENTS / DAMGE_VALUE_RATIO,
+)
+
+// 模板属强
+export const ELEMENTAL_DAMAGE = 436
 
 // 灼烧破冰率
 export const BURN_BREAK_ICE_RATE = 75

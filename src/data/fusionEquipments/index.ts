@@ -1,4 +1,4 @@
-import { DAMAGE_VALUE_FUSION, ELEMENTAL_DAMAGE } from '@/constants'
+import { DAMAGE_VALUE_FUSION_COMPARATION, ELEMENTAL_DAMAGE } from '@/constants'
 import { getIncreaseRate, Data } from '../common'
 import { fusionTops } from './fusionTops'
 import { fusionBottoms } from './fusionBottoms'
@@ -26,7 +26,7 @@ const fusionEquipments: Data[] = [
   ...fusionEarrings,
 ]
   .map(item => {
-    item.increaseRate = getIncreaseRate(item, DAMAGE_VALUE_FUSION, ELEMENTAL_DAMAGE)
+    item.increaseRate = getIncreaseRate(item, DAMAGE_VALUE_FUSION_COMPARATION, ELEMENTAL_DAMAGE)
     return item
   })
   .sort((a, b) => (b.increaseRate as number) - (a.increaseRate as number))
