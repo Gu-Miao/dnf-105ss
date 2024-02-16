@@ -6,6 +6,7 @@ export type Abnormal = {
   prevAbnormalDamage?: number
   convert?: number
   abnormalDamage?: number
+  additionalDamage?: number
 }
 
 export type Data = {
@@ -40,7 +41,7 @@ export type Data = {
     | 'fusion-earring'
   from?: string
   damageValue?: number
-  skillAtk?: number[]
+  skillAtk?: number | number[]
   elementalDamage?: number
   abnormal?: Abnormal
   cooldownRecovery?: number
@@ -69,8 +70,10 @@ const abnormalTypeMap = {
  * @param skillAtk 所有技攻加成
  * @returns 技攻提升率
  */
-function getSkillAtkIncreaseRate(skillAtk: number[]) {
-  return skillAtk.reduce((increaseRate, skillAttack) => increaseRate * (1 + skillAttack * 0.01), 1)
+function getSkillAtkIncreaseRate(skillAtk: number | number[]) {
+  return Array.isArray(skillAtk)
+    ? skillAtk.reduce((increaseRate, skillAttack) => increaseRate * (1 + skillAttack * 0.01), 1)
+    : 1 + skillAtk * 0.01
 }
 
 /**
@@ -104,20 +107,25 @@ function getAbnormalDamageIncreaseRate({
   prevAbnormalDamage = 0,
   convert = 0,
   abnormalDamage = 0,
+  additionalDamage = 0,
 }: Abnormal) {
   const currentConvert = prevConvert + convert
   const currentAbnormalDamage = prevAbnormalDamage + abnormalDamage
-  const additionalDamage =
-    type === 'bleed' ? 10 : type === 'burn' ? 5 * (BURN_BREAK_ICE_RATE * 0.01) : 0
+  const abnormalTypeDamage =
+    type === 'shock' ? 5 : type === 'burn' ? 10 * (BURN_BREAK_ICE_RATE * 0.01) : 10
 
   const prevDamage =
     1 -
     prevConvert * 0.01 +
-    prevConvert * 0.01 * (1 + additionalDamage * 0.01) * (1 + prevAbnormalDamage * 0.01)
+    prevConvert * 0.01 * (1 + abnormalTypeDamage * 0.01) * (1 + prevAbnormalDamage * 0.01)
   const damage =
     1 -
     currentConvert * 0.01 +
-    currentConvert * 0.01 * (1 + additionalDamage * 0.01) * (1 + currentAbnormalDamage * 0.01)
+    currentConvert *
+      0.01 *
+      (1 + abnormalTypeDamage * 0.01) *
+      (1 + currentAbnormalDamage * 0.01) *
+      (1 + additionalDamage * 0.01)
 
   return damage / prevDamage
 }
@@ -164,7 +172,11 @@ export function getIncreaseRate(data: Data, damageValue: number, elementalDamage
 
     increaseRate *= skillAtkIncreaseRate
     console.log(
-      `技攻：${data.skillAtk.map(num => num + '%').join(', ')}，提升：${skillAtkIncreaseRate}`,
+      `技攻：${
+        Array.isArray(data.skillAtk)
+          ? data.skillAtk.map(num => num + '%').join(', ')
+          : `${data.skillAtk}%`
+      }，提升：${skillAtkIncreaseRate}`,
     )
   }
 

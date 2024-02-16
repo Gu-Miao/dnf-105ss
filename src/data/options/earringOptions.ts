@@ -2,11 +2,42 @@ import { Data } from '.'
 
 export const earringOptions: Data[] = [
   {
+    name: '范围 6% 技攻',
+    type: 'earring',
+    from: 'logo',
+    damageValue: 741,
+    skillAtk: 6,
+  },
+  {
+    name: '非无色 10% 技攻',
+    prefix: '非无色',
+    from: 'logo',
+    type: 'earring',
+    damageValue: 741,
+    skillAtk: 10,
+  },
+  {
     name: '领主 20 属强',
     type: 'earring',
     from: '森林之魔女耳环',
     damageValue: 741,
     elementalDamage: 20,
+  },
+  {
+    name: 'Lv80 40% CDR',
+    type: 'earring',
+    from: '森林之魔女耳环',
+    damageValue: 1037,
+    cooldownRecovery: 10 * 4 * 0.43,
+    other: '按 CP 鹦鹉双 80 恩特上衣双 80 恩特裤子 40 秒 3 剜心 Lv80 43% 占比计算',
+  },
+  {
+    name: 'Lv95 40% CDR',
+    type: 'earring',
+    from: '森林之魔女耳环',
+    damageValue: 1037,
+    cooldownRecovery: 10 * 4 * 0.12,
+    other: '按制式鹦鹉 Lv95 12% 占比计算',
   },
   {
     name: 'Lv35 韧性 CDR',
@@ -114,7 +145,7 @@ export const earringOptions: Data[] = [
     type: 'earring',
     from: '蓝灵绿玉石耳环',
     damageValue: 148,
-    skillAtk: [8],
+    skillAtk: 8,
   },
   {
     name: '领主 20% 感电伤害',
@@ -156,7 +187,7 @@ export const earringOptions: Data[] = [
     type: 'earring',
     from: '蓝灵绿玉石耳环',
     damageValue: 741,
-    elementalDamage: Math.floor((35 * 2) / 3),
+    elementalDamage: 23,
   },
   {
     name: '基础精通 35 属强',
@@ -171,20 +202,20 @@ export const earringOptions: Data[] = [
     type: 'earring',
     from: '蓝灵绿玉石耳环',
     damageValue: 889,
-    elementalDamage: Math.floor((35 * 2) / 3),
+    elementalDamage: 23,
   },
   {
     name: '领主 6% 技攻',
     type: 'earring',
     from: '深潜迷航耳环',
     damageValue: 741,
-    skillAtk: [6],
+    skillAtk: 6,
   },
   {
     name: '韧性攻强',
     type: 'earring',
     from: '深潜迷航耳环',
-    damageValue: 1186 + 193 * 10,
+    damageValue: 1186 + 267 * 10,
   },
   {
     name: '控制异常 20 属强',
@@ -193,5 +224,27 @@ export const earringOptions: Data[] = [
     from: '深潜迷航耳环',
     damageValue: 1186,
     elementalDamage: 20,
+  },
+  {
+    name: 'MP 最大值 5% 技攻',
+    type: 'earring',
+    from: '蓝色海贼耳环',
+    damageValue: 741,
+    skillAtk: 5,
+  },
+  {
+    name: '自睡眠 6% 技攻',
+    type: 'earring',
+    from: '蓝色海贼耳环',
+    damageValue: 1186,
+    skillAtk: 6,
+  },
+  {
+    name: 'TP 等级 6% 技攻，Lv75 以上 6% 技攻',
+    type: 'earring',
+    from: '蓝色海贼耳环',
+    damageValue: 1186,
+    skillAtk: [6, 6 * 0.78],
+    other: '按 CP 鹦鹉双 80 恩特上衣双 80 恩特裤子 40 秒 3 剜心 Lv75 以上技能 78% 占比计算',
   },
 ]

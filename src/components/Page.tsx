@@ -17,14 +17,7 @@ function Page({ data, cacheName, types }: PageProps) {
 
   return (
     <div>
-      <p>
-        <Selector
-          cacheName={cacheName}
-          types={types}
-          value={type}
-          onChange={type => setType(type)}
-        />
-      </p>
+      <Selector cacheName={cacheName} types={types} value={type} onChange={type => setType(type)} />
       <Table data={filteredData} />
     </div>
   )

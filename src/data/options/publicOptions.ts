@@ -2,21 +2,24 @@ import { Data } from '.'
 
 export const publicOptions: Data[] = [
   {
-    name: '15 单属强',
+    name: '18 全属强',
     type: 'public',
+    from: 'logo',
     damageValue: 1186,
-    elementalDamage: 15,
+    elementalDamage: 18,
   },
   {
-    name: '10 全属强',
+    name: '20 单属强',
     type: 'public',
+    from: 'logo',
     damageValue: 1186,
-    elementalDamage: 10,
+    elementalDamage: 20,
   },
   {
-    name: '15 全属强',
+    name: '20 全属强',
     type: 'public',
+    from: 'logo',
     damageValue: 1630,
-    elementalDamage: 15,
+    elementalDamage: 20,
   },
 ]

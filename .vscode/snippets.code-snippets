@@ -18,14 +18,7 @@
   "data": {
     "scope": "typescript",
     "prefix": "dataSnippet",
-    "body": [
-      "{",
-      "  name: '$1',",
-      "  type: '$2',",
-      "  damageValue: $3,",
-      "  skillAtk: [$4],",
-      "},$0"
-    ]
+    "body": ["{", "  name: '$1',", "  type: '$2',", "  damageValue: $3,", "  skillAtk: $4,", "},$0"]
   },
   "option": {
     "scope": "typescript",

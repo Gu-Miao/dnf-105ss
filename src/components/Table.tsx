@@ -27,7 +27,6 @@ function Table({ data }: TableProps) {
         {data.map(item => {
           const key = item.name + item.prefix + item.damageValue + item.other
           const name = getIconName(item)
-          console.log(name)
 
           return (
             <tr key={key}>
@@ -57,14 +56,12 @@ function Table({ data }: TableProps) {
 }
 
 function getIconName(item: Data) {
-  return ['public', 'armor', 'jewelry', 'special-equipment'].includes(item.type)
-    ? 'logo'
-    : item.from ?? item.name
+  return item.from ?? item.name
 }
 
 function renderSkillAttack(skillAtk: Data['skillAtk']) {
-  if (!skillAtk || skillAtk[0] === 0) return ''
-  return skillAtk.map(num => num + '%').join(', ')
+  if (!skillAtk) return ''
+  return Array.isArray(skillAtk) ? skillAtk.map(num => num + '%').join(', ') : `${skillAtk}%`
 }
 
 function renderSpeed(speed: Data['speed']) {

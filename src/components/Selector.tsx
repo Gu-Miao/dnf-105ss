@@ -47,13 +47,17 @@ function Selector({ types, cacheName, value, onChange }: SelectorProps) {
   }
 
   return (
-    <div>
+    <p>
       <select value={current} onChange={handleChange}>
         {types.map(type => {
-          return <option value={type}>{map[type]}</option>
+          return (
+            <option key={type} value={type}>
+              {map[type]}
+            </option>
+          )
         })}
       </select>
-    </div>
+    </p>
   )
 }
 
