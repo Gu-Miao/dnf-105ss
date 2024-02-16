@@ -83,7 +83,7 @@ function getSkillAtkIncreaseRate(skillAtk: number | number[]) {
  * @returns 攻击强化提升率
  */
 function getDamageValueIncreaseRate(damageValue: number, prevDamageValue: number) {
-  return 1 + (damageValue / prevDamageValue) * 0.01
+  return 1 + damageValue / prevDamageValue
 }
 
 /**
