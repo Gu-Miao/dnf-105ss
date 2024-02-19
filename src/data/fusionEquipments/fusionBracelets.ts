@@ -55,25 +55,25 @@ export const fusionBracelets: Data[] = [
     skillAtk: 3,
   },
   {
-    name: '隔阂：扭曲的心灵',
+    name: '无信：扭曲的真心',
     type: 'fusion-bracelet',
     damageValue: 10047,
     skillAtk: 3,
   },
   {
-    name: '监视：选择的记忆',
+    name: '监视者：选择的记忆',
     type: 'fusion-bracelet',
     damageValue: 9265,
     skillAtk: 3,
   },
   {
-    name: '孤岛：幸存者的执念',
+    name: '孤岛：幸存的决心',
     type: 'fusion-bracelet',
     damageValue: 10830,
     skillAtk: 3,
   },
   {
-    name: '解放：滋生的迷茫',
+    name: '因果毁灭：滋生的灭亡',
     prefix: '觉醒',
     type: 'fusion-bracelet',
     damageValue: 1450,
@@ -86,7 +86,7 @@ export const fusionBracelets: Data[] = [
     skillAtk: 3,
   },
   {
-    name: '斗志：绝对勇气',
+    name: '斗志：绝对的勇气',
     type: 'fusion-bracelet',
     damageValue: 4576,
     skillAtk: 3,
