@@ -41,13 +41,13 @@ export const fusionEarrings: Data[] = [
     skillAtk: [3, 3],
   },
   {
-    name: '隔阂：失信的言行',
+    name: '无信：失信的言语',
     type: 'fusion-earring',
     damageValue: 10010,
     skillAtk: 3,
   },
   {
-    name: '监视：顾虑的意志',
+    name: '监视者：顾虑的意志',
     type: 'fusion-earring',
     damageValue: 3800,
     skillAtk: 6,
@@ -67,7 +67,7 @@ export const fusionEarrings: Data[] = [
     skillAtk: 6,
   },
   {
-    name: '解放：透彻的混乱',
+    name: '因果毁灭：透彻的祸乱',
     type: 'fusion-earring',
     damageValue: 1450,
     skillAtk: 5,
@@ -80,13 +80,13 @@ export const fusionEarrings: Data[] = [
     other: '按出血异常，按佩戴异常手镯和蓝灵上衣计算',
   },
   {
-    name: '怪异：铭刻的恐怖',
+    name: '怪异：刻骨的咆哮',
     type: 'fusion-earring',
     damageValue: 3450,
     skillAtk: [6, 1],
   },
   {
-    name: '斗志：变换之风',
+    name: '斗志：变换的流风',
     type: 'fusion-earring',
     damageValue: 3800,
     skillAtk: 3,

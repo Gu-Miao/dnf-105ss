@@ -33,25 +33,25 @@ export const fusionNecklaces: Data[] = [
     skillAtk: 3,
   },
   {
-    name: '隔阂：忘却的恩惠',
+    name: '无信：忘却的恩惠',
     type: 'fusion-necklace',
     damageValue: 10047,
     skillAtk: 3,
   },
   {
-    name: '监视：坚定的意向',
+    name: '监视者：坚定的意向',
     type: 'fusion-necklace',
     damageValue: 9265,
     skillAtk: 3,
   },
   {
-    name: '孤岛：环中默念',
+    name: '孤岛：鸣动的沉默',
     type: 'fusion-necklace',
     damageValue: 10830,
     skillAtk: 3,
   },
   {
-    name: '解放：飞翔的噩梦',
+    name: '因果毁灭：紧迫的噩梦',
     prefix: '觉醒',
     type: 'fusion-necklace',
     damageValue: 1450,
@@ -64,7 +64,7 @@ export const fusionNecklaces: Data[] = [
     skillAtk: 3,
   },
   {
-    name: '斗志：荣光之证',
+    name: '斗志：荣光的证明',
     type: 'fusion-necklace',
     damageValue: 4576,
     skillAtk: 3,
