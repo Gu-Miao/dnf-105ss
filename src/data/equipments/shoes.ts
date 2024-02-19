@@ -367,7 +367,7 @@ export const shoes: Data[] = [
     other: 'TP +1 提升约为 7%',
   },
   {
-    name: '迷雾追随者长靴',
+    name: '雾之意志追随者长靴',
     type: 'shoe',
     damageValue: 6144,
     skillAtk: 13,
@@ -418,7 +418,7 @@ export const shoes: Data[] = [
     skillAtk: [5, 15],
   },
   {
-    name: '满怀梦想的工程师工作靴',
+    name: '想象力充沛的工程师工作靴',
     type: 'shoe',
     damageValue: 6144,
     skillAtk: 6 * 3,

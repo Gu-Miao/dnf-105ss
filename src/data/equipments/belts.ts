@@ -356,7 +356,7 @@ export const belts: Data[] = [
     skillAtk: 12,
   },
   {
-    name: '迷雾追随者腰带',
+    name: '雾之意志追随者腰带',
     type: 'belt',
     damageValue: 6144,
     skillAtk: 10,
@@ -393,7 +393,7 @@ export const belts: Data[] = [
       '对毒王提升，按佩戴异常手镯，蓝灵上衣，武器 15% 毒伤，50% 毒伤蓝灵戒指和 15% 毒伤蓝灵裤子计算',
   },
   {
-    name: '满怀梦想的工程师工作腰带',
+    name: '想象力充沛的工程师工作腰带',
     type: 'belt',
     damageValue: 6952 + 3260,
     skillAtk: 25,

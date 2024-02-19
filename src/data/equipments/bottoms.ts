@@ -262,7 +262,7 @@ export const bottoms: Data[] = [
     damageValue: 5604 + 2705,
   },
   {
-    name: '迷雾追随者下装',
+    name: '雾之意志追随者下装',
     prefix: '90% 韧性',
     type: 'bottom',
     damageValue: 5604 + 296 * 10,
@@ -273,13 +273,13 @@ export const bottoms: Data[] = [
     },
   },
   {
-    name: '溪谷监视者下装',
+    name: '守望溪谷的行动',
     type: 'bottom',
     damageValue: 4917,
     skillAtk: 10,
   },
   {
-    name: '满怀梦想的工程师长裤',
+    name: '想象力充沛的工程师长裤',
     type: 'bottom',
     damageValue: 5066 + 1186,
     skillAtk: 2 * 3,
@@ -289,7 +289,7 @@ export const bottoms: Data[] = [
     },
   },
   {
-    name: '光荣骑士下装',
+    name: '坚定骑士护腿',
     type: 'bottom',
     damageValue: 4824,
     skillAtk: [10, 5 * 0.26],
