@@ -283,7 +283,7 @@ export const rings: Data[] = [
     speed: -15,
   },
   {
-    name: '迷雾探求者戒指',
+    name: '雾之探索者戒指',
     type: 'ring',
     damageValue: 4528,
     cooldownRecovery: 15 * 2,
@@ -292,7 +292,7 @@ export const rings: Data[] = [
     },
   },
   {
-    name: '典狱长的证明',
+    name: '守望者之证',
     type: 'ring',
     damageValue: 6144,
     skillAtk: 5,
@@ -305,7 +305,7 @@ export const rings: Data[] = [
     other: '按出血异常计算',
   },
   {
-    name: '典狱长的证明',
+    name: '守望者之证',
     prefix: '毒王',
     type: 'ring',
     damageValue: 6144,
@@ -319,7 +319,7 @@ export const rings: Data[] = [
     other: '对毒王提升',
   },
   {
-    name: '眺望夜色的工程师的视线',
+    name: '俯瞰夜色的工程师之眼',
     prefix: '觉醒',
     type: 'ring',
     damageValue: 7144,
@@ -327,7 +327,7 @@ export const rings: Data[] = [
     cooldownRecovery: 40,
   },
   {
-    name: '压倒性的勇猛',
+    name: '压倒性之勇猛',
     type: 'ring',
     damageValue: 5066,
     skillAtk: 10,

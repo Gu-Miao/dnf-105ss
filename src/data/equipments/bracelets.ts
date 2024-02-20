@@ -250,7 +250,7 @@ export const bracelets: Data[] = [
     },
   },
   {
-    name: '侵蚀禁忌之力手镯',
+    name: '邪恶力量侵蚀手镯',
     prefix: '50% 韧性',
     type: 'bracelet',
     damageValue: 5604,
@@ -260,7 +260,7 @@ export const bracelets: Data[] = [
     },
   },
   {
-    name: '侵蚀禁忌之力手镯',
+    name: '邪恶力量侵蚀手镯',
     prefix: '期望',
     type: 'bracelet',
     damageValue: 5604,
@@ -270,7 +270,7 @@ export const bracelets: Data[] = [
     },
   },
   {
-    name: '信使的祝福',
+    name: '传令使的祝福',
     type: 'bracelet',
     damageValue: 5874,
     skillAtk: 15,
@@ -281,7 +281,7 @@ export const bracelets: Data[] = [
     },
   },
   {
-    name: '历久弥新手镯',
+    name: '存封时空的手镯',
     type: 'bracelet',
     damageValue: 5604,
     skillAtk: 14,
@@ -309,13 +309,13 @@ export const bracelets: Data[] = [
     name: '深潜迷航腕表',
     prefix: '期望',
     type: 'bracelet',
-    damageValue: 1186 + 1186 + 1186 + 4150,
-    skillAtk: [10, 2, 5, 6],
+    damageValue: 1186 + 1186 + 1186 + 1334,
+    skillAtk: [10, 2, 3, 6, (6 + 10) / 2],
     speed: {
       attackSpeed: 20,
       castingSpeed: 30,
       moveSpeed: 20,
     },
-    other: '110% 暴击 10% 技攻，直伤技攻，移动 6% 技攻，速度攻强',
+    other: '110% 暴击 10% 技攻，直伤 5% 技攻，移动 6% 技攻，概率速度技攻',
   },
 ]

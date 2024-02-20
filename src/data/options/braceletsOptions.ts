@@ -2,11 +2,11 @@ import { Data } from '.'
 
 export const braceletsOptions: Data[] = [
   {
-    name: '直伤技攻',
+    name: '直伤 5% 技攻',
     type: 'bracelet',
     from: 'logo',
     damageValue: 1186,
-    skillAtk: [2, 5],
+    skillAtk: [2, 3],
   },
   {
     name: '移动 6% 技攻',
@@ -103,18 +103,19 @@ export const braceletsOptions: Data[] = [
     skillAtk: 10,
   },
   {
-    name: '攻强减伤',
+    name: '概率攻强减伤',
     prefix: '期望',
     type: 'bracelet',
     from: '深潜迷航腕表',
     damageValue: 1186 + (3409 + 2223) / 2,
   },
   {
-    name: '攻强速度',
+    name: '概率技攻速度',
     prefix: '期望',
     type: 'bracelet',
     from: '深潜迷航腕表',
-    damageValue: 1334 + (3409 + 2223) / 2,
+    damageValue: 1334,
+    skillAtk: (6 + 10) / 2,
     speed: {
       attackSpeed: 20,
       castingSpeed: 30,

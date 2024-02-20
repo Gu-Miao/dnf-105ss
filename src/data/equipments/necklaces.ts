@@ -192,7 +192,7 @@ export const necklaces: Data[] = [
     speed: 10,
   },
   {
-    name: '迷雾探求者项链',
+    name: '雾之探索者项链',
     type: 'necklace',
     damageValue: 6144 + 3557,
     skillAtk: 5,
@@ -208,14 +208,14 @@ export const necklaces: Data[] = [
     skillAtk: 11,
   },
   {
-    name: '机械工学之心',
+    name: '机械工程学核心项链',
     type: 'necklace',
     damageValue: 4972,
     skillAtk: 10,
     elementalDamage: 20,
   },
   {
-    name: '对敌慎重',
+    name: '对敌之慎重',
     type: 'necklace',
     damageValue: 6170,
     skillAtk: [10, 1.05],

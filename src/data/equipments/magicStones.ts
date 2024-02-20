@@ -189,7 +189,7 @@ export const magicStones: Data[] = [
     },
   },
   {
-    name: '被侵蚀高原的精髓',
+    name: '被侵蚀的高原之精髓',
     type: 'magic-stone',
     damageValue: 5066,
     skillAtk: 8,
@@ -203,7 +203,7 @@ export const magicStones: Data[] = [
     skillAtk: 10,
   },
   {
-    name: '机械工学的精华',
+    name: '机械工程学的精髓',
     prefix: '无弱点',
     type: 'magic-stone',
     damageValue: 4528,
@@ -211,7 +211,7 @@ export const magicStones: Data[] = [
     elementalDamage: 10,
   },
   {
-    name: '机械工学的精华',
+    name: '机械工程学的精髓',
     prefix: '弱点',
     type: 'magic-stone',
     damageValue: 4528,
@@ -219,7 +219,7 @@ export const magicStones: Data[] = [
     elementalDamage: 10 + 20,
   },
   {
-    name: '守护的忍耐',
+    name: '守护之坚韧',
     type: 'magic-stone',
     damageValue: 6144,
     skillAtk: 10,
