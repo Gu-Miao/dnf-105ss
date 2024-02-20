@@ -225,13 +225,13 @@ export const subEquipments: Data[] = [
     speed: '普攻，跳攻，前冲攻击时 35% 攻速',
   },
   {
-    name: '被侵蚀神兽的悲痛面纱',
+    name: '悲蚀之神兽面纱',
     type: 'sub-equipment',
     damageValue: 6144,
     skillAtk: 7,
   },
   {
-    name: '清渊之力',
+    name: '守护晴烟之力',
     type: 'sub-equipment',
     damageValue: 7222 + 2519,
     elementalDamage: 15,
@@ -249,7 +249,7 @@ export const subEquipments: Data[] = [
     cooldownReduction: 50,
   },
   {
-    name: '前进的一步',
+    name: '挺近之气势',
     type: 'sub-equipment',
     damageValue: 6440,
     skillAtk: 1.75,

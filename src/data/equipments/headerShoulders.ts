@@ -463,13 +463,13 @@ export const headerShoulders: Data[] = [
     },
   },
   {
-    name: '被侵蚀神兽的罪恶斗篷',
+    name: '虚蚀之神兽斗篷',
     type: 'header-shoulder',
     damageValue: 6144,
     skillAtk: 9,
   },
   {
-    name: '守护清渊的意志',
+    name: '守护晴烟的意志',
     prefix: '单异常对象',
     type: 'header-shoulder',
     damageValue: 5066 + 712,
@@ -483,7 +483,7 @@ export const headerShoulders: Data[] = [
     other: '按佩戴异常手镯和蓝灵上衣计算',
   },
   {
-    name: '守护清渊的意志',
+    name: '守护晴烟的意志',
     prefix: '2 个异常对象',
     type: 'header-shoulder',
     damageValue: 5066 + 712 * 2,
@@ -497,7 +497,7 @@ export const headerShoulders: Data[] = [
     other: '按佩戴异常手镯和蓝灵上衣计算',
   },
   {
-    name: '守护清渊的意志',
+    name: '守护晴烟的意志',
     prefix: '5 个异常对象',
     type: 'header-shoulder',
     damageValue: 5066 + 712 * 5,
@@ -511,13 +511,13 @@ export const headerShoulders: Data[] = [
     other: '按佩戴异常手镯和混乱核心计算',
   },
   {
-    name: '实现想象的自由',
+    name: '化虚为实之想象',
     type: 'header-shoulder',
     damageValue: 6144,
     skillAtk: 9,
   },
   {
-    name: '忍耐骑士护肩',
+    name: '忍耐骑士肩甲',
     type: 'header-shoulder',
     damageValue: 6400,
     skillAtk: [6, 5 * 0.15],

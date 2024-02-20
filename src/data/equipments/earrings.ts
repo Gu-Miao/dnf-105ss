@@ -300,7 +300,7 @@ export const earrings: Data[] = [
     other: '通过模拟得到期望概率为 8.7%',
   },
   {
-    name: '被侵蚀神兽的眼泪',
+    name: '被侵蚀的神兽之泪',
     prefix: '远',
     type: 'earring',
     damageValue: 6682 + 2519,
@@ -311,7 +311,7 @@ export const earrings: Data[] = [
     },
   },
   {
-    name: '被侵蚀神兽的眼泪',
+    name: '被侵蚀的神兽之泪',
     prefix: '近',
     type: 'earring',
     damageValue: 6682,
@@ -323,20 +323,20 @@ export const earrings: Data[] = [
     },
   },
   {
-    name: '溪谷监视者的证明',
+    name: '守望溪谷的证明',
     type: 'earring',
     damageValue: 5604,
     skillAtk: [10, 6 * 0.75],
     other: '按鹦鹉特化剜心 Lv75 以上技能总共 75% 占比计算',
   },
   {
-    name: '机械工学的时间',
+    name: '时间工程学的时刻',
     type: 'earring',
     damageValue: 5604,
     skillAtk: 12,
   },
   {
-    name: '永不言弃的勇气',
+    name: '永不放弃的勇气',
     type: 'earring',
     damageValue: 5874,
     skillAtk: 12,
